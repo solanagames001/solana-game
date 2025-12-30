@@ -1,0 +1,22 @@
+[toolchain]
+anchor_version = "0.32.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+solana_game = "4dWfqrMh8irJFT4pSDbNyQzH3MRzVakcJYYNNyLZZ6V6"
+
+[programs.mainnet]
+solana_game = "Bk5wQdDbfe2UGrrjBsDUJFPjH9mqB5JHZymrp4u95458"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "wallets/mainnet-final/solana_game_mainnet.json"
+
+[workspace]
+members = ["programs/solana_game"]
