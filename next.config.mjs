@@ -7,8 +7,8 @@ const nextConfig = {
   experimental: {
     esmExternals: "loose",
   },
-  output: "export",
-  distDir: "out",
+  // Removed output: "export" for Vercel deployment
+  // Vercel works best with standard Next.js build
   trailingSlash: true,
   
   // Performance optimizations
