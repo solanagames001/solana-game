@@ -90,3 +90,25 @@ export function clearLocalHistory(wallet: string): void {
   if (!isClient() || !wallet) return;
   window.localStorage.removeItem(historyKey(wallet));
 }
+
+/* ------------------------------------------------------------
+   CLEAR REFERRAL EVENTS
+   Удаляет все события REFERRAL_REGISTERED.
+   Используется для очистки старых "рандомных" рефералов.
+------------------------------------------------------------ */
+
+export function clearReferralEvents(wallet: string): void {
+  if (!isClient() || !wallet) return;
+
+  try {
+    const all = loadLocalHistory(wallet);
+    const filtered = all.filter((ev) => ev.kind !== "REFERRAL_REGISTERED");
+    
+    if (filtered.length < all.length) {
+      saveLocalHistory(wallet, filtered);
+      console.log(`[sdk/history/local] Cleared ${all.length - filtered.length} referral events for ${wallet}`);
+    }
+  } catch (err) {
+    console.warn("[sdk/history/local] clearReferralEvents failed:", err);
+  }
+}

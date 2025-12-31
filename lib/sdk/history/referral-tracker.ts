@@ -3,18 +3,21 @@
 // Referral Registration Tracker
 // ------------------------------------------------------------
 // Периодически проверяет новых игроков и создает события REFERRAL_REGISTERED
-// для upline игроков
+// для upline игроков.
+//
+// ВАЖНО: Рефералы создаются ТОЛЬКО когда новый игрок пришел по реферальной
+// ссылке. Если upline1/2/3 = SystemProgram.programId ("нулевой" адрес),
+// это означает, что реферера нет, и событие НЕ создается.
 // ------------------------------------------------------------
 
-import { Connection, PublicKey } from "@solana/web3.js";
-import { fetchGlobalStatsNullable, fetchPlayerNullable } from "../fetch";
+import { Connection, PublicKey, SystemProgram } from "@solana/web3.js";
+import { fetchGlobalStatsNullable, fetchPlayerNullable, fetchConfigV3Nullable } from "../fetch";
 import { derivePlayerPda, CLUSTER } from "../pda";
 import { recordTxEvent } from "./record";
 import { notifyHistoryUpdated } from "./helpers";
 import { loadLocalHistory } from "./local";
 
 const CHECK_INTERVAL_MS = 30 * 1000; // 30 секунд
-const MAX_LAST_PLAYERS = 50; // Максимум игроков для проверки за раз
 
 interface LastPlayerCache {
   lastPlayer: string;
@@ -57,9 +60,51 @@ function saveLastPlayerCache(wallet: string, lastPlayer: string): void {
   }
 }
 
+// "Нулевой" pubkey - означает "нет реферера"
+const ZERO_PUBKEY_STR = SystemProgram.programId.toBase58(); // "11111111111111111111111111111111"
+
+/**
+ * Проверяет, является ли upline адрес "валидным" реферером.
+ * 
+ * Невалидные адреса:
+ * - ZERO_PUBKEY (SystemProgram.programId) = нет реферера
+ * - Admin адрес = системный fallback
+ * - Treasury адрес = системный
+ * 
+ * @param uplineStr - Base58 строка upline адреса
+ * @param adminStr - Base58 строка admin адреса
+ * @param treasuryStr - Base58 строка treasury адреса
+ * @returns true если это реальный реферер, false если системный/пустой
+ */
+function isValidReferrerUpline(
+  uplineStr: string,
+  adminStr: string,
+  treasuryStr: string
+): boolean {
+  // 1. Нулевой адрес = нет реферера
+  if (uplineStr === ZERO_PUBKEY_STR) {
+    return false;
+  }
+  
+  // 2. Admin адрес = системный fallback (не реальный реферер)
+  if (uplineStr === adminStr) {
+    return false;
+  }
+  
+  // 3. Treasury адрес = системный (не реальный реферер)
+  if (uplineStr === treasuryStr) {
+    return false;
+  }
+  
+  return true;
+}
+
 /**
  * Проверяет новых игроков и создает события REFERRAL_REGISTERED для текущего игрока,
- * если кто-то зарегистрировался с ним как upline1, upline2 или upline3
+ * если кто-то зарегистрировался с ним как upline1, upline2 или upline3.
+ * 
+ * ВАЖНО: События создаются ТОЛЬКО для реальных рефералов (пришедших по ссылке),
+ * а не для системных upline (ZERO_PUBKEY, admin, treasury).
  */
 export async function checkForNewReferrals(
   connection: Connection,
@@ -89,6 +134,11 @@ export async function checkForNewReferrals(
       return;
     }
     
+    // Получаем config для admin/treasury адресов
+    const config = await fetchConfigV3Nullable(connection);
+    const adminStr = config?.admin.toBase58() || "";
+    const treasuryStr = config?.treasury.toBase58() || "";
+    
     // Проверяем последнего игрока
     const [lastPlayerPda] = derivePlayerPda(stats.last_player);
     const lastPlayer = await fetchPlayerNullable(connection, lastPlayerPda);
@@ -117,12 +167,19 @@ export async function checkForNewReferrals(
       return;
     }
     
-    // ВАЖНО: Проверяем линии в порядке приоритета (1 > 2 > 3)
-    // По логике Rust, один реферал может быть только на ОДНОЙ линии для конкретного пользователя
-    // Но мы проверяем все три линии и создаем событие для той, где текущий пользователь находится
+    // Получаем upline адреса последнего игрока
+    const upline1Str = lastPlayer.upline1.toBase58();
+    const upline2Str = lastPlayer.upline2.toBase58();
+    const upline3Str = lastPlayer.upline3.toBase58();
+    
+    // КРИТИЧЕСКОЕ: Проверяем линии в порядке приоритета (1 > 2 > 3)
+    // и ТОЛЬКО если upline является РЕАЛЬНЫМ реферером (не системным адресом)
     
     // Проверяем upline1 (линия 1) - ПРИОРИТЕТ 1 (самый важный)
-    if (lastPlayer.upline1.toBase58() === currentWalletStr) {
+    if (
+      upline1Str === currentWalletStr &&
+      isValidReferrerUpline(upline1Str, adminStr, treasuryStr)
+    ) {
       const sig = `referral-registered-line1-${referralAddress}-${referralCreatedAt}`;
       if (!existingSigs.has(sig)) {
         recordTxEvent({
@@ -133,8 +190,6 @@ export async function checkForNewReferrals(
           slot: null,
           ts: referralCreatedAt,
         });
-        // Если мы upline1, это правильная линия - НЕ проверяем дальше
-        // (хотя по логике Rust мы не можем быть одновременно upline1 и upline2)
         saveLastPlayerCache(walletStr, lastPlayerStr);
         notifyHistoryUpdated(walletStr);
         return;
@@ -142,8 +197,10 @@ export async function checkForNewReferrals(
     }
     
     // Проверяем upline2 (линия 2) - ПРИОРИТЕТ 2
-    // (Если мы не upline1, но мы upline2 - значит реферал попал к нам через наследование цепочки)
-    if (lastPlayer.upline2.toBase58() === currentWalletStr) {
+    if (
+      upline2Str === currentWalletStr &&
+      isValidReferrerUpline(upline2Str, adminStr, treasuryStr)
+    ) {
       const sig = `referral-registered-line2-${referralAddress}-${referralCreatedAt}`;
       if (!existingSigs.has(sig)) {
         recordTxEvent({
@@ -154,7 +211,6 @@ export async function checkForNewReferrals(
           slot: null,
           ts: referralCreatedAt,
         });
-        // Если мы upline2, НЕ проверяем upline3 (по логике Rust мы не можем быть одновременно upline2 и upline3)
         saveLastPlayerCache(walletStr, lastPlayerStr);
         notifyHistoryUpdated(walletStr);
         return;
@@ -162,7 +218,10 @@ export async function checkForNewReferrals(
     }
     
     // Проверяем upline3 (линия 3) - ПРИОРИТЕТ 3
-    if (lastPlayer.upline3.toBase58() === currentWalletStr) {
+    if (
+      upline3Str === currentWalletStr &&
+      isValidReferrerUpline(upline3Str, adminStr, treasuryStr)
+    ) {
       const sig = `referral-registered-line3-${referralAddress}-${referralCreatedAt}`;
       if (!existingSigs.has(sig)) {
         recordTxEvent({
@@ -215,4 +274,3 @@ export function startReferralTracker(
     }
   };
 }
-

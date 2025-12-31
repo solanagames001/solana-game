@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { useWalletBalance } from '@/lib/sdk/hooks/useWalletBalance';
-import { loadLocalHistory } from '@/lib/sdk/history/local';
+import { loadLocalHistory, clearReferralEvents } from '@/lib/sdk/history/local';
 import { withSyntheticClosures } from '@/lib/sdk/history/derive';
 import { toast } from '@/lib/sdk/toast';
 import type { TxEvent } from '@/lib/sdk/history/types';
