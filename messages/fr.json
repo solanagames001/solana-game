@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Connecter le portefeuille",
+    "disconnect": "Déconnecter",
+    "dashboard": "Tableau de bord",
+    "register": "S'inscrire",
+    "registering": "Inscription...",
+    "connecting": "Connexion",
+    "loading": "Chargement...",
+    "processing": "Traitement...",
+    "success": "Succès",
+    "error": "Erreur",
+    "copy": "Copier",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "more": "Plus",
+    "less": "Moins",
+    "all": "Tous",
+    "none": "Aucun",
+    "yes": "Oui",
+    "no": "Non",
+    "on": "Activé",
+    "off": "Désactivé",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "pending": "En attente",
+    "completed": "Terminé",
+    "failed": "Échoué",
+    "home": "Accueil",
+    "support": "Support",
+    "balance": "Solde",
+    "tapToCopy": "Appuyez pour copier",
+    "swipeToClose": "Faites glisser vers le bas pour fermer",
+    "connectedWallet": "Portefeuille connecté",
+    "disconnectWallet": "Déconnecter le portefeuille",
+    "selectLanguage": "Sélectionner la langue",
+    "language": "Langue",
+    "chooseLanguage": "Choisissez votre langue préférée"
+  },
+  "playerStatus": {
+    "title": "Statut du joueur",
+    "accountInfo": "Infos du compte",
+    "authority": "Autorité",
+    "playerPda": "PDA du joueur",
+    "createdAt": "Créé le",
+    "openLevels": "Ouvrir les niveaux",
+    "copyPda": "Copier PDA",
+    "explorer": "Explorateur",
+    "register": "S'inscrire",
+    "registering": "Inscription…",
+    "connectFirst": "Connectez d'abord votre portefeuille",
+    "playerRegistered": "Joueur enregistré",
+    "registrationFailed": "Échec de l'inscription",
+    "addressCopied": "Adresse copiée",
+    "copyFailed": "Échec de la copie"
+  },
+  "levelCard": {
+    "activate": "Activer",
+    "activating": "Activation…",
+    "activated": "Activé",
+    "notActivated": "Non activé",
+    "checking": "Vérification…",
+    "notRegistered": "Non enregistré",
+    "levelActive": "Niveau actif — récompenses activées.",
+    "level": "Niveau",
+    "price": "Prix (SOL)",
+    "slots": "Slots",
+    "cycles": "Cycles",
+    "details": "Détails"
+  },
+  "activations": {
+    "title": "Activations",
+    "lastDays": "{days} derniers jours",
+    "total": "total",
+    "activationsCount": "{count} activations"
+  },
+  "header": {
+    "connectWallet": "Connecter le portefeuille",
+    "dashboard": "Tableau de bord",
+    "register": "S'inscrire",
+    "connecting": "Connexion"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Système de matrice décentralisé sur la blockchain Solana",
+    "poweredBy": "Propulsé par Solana"
+  },
+  "ticker": {
+    "onChain": "Contrat intelligent 100% On-Chain",
+    "noAdminKeys": "Pas de clés admin - Entièrement décentralisé",
+    "instantPayouts": "Paiements instantanés sur votre portefeuille",
+    "audited": "Contrat audité et vérifié",
+    "levels": "16 niveaux - Jusqu'à 655.35 SOL",
+    "partnerBonus": "Invitez des partenaires - Gagnez 26% de bonus",
+    "unlimited": "Cycles illimités - Gains illimités"
+  },
+  "technology": {
+    "smartContract": "Contrat intelligent",
+    "howItWorks": "Fonctionnement sur",
+    "solana": "Solana",
+    "description": "Contrat intelligent entièrement autonome avec modèle de matrice X3, paiements instantanés et sécurité cryptographique",
+    "x3Matrix": "Matrice X3",
+    "x3MatrixDesc": "Chaque niveau fonctionne comme une matrice X3 basée sur une file d'attente. Lorsque vous activez un niveau, vous rejoignez une file d'attente mondiale. Toutes les 3 activations après vous remplissent vos emplacements, complétant un cycle. Vous recevez 60% de chaque remplissage, puis ré-entrez automatiquement pour des cycles illimités.",
+    "instantPayouts": "Paiements instantanés",
+    "instantPayoutsDesc": "Le contrat intelligent distribue les paiements instantanément : 60% au propriétaire, 13% au parrain ligne 1, 8% ligne 2, 5% ligne 3, et 14% à la trésorerie. Tous les transferts se font en une seule transaction atomique.",
+    "sixteenLevels": "16 Niveaux",
+    "sixteenLevelsDesc": "Le système dispose de 16 niveaux avec des prix fixes de 0.05 SOL (Niveau 1) à 8.7 SOL (Niveau 16). Chaque niveau a sa propre file d'attente indépendante. Des niveaux plus élevés signifient des paiements plus importants.",
+    "replayProtection": "Protection contre la répétition",
+    "replayProtectionDesc": "Chaque transaction utilise un nonce unique stocké dans un compte TxGuard. Cela empêche les attaques par rejeu et garantit que chaque activation est traitée une seule fois.",
+    "globalQueue": "File d'attente mondiale",
+    "globalQueueDesc": "Chaque niveau maintient un LevelPool avec des QueuePages paginées (64 joueurs par page). Lorsqu'une page est pleine, une nouvelle page est créée automatiquement.",
+    "referralChain": "Chaîne de parrainage",
+    "referralChainDesc": "Lors de l'inscription, votre ligne ascendante sur 3 niveaux est enregistrée on-chain. Ils reçoivent des bonus uniquement s'ils ont le même niveau actif.",
+    "levels": "Niveaux",
+    "slotsPerCycle": "Emplacements par cycle",
+    "autoRecycle": "Recyclage auto",
+    "ownerPayout": "Paiement propriétaire",
+    "perActivation": "Par activation",
+    "referralTotal": "Total parrainage"
+  },
+  "mechanics": {
+    "gameMechanics": "Mécanique de jeu",
+    "howSolanaGameWorks": "Comment fonctionne Solana Game",
+    "description": "Gagnez, améliorez et jouez via des niveaux intelligents décentralisés alimentés par les contrats intelligents Solana",
+    "activateLevel": "Activer un niveau",
+    "activateLevelDesc": "Choisissez n'importe quel niveau et activez-le directement on-chain. La propriété est enregistrée de façon permanente sur la blockchain Solana.",
+    "playRecycle": "Jouer et recycler",
+    "playRecycleDesc": "Chaque niveau se recycle automatiquement après la fermeture de trois emplacements — les récompenses sont distribuées instantanément.",
+    "earnUpgrade": "Gagner et améliorer",
+    "earnUpgradeDesc": "Collectez des récompenses en SOL et débloquez des niveaux supérieurs pour de meilleurs rendements."
+  },
+  "stats": {
+    "title": "Avantages de la communauté",
+    "growingEverySecond": "Faites Partie de Quelque Chose de Plus Grand",
+    "description": "Rejoignez un réseau mondial de gagnants actifs et grandissez ensemble.",
+    "worldwideNetwork": "Réseau Mondial",
+    "worldwideNetworkDesc": "Accès depuis n'importe où dans le monde",
+    "thrivingCommunity": "Communauté Florissante",
+    "thrivingCommunityDesc": "Membres actifs gagnant quotidiennement",
+    "alwaysSupported": "Toujours Soutenu",
+    "alwaysSupportedDesc": "Obtenez de l'aide chaque fois que vous en avez besoin",
+    "collectiveWins": "Victoires Collectives",
+    "collectiveWinsDesc": "Le succès grandit avec le réseau",
+    "startEarning": "Commencer à gagner",
+    "goToDashboard": "Aller au tableau de bord",
+    "walletConnected": "Portefeuille connecté. Prêt à gagner.",
+    "noHiddenFees": "Pas de frais cachés. Paiements instantanés. 100% on-chain."
+  },
+  "levels": {
+    "title": "Niveaux",
+    "level": "Niveau",
+    "price": "Prix",
+    "activate": "Activer",
+    "activating": "Activation...",
+    "activated": "Activé",
+    "locked": "Verrouillé",
+    "cycles": "Cycles",
+    "slots": "Emplacements",
+    "filled": "Rempli",
+    "earnings": "Gains",
+    "totalEvents": "Total des événements",
+    "cyclesDone": "Cycles terminés",
+    "queue": "En file d'attente",
+    "yourPosition": "Votre position",
+    "recycleAfter": "Recyclage après 3 emplacements remplis"
+  },
+  "history": {
+    "title": "Historique des transactions",
+    "noTransactions": "Pas encore de transactions",
+    "activation": "Activation",
+    "earning": "Gain",
+    "referralBonus": "Bonus de parrainage",
+    "referralActivated": "Parrainage Activé",
+    "referralRegistered": "Parrainage Enregistré",
+    "cycleClose": "Cycle Terminé",
+    "recycled": "Recyclé",
+    "reOpened": "Réouvert",
+    "viewExplorer": "Voir dans Explorer",
+    "view": "Voir",
+    "viewAll": "Voir tout",
+    "synthetic": "synthétique",
+    "pending": "En attente",
+    "slot": "emplacement",
+    "justNow": "À l'instant",
+    "mAgo": "min il y a",
+    "hAgo": "h il y a",
+    "dAgo": "j il y a",
+    "activated": "Activé",
+    "filters": {
+      "all": "Tous",
+      "activations": "Activations",
+      "earnings": "Gains",
+      "pending": "En attente"
+    },
+    "ownerPayout": "Paiement propriétaire (60%)",
+    "referralPayoutL1": "Bonus parrainage L1 (13%)",
+    "referralPayoutL2": "Bonus parrainage L2 (8%)",
+    "referralPayoutL3": "Bonus parrainage L3 (5%)",
+    "fromSlot": "Slot {slot}"
+  },
+  "info": {
+    "platformFeatures": "Fonctionnalités de la plateforme",
+    "builtOn": "Construit sur",
+    "solana": "Solana",
+    "description": "Contrats intelligents transparents, transactions instantanées et système de parrainage décentralisé",
+    "documentation": "Documentation",
+    "documentationDesc": "Guides complets pour comprendre le système de matrice X3 et maximiser vos gains.",
+    "instantPayouts": "Paiements instantanés",
+    "instantPayoutsDesc": "Les SOL sont envoyés directement à votre portefeuille. Pas de délai, pas d'intermédiaire.",
+    "referralSystem": "Système de parrainage",
+    "referralSystemDesc": "Gagnez 13%, 8% et 5% de vos lignes de parrainage. Construisez votre réseau.",
+    "readDocs": "Lire les docs",
+    "learnMore": "En savoir plus",
+    "startEarning": "Commencer à gagner",
+    "ownerPayout": "Paiement propriétaire",
+    "referralRewards": "Récompenses parrainage",
+    "transactionSpeed": "Vitesse de transaction"
+  },
+  "partner": {
+    "title": "Programme partenaire",
+    "subtitle": "Invitez des amis et gagnez 50% de bonus sur leurs activations",
+    "yourReferralLink": "Votre lien de parrainage",
+    "copyLink": "Copier le lien",
+    "linkCopied": "Lien copié !",
+    "howItWorks": "Comment fonctionne le bonus partenaire",
+    "level1": "Partenaire niveau 1",
+    "level2": "Partenaire niveau 2",
+    "level3": "Partenaire niveau 3",
+    "bonus1": "13% des parrainages directs",
+    "bonus2": "8% des parrainages niveau 2",
+    "bonus3": "5% des parrainages niveau 3"
+  },
+  "telegram": {
+    "title": "Ressources Telegram",
+    "community": "Communauté",
+    "communityDesc": "Rejoignez notre chat",
+    "support": "Support",
+    "supportDesc": "Obtenez de l'aide de l'équipe"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Réponses rapides pour comprendre et commencer avec Solana Game",
+    "q1": "Qu'est-ce que Solana Game et comment ça fonctionne ?",
+    "a1": "Solana Game est une plateforme de matrice décentralisée fonctionnant entièrement sur les contrats intelligents Solana. Quand vous activez un niveau, vous rejoignez une file d'attente globale. Quand de nouveaux joueurs activent le même niveau après vous, ils remplissent vos 3 emplacements. Une fois les 3 emplacements remplis, vous recevez des paiements et rentrez automatiquement dans la file. Ce cycle se répète indéfiniment — une activation vous donne un potentiel de gains illimité.",
+    "q2": "Combien de niveaux y a-t-il et combien coûtent-ils ?",
+    "a2": "Il y a 16 niveaux avec des prix fixes en SOL : L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Chaque niveau fonctionne indépendamment avec sa propre file — vous pouvez activer n'importe quel niveau dans n'importe quel ordre.",
+    "q3": "Combien je gagne et où va l'argent ?",
+    "a3": "Quand quelqu'un active un niveau, les paiements sont distribués instantanément : 60% va au leader de la file (propriétaire du niveau), 13% au parrain de 1ère ligne, 8% à la 2ème ligne, 5% à la 3ème ligne, et 14% au trésor de la plateforme. Par cycle (3 emplacements remplis), vous recevez 180% du prix du niveau. Tous les transferts se font atomiquement en une transaction blockchain.",
+    "q4": "Comment fonctionne le programme de parrainage ?",
+    "a4": "Lors de votre inscription, votre chaîne de parrainage est enregistrée on-chain (3 niveaux de profondeur). Vos parrains gagnent 13%, 8% et 5% de chacune de vos activations de niveau. Important : les bonus de parrainage ne s'appliquent que si votre upline a le même niveau actif. Sinon, leur part va au trésor. Cela incite tout le monde à activer plus de niveaux.",
+    "q5": "Que se passe-t-il après le remplissage de mes 3 emplacements ?",
+    "a5": "Votre niveau 'recycle' automatiquement — vos emplacements sont réinitialisés à 0, votre compteur de cycles augmente de 1, et vous rentrez à la fin de la file. Vous gardez votre position et continuez à gagner de la même activation de niveau pour toujours. Il n'y a pas de limite au nombre de cycles.",
+    "q6": "Comment commencer ?",
+    "a6": "Étape 1 : Connectez votre portefeuille Phantom (ou un autre portefeuille Solana). Étape 2 : Enregistrez votre profil joueur — cela crée votre compte on-chain et enregistre votre parrain. Étape 3 : Activez le Niveau 1 pour 0.05 SOL. Étape 4 : Partagez votre lien de parrainage pour gagner des bonus quand d'autres rejoignent. Vous pouvez surveiller vos emplacements, cycles et gains en temps réel sur votre tableau de bord.",
+    "q7": "Mon argent est-il en sécurité ? Quelqu'un peut-il voler mes fonds ?",
+    "a7": "Vos fonds sont totalement en sécurité. La plateforme fonctionne sur des contrats intelligents vérifiés et immuables — personne (y compris les développeurs) ne peut modifier le code ou accéder à votre portefeuille. Les paiements vont directement de portefeuille à portefeuille sans intermédiaires. Le contrat inclut une protection TxGuard contre les transactions en double. Vous ne cédez jamais la garde de vos fonds à personne.",
+    "q8": "Et si personne n'active après moi ?",
+    "a8": "Votre position dans la file est permanente et n'expire jamais. Vous attendez simplement que de nouveaux joueurs activent le niveau. La file est globale — tous les joueurs du monde partagent la même file pour chaque niveau. Plus le niveau est populaire, plus vos emplacements se remplissent rapidement. Les niveaux supérieurs peuvent prendre plus de temps mais offrent des paiements plus importants."
+  },
+  "footer": {
+    "description": "Système de matrice X3 décentralisé sur la blockchain Solana. Paiements instantanés, mécanique transparente, 100% on-chain.",
+    "smartContract": "Contrat intelligent",
+    "contractAddress": "Adresse du contrat",
+    "verifyExplorer": "Vérifiez toujours l'adresse du contrat sur Solana Explorer",
+    "viewOnExplorer": "Voir sur Explorer",
+    "platform": "Plateforme",
+    "gameLevels": "Niveaux de jeu",
+    "resources": "Ressources",
+    "howItWorks": "Comment ça marche",
+    "docs": "Documentation",
+    "disclaimer": "Avertissement",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Portefeuille connecté",
+    "allRightsReserved": "Tous droits réservés"
+  },
+  "wallet": {
+    "connect": "Connecter le portefeuille",
+    "connecting": "Connexion...",
+    "connected": "Connecté",
+    "disconnect": "Déconnecter",
+    "balance": "Solde",
+    "address": "Adresse",
+    "copyAddress": "Copier l'adresse",
+    "viewExplorer": "Voir dans Explorer",
+    "switchWallet": "Changer de portefeuille",
+    "installPhantom": "Installer Phantom",
+    "phantomRequired": "Portefeuille Phantom requis",
+    "readyToConnect": "Prêt à connecter",
+    "supported": "Supporté",
+    "connectToContinue": "Connectez-vous pour continuer",
+    "phantomNotFound": "Phantom introuvable",
+    "pleaseInstall": "Veuillez installer l'extension Phantom wallet",
+    "byConnecting": "En vous connectant, vous acceptez les Conditions d'utilisation",
+    "notInstalled": "Non installé"
+  },
+  "guard": {
+    "title": "Connectez votre portefeuille",
+    "description": "Pour accéder au tableau de bord, veuillez connecter votre portefeuille Solana. Votre portefeuille est nécessaire pour interagir avec la blockchain.",
+    "backHome": "Retour à l'accueil",
+    "registerRequired": "Inscription Requise",
+    "registerRequiredDesc": "Pour accéder au tableau de bord, vous devez vous inscrire en tant que joueur. C'est gratuit et ne prend que quelques secondes."
+  },
+  "docs": {
+    "title": "Documentation",
+    "startPlaying": "Commencer à jouer",
+    "overview": "Aperçu",
+    "gettingStarted": "Premiers pas",
+    "matrixSystem": "Système de matrice X3",
+    "earnings": "Gains et paiements",
+    "referrals": "Programme de parrainage",
+    "security": "Sécurité"
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "understand": "Je comprends",
+    "intro": "Veuillez lire attentivement cet avertissement avant d'utiliser Solana Program X3. En accédant à la plateforme ou en l'utilisant, vous acceptez d'être lié par ces conditions.",
+    "lastUpdated": "Dernière mise à jour : décembre 2024",
+    "importantNotice": "Avis Important",
+    "importantNoticeText": "Les investissements en cryptomonnaies comportent des risques élevés. N'investissez que ce que vous pouvez vous permettre de perdre. Cette plateforme fonctionne sur des contrats intelligents immuables — les transactions ne peuvent pas être annulées.",
+    "acceptanceTitle": "Acceptation des Conditions",
+    "acceptanceText": "En utilisant Solana Program X3, vous reconnaissez avoir lu, compris et accepté d'être lié par cet avertissement et toutes les conditions applicables.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Nature de la Plateforme",
+        "content": "Solana Program X3 est une application décentralisée (dApp) construite sur la blockchain Solana. La plateforme fonctionne via des contrats intelligents immuables déployés sur la chaîne. Une fois déployés, le code du contrat intelligent ne peut pas être modifié, altéré ou contrôlé par aucune partie, y compris les développeurs.\n\nLa plateforme facilite un système basé sur une matrice où les participants peuvent activer des niveaux et recevoir des paiements basés sur la mécanique définie dans le contrat intelligent. Toutes les transactions sont exécutées automatiquement par la blockchain selon les règles prédéfinies."
+      },
+      "noFinancialAdvice": {
+        "title": "Pas de Conseil Financier",
+        "content": "Rien sur cette plateforme ne constitue un conseil financier, d'investissement, juridique ou fiscal. Les informations fournies sont uniquement à des fins éducatives et informatives. Vous devriez consulter des professionnels qualifiés avant de prendre toute décision financière.\n\nParticiper à des plateformes basées sur la blockchain implique des risques importants. Les performances passées ne garantissent pas les résultats futurs. La valeur des cryptomonnaies peut fluctuer considérablement et vous pouvez perdre une partie ou la totalité de votre investissement."
+      },
+      "riskAcknowledgment": {
+        "title": "Reconnaissance des Risques",
+        "content": "En utilisant Solana Program X3, vous reconnaissez et acceptez les risques suivants :\n\n• Risque du Contrat Intelligent : Bien que le code ait été soigneusement développé, aucun contrat intelligent n'est complètement exempt de vulnérabilités ou de bugs potentiels.\n\n• Risque de Marché : La valeur de SOL et d'autres cryptomonnaies peut être très volatile et peut entraîner des pertes importantes.\n\n• Risque Réglementaire : Les réglementations sur les cryptomonnaies varient selon les juridictions et peuvent changer. Il est de votre responsabilité de garantir la conformité aux lois applicables.\n\n• Risque Réseau : La blockchain Solana peut connaître des congestions, des pannes ou d'autres problèmes techniques qui pourraient affecter les transactions.\n\n• Perte d'Accès : Si vous perdez l'accès à votre portefeuille ou à vos clés privées, vos fonds peuvent devenir définitivement inaccessibles."
+      },
+      "noGuarantees": {
+        "title": "Aucune Garantie",
+        "content": "La plateforme ne donne aucune garantie concernant :\n\n• Le montant ou le moment de tout gain ou retour\n• Le fonctionnement continu de la plateforme\n• La disponibilité ou la fonctionnalité de toute fonctionnalité\n• L'exactitude de toute information affichée\n• Les actions d'autres participants\n\nVos résultats dépendent entièrement de l'activité d'autres participants et de la mécanique du contrat intelligent. Il n'y a aucune garantie que vous recevrez des paiements ou récupérerez votre investissement initial."
+      },
+      "yourResponsibilities": {
+        "title": "Vos Responsabilités",
+        "content": "En tant que participant, vous êtes seul responsable de :\n\n• Effectuer vos propres recherches avant de participer\n• Sécuriser votre portefeuille et vos clés privées\n• Comprendre la mécanique de la plateforme\n• Respecter toutes les lois et réglementations applicables dans votre juridiction\n• Déclarer tout gain à des fins fiscales selon les exigences\n• Prendre des décisions éclairées concernant votre participation\n\nVous ne devriez participer qu'avec des fonds que vous pouvez vous permettre de perdre complètement."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Restrictions Juridictionnelles",
+        "content": "La plateforme peut ne pas être disponible ou être restreinte dans certaines juridictions. Il est de votre responsabilité de déterminer si votre utilisation de la plateforme est légale dans votre juridiction.\n\nEn accédant à la plateforme et en l'utilisant, vous déclarez et garantissez que vous êtes légalement autorisé à le faire dans votre juridiction et que vous respecterez toutes les lois et réglementations locales, étatiques, nationales et internationales applicables."
+      },
+      "thirdPartyServices": {
+        "title": "Services Tiers",
+        "content": "La plateforme s'intègre avec des services tiers, notamment :\n\n• Réseau Blockchain Solana\n• Fournisseurs de Portefeuilles (Phantom, Solflare, etc.)\n• Fournisseurs RPC\n\nNous n'avons aucun contrôle sur ces services tiers et ne sommes pas responsables de leur disponibilité, sécurité ou de tout problème résultant de leur utilisation."
+      },
+      "limitationOfLiability": {
+        "title": "Limitation de Responsabilité",
+        "content": "Dans la mesure maximale permise par la loi, les développeurs, contributeurs et toute partie associée ne seront pas responsables de tout dommage direct, indirect, accessoire, spécial, consécutif ou exemplaire résultant de :\n\n• Votre utilisation ou incapacité à utiliser la plateforme\n• Toute transaction effectuée via la plateforme\n• Tout accès non autorisé à votre portefeuille ou fonds\n• Toute erreur ou omission dans le code du contrat intelligent\n• Toute autre question relative à la plateforme\n\nCette limitation s'applique quelle que soit la théorie juridique et même si nous avons été informés de la possibilité de tels dommages."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "Cet avertissement peut être mis à jour de temps à autre. Bien que le code du contrat intelligent soit immuable, l'interface front-end et cet avertissement peuvent être modifiés. Il est de votre responsabilité de consulter périodiquement cet avertissement pour tout changement.\n\nL'utilisation continue de la plateforme après toute modification constitue l'acceptation des conditions mises à jour."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "Si vous avez des questions concernant cet avertissement ou la plateforme, veuillez nous contacter via notre canal de support Telegram officiel.\n\nRappelez-vous : Ne partagez jamais vos clés privées ou phrase secrète avec qui que ce soit, y compris toute personne prétendant faire partie de notre équipe."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Adresse copiée",
+    "signatureCopied": "Signature copiée",
+    "contractCopied": "Adresse du contrat copiée",
+    "linkCopied": "Lien copié",
+    "copyFailed": "Échec de la copie",
+    "walletNotConnected": "Portefeuille non connecté",
+    "connectWalletFirst": "Connectez d'abord votre portefeuille",
+    "invalidLevel": "Niveau invalide",
+    "activationSent": "Activation envoyée",
+    "activationSentLevel": "Activation L{level} envoyée",
+    "activatingLevel": "Activation du niveau {level}...",
+    "activationError": "Erreur d'activation",
+    "registrationSuccess": "Joueur enregistré avec succès",
+    "registrationFailed": "Échec de l'inscription",
+    "profileCreated": "Profil créé",
+    "referralActivatedLevel": "Quelqu'un de votre réseau de parrainage a activé le niveau {level}",
+    "creatingProfile": "Création du profil...",
+    "insufficientFundsForRegistration": "Fonds insuffisants pour l'inscription. Vous avez besoin d'au moins 0.0030 SOL.",
+    "transactionProcessing": "Transaction en cours...",
+    "clipboardNotSupported": "Presse-papiers non pris en charge",
+    "playerRegistered": "Joueur enregistré",
+    "viewInExplorer": "Voir dans l'Explorer",
+    "closeNotification": "Fermer la notification",
+    "comingSoon": "Bientôt disponible",
+    "loadError": "Échec du chargement des données",
+    "activationFinalized": "Activation finalisée",
+    "registrationFinalized": "Inscription finalisée",
+    "checkingPlayerState": "Vérification de l'état du joueur…",
+    "playerNotFound": "Joueur introuvable — appuyez sur S'inscrire",
+    "levelAlreadyActivated": "Niveau déjà activé",
+    "pressActivate": "Appuyez sur Activer pour activer ce niveau"
+  },
+  "overlay": {
+    "processing": "Transaction en cours..."
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "home": "Accueil",
+    "levels": "Niveaux",
+    "history": "Historique",
+    "information": "Information",
+    "info": "Info",
+    "partnerBonus": "Bonus partenaire",
+    "partners": "Partenaires",
+    "telegram": "Telegram",
+    "support": "Support",
+    "more": "Plus"
+  },
+  "mobileMenu": {
+    "connectWallet": "Connecter le portefeuille",
+    "connecting": "Connexion...",
+    "createProfile": "Créer un profil",
+    "creatingProfile": "Création du profil...",
+    "goToDashboard": "Aller au tableau de bord"
+  },
+  "dashboardPage": {
+    "title": "Tableau de bord",
+    "subtitle": "Vos niveaux, gains et activité",
+    "yourStatistics": "Vos statistiques",
+    "onChainData": "Données On-Chain",
+    "activeLevels": "Niveaux actifs",
+    "next": "Suivant",
+    "allDone": "Tout terminé",
+    "completedCycles": "Cycles terminés",
+    "slotsEquals": "3 emplacements = 1 cycle",
+    "estEarnings": "Gains estimés",
+    "ownerPayout": "60% paiement propriétaire",
+    "totalSpent": "Total dépensé",
+    "levelActivations": "activations de niveau",
+    "yourLevels": "Vos niveaux",
+    "slotsAndCycles": "Emplacements et cycles",
+    "viewAll": "Voir tout",
+    "slots": "emplacements",
+    "cycle": "cycle",
+    "cycles": "cycles",
+    "howItWorks": "Comment ça marche :",
+    "howItWorksDesc": "Quand 3 joueurs activent votre niveau, vous recevez 60% de chaque paiement. Le reste → parrains (26%) + trésor (14%).",
+    "latestActivity": "Dernière activité",
+    "transactionHistory": "Historique des transactions",
+    "live": "en direct",
+    "noActivity": "Pas encore d'activité. Activez votre premier niveau pour commencer.",
+    "contractIdCopied": "ID du contrat copié"
+  },
+  "levelsPage": {
+    "title": "Niveaux",
+    "subtitle": "Activez des niveaux pour gagner du SOL",
+    "active": "Actif",
+    "ready": "prêt",
+    "noWallet": "pas de portefeuille",
+    "registerFirst": "Veuillez d'abord enregistrer un joueur",
+    "levelAlreadyActive": "déjà actif",
+    "activated": "activé"
+  },
+  "historyPage": {
+    "title": "Historique des transactions",
+    "subtitle": "Toutes vos activations, gains et événements système",
+    "wallet": "Portefeuille",
+    "notConnected": "Non connecté",
+    "totalEvents": "Total événements",
+    "activations": "Activations",
+    "cyclesDone": "Cycles terminés",
+    "pending": "En attente",
+    "all": "Tous",
+    "earnings": "Gains",
+    "connectWallet": "Connectez votre portefeuille pour voir l'historique",
+    "noTransactions": "Pas encore de transactions. Activez votre premier niveau pour commencer.",
+    "noEventsFound": "Aucun événement {filter} trouvé.",
+    "transactionTypes": "Types de transactions",
+    "activationsDesc": "Vos activations et recyclages de niveaux. Ce sont des transactions sortantes.",
+    "earningsDesc": "Paiements reçus : 60% paiement propriétaire + bonus de parrainage (13%, 8%, 5%).",
+    "pendingDesc": "Transactions en attente de confirmation blockchain.",
+    "cyclesDesc": "Cycles terminés — 3 emplacements remplis, puis auto-recyclage dans la file d'attente.",
+    "walletCopied": "Portefeuille copié",
+    "connectFirst": "Connectez d'abord votre portefeuille",
+    "copyFailed": "Échec de la copie"
+  },
+  "informationPage": {
+    "title": "Comment ça marche",
+    "subtitle": "Tout ce que vous devez savoir sur la plateforme",
+    "totalLevels": "Niveaux totaux",
+    "slotsPerCycle": "Emplacements par cycle",
+    "yourPayout": "Votre paiement",
+    "network": "Réseau",
+    "whatIsThis": "Qu'est-ce que cette plateforme ?",
+    "whatIsThisDesc": "C'est une application décentralisée sur la blockchain Solana. Tout fonctionne automatiquement via des contrats intelligents — pas d'administrateurs, pas d'intermédiaires. Vous activez des niveaux, gagnez quand d'autres rejoignent après vous, et le processus se répète indéfiniment.",
+    "transparent": "Transparent",
+    "transparentDesc": "Toutes les transactions visibles sur la blockchain Solana. Rien de caché.",
+    "automatic": "Automatique",
+    "automaticDesc": "Le contrat intelligent gère les paiements. Pas de délais, pas d'approbation nécessaire.",
+    "unlimited": "Illimité",
+    "unlimitedDesc": "Chaque niveau peut gagner pour toujours. Pas de limites sur les cycles ou les gains.",
+    "simpleProcess": "Processus simple en 4 étapes",
+    "step1Title": "Activer un niveau",
+    "step1Desc": "Choisissez n'importe quel niveau de L01 à L16. Payez le prix d'activation une fois. Vous possédez maintenant ce niveau et entrez dans la file d'attente.",
+    "step2Title": "Attendre 3 activations",
+    "step2Desc": "Quand 3 autres joueurs activent le même niveau après vous, chacun vous paie 60% du prix du niveau. Soit 3 paiements au total.",
+    "step3Title": "Cycle terminé",
+    "step3Desc": "Après avoir reçu 3 paiements, votre niveau se recycle automatiquement. Vous retournez dans la file et pouvez regagner.",
+    "step4Title": "Répéter indéfiniment",
+    "step4Desc": "Le cycle se répète indéfiniment. Une activation = potentiel de gains illimité tant que de nouveaux joueurs rejoignent.",
+    "whereMoneyGoes": "Où va l'argent ?",
+    "moneyGoesDesc": "Quand quelqu'un active un niveau, son paiement est instantanément réparti :",
+    "youOwner": "Vous (Propriétaire)",
+    "yourEarnings": "Vos gains par activation",
+    "referrerL1": "Parrain L1",
+    "directInviter": "Votre inviteur direct",
+    "referrerL2": "Parrain L2",
+    "inviterOfInviter": "L'inviteur de votre inviteur",
+    "referrerL3": "Parrain L3",
+    "thirdLevelUpline": "Troisième niveau upline",
+    "platform": "Plateforme",
+    "projectDevelopment": "Développement du projet",
+    "exampleCalculation": "Exemple de calcul",
+    "exampleDesc": "L01 coûte 0.05 SOL. Quand 3 personnes activent après vous :",
+    "youReceive": "Vous recevez :",
+    "perCycle": "par cycle",
+    "levelPrices": "Prix des niveaux",
+    "levelPricesDesc": "16 niveaux disponibles. Niveau plus élevé = gains plus élevés par cycle.",
+    "allPricesInSol": "Tous les prix en SOL",
+    "referralBonuses": "Bonus de parrainage",
+    "referralBonusesDesc": "Quand quelqu'un que vous avez invité gagne de ses niveaux, vous recevez aussi un bonus :",
+    "directReferral": "Parrainage direct (Ligne 1)",
+    "peopleInvitedDirectly": "Personnes que vous avez invitées directement",
+    "secondLine": "Deuxième ligne (Ligne 2)",
+    "peopleInvitedByReferrals": "Personnes invitées par vos parrainages",
+    "thirdLine": "Troisième ligne (Ligne 3)",
+    "thirdLevelNetwork": "Troisième niveau de votre réseau",
+    "referralNote": "Note : Vous ne recevez des bonus de parrainage que pour les niveaux que vous avez activés. Si vous n'avez pas L05 actif, les bonus de L05 vont à la plateforme.",
+    "commonQuestions": "Questions fréquentes",
+    "q1": "Dois-je activer les niveaux dans l'ordre ?",
+    "a1": "Non. Vous pouvez activer n'importe quel niveau à tout moment. L01 et L16 sont complètement indépendants.",
+    "q2": "Que se passe-t-il quand mon cycle est terminé ?",
+    "a2": "Votre niveau retourne automatiquement dans la file d'attente. Vous pouvez en gagner encore et encore.",
+    "q3": "Puis-je perdre mon argent ?",
+    "a3": "Une fois activé, un niveau fonctionne pour toujours. Vous ne pouvez pas le perdre. Tous les paiements sont garantis par le contrat intelligent.",
+    "q4": "Quelle est la rapidité des paiements ?",
+    "a4": "Instantané. Au moment où quelqu'un active, le SOL va directement dans votre portefeuille. Pas de délais.",
+    "q5": "Et si je n'ai pas de parrainages ?",
+    "a5": "Vous gagnez quand même 60% de vos niveaux. Les bonus de parrainage sont un revenu supplémentaire.",
+    "gettingStarted": "Pour commencer",
+    "getWallet": "Obtenir un portefeuille",
+    "getWalletDesc": "Téléchargez Phantom ou Backpack pour votre navigateur ou téléphone.",
+    "getSol": "Obtenir du SOL",
+    "getSolDesc": "Achetez du SOL sur une bourse (Binance, Coinbase, etc.) et envoyez-le à votre portefeuille.",
+    "minimumForL01": "Minimum pour L01 : ~0.06 SOL (frais inclus)",
+    "connectWallet": "Connecter le portefeuille",
+    "connectWalletDesc": "Cliquez sur « Connecter » dans l'en-tête. Approuvez la connexion dans votre portefeuille.",
+    "activateLevels": "Activer des niveaux",
+    "activateLevelsDesc": "Allez à la page Niveaux, choisissez un niveau, cliquez sur Activer. Confirmez dans le portefeuille. Terminé."
+  },
+  "referralTree": {
+    "title": "Arbre de Parrainage",
+    "subtitle": "Votre réseau de parrainage actif ({count} au total)",
+    "total": "Total",
+    "noReferrals": "Aucun parrainage pour le moment",
+    "shareLink": "Partagez votre lien de parrainage pour commencer à construire votre réseau",
+    "line": "Ligne {number}",
+    "noReferralsInLine": "Aucun parrainage dans cette ligne",
+    "referralsCount": "{count} {count, plural, one {parrainage} other {parrainages}}",
+    "copyAddress": "Copier l'adresse",
+    "refresh": "Actualiser",
+    "yourLink": "Votre lien de parrainage",
+    "copyLink": "Copier le lien",
+    "linkCopied": "Lien copié!",
+    "addressCopied": "Adresse copiée!",
+    "viewExplorer": "Voir dans Explorer",
+    "copied": "Copié!",
+    "levels": "Niveaux:",
+    "loadingLevels": "Chargement des niveaux..."
+  },
+  "partnerBonusPage": {
+    "title": "Programme Partenaire",
+    "subtitle": "Invitez d'autres personnes et gagnez de leur activité",
+    "totalEarned": "Total gagné",
+    "line1": "Ligne 1 (13%)",
+    "line2": "Ligne 2 (8%)",
+    "line3": "Ligne 3 (5%)",
+    "yourReferralLink": "Votre lien de parrainage",
+    "copyLink": "Copier le lien",
+    "connectWalletForLink": "Connectez votre portefeuille pour obtenir votre lien de parrainage",
+    "linkNote": "Quand quelqu'un s'inscrit via votre lien, il devient votre parrainage Ligne 1 de façon permanente.",
+    "howReferralWorks": "Comment fonctionnent les bonus de parrainage",
+    "step1Title": "Partagez votre lien",
+    "step1Desc": "Quiconque s'inscrit via votre lien devient votre parrainage Ligne 1.",
+    "step2Title": "Ils activent des niveaux",
+    "step2Desc": "Quand vos parrainages gagnent de leurs niveaux, vous recevez un pourcentage.",
+    "step3Title": "Vous gagnez automatiquement",
+    "step3Desc": "Les bonus sont payés instantanément à votre portefeuille. Pas de réclamation nécessaire.",
+    "payoutStructure": "Structure de paiement des parrainages",
+    "directReferrals": "Ligne 1 — Parrainages directs",
+    "directReferralsDesc": "Personnes que vous avez invitées directement",
+    "secondLevel": "Ligne 2 — Deuxième niveau",
+    "secondLevelDesc": "Parrainages de vos parrainages",
+    "thirdLevel": "Ligne 3 — Troisième niveau",
+    "thirdLevelDesc": "Troisième génération de votre réseau",
+    "important": "Important",
+    "importantDesc": "Vous ne recevez des bonus de parrainage que pour les niveaux que vous avez activés. Si votre parrainage gagne de L05 mais que vous n'avez pas L05 actif, ce bonus va à la plateforme.",
+    "referralActivity": "Activité de parrainage",
+    "refresh": "Actualiser",
+    "loading": "Chargement...",
+    "noActivity": "Pas encore d'activité de parrainage",
+    "noActivityDesc": "Partagez votre lien pour commencer à gagner des bonus de parrainage",
+    "showingOf": "Affichage de {count} sur {total} transactions",
+    "tipsForSuccess": "Conseils pour réussir",
+    "tip1Title": "Activer tous les niveaux",
+    "tip1Desc": "Plus vous avez de niveaux, plus vous pouvez recevoir de bonus de parrainage.",
+    "tip2Title": "Construire votre réseau",
+    "tip2Desc": "3 lignes de profondeur signifie un revenu passif des parrainages de vos parrainages.",
+    "tip3Title": "Partager régulièrement",
+    "tip3Desc": "Votre lien n'expire jamais. Continuez à partager pour développer votre réseau.",
+    "tip4Title": "Aider votre équipe",
+    "tip4Desc": "Quand vos parrainages réussissent, vous gagnez plus. Soutenez-les.",
+    "connectFirst": "Connectez d'abord votre portefeuille",
+    "linkCopied": "Lien de parrainage copié",
+    "copyFailed": "Échec de la copie",
+    "failedToLoad": "Échec du chargement de l'historique partenaire",
+    "registration": "Inscription",
+    "newReferral": "Nouveau parrainage"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Rejoignez notre communauté et obtenez du support",
+    "communityGroup": "Groupe Communautaire",
+    "communityDesc": "Rejoignez notre groupe Telegram officiel. Discutez avec d'autres joueurs, partagez des stratégies, recevez des mises à jour et des annonces.",
+    "joinGroup": "Rejoindre le Groupe",
+    "copyLink": "Copier le Lien",
+    "support": "Support",
+    "supportDesc": "Besoin d'aide? Contactez directement notre équipe de support. Nous répondons rapidement à toutes les questions sur la plateforme.",
+    "contactSupport": "Contacter le Support",
+    "whatYouGet": "Ce que vous obtenez",
+    "realTimeUpdates": "Mises à jour en temps réel",
+    "realTimeUpdatesDesc": "Soyez le premier informé des nouvelles fonctionnalités, mises à jour et annonces.",
+    "communitySupport": "Support Communautaire",
+    "communitySupportDesc": "Obtenez l'aide de joueurs expérimentés et partagez vos connaissances.",
+    "directAccess": "Accès Direct",
+    "directAccessDesc": "Accès rapide à l'équipe de support pour tout problème technique.",
+    "networkGrowth": "Croissance du Réseau",
+    "networkGrowthDesc": "Connectez-vous avec d'autres joueurs et développez votre réseau de parrainage."
+  },
+  "docsPage": {
+    "title": "Documentation",
+    "label": "Documentation",
+    "heading": "Comment fonctionne Solana Program X3",
+    "description": "Documentation technique complète pour comprendre le système de matrice X3, les mécaniques de paiement et comment maximiser vos gains.",
+    "startPlaying": "Commencer à jouer",
+    "swipeHint": "Glissez gauche/droite pour naviguer",
+    "of": "sur",
+    "more": "Plus",
+    "footerText": "Solana Program X3 — Matrice décentralisée sur blockchain Solana",
+    "sections": {
+      "overview": {
+        "title": "Aperçu",
+        "shortTitle": "Aperçu",
+        "content1": {
+          "heading": "Qu'est-ce que Solana Program X3?",
+          "text": "Solana Program X3 est un système de matrice entièrement décentralisé construit sur la blockchain Solana. Il fonctionne via des contrats intelligents vérifiés sans contrôle central, ce qui signifie que personne ne peut modifier les règles ou accéder à vos fonds.\n\nLa plateforme utilise un modèle de matrice X3 où chaque niveau a une file d'attente globale. Lorsque vous activez un niveau, vous entrez dans la file. Au fur et à mesure que de nouveaux joueurs activent le même niveau, ils remplissent vos slots (3 slots par cycle). Une fois tous les slots remplis, vous recevez des paiements et réentrez automatiquement dans la file pour des cycles illimités."
+        },
+        "content2": {
+          "heading": "Caractéristiques clés",
+          "text": "• 16 niveaux indépendants avec prix fixes (0,05 - 8,7 SOL)\n• 3 slots par cycle avec recyclage automatique\n• 60% de paiement au propriétaire du niveau par activation\n• 26% total de récompenses de parrainage (13% + 8% + 5%)\n• Transferts instantanés de portefeuille à portefeuille\n• Aucun délai de retrait ni intermédiaires\n• Code de contrat intelligent immuable"
+        },
+        "content3": {
+          "heading": "Pourquoi la blockchain Solana?",
+          "text": "Solana a été choisie pour ses performances exceptionnelles:\n\n• Vitesse de transaction: ~400ms de confirmation\n• Frais bas: fractions de centime par transaction\n• Haut débit: 65 000+ transactions par seconde\n• Décentralisation: des milliers de validateurs dans le monde\n• Historique prouvé: l'une des principales blockchains par TVL"
+        },
+        "content4": {
+          "heading": "Comment vous gagnez",
+          "text": "Il y a deux façons de gagner sur la plateforme:\n\n1. Propriété de niveau: Activez des niveaux et recevez 60% de chaque joueur qui active après vous (3 paiements = 180% par cycle)\n\n2. Bonus de parrainage: Invitez d'autres personnes et gagnez 13%, 8% et 5% de votre réseau à 3 lignes\n\nLes deux méthodes fonctionnent simultanément et multiplient vos revenus."
+        },
+        "content5": {
+          "heading": "Transparence du contrat intelligent",
+          "text": "Toute la plateforme fonctionne sur des contrats intelligents vérifiés et open-source:\n\n• Adresse du contrat visible publiquement sur Solana Explorer\n• Toutes les transactions enregistrées sur la blockchain\n• N'importe qui peut vérifier le code et la logique\n• Pas de fonctions cachées ni de portes dérobées\n• Fonctionnement totalement trustless"
+        }
+      },
+      "levels": {
+        "title": "Système de niveaux",
+        "shortTitle": "Niveaux",
+        "content1": {
+          "heading": "Prix des niveaux",
+          "text": "Le système comprend 16 niveaux avec prix fixes en SOL:\n\nNiveau 1: 0,05 SOL    Niveau 9: 3,25 SOL\nNiveau 2: 0,18 SOL    Niveau 10: 3,90 SOL\nNiveau 3: 0,36 SOL    Niveau 11: 4,65 SOL\nNiveau 4: 0,68 SOL    Niveau 12: 5,45 SOL\nNiveau 5: 1,10 SOL    Niveau 13: 6,40 SOL\nNiveau 6: 1,55 SOL    Niveau 14: 7,35 SOL\nNiveau 7: 2,10 SOL    Niveau 15: 8,00 SOL\nNiveau 8: 2,65 SOL    Niveau 16: 8,70 SOL\n\nChaque niveau fonctionne indépendamment avec sa propre file d'attente globale. Vous pouvez activer les niveaux dans n'importe quel ordre."
+        },
+        "content2": {
+          "heading": "Comment fonctionnent les niveaux",
+          "text": "1. Vous activez un niveau en payant le prix fixe\n2. Votre activation est enregistrée on-chain et vous entrez dans la file globale\n3. Les 3 prochains joueurs qui activent le même niveau remplissent vos slots\n4. Vous recevez 60% du paiement de chaque joueur (180% total par cycle)\n5. Après 3 slots remplis, vous réentrez automatiquement dans la file\n6. Ce cycle se répète infiniment à partir d'une seule activation"
+        },
+        "content3": {
+          "heading": "Indépendance des niveaux",
+          "text": "Chacun des 16 niveaux fonctionne de manière totalement indépendante:\n\n• File d'attente séparée pour chaque niveau\n• Pas de prérequis — activez n'importe quel niveau à tout moment\n• Plusieurs niveaux peuvent être actifs simultanément\n• Chaque niveau génère des gains séparément\n• La progression sur un niveau n'affecte pas les autres"
+        },
+        "content4": {
+          "heading": "Gains par niveau",
+          "text": "Vos gains par cycle (3 slots remplis) pour chaque niveau:\n\nL1: 0,09 SOL    L9: 5,85 SOL\nL2: 0,32 SOL    L10: 7,02 SOL\nL3: 0,65 SOL    L11: 8,37 SOL\nL4: 1,22 SOL    L12: 9,81 SOL\nL5: 1,98 SOL    L13: 11,52 SOL\nL6: 2,79 SOL    L14: 13,23 SOL\nL7: 3,78 SOL    L15: 14,40 SOL\nL8: 4,77 SOL    L16: 15,66 SOL\n\nFormule: Prix du niveau × 60% × 3 slots = Gains par cycle"
+        },
+        "content5": {
+          "heading": "Mécanisme de recyclage automatique",
+          "text": "Quand vos 3 slots sont remplis, votre niveau se recycle automatiquement:\n\n• Votre compteur de slots se réinitialise à 0\n• Votre compteur de cycles augmente de 1\n• Vous passez de la tête à la fin de la file\n• Vous continuez à gagner sans aucune action\n• Aucun paiement supplémentaire requis\n\nCela crée un potentiel de gains illimité à partir d'une seule activation."
+        }
+      },
+      "queue": {
+        "title": "File d'attente globale",
+        "shortTitle": "File",
+        "content1": {
+          "heading": "Structure de la file",
+          "text": "Chaque niveau maintient un LevelPool avec des QueuePages paginées. Caractéristiques clés:\n\n• Chaque page contient jusqu'à 64 joueurs\n• Quand une page est pleine, une nouvelle est créée automatiquement\n• Les joueurs sont traités par ordre d'arrivée\n• Votre position est permanente et n'expire jamais\n• Après chaque cycle terminé, vous réentrez en fin de file"
+        },
+        "content2": {
+          "heading": "Traitement de la file",
+          "text": "Quand un nouveau joueur active un niveau:\n\n1. Le contrat intelligent identifie la tête de file\n2. Le compteur slots_filled de ce joueur augmente de 1\n3. Le paiement est distribué (60% au propriétaire, parrainages, trésorerie)\n4. Si slots_filled atteint 3, le niveau est recyclé:\n   - le compteur de cycles augmente de 1\n   - slots_filled est réinitialisé à 0\n   - Le joueur est retiré de la tête et ajouté à la fin\n5. Le nouveau joueur entre également en fin de file"
+        },
+        "content3": {
+          "heading": "Distribution équitable",
+          "text": "Le système de file garantit un traitement équitable pour tous:\n\n• Premier arrivé, premier servi — pas de favoritisme\n• Impossible de sauter ou manipuler la position\n• Tout le monde attend son tour équitablement\n• Le contrat intelligent applique les règles automatiquement\n• Transparent et vérifiable on-chain"
+        },
+        "content4": {
+          "heading": "Vitesse de la file",
+          "text": "La vitesse de remplissage dépend de l'activité du niveau:\n\n• Niveaux bas (L1-L5): Plus de joueurs, remplissage plus rapide\n• Niveaux hauts (L11-L16): Moins de joueurs, remplissage plus lent\n• L'activité globale affecte toutes les files\n• Votre position compte — plus tôt = plus rapide\n\nConseil: Surveillez l'activité dans votre tableau de bord."
+        },
+        "content5": {
+          "heading": "Position permanente",
+          "text": "Une fois un niveau activé, votre position n'expire jamais:\n\n• Pas de délai d'expiration\n• La file persiste pour toujours sur la blockchain\n• Vous recevrez des paiements même après des mois\n• Aucune maintenance ou renouvellement requis\n• Complètement passif une fois activé"
+        }
+      },
+      "payouts": {
+        "title": "Distribution des paiements",
+        "shortTitle": "Paiements",
+        "content1": {
+          "heading": "Répartition des paiements",
+          "text": "Chaque activation distribue 100% du prix du niveau:\n\n• 60% → Propriétaire du niveau (tête de file)\n• 13% → Parrain Ligne 1 (upline1)\n• 8% → Parrain Ligne 2 (upline2)\n• 5% → Parrain Ligne 3 (upline3)\n• 14% → Trésorerie de la plateforme\n\nTous les transferts se font de manière atomique en une seule transaction Solana. Aucun délai, aucun état en attente."
+        },
+        "content2": {
+          "heading": "Calcul des gains",
+          "text": "Par cycle (3 slots remplis), vous gagnez:\n60% × 3 = 180% du prix du niveau\n\nExemple pour Niveau 5 (1,10 SOL):\n• Par slot: 0,66 SOL (60% de 1,10)\n• Par cycle: 1,98 SOL (180% de 1,10)\n• ROI par cycle: +80% de profit\n\nIl n'y a pas de limite de cycles. Une activation = potentiel de gains illimité."
+        },
+        "content3": {
+          "heading": "Transferts instantanés",
+          "text": "Les paiements sont effectués instantanément via le contrat intelligent:\n\n• Pas d'états en attente ni de délais\n• Transferts directs de portefeuille à portefeuille\n• Les SOL apparaissent immédiatement dans votre portefeuille\n• Aucune réclamation manuelle requise\n• Pas de montant minimum de retrait"
+        },
+        "content4": {
+          "heading": "Potentiel de gains total",
+          "text": "Si vous activez les 16 niveaux et complétez plusieurs cycles:\n\nCoût total des niveaux: ~42 SOL\nGains par cycle: ~100 SOL (tous niveaux)\n\nPlus les bonus de parrainage de votre réseau peuvent augmenter significativement vos revenus. Plus vous activez de niveaux et plus votre réseau est grand, plus vos gains sont élevés."
+        },
+        "content5": {
+          "heading": "Suivi de vos gains",
+          "text": "Surveillez vos revenus en temps réel:\n\n• Le tableau de bord affiche les slots remplis par niveau\n• Voir le nombre de cycles complétés\n• Suivre le total de SOL gagnés\n• Voir les slots en attente de remplissage\n• Historique des transactions disponible\n\nToutes les données sont récupérées directement de la blockchain."
+        }
+      },
+      "referrals": {
+        "title": "Système de parrainage",
+        "shortTitle": "Parrainages",
+        "content1": {
+          "heading": "Comment fonctionne le parrainage",
+          "text": "Lors de l'inscription, votre chaîne de parrainage est enregistrée on-chain:\n\n• upline1: Votre parrain direct (gagne 13%)\n• upline2: Le parrain de votre parrain (gagne 8%)\n• upline3: Troisième niveau au-dessus (gagne 5%)\n\nImportant: Les bonus de parrainage ne s'appliquent que si votre upline a le MÊME niveau actif. Sinon, leur part va à la trésorerie de la plateforme."
+        },
+        "content2": {
+          "heading": "Construire votre réseau",
+          "text": "Pour maximiser les gains de parrainage:\n\n1. Partagez votre lien de parrainage (contient votre player PDA)\n2. Quand quelqu'un s'inscrit via votre lien, vous devenez son upline1\n3. Vous gagnez 13% de chaque niveau qu'ils activent (si vous l'avez actif)\n4. Vous gagnez aussi 8% de leurs parrainages (votre ligne 2)\n5. Et 5% des parrainages de ligne 3\n\nLa clé est d'activer les 16 niveaux pour maximiser les revenus de parrainage."
+        },
+        "content3": {
+          "heading": "Votre lien de parrainage",
+          "text": "Votre lien de parrainage unique contient votre Player PDA:\n\nhttps://[domaine]/?ref=[votre_player_pda]\n\nPartagez ce lien n'importe où:\n• Réseaux sociaux (Twitter, Telegram, Discord)\n• Vidéos YouTube et descriptions\n• Articles de blog et forums\n• Messages directs à des amis\n\nToute personne s'inscrivant via votre lien devient votre filleul permanent."
+        },
+        "content4": {
+          "heading": "Règle de correspondance des niveaux",
+          "text": "Règle critique: Vous ne recevez des bonus de parrainage que pour les niveaux que VOUS avez activés.\n\nExemple:\n• Vous avez L1, L2, L3 actifs\n• Votre filleul active L5\n• Vous gagnez 0% car vous n'avez pas L5\n\nSolution: Activez les 16 niveaux pour capturer 100% des revenus de parrainage possibles."
+        },
+        "content5": {
+          "heading": "Croissance du réseau",
+          "text": "Votre réseau se développe automatiquement sur 3 lignes:\n\nLigne 1: Personnes que vous invitez directement (13%)\nLigne 2: Personnes invitées par votre Ligne 1 (8%)\nLigne 3: Personnes invitées par votre Ligne 2 (5%)\n\nPotentiel de parrainage total: 26% de chaque activation dans votre réseau à 3 lignes."
+        },
+        "content6": {
+          "heading": "Exemple de gains de parrainage",
+          "text": "Si vous avez 10 filleuls actifs et chacun active L5 (1,10 SOL):\n\nLigne 1 (10 personnes): 10 × 1,10 × 13% = 1,43 SOL\n\nSi chacun invite 5 autres (Ligne 2):\n50 × 1,10 × 8% = 4,40 SOL\n\nSi la Ligne 2 invite 5 chacun (Ligne 3):\n250 × 1,10 × 5% = 13,75 SOL\n\nTotal de L5 uniquement: 19,58 SOL"
+        }
+      },
+      "security": {
+        "title": "Sécurité",
+        "shortTitle": "Sécurité",
+        "content1": {
+          "heading": "Sécurité du contrat intelligent",
+          "text": "La plateforme implémente plusieurs mesures de sécurité:\n\n• TxGuard: Chaque transaction utilise un nonce unique pour prévenir les attaques par rejeu\n• Vérification PDA: Tous les comptes sont validés cryptographiquement\n• Transferts atomiques: Les paiements se font en une seule transaction (tout ou rien)\n• Code immuable: Le contrat ne peut pas être modifié après déploiement\n• Aucune clé admin: Personne ne peut drainer les fonds ou changer les règles"
+        },
+        "content2": {
+          "heading": "Vos fonds sont en sécurité",
+          "text": "• Vous ne donnez jamais la garde de votre portefeuille à quiconque\n• Les paiements vont directement de portefeuille à portefeuille via le contrat\n• Pas de système dépôt/retrait — vos SOL restent dans votre portefeuille\n• Toutes les transactions sont vérifiables publiquement sur Solana Explorer\n• Le contrat n'a pas de fonctions admin pouvant voler des fonds"
+        },
+        "content3": {
+          "heading": "Vérifiable sur Solana Explorer",
+          "text": "Le contrat intelligent est entièrement transparent:\n\n• Adresse du contrat disponible publiquement\n• Tout le code est vérifié et lisible\n• Chaque transaction visible dans l'Explorer\n• États des comptes inspectables\n• Pas de logique ou fonctions cachées\n\nVous pouvez tout vérifier de manière indépendante."
+        },
+        "content4": {
+          "heading": "Rug Pull impossible",
+          "text": "La conception du contrat empêche toute forme de rug pull:\n\n• Pas de fonction de retrait pour le propriétaire\n• Pas de mécanismes de pause ou gel\n• Pas de patterns proxy évolutifs\n• Les fonds circulent directement entre portefeuilles\n• Trésorerie de la plateforme transparente\n\nMême les développeurs ne peuvent pas accéder à vos fonds."
+        },
+        "content5": {
+          "heading": "Conseils de sécurité du portefeuille",
+          "text": "Gardez votre portefeuille en sécurité:\n\n• Ne partagez jamais votre phrase de récupération\n• Utilisez un hardware wallet pour les gros montants\n• Vérifiez les détails avant de signer\n• Connectez-vous uniquement à l'URL officielle\n• Méfiez-vous des tentatives de phishing\n• Stockez votre phrase hors ligne en sécurité"
+        },
+        "content6": {
+          "heading": "Protection des transactions",
+          "text": "Chaque transaction est protégée par TxGuard:\n\n• Nonce unique empêche les duplications\n• Protège contre les attaques par rejeu\n• Assure que chaque activation est traitée une fois\n• Validation automatique avant exécution\n• Les transactions échouées sont annulées en sécurité"
+        }
+      },
+      "getting-started": {
+        "title": "Premiers pas",
+        "shortTitle": "Démarrer",
+        "content1": {
+          "heading": "Guide étape par étape",
+          "text": "1. Installez Phantom Wallet\n   Téléchargez depuis phantom.app et créez votre portefeuille\n\n2. Alimentez votre portefeuille\n   Transférez des SOL à votre adresse Phantom\n\n3. Connectez le portefeuille\n   Cliquez sur Connecter Portefeuille sur notre plateforme\n\n4. Enregistrez le joueur\n   Créez votre profil joueur on-chain (une seule fois)\n\n5. Activez le Niveau 1\n   Payez 0,05 SOL pour activer votre premier niveau\n\n6. Partagez et gagnez\n   Copiez votre lien de parrainage et invitez d'autres personnes"
+        },
+        "content2": {
+          "heading": "Conseils pour réussir",
+          "text": "• Commencez par le Niveau 1 et progressez\n• Activez autant de niveaux que vous pouvez vous permettre\n• Partagez votre lien de parrainage sur les réseaux sociaux\n• N'oubliez pas: les bonus de parrainage nécessitent des niveaux actifs correspondants\n• Surveillez votre tableau de bord pour les remplissages de slots et les cycles\n• Niveaux plus élevés = paiements plus élevés mais mouvement de file plus lent"
+        },
+        "content3": {
+          "heading": "Portefeuilles supportés",
+          "text": "La plateforme supporte les portefeuilles Solana populaires:\n\n• Phantom (recommandé)\n• Solflare\n• Backpack\n• Ledger (via Phantom)\n• Autres portefeuilles compatibles Solana\n\nNous recommandons Phantom pour la meilleure expérience."
+        },
+        "content4": {
+          "heading": "Obtenir des SOL",
+          "text": "Vous avez besoin de SOL pour participer. Comment obtenir des SOL:\n\n• Acheter sur des exchanges (Binance, Coinbase, Kraken)\n• Utiliser des rampes fiat (MoonPay, Transak)\n• Échanger depuis d'autres cryptos\n• Recevoir d'autres utilisateurs\n\nMinimum nécessaire: ~0,06 SOL pour Niveau 1 + frais"
+        },
+        "content5": {
+          "heading": "Processus d'inscription",
+          "text": "Inscription joueur unique:\n\n1. Connectez votre portefeuille\n2. Cliquez sur le bouton « S'inscrire »\n3. Approuvez la transaction dans votre portefeuille\n4. Votre player PDA est créé on-chain\n5. Vous êtes prêt à activer des niveaux\n\nL'inscription nécessite un solde minimum de 0.0030 SOL pour couvrir les frais de transaction."
+        },
+        "content6": {
+          "heading": "Utilisation de votre tableau de bord",
+          "text": "Après inscription, votre tableau de bord affiche:\n\n• Niveaux actifs et leur statut\n• Slots remplis et cycles complétés\n• Gains totaux (estimation)\n• Votre lien de parrainage\n• Historique des transactions\n• Boutons d'activation de niveaux"
+        },
+        "content7": {
+          "heading": "Questions fréquentes",
+          "text": "Q: Que se passe-t-il si je perds le lien de mon parrain?\nR: Vous pouvez vous inscrire avec le parrain par défaut.\n\nQ: Puis-je changer de parrain?\nR: Non, les chaînes de parrainage sont permanentes sur la blockchain.\n\nQ: Quel est l'investissement minimum?\nR: Le Niveau 1 ne coûte que 0,05 SOL.\n\nQ: Y a-t-il une limite de temps?\nR: Non, vos niveaux fonctionnent pour toujours une fois activés."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Prix d'activation",
+    "back": "Retour",
+    "status": "Statut",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "slots": "Emplacements",
+    "cycles": "Cycles",
+    "earned": "Gagné",
+    "cycleProgress": "Progression du Cycle",
+    "filled": "Rempli",
+    "empty": "Vide",
+    "slotsFilled": "{filled} sur {total} emplacements remplis",
+    "nextPayout": "Prochain paiement",
+    "perActivationDistribution": "Distribution par Activation",
+    "youOwner": "Vous (Propriétaire)",
+    "referrerL1": "Parrain L1",
+    "referrerL2": "Parrain L2",
+    "referrerL3": "Parrain L3",
+    "platform": "Plateforme",
+    "yourEarningsPerCycle": "Vos gains par cycle (×3)",
+    "howItWorks": "Comment ça fonctionne",
+    "step1Title": "Activez ce niveau",
+    "step1Desc": "vous entrez dans la file d'attente et attendez que 3 joueurs s'activent après vous.",
+    "step2Title": "3 emplacements se remplissent",
+    "step2Desc": "chaque fois que quelqu'un s'active, vous recevez {percent}% de son paiement.",
+    "step3Title": "Le cycle se termine",
+    "step3Desc": "après 3 paiements, votre niveau est recyclé automatiquement dans la file.",
+    "step4Title": "Cycles illimités",
+    "step4Desc": "vous pouvez gagner de ce niveau indéfiniment tant que de nouveaux joueurs rejoignent.",
+    "processing": "Traitement...",
+    "alreadyActivated": "Déjà activé",
+    "activateFor": "Activer pour {price} SOL",
+    "levelStatistics": "Statistiques du Niveau",
+    "totalCyclesCompleted": "Total des Cycles Complétés",
+    "totalEarned": "Total Gagné",
+    "perCycleEarnings": "Gains par Cycle",
+    "note": "Note",
+    "noteText": "Ce niveau continuera à générer des gains tant que de nouveaux joueurs rejoignent. Chaque cycle est indépendant."
+  }
+}

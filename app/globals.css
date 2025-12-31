@@ -1,0 +1,366 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+   Подключение шрифтов
+   ===================== */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =====================
+   Цветовые токены (Solana-dark)
+   ===================== */
+:root {
+  --background: #0a0b0e;
+  --foreground: #e5e5e5;
+
+  --border-solana: rgba(153, 69, 255, 0.25); /* фиолетовый */
+  --accent-solana: #14F195; /* Solana green */
+  --accent-cyan: #00FFA3;
+  --accent-purple: #9945FF;
+}
+
+/* =====================
+   Системная/тёмная тема
+   ===================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0b0e;
+    --foreground: #e5e5e5;
+  }
+}
+
+/* =====================
+   PWA Safe Area Variables
+   ===================== */
+:root {
+  /* Safe area insets for notched devices (iPhone X+, Android) */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  
+  /* PWA status bar height (for standalone mode) */
+  --pwa-status-bar-height: env(safe-area-inset-top, 0px);
+  
+  /* Touch target minimum size */
+  --touch-target-min: 44px;
+}
+
+/* =====================
+   База
+   ===================== */
+html,
+body {
+  min-height: 100%;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Montserrat', 'DM Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Prevent pull-to-refresh in PWA */
+  overscroll-behavior-y: contain;
+  /* Prevent text size adjustment on orientation change */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* PWA Standalone Mode Styles */
+@media all and (display-mode: standalone) {
+  /* Prevent overscroll bounce in iOS PWA - only for main scroll container */
+  html {
+    overscroll-behavior: none;
+  }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+  /* Fix for iOS bottom bar */
+  body {
+    min-height: -webkit-fill-available;
+  }
+  
+  /* Fix for iOS rubber band scrolling */
+  html {
+    height: -webkit-fill-available;
+  }
+}
+
+/* =====================
+   Утилиты (bg-app / text-app)
+   ===================== */
+@layer utilities {
+  .bg-app {
+    background-color: var(--background);
+  }
+  .text-app {
+    color: var(--foreground);
+  }
+
+  /* Градиент Solana — можно применять выборочно */
+  .border-solana {
+    border-color: var(--border-solana);
+  }
+
+  /* Мягкое свечение акцентов (очень деликатное) */
+  .shadow-solana {
+    box-shadow:
+      0 0 12px rgba(153, 69, 255, 0.15),
+      0 0 18px rgba(0, 255, 163, 0.08);
+  }
+
+  /* =====================
+     Safe Area Utilities (PWA/Notch support)
+     ===================== */
+  
+  /* Padding for safe areas */
+  .pt-safe {
+    padding-top: var(--safe-area-inset-top);
+  }
+  .pb-safe {
+    padding-bottom: var(--safe-area-inset-bottom);
+  }
+  .pl-safe {
+    padding-left: var(--safe-area-inset-left);
+  }
+  .pr-safe {
+    padding-right: var(--safe-area-inset-right);
+  }
+  .px-safe {
+    padding-left: var(--safe-area-inset-left);
+    padding-right: var(--safe-area-inset-right);
+  }
+  .py-safe {
+    padding-top: var(--safe-area-inset-top);
+    padding-bottom: var(--safe-area-inset-bottom);
+  }
+  .p-safe {
+    padding-top: var(--safe-area-inset-top);
+    padding-right: var(--safe-area-inset-right);
+    padding-bottom: var(--safe-area-inset-bottom);
+    padding-left: var(--safe-area-inset-left);
+  }
+
+  /* Margin for safe areas */
+  .mt-safe {
+    margin-top: var(--safe-area-inset-top);
+  }
+  .mb-safe {
+    margin-bottom: var(--safe-area-inset-bottom);
+  }
+  .ml-safe {
+    margin-left: var(--safe-area-inset-left);
+  }
+  .mr-safe {
+    margin-right: var(--safe-area-inset-right);
+  }
+
+  /* Min height accounting for safe areas */
+  .min-h-screen-safe {
+    min-height: calc(100vh - var(--safe-area-inset-top) - var(--safe-area-inset-bottom));
+    min-height: calc(100dvh - var(--safe-area-inset-top) - var(--safe-area-inset-bottom));
+  }
+  
+  .h-screen-safe {
+    height: calc(100vh - var(--safe-area-inset-top) - var(--safe-area-inset-bottom));
+    height: calc(100dvh - var(--safe-area-inset-top) - var(--safe-area-inset-bottom));
+  }
+
+  /* Touch-friendly minimum sizes */
+  .touch-target {
+    min-height: var(--touch-target-min);
+    min-width: var(--touch-target-min);
+  }
+
+  /* Prevent text selection on touch */
+  .no-select {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  /* Hardware accelerated animations */
+  .gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
+
+/* =====================
+   Scrollbar и selection
+   ===================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+::selection {
+  background: rgba(153, 69, 255, 0.25);
+  color: inherit;
+}
+
+/* =====================
+   Мини-анимации
+   ===================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.25s ease-out;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* =====================
+   Solana Neon Border (smooth blend, no snake)
+   ===================== */
+.level-frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* плавное свечение границы всеми цветами Solana */
+.level-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;              /* толщина неон-рамки */
+  border-radius: inherit;
+
+  /* делаем только рамку (вырезаем внутренность) */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  /* неоновый градиент Solana */
+  background: linear-gradient(
+    120deg,
+    #14F195 0%,
+    #00FFA3 25%,
+    #00E6E6 50%,
+    #9945FF 75%,
+    #14F195 100%
+  );
+  background-size: 300% 300%;
+
+  /* очень мягкое движение без мигания */
+  animation: solana-neon 14s linear infinite;
+
+  pointer-events: none;
+}
+
+/* лёгкий hover-эффект — без пульсации */
+.level-frame:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(20, 241, 149, 0.28);
+}
+
+@keyframes solana-neon {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+/* При необходимости глушить старые анимации (например, greenPulse) */
+.no-pulse { animation: none !important; }
+
+/* =====================
+   Skeleton Shimmer
+   ===================== */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* =====================
+   Radial Gradient for Loading Screen
+   ===================== */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-from) 0%, var(--tw-gradient-via) 50%, var(--tw-gradient-to) 100%);
+}

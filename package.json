@@ -1,0 +1,68 @@
+{
+  "name": "solana-game",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:simple": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "idl:fetch": "anchor idl fetch 8anA35hDUkbYhycwyUGpwBqQBk1CoCUy58dVcW9kjhZr -o public/idl/solana_game.json"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@solana/wallet-adapter-backpack": "^0.1.14",
+    "@solana/wallet-adapter-clover": "^0.4.23",
+    "@solana/wallet-adapter-exodus": "^0.1.18",
+    "@solana/wallet-adapter-ledger": "^0.9.29",
+    "@solana/wallet-adapter-phantom": "^0.9.28",
+    "@solana/wallet-adapter-react": "^0.15.39",
+    "@solana/wallet-adapter-react-ui": "^0.9.39",
+    "@solana/wallet-adapter-slope": "^0.5.21",
+    "@solana/wallet-adapter-solflare": "^0.6.32",
+    "@solana/wallet-adapter-torus": "^0.11.32",
+    "@solana/wallet-adapter-wallets": "^0.19.37",
+    "@solana/web3.js": "^1.98.4",
+    "bn.js": "^5.2.2",
+    "buffer": "^6.0.3",
+    "dotenv": "^17.2.3",
+    "framer-motion": "^12.23.22",
+    "next": "^14.2.14",
+    "next-intl": "^4.1.0",
+    "next-themes": "^0.4.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.19.21",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.14",
+    "mocha": "^11.7.4",
+    "postcss": "^8.4.41",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.13",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.5.4"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "连接钱包",
+    "disconnect": "断开连接",
+    "dashboard": "控制面板",
+    "register": "注册",
+    "registering": "注册中...",
+    "connecting": "连接中",
+    "loading": "加载中...",
+    "processing": "处理中...",
+    "success": "成功",
+    "error": "错误",
+    "copy": "复制",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "view": "查看",
+    "more": "更多",
+    "less": "收起",
+    "all": "全部",
+    "none": "无",
+    "yes": "是",
+    "no": "否",
+    "on": "开",
+    "off": "关",
+    "active": "活跃",
+    "inactive": "未活跃",
+    "pending": "待处理",
+    "completed": "已完成",
+    "failed": "失败",
+    "home": "首页",
+    "support": "支持",
+    "balance": "余额",
+    "tapToCopy": "点击复制",
+    "swipeToClose": "向下滑动关闭",
+    "connectedWallet": "已连接钱包",
+    "disconnectWallet": "断开钱包",
+    "selectLanguage": "选择语言",
+    "language": "语言",
+    "chooseLanguage": "选择您的首选语言"
+  },
+  "playerStatus": {
+    "title": "玩家状态",
+    "accountInfo": "账户信息",
+    "authority": "所有者",
+    "playerPda": "玩家PDA",
+    "createdAt": "创建于",
+    "openLevels": "打开级别",
+    "copyPda": "复制PDA",
+    "explorer": "浏览器",
+    "register": "注册",
+    "registering": "注册中…",
+    "connectFirst": "请先连接钱包",
+    "playerRegistered": "玩家已注册",
+    "registrationFailed": "注册失败",
+    "addressCopied": "地址已复制",
+    "copyFailed": "复制失败"
+  },
+  "levelCard": {
+    "activate": "激活",
+    "activating": "激活中…",
+    "activated": "已激活",
+    "notActivated": "未激活",
+    "checking": "检查中…",
+    "notRegistered": "未注册",
+    "levelActive": "级别已激活 — 奖励已启用。",
+    "level": "级别",
+    "price": "价格 (SOL)",
+    "slots": "插槽",
+    "cycles": "周期",
+    "details": "详情"
+  },
+  "activations": {
+    "title": "激活",
+    "lastDays": "最近{days}天",
+    "total": "总计",
+    "activationsCount": "{count}次激活"
+  },
+  "header": {
+    "connectWallet": "连接钱包",
+    "dashboard": "控制面板",
+    "register": "注册",
+    "connecting": "连接中"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "基于Solana区块链的去中心化矩阵系统",
+    "poweredBy": "由Solana驱动"
+  },
+  "ticker": {
+    "onChain": "100%链上智能合约",
+    "noAdminKeys": "无管理员密钥 - 完全去中心化",
+    "instantPayouts": "即时支付到您的钱包",
+    "audited": "经审计验证的合约",
+    "levels": "16个级别 - 最高655.35 SOL",
+    "partnerBonus": "邀请伙伴 - 获得26%奖励",
+    "unlimited": "无限循环 - 无限收益"
+  },
+  "technology": {
+    "smartContract": "智能合约",
+    "howItWorks": "如何在",
+    "solana": "Solana",
+    "description": "完全自主的智能合约，采用X3矩阵模型，即时支付和加密安全",
+    "x3Matrix": "X3 矩阵",
+    "x3MatrixDesc": "每个级别作为基于队列的X3矩阵运行。当您激活一个级别时，您进入全球队列。在您之后每3次激活填充您的槽位，完成一个周期。您从每个槽位填充中获得60%，然后自动重新进入队列进行无限循环。",
+    "instantPayouts": "即时支付",
+    "instantPayoutsDesc": "智能合约即时分配付款：60%给级别所有者，13%给第1线推荐人，8%给第2线，5%给第3线，14%给平台国库。所有转账在单个原子交易中发生——无延迟，无中介。",
+    "sixteenLevels": "16个级别",
+    "sixteenLevelsDesc": "系统有16个级别，固定价格从0.05 SOL（1级）到8.7 SOL（16级）。每个级别都有自己独立的队列。更高级别意味着每次槽位填充获得更高的收益。按您喜欢的任意顺序激活级别。",
+    "replayProtection": "重放保护",
+    "replayProtectionDesc": "每笔交易使用存储在TxGuard账户中的唯一随机数。这可以防止重放攻击，确保每次激活只处理一次。智能合约在任何转账之前以加密方式验证所有PDA。",
+    "globalQueue": "全球队列",
+    "globalQueueDesc": "每个级别维护一个带有分页QueuePages的LevelPool（每页64名玩家）。当一页填满时，自动创建新页。队列确保公平的先到先服务槽位填充分配。",
+    "referralChain": "推荐链",
+    "referralChainDesc": "当您注册时，您的3级上线被记录在链上（upline1、upline2、upline3）。他们仅在激活相同级别时才能从您的激活中获得奖金。否则，奖金将进入平台国库。",
+    "levels": "级别",
+    "slotsPerCycle": "每周期槽位",
+    "autoRecycle": "自动回收",
+    "ownerPayout": "所有者支付",
+    "perActivation": "每次激活",
+    "referralTotal": "推荐总计"
+  },
+  "mechanics": {
+    "gameMechanics": "游戏机制",
+    "howSolanaGameWorks": "Solana Game如何运作",
+    "description": "通过Solana智能合约支持的去中心化智能级别赚取、升级和游戏",
+    "activateLevel": "激活级别",
+    "activateLevelDesc": "选择任何级别并直接在链上激活。所有权永久记录在Solana区块链上。",
+    "playRecycle": "游戏与回收",
+    "playRecycleDesc": "每个级别在三个槽位关闭后自动循环——奖励即时分发，级别自动重新开放。",
+    "earnUpgrade": "赚取与升级",
+    "earnUpgradeDesc": "收集SOL奖励，解锁更高级别以在去中心化生态系统中获得更高回报。"
+  },
+  "stats": {
+    "title": "社区优势",
+    "growingEverySecond": "成为更大事物的一部分",
+    "description": "加入全球活跃赚取者网络，共同成长。",
+    "worldwideNetwork": "全球网络",
+    "worldwideNetworkDesc": "从世界任何地方访问",
+    "thrivingCommunity": "繁荣社区",
+    "thrivingCommunityDesc": "活跃成员每日赚取",
+    "alwaysSupported": "始终支持",
+    "alwaysSupportedDesc": "随时获得帮助",
+    "collectiveWins": "集体胜利",
+    "collectiveWinsDesc": "成功随网络增长",
+    "startEarning": "立即开始赚取",
+    "goToDashboard": "前往控制面板",
+    "walletConnected": "钱包已连接。准备赚取。",
+    "noHiddenFees": "无隐藏费用。即时支付。100%链上。"
+  },
+  "levels": {
+    "title": "级别",
+    "level": "级别",
+    "price": "价格",
+    "activate": "激活",
+    "activating": "激活中...",
+    "activated": "已激活",
+    "locked": "已锁定",
+    "cycles": "循环",
+    "slots": "位置",
+    "filled": "已填充",
+    "earnings": "收益",
+    "totalEvents": "总事件数",
+    "cyclesDone": "完成循环",
+    "queue": "排队中",
+    "yourPosition": "您的位置",
+    "recycleAfter": "填满3个位置后循环"
+  },
+  "history": {
+    "title": "交易历史",
+    "noTransactions": "暂无交易",
+    "activation": "激活",
+    "earning": "收益",
+    "referralBonus": "推荐奖励",
+    "referralActivated": "推荐已激活",
+    "referralRegistered": "推荐已注册",
+    "cycleClose": "周期完成",
+    "recycled": "已回收",
+    "reOpened": "已重新开启",
+    "viewExplorer": "在浏览器查看",
+    "view": "查看",
+    "viewAll": "查看全部",
+    "synthetic": "合成",
+    "pending": "待处理",
+    "slot": "槽位",
+    "justNow": "刚刚",
+    "mAgo": "分钟前",
+    "hAgo": "小时前",
+    "dAgo": "天前",
+    "activated": "已激活",
+    "filters": {
+      "all": "全部",
+      "activations": "激活",
+      "earnings": "收益",
+      "pending": "待处理"
+    },
+    "ownerPayout": "所有者支付 (60%)",
+    "referralPayoutL1": "推荐奖金 L1 (13%)",
+    "referralPayoutL2": "推荐奖金 L2 (8%)",
+    "referralPayoutL3": "推荐奖金 L3 (5%)",
+    "fromSlot": "插槽 {slot}"
+  },
+  "info": {
+    "platformFeatures": "平台特性",
+    "builtOn": "构建于",
+    "solana": "Solana",
+    "description": "透明的智能合约，即时交易，以及去中心化推荐系统",
+    "documentation": "文档",
+    "documentationDesc": "完整指南，帮助您理解X3矩阵系统如何运作以及如何最大化您的收益。",
+    "instantPayouts": "即时支付",
+    "instantPayoutsDesc": "SOL直接发送到您的钱包。无延迟，无中介。智能合约处理一切。",
+    "referralSystem": "推荐系统",
+    "referralSystemDesc": "从您的推荐线获得13%、8%和5%。建立您的网络，增加被动收入。",
+    "readDocs": "阅读文档",
+    "learnMore": "了解更多",
+    "startEarning": "开始赚取",
+    "ownerPayout": "所有者支付",
+    "referralRewards": "推荐奖励",
+    "transactionSpeed": "交易速度"
+  },
+  "partner": {
+    "title": "合作伙伴计划",
+    "subtitle": "邀请朋友，从他们的激活中获得50%奖励",
+    "yourReferralLink": "您的推荐链接",
+    "copyLink": "复制链接",
+    "linkCopied": "链接已复制！",
+    "howItWorks": "合作伙伴奖励运作方式",
+    "level1": "一级合作伙伴",
+    "level2": "二级合作伙伴",
+    "level3": "三级合作伙伴",
+    "bonus1": "直接推荐13%",
+    "bonus2": "二级推荐8%",
+    "bonus3": "三级推荐5%"
+  },
+  "telegram": {
+    "title": "Telegram资源",
+    "community": "社区",
+    "communityDesc": "加入我们的群聊",
+    "support": "支持",
+    "supportDesc": "获取团队帮助"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "快速解答帮助您理解并开始使用Solana Game",
+    "q1": "什么是Solana Game，它是如何运作的？",
+    "a1": "Solana Game是一个完全运行在Solana智能合约上的去中心化矩阵平台。当您激活一个级别时，您加入全球队列。当新玩家在您之后激活同一级别时，他们会填充您的3个槽位。一旦3个槽位全部填满，您将收到支付并自动重新进入队列。这个循环无限重复——一次激活给您无限的收益潜力。",
+    "q2": "有多少个级别，它们的费用是多少？",
+    "a2": "共有16个级别，价格以SOL固定：L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL。每个级别独立运作，有自己的队列——您可以按任意顺序激活任何级别。",
+    "q3": "我能赚多少钱，钱去哪里了？",
+    "a3": "当有人激活一个级别时，支付立即分配：60%给队列领导者（级别所有者），13%给他们的一级推荐人，8%给二级，5%给三级，14%给平台国库。每个周期（填满3个槽位），您将获得级别价格的180%。所有转账都在一个区块链交易中原子性完成。",
+    "q4": "推荐计划如何运作？",
+    "a4": "当您注册时，您的推荐链会记录在链上（深度3级）。您的推荐人从您的每次级别激活中获得13%、8%和5%。重要提示：推荐奖金仅在您的上级激活了相同级别时适用。如果没有，他们的份额将进入国库。这激励每个人激活更多级别。",
+    "q5": "我的3个槽位填满后会发生什么？",
+    "a5": "您的级别会自动「回收」——您的槽位重置为0，您的周期计数器增加1，您重新进入队列末尾。您保持位置并永远从同一级别激活中继续获得收益。您可以完成的周期数没有限制。",
+    "q6": "如何开始？",
+    "a6": "第1步：连接您的Phantom钱包（或其他Solana钱包）。第2步：注册您的玩家资料——这将创建您的链上账户并记录您的推荐人。第3步：以0.05 SOL激活1级。第4步：分享您的推荐链接，当其他人加入时获得奖金。您可以在仪表板上实时监控您的槽位、周期和收益。",
+    "q7": "我的钱安全吗？有人能偷走我的资金吗？",
+    "a7": "您的资金完全安全。平台运行在经过验证的、不可变的智能合约上——没有人（包括开发人员）可以修改代码或访问您的钱包。支付直接从钱包到钱包，没有任何中介。合约包括TxGuard保护，防止重复交易。您永远不会将资金的保管权交给任何人。",
+    "q8": "如果没有人在我之后激活怎么办？",
+    "a8": "您在队列中的位置是永久的，永不过期。您只需等待新玩家激活该级别。队列是全球性的——全球所有玩家共享每个级别的同一队列。级别越受欢迎，您的槽位填充得越快。较高级别可能需要更长时间，但提供更大的支付。"
+  },
+  "footer": {
+    "description": "基于Solana区块链的去中心化X3矩阵系统。即时支付，透明机制，100%链上。",
+    "smartContract": "智能合约",
+    "contractAddress": "合约地址",
+    "verifyExplorer": "请在Solana Explorer上验证合约地址",
+    "viewOnExplorer": "在Explorer中查看",
+    "platform": "平台",
+    "gameLevels": "游戏级别",
+    "resources": "资源",
+    "howItWorks": "运作方式",
+    "docs": "文档",
+    "disclaimer": "免责声明",
+    "mainnet": "Solana主网",
+    "walletConnected": "钱包已连接",
+    "allRightsReserved": "版权所有"
+  },
+  "wallet": {
+    "connect": "连接钱包",
+    "connecting": "连接中...",
+    "connected": "已连接",
+    "disconnect": "断开连接",
+    "balance": "余额",
+    "address": "地址",
+    "copyAddress": "复制地址",
+    "viewExplorer": "在浏览器查看",
+    "switchWallet": "切换钱包",
+    "installPhantom": "安装Phantom",
+    "phantomRequired": "需要Phantom钱包",
+    "readyToConnect": "准备连接",
+    "supported": "支持",
+    "connectToContinue": "连接以继续",
+    "phantomNotFound": "未找到Phantom",
+    "pleaseInstall": "请安装Phantom钱包扩展",
+    "byConnecting": "连接即表示您同意服务条款",
+    "notInstalled": "未安装"
+  },
+  "guard": {
+    "title": "连接您的钱包",
+    "description": "要访问控制面板，请连接您的Solana钱包。需要钱包与区块链交互。",
+    "backHome": "返回首页",
+    "registerRequired": "需要注册",
+    "registerRequiredDesc": "要访问控制面板，您需要注册为玩家。这是免费的，只需几秒钟。"
+  },
+  "docs": {
+    "title": "文档",
+    "startPlaying": "开始游戏",
+    "overview": "概述",
+    "gettingStarted": "入门指南",
+    "matrixSystem": "X3矩阵系统",
+    "earnings": "收益和支付",
+    "referrals": "推荐计划",
+    "security": "安全性"
+  },
+  "disclaimer": {
+    "title": "免责声明",
+    "understand": "我了解",
+    "intro": "在使用Solana Program X3之前，请仔细阅读本免责声明。通过访问或使用本平台，您同意受这些条款的约束。",
+    "lastUpdated": "最后更新：2024年12月",
+    "importantNotice": "重要提示",
+    "importantNoticeText": "加密货币投资具有高风险。只投资您能承受损失的资金。本平台在不可变的智能合约上运行——交易无法撤销。",
+    "acceptanceTitle": "接受条款",
+    "acceptanceText": "使用Solana Program X3即表示您已阅读、理解并同意受本免责声明及所有适用条款和条件的约束。",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "平台性质",
+        "content": "Solana Program X3是建立在Solana区块链上的去中心化应用程序（dApp）。该平台通过链上部署的不可变智能合约运行。一旦部署，智能合约代码无法被任何一方（包括开发者）修改、更改或控制。\n\n该平台促进基于矩阵的系统，参与者可以激活级别并根据智能合约中定义的机制接收付款。所有交易均由区块链根据预定义规则自动执行。"
+      },
+      "noFinancialAdvice": {
+        "title": "非财务建议",
+        "content": "本平台上的任何内容均不构成财务、投资、法律或税务建议。所提供的信息仅用于教育和信息目的。在做出任何财务决定之前，您应咨询合格的专业人士。\n\n参与基于区块链的平台涉及重大风险。过往表现不能保证未来结果。加密货币的价值可能大幅波动，您可能会损失部分或全部投资。"
+      },
+      "riskAcknowledgment": {
+        "title": "风险确认",
+        "content": "使用Solana Program X3即表示您承认并接受以下风险：\n\n• 智能合约风险：虽然代码经过精心开发，但没有任何智能合约完全没有潜在的漏洞或错误。\n\n• 市场风险：SOL和其他加密货币的价值可能高度波动，并可能导致重大损失。\n\n• 监管风险：加密货币法规因司法管辖区而异，可能会发生变化。您有责任确保遵守适用法律。\n\n• 网络风险：Solana区块链可能遇到拥堵、中断或其他可能影响交易的技术问题。\n\n• 访问丢失：如果您丢失对钱包或私钥的访问权限，您的资金可能永久无法访问。"
+      },
+      "noGuarantees": {
+        "title": "无保证",
+        "content": "平台不保证：\n\n• 任何收益或回报的金额或时间\n• 平台的持续运营\n• 任何功能的可用性或功能性\n• 任何显示信息的准确性\n• 其他参与者的行为\n\n您的结果完全取决于其他参与者的活动和智能合约的机制。不保证您将收到任何付款或收回您的初始投资。"
+      },
+      "yourResponsibilities": {
+        "title": "您的责任",
+        "content": "作为参与者，您全权负责：\n\n• 在参与前进行自己的研究\n• 保护您的钱包和私钥\n• 了解平台的机制\n• 遵守您所在司法管辖区的所有适用法律法规\n• 按要求报告任何收益用于税务目的\n• 就您的参与做出明智的决定\n\n您应该只使用您能够完全承受损失的资金参与。"
+      },
+      "jurisdictionalRestrictions": {
+        "title": "司法管辖区限制",
+        "content": "平台可能在某些司法管辖区不可用或受到限制。您有责任确定您对平台的使用在您的司法管辖区是否合法。\n\n通过访问和使用平台，您声明并保证您在您的司法管辖区合法允许这样做，并且您将遵守所有适用的地方、州、国家和国际法律法规。"
+      },
+      "thirdPartyServices": {
+        "title": "第三方服务",
+        "content": "平台集成了第三方服务，包括：\n\n• Solana区块链网络\n• 钱包提供商（Phantom、Solflare等）\n• RPC提供商\n\n我们无法控制这些第三方服务，不对其可用性、安全性或使用它们产生的任何问题负责。"
+      },
+      "limitationOfLiability": {
+        "title": "责任限制",
+        "content": "在法律允许的最大范围内，开发者、贡献者和任何相关方不对以下原因产生的任何直接、间接、偶然、特殊、后果性或示范性损害承担责任：\n\n• 您使用或无法使用平台\n• 通过平台进行的任何交易\n• 对您的钱包或资金的任何未经授权的访问\n• 智能合约代码中的任何错误或遗漏\n• 与平台相关的任何其他事项\n\n无论法律理论如何，即使我们已被告知此类损害的可能性，此限制也适用。"
+      },
+      "modifications": {
+        "title": "修改",
+        "content": "本免责声明可能会不时更新。虽然智能合约代码是不可变的，但前端界面和本免责声明可能会被修改。您有责任定期查看本免责声明的任何更改。\n\n在任何修改后继续使用平台即表示接受更新的条款。"
+      },
+      "contact": {
+        "title": "联系",
+        "content": "如果您对本免责声明或平台有任何疑问，请通过我们的官方Telegram支持渠道联系我们。\n\n记住：永远不要与任何人分享您的私钥或助记词，包括任何声称来自我们团队的人。"
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "地址已复制",
+    "signatureCopied": "签名已复制",
+    "contractCopied": "合约地址已复制",
+    "linkCopied": "链接已复制",
+    "copyFailed": "复制失败",
+    "walletNotConnected": "钱包未连接",
+    "connectWalletFirst": "请先连接钱包",
+    "invalidLevel": "无效级别",
+    "activationSent": "激活已发送",
+    "activationSentLevel": "L{level} 激活已发送",
+    "activatingLevel": "正在激活级别 {level}...",
+    "activationError": "激活错误",
+    "registrationSuccess": "玩家注册成功",
+    "registrationFailed": "注册失败",
+    "profileCreated": "个人资料已创建",
+    "referralActivatedLevel": "您的推荐网络中有人激活了等级 {level}",
+    "creatingProfile": "创建个人资料中...",
+    "insufficientFundsForRegistration": "注册资金不足。您至少需要 0.0030 SOL。",
+    "transactionProcessing": "交易处理中...",
+    "clipboardNotSupported": "不支持剪贴板",
+    "playerRegistered": "玩家已注册",
+    "viewInExplorer": "在浏览器中查看",
+    "closeNotification": "关闭通知",
+    "comingSoon": "即将推出",
+    "loadError": "数据加载失败",
+    "activationFinalized": "激活已完成",
+    "registrationFinalized": "注册已完成",
+    "checkingPlayerState": "正在检查玩家状态…",
+    "playerNotFound": "未找到玩家 — 请点击注册",
+    "levelAlreadyActivated": "级别已激活",
+    "pressActivate": "点击激活以激活此级别"
+  },
+  "overlay": {
+    "processing": "交易处理中..."
+  },
+  "nav": {
+    "dashboard": "面板",
+    "home": "首页",
+    "levels": "级别",
+    "history": "历史",
+    "information": "信息",
+    "info": "信息",
+    "partnerBonus": "合作伙伴奖励",
+    "partners": "伙伴",
+    "telegram": "Telegram",
+    "support": "支持",
+    "more": "更多"
+  },
+  "mobileMenu": {
+    "connectWallet": "连接钱包",
+    "connecting": "连接中...",
+    "createProfile": "创建资料",
+    "creatingProfile": "创建资料中...",
+    "goToDashboard": "进入面板"
+  },
+  "dashboardPage": {
+    "title": "控制面板",
+    "subtitle": "您的级别、收益和活动",
+    "yourStatistics": "您的统计",
+    "onChainData": "链上数据",
+    "activeLevels": "活跃级别",
+    "next": "下一个",
+    "allDone": "全部完成",
+    "completedCycles": "完成的循环",
+    "slotsEquals": "3个槽位 = 1个循环",
+    "estEarnings": "预计收益",
+    "ownerPayout": "60%所有者支付",
+    "totalSpent": "总支出",
+    "levelActivations": "级别激活",
+    "yourLevels": "您的级别",
+    "slotsAndCycles": "槽位和循环",
+    "viewAll": "查看全部",
+    "slots": "槽位",
+    "cycle": "循环",
+    "cycles": "循环",
+    "howItWorks": "运作方式：",
+    "howItWorksDesc": "当3名玩家激活您的级别时，您将收到每笔支付的60%。其余部分 → 推荐人(26%) + 国库(14%)。",
+    "latestActivity": "最新活动",
+    "transactionHistory": "交易历史",
+    "live": "实时",
+    "noActivity": "暂无活动。激活您的第一个级别开始。",
+    "contractIdCopied": "合约ID已复制"
+  },
+  "levelsPage": {
+    "title": "级别",
+    "subtitle": "激活级别以赚取SOL",
+    "active": "活跃",
+    "ready": "就绪",
+    "noWallet": "无钱包",
+    "registerFirst": "请先注册玩家",
+    "levelAlreadyActive": "已激活",
+    "activated": "已激活"
+  },
+  "historyPage": {
+    "title": "交易历史",
+    "subtitle": "所有激活、收益和系统事件",
+    "wallet": "钱包",
+    "notConnected": "未连接",
+    "totalEvents": "总事件",
+    "activations": "激活",
+    "cyclesDone": "完成的循环",
+    "pending": "待处理",
+    "all": "全部",
+    "earnings": "收益",
+    "connectWallet": "连接钱包查看历史记录",
+    "noTransactions": "暂无交易。激活您的第一个级别开始。",
+    "noEventsFound": "未找到{filter}事件。",
+    "transactionTypes": "交易类型",
+    "activationsDesc": "您的级别激活和回收。这些是出站交易。",
+    "earningsDesc": "您收到的付款：60%所有者支付 + 推荐奖金（13%、8%、5%）。",
+    "pendingDesc": "等待区块链确认的交易。",
+    "cyclesDesc": "完成的循环 - 3个槽位已填满，然后自动回收返回队列。",
+    "walletCopied": "钱包已复制",
+    "connectFirst": "请先连接钱包",
+    "copyFailed": "复制失败"
+  },
+  "informationPage": {
+    "title": "运作方式",
+    "subtitle": "了解平台的一切",
+    "totalLevels": "总级别",
+    "slotsPerCycle": "每循环槽位",
+    "yourPayout": "您的收益",
+    "network": "网络",
+    "whatIsThis": "这是什么平台？",
+    "whatIsThisDesc": "这是一个基于Solana区块链的去中心化应用。一切都通过智能合约自动运行 - 没有管理员，没有中间人。您激活级别，当其他人在您之后加入时赚取收益，过程无限重复。",
+    "transparent": "透明",
+    "transparentDesc": "所有交易在Solana区块链上可见。没有隐藏。",
+    "automatic": "自动",
+    "automaticDesc": "智能合约处理付款。无延迟，无需批准。",
+    "unlimited": "无限制",
+    "unlimitedDesc": "每个级别可以永远赚取。循环或收益没有限制。",
+    "simpleProcess": "简单的4步流程",
+    "step1Title": "激活级别",
+    "step1Desc": "从L01到L16选择任何级别。支付一次激活价格。您现在拥有这个级别并进入队列。",
+    "step2Title": "等待3次激活",
+    "step2Desc": "当3个其他玩家在您之后激活相同级别时，每个人向您支付级别价格的60%。总共3笔付款。",
+    "step3Title": "循环完成",
+    "step3Desc": "收到3笔付款后，您的级别自动回收。您返回队列并可以再次赚取。",
+    "step4Title": "永远重复",
+    "step4Desc": "循环无限重复。一次激活 = 只要有新玩家加入就有无限的赚取潜力。",
+    "whereMoneyGoes": "钱去哪了？",
+    "moneyGoesDesc": "当有人激活级别时，他们的付款会立即分配：",
+    "youOwner": "您（所有者）",
+    "yourEarnings": "每次激活的收益",
+    "referrerL1": "推荐人L1",
+    "directInviter": "您的直接邀请人",
+    "referrerL2": "推荐人L2",
+    "inviterOfInviter": "您邀请人的邀请人",
+    "referrerL3": "推荐人L3",
+    "thirdLevelUpline": "第三级上线",
+    "platform": "平台",
+    "projectDevelopment": "项目开发",
+    "exampleCalculation": "计算示例",
+    "exampleDesc": "L01成本0.05 SOL。当3人在您之后激活：",
+    "youReceive": "您收到：",
+    "perCycle": "每循环",
+    "levelPrices": "级别价格",
+    "levelPricesDesc": "16个级别可用。更高级别 = 每循环更高收益。",
+    "allPricesInSol": "所有价格以SOL计",
+    "referralBonuses": "推荐奖金",
+    "referralBonusesDesc": "当您邀请的人从他们的级别赚取时，您也获得奖金：",
+    "directReferral": "直接推荐（第1线）",
+    "peopleInvitedDirectly": "您直接邀请的人",
+    "secondLine": "第二线（第2线）",
+    "peopleInvitedByReferrals": "由您的推荐人邀请的人",
+    "thirdLine": "第三线（第3线）",
+    "thirdLevelNetwork": "您网络的第三级",
+    "referralNote": "注意：您只能收到已激活级别的推荐奖金。如果您没有激活L05，L05的推荐奖金将归平台所有。",
+    "commonQuestions": "常见问题",
+    "q1": "我需要按顺序激活级别吗？",
+    "a1": "不需要。您可以随时激活任何级别。L01和L16完全独立。",
+    "q2": "循环完成后会发生什么？",
+    "a2": "您的级别自动返回队列。您可以一次又一次地从中赚取。",
+    "q3": "我会损失我的钱吗？",
+    "a3": "一旦激活，级别将永远工作。您无法失去它。所有付款都由智能合约保证。",
+    "q4": "支付有多快？",
+    "a4": "即时。在有人激活的那一刻，SOL直接进入您的钱包。没有延迟。",
+    "q5": "如果我没有推荐人怎么办？",
+    "a5": "您仍然可以从您的级别中赚取60%。推荐奖金是额外收入。",
+    "gettingStarted": "开始使用",
+    "getWallet": "获取钱包",
+    "getWalletDesc": "为您的浏览器或手机下载Phantom或Backpack钱包。",
+    "getSol": "获取SOL",
+    "getSolDesc": "在任何交易所（Binance、Coinbase等）购买SOL并发送到您的钱包。",
+    "minimumForL01": "L01最低要求：约0.06 SOL（包括费用）",
+    "connectWallet": "连接钱包",
+    "connectWalletDesc": "点击页眉中的「连接」。在钱包中批准连接。",
+    "activateLevels": "激活级别",
+    "activateLevelsDesc": "转到级别页面，选择一个级别，点击激活。在钱包中确认。完成。"
+  },
+  "referralTree": {
+    "title": "推荐树",
+    "subtitle": "您的活跃推荐网络（共 {count}）",
+    "total": "总计",
+    "noReferrals": "尚无推荐",
+    "shareLink": "分享您的推荐链接以开始建立您的网络",
+    "line": "第 {number} 线",
+    "noReferralsInLine": "此线中无推荐",
+    "referralsCount": "{count} {count, plural, other {个推荐}}",
+    "copyAddress": "复制地址",
+    "refresh": "刷新",
+    "yourLink": "您的推荐链接",
+    "copyLink": "复制链接",
+    "linkCopied": "链接已复制!",
+    "addressCopied": "地址已复制!",
+    "viewExplorer": "在Explorer中查看",
+    "copied": "已复制!",
+    "levels": "等级:",
+    "loadingLevels": "正在加载等级..."
+  },
+  "partnerBonusPage": {
+    "title": "合作伙伴计划",
+    "subtitle": "邀请他人并从他们的活动中获利",
+    "totalEarned": "总收益",
+    "line1": "第1线 (13%)",
+    "line2": "第2线 (8%)",
+    "line3": "第3线 (5%)",
+    "yourReferralLink": "您的推荐链接",
+    "copyLink": "复制链接",
+    "connectWalletForLink": "连接钱包获取您的推荐链接",
+    "linkNote": "当有人通过您的链接注册时，他们将永久成为您的第1线推荐人。",
+    "howReferralWorks": "推荐奖金如何运作",
+    "step1Title": "分享您的链接",
+    "step1Desc": "通过您的链接注册的任何人都成为您的第1线推荐人。",
+    "step2Title": "他们激活级别",
+    "step2Desc": "当您的推荐人从他们的级别赚取时，您获得一定比例。",
+    "step3Title": "您自动赚取",
+    "step3Desc": "奖金立即支付到您的钱包。无需领取。",
+    "payoutStructure": "推荐支付结构",
+    "directReferrals": "第1线 - 直接推荐",
+    "directReferralsDesc": "您直接邀请的人",
+    "secondLevel": "第2线 - 第二级",
+    "secondLevelDesc": "您推荐人的推荐人",
+    "thirdLevel": "第3线 - 第三级",
+    "thirdLevelDesc": "您网络的第三代",
+    "important": "重要",
+    "importantDesc": "您只能收到已激活级别的推荐奖金。如果您的推荐人从L05赚取，但您没有激活L05，该奖金将归平台所有。",
+    "referralActivity": "推荐活动",
+    "refresh": "刷新",
+    "loading": "加载中...",
+    "noActivity": "暂无推荐活动",
+    "noActivityDesc": "分享您的链接开始赚取推荐奖金",
+    "showingOf": "显示{total}中的{count}笔交易",
+    "tipsForSuccess": "成功秘诀",
+    "tip1Title": "激活所有级别",
+    "tip1Desc": "您拥有的级别越多，可以获得的推荐奖金就越多。",
+    "tip2Title": "建立您的网络",
+    "tip2Desc": "3线深度意味着从您推荐人的推荐人获得被动收入。",
+    "tip3Title": "持续分享",
+    "tip3Desc": "您的链接永不过期。继续分享以扩大您的网络。",
+    "tip4Title": "帮助您的团队",
+    "tip4Desc": "当您的推荐人成功时，您赚得更多。支持他们。",
+    "connectFirst": "请先连接钱包",
+    "linkCopied": "推荐链接已复制",
+    "copyFailed": "复制失败",
+    "failedToLoad": "无法加载合作伙伴历史",
+    "registration": "注册",
+    "newReferral": "新推荐"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "加入我们的社区并获得支持",
+    "communityGroup": "社区群组",
+    "communityDesc": "加入我们的官方Telegram群组。与其他玩家聊天，分享策略，获取更新和公告。",
+    "joinGroup": "加入群组",
+    "copyLink": "复制链接",
+    "support": "支持",
+    "supportDesc": "需要帮助？直接联系我们的支持团队。我们会快速回复所有关于平台的问题。",
+    "contactSupport": "联系支持",
+    "whatYouGet": "您将获得",
+    "realTimeUpdates": "实时更新",
+    "realTimeUpdatesDesc": "第一时间了解新功能、更新和公告。",
+    "communitySupport": "社区支持",
+    "communitySupportDesc": "从有经验的玩家那里获得帮助，分享您的知识。",
+    "directAccess": "直接访问",
+    "directAccessDesc": "快速联系支持团队解决任何技术问题。",
+    "networkGrowth": "网络增长",
+    "networkGrowthDesc": "与其他玩家联系，扩大您的推荐网络。"
+  },
+  "docsPage": {
+    "title": "文档",
+    "label": "文档",
+    "heading": "Solana Program X3 如何运作",
+    "description": "完整的技术文档，帮助您理解X3矩阵系统、支付机制以及如何最大化您的收益。",
+    "startPlaying": "开始游戏",
+    "swipeHint": "左右滑动浏览",
+    "of": "/",
+    "more": "更多",
+    "footerText": "Solana Program X3 — Solana区块链上的去中心化矩阵",
+    "sections": {
+      "overview": {
+        "title": "概述",
+        "shortTitle": "概述",
+        "content1": {
+          "heading": "什么是Solana Program X3？",
+          "text": "Solana Program X3是一个建立在Solana区块链上的完全去中心化矩阵系统。它通过经过验证的智能合约运行，没有中央控制，这意味着没有人可以修改规则或访问您的资金。\n\n该平台使用X3矩阵模型，每个等级都有一个全球队列。当您激活一个等级时，您进入队列。当新玩家激活同一等级时，他们会填满您的插槽（每周期3个插槽）。一旦所有插槽填满，您将收到支付并自动重新进入队列以进行无限循环。"
+        },
+        "content2": {
+          "heading": "主要特点",
+          "text": "• 16个独立等级，固定价格（0.05 - 8.7 SOL）\n• 每周期3个插槽，自动循环\n• 每次激活向等级所有者支付60%\n• 总共26%的推荐奖励（13% + 8% + 5%）\n• 即时钱包到钱包转账\n• 无提款延迟或中介\n• 不可更改的智能合约代码"
+        },
+        "content3": {
+          "heading": "为什么选择Solana区块链？",
+          "text": "Solana因其卓越的性能而被选中：\n\n• 交易速度：~400毫秒确认\n• 低费用：每笔交易仅需几分钱\n• 高吞吐量：每秒65,000+交易\n• 去中心化：全球数千个验证者\n• 经过验证的记录：TVL排名前列的区块链之一"
+        },
+        "content4": {
+          "heading": "如何赚钱",
+          "text": "在平台上有两种赚钱方式：\n\n1. 等级所有权：激活等级，从每个在您之后激活的玩家获得60%（3次支付 = 每周期180%）\n\n2. 推荐奖金：邀请他人，从您的3层网络中赚取13%、8%和5%\n\n两种赚钱方式同时运作，使您的收入倍增。"
+        },
+        "content5": {
+          "heading": "智能合约透明度",
+          "text": "整个平台运行在经过验证的开源智能合约上：\n\n• 合约地址在Solana Explorer上公开可见\n• 所有交易都记录在区块链上\n• 任何人都可以验证代码和逻辑\n• 没有隐藏功能或后门\n• 完全无需信任的操作"
+        }
+      },
+      "levels": {
+        "title": "等级系统",
+        "shortTitle": "等级",
+        "content1": {
+          "heading": "等级价格",
+          "text": "系统有16个等级，SOL固定价格如下：\n\n等级1: 0.05 SOL    等级9: 3.25 SOL\n等级2: 0.18 SOL    等级10: 3.90 SOL\n等级3: 0.36 SOL    等级11: 4.65 SOL\n等级4: 0.68 SOL    等级12: 5.45 SOL\n等级5: 1.10 SOL    等级13: 6.40 SOL\n等级6: 1.55 SOL    等级14: 7.35 SOL\n等级7: 2.10 SOL    等级15: 8.00 SOL\n等级8: 2.65 SOL    等级16: 8.70 SOL\n\n每个等级独立运作，有自己的全球队列。您可以按任何顺序激活等级。"
+        },
+        "content2": {
+          "heading": "等级如何运作",
+          "text": "1. 您通过支付固定价格激活等级\n2. 您的激活记录在链上，您进入全球队列\n3. 激活同一等级的下3名玩家填满您的插槽\n4. 您获得每位玩家支付的60%（每周期共180%）\n5. 3个插槽填满后，您自动重新进入队列\n6. 这个周期从单次激活无限重复"
+        },
+        "content3": {
+          "heading": "等级独立性",
+          "text": "16个等级中的每一个都完全独立运作：\n\n• 每个等级有单独的队列\n• 无前提条件 — 随时激活任何等级\n• 多个等级可以同时激活\n• 每个等级单独赚钱\n• 一个等级的进度不影响其他等级"
+        },
+        "content4": {
+          "heading": "每级收益",
+          "text": "每个等级每周期（3个插槽填满）的收益：\n\nL1: 0.09 SOL    L9: 5.85 SOL\nL2: 0.32 SOL    L10: 7.02 SOL\nL3: 0.65 SOL    L11: 8.37 SOL\nL4: 1.22 SOL    L12: 9.81 SOL\nL5: 1.98 SOL    L13: 11.52 SOL\nL6: 2.79 SOL    L14: 13.23 SOL\nL7: 3.78 SOL    L15: 14.40 SOL\nL8: 4.77 SOL    L16: 15.66 SOL\n\n公式：等级价格 × 60% × 3插槽 = 周期收益"
+        },
+        "content5": {
+          "heading": "自动循环机制",
+          "text": "当您的3个插槽填满时，您的等级自动循环：\n\n• 您的插槽计数器重置为0\n• 您的周期计数器增加1\n• 您从队列头部移到尾部\n• 无需任何操作即可继续赚钱\n• 无需额外支付\n\n这创造了单次激活的无限赚钱潜力。"
+        }
+      },
+      "queue": {
+        "title": "全球队列",
+        "shortTitle": "队列",
+        "content1": {
+          "heading": "队列结构",
+          "text": "每个等级维护一个带有分页QueuePages的LevelPool。主要特点：\n\n• 每页最多容纳64名玩家\n• 当页面填满时，自动创建新页面\n• 玩家按先到先得顺序处理\n• 您的位置是永久的，永不过期\n• 每个周期完成后，您在队列尾部重新进入"
+        },
+        "content2": {
+          "heading": "队列处理",
+          "text": "当新玩家激活等级时：\n\n1. 智能合约识别队列头部（排队第一的玩家）\n2. 该玩家的slots_filled计数器增加1\n3. 支付分配（60%给所有者，推荐人，金库）\n4. 如果slots_filled达到3，等级「循环」：\n   - 周期计数器增加1\n   - slots_filled重置为0\n   - 玩家从头部移除并添加到尾部\n5. 新玩家也进入队列尾部"
+        },
+        "content3": {
+          "heading": "公平分配",
+          "text": "队列系统确保所有参与者得到公平对待：\n\n• 先到先得 — 无偏袒\n• 无法跳过或操纵队列位置\n• 每个人平等等待轮次\n• 智能合约自动执行规则\n• 在区块链上透明可验证"
+        },
+        "content4": {
+          "heading": "队列速度",
+          "text": "插槽填充速度取决于等级活动：\n\n• 低等级（L1-L5）：更多玩家，更快填充\n• 高等级（L11-L16）：较少玩家，较慢填充\n• 全球活动影响所有队列\n• 您的队列位置很重要 — 越早越快\n\n提示：在仪表板中监控队列活动。"
+        },
+        "content5": {
+          "heading": "永久位置",
+          "text": "一旦激活等级，您的位置永不过期：\n\n• 无超时或过期\n• 队列在区块链上永久存在\n• 即使几个月后您也会收到付款\n• 无需维护或续期\n• 激活后完全被动"
+        }
+      },
+      "payouts": {
+        "title": "支付分配",
+        "shortTitle": "支付",
+        "content1": {
+          "heading": "支付细分",
+          "text": "每次激活分配等级价格的100%：\n\n• 60% → 等级所有者（队列头部）\n• 13% → 推荐人第1线（upline1）\n• 8% → 推荐人第2线（upline2）\n• 5% → 推荐人第3线（upline3）\n• 14% → 平台金库\n\n所有转账在单个Solana交易中原子性发生。无延迟，无待处理状态。"
+        },
+        "content2": {
+          "heading": "收益计算",
+          "text": "每周期（3个插槽填满），您赚取：\n60% × 3 = 等级价格的180%\n\n等级5示例（1.10 SOL）：\n• 每插槽：0.66 SOL（1.10的60%）\n• 每周期：1.98 SOL（1.10的180%）\n• 每周期投资回报率：+80%利润\n\n周期没有限制。一次激活 = 无限收益潜力。"
+        },
+        "content3": {
+          "heading": "即时转账",
+          "text": "通过智能合约即时支付：\n\n• 无待处理状态或延迟\n• 直接钱包到钱包转账\n• SOL立即出现在您的钱包中\n• 无需手动领取\n• 无最低提款金额"
+        },
+        "content4": {
+          "heading": "总收益潜力",
+          "text": "如果您激活所有16个等级并完成多个周期：\n\n总等级成本：~42 SOL\n每周期收益：~100 SOL（所有等级）\n\n加上来自您网络的推荐奖金可以显著增加您的收入。您激活的等级越多，网络越大，收益越高。"
+        },
+        "content5": {
+          "heading": "追踪您的收益",
+          "text": "实时监控您的收入：\n\n• 仪表板显示每个等级的已填充插槽\n• 查看已完成周期数\n• 追踪总共赚取的SOL\n• 查看待填充插槽\n• 交易历史可用\n\n所有数据直接从区块链获取。"
+        }
+      },
+      "referrals": {
+        "title": "推荐系统",
+        "shortTitle": "推荐",
+        "content1": {
+          "heading": "推荐如何运作",
+          "text": "注册时，您的推荐链记录在链上：\n\n• upline1：您的直接推荐人（赚取13%）\n• upline2：您推荐人的推荐人（赚取8%）\n• upline3：第三级向上（赚取5%）\n\n重要提示：推荐奖金仅在您的上线拥有相同等级激活时适用。否则，他们的份额将进入平台金库。"
+        },
+        "content2": {
+          "heading": "建立您的网络",
+          "text": "最大化推荐收益：\n\n1. 分享您的推荐链接（包含您的player PDA）\n2. 当有人通过您的链接注册时，您成为他们的upline1\n3. 他们激活的每个等级您赚取13%（如果您激活了该等级）\n4. 您还从他们的推荐中赚取8%（您的第2线）\n5. 第3线推荐赚取5%\n\n关键是激活所有16个等级以获得最大推荐收入。"
+        },
+        "content3": {
+          "heading": "您的推荐链接",
+          "text": "您的唯一推荐链接包含您的Player PDA：\n\nhttps://[域名]/?ref=[您的_player_pda]\n\n在任何地方分享此链接：\n• 社交媒体（Twitter、Telegram、Discord）\n• YouTube视频和描述\n• 博客文章和论坛\n• 给朋友的直接消息\n\n通过您的链接注册的任何人都成为您的永久推荐人。"
+        },
+        "content4": {
+          "heading": "等级匹配规则",
+          "text": "关键规则：您只能获得您已激活等级的推荐奖金。\n\n示例：\n• 您激活了L1、L2、L3\n• 您的推荐人激活L5\n• 您获得0%，因为您没有L5\n\n解决方案：激活所有16个等级以获得100%可能的推荐收入。"
+        },
+        "content5": {
+          "heading": "网络增长",
+          "text": "您的网络通过3条线自动增长：\n\n第1线：您直接邀请的人（13%）\n第2线：您的第1线邀请的人（8%）\n第3线：您的第2线邀请的人（5%）\n\n总推荐潜力：您3线网络中每次激活的26%。这创造了强大的被动收入。"
+        },
+        "content6": {
+          "heading": "推荐收益示例",
+          "text": "如果您有10个活跃推荐人，每人激活L5（1.10 SOL）：\n\n第1线（10人）：10 × 1.10 × 13% = 1.43 SOL\n\n如果每人再邀请5人（第2线）：\n50 × 1.10 × 8% = 4.40 SOL\n\n如果第2线每人邀请5人（第3线）：\n250 × 1.10 × 5% = 13.75 SOL\n\n仅L5的总计：19.58 SOL"
+        }
+      },
+      "security": {
+        "title": "安全性",
+        "shortTitle": "安全",
+        "content1": {
+          "heading": "智能合约安全",
+          "text": "平台实施多项安全措施：\n\n• TxGuard：每笔交易使用唯一nonce防止重放攻击\n• PDA验证：所有账户经过密码学验证\n• 原子转账：支付在单个交易中发生（全有或全无）\n• 不可变代码：智能合约部署后无法修改\n• 无管理员密钥：没有人可以提取资金或更改规则"
+        },
+        "content2": {
+          "heading": "您的资金安全",
+          "text": "• 您永远不会将钱包托管权交给任何人\n• 支付通过智能合约直接从钱包到钱包\n• 没有存款/取款系统 — 您的SOL留在您的钱包中\n• 所有交易在Solana Explorer上公开可验证\n• 合约没有可能窃取资金的管理员功能"
+        },
+        "content3": {
+          "heading": "在Solana Explorer上验证",
+          "text": "智能合约完全透明：\n\n• 合约地址公开可用\n• 所有代码经过验证且可读\n• 每笔交易在Explorer上可见\n• 账户状态可检查\n• 无隐藏逻辑或功能\n\n您可以独立验证一切。"
+        },
+        "content4": {
+          "heading": "不可能跑路",
+          "text": "合约设计防止任何形式的跑路：\n\n• 无所有者提款功能\n• 无暂停或冻结机制\n• 无可升级代理模式\n• 资金直接在钱包之间流动\n• 平台金库透明\n\n即使开发者也无法访问您的资金。"
+        },
+        "content5": {
+          "heading": "钱包安全提示",
+          "text": "保护您的钱包安全：\n\n• 永远不要与任何人分享您的助记词\n• 大额使用硬件钱包\n• 签名前验证交易详情\n• 只连接到官方平台URL\n• 警惕钓鱼尝试\n• 离线安全存储助记词"
+        },
+        "content6": {
+          "heading": "交易保护",
+          "text": "每笔交易都受TxGuard保护：\n\n• 唯一nonce防止重复交易\n• 防止重放攻击\n• 确保每次激活只处理一次\n• 执行前自动验证\n• 失败的交易安全回滚"
+        }
+      },
+      "getting-started": {
+        "title": "入门指南",
+        "shortTitle": "开始",
+        "content1": {
+          "heading": "分步指南",
+          "text": "1. 安装Phantom钱包\n   从phantom.app下载并创建您的钱包\n\n2. 为钱包充值\n   将SOL转入您的Phantom钱包地址\n\n3. 连接钱包\n   在我们的平台上点击「连接钱包」\n\n4. 注册玩家\n   创建您的链上玩家档案（一次性）\n\n5. 激活等级1\n   支付0.05 SOL激活您的第一个等级\n\n6. 分享并赚取\n   复制您的推荐链接并邀请他人"
+        },
+        "content2": {
+          "heading": "成功秘诀",
+          "text": "• 从等级1开始，逐步升级\n• 激活尽可能多的等级\n• 在社交媒体上分享您的推荐链接\n• 记住：推荐奖金需要匹配的激活等级\n• 监控您的仪表板查看插槽填充和周期\n• 更高等级 = 更高支付但队列移动更慢"
+        },
+        "content3": {
+          "heading": "支持的钱包",
+          "text": "平台支持流行的Solana钱包：\n\n• Phantom（推荐）\n• Solflare\n• Backpack\n• Ledger（通过Phantom）\n• 其他Solana兼容钱包\n\n我们推荐Phantom以获得最佳体验。"
+        },
+        "content4": {
+          "heading": "获取SOL",
+          "text": "您需要SOL才能参与。获取SOL的方法：\n\n• 在交易所购买（Binance、Coinbase、Kraken）\n• 使用法币入金（MoonPay、Transak）\n• 从其他加密货币兑换\n• 从其他用户接收\n\n最低需要：~0.06 SOL用于等级1 + 手续费"
+        },
+        "content5": {
+          "heading": "注册流程",
+          "text": "一次性玩家注册：\n\n1. 连接您的钱包\n2. 点击「注册」按钮\n3. 在钱包中批准交易\n4. 您的player PDA在链上创建\n5. 您已准备好激活等级\n\n注册需要最低余额0.0030 SOL以支付交易费用。"
+        },
+        "content6": {
+          "heading": "使用您的仪表板",
+          "text": "注册后，您的仪表板显示：\n\n• 活跃等级及其状态\n• 已填充插槽和完成的周期\n• 总收益（估计）\n• 您的推荐链接\n• 交易历史\n• 等级激活按钮"
+        },
+        "content7": {
+          "heading": "常见问题",
+          "text": "问：如果我丢失了推荐人的链接怎么办？\n答：您可以使用默认推荐人注册。\n\n问：我可以更改推荐人吗？\n答：不可以，推荐链在区块链上是永久的。\n\n问：最低投资是多少？\n答：等级1只需0.05 SOL。\n\n问：有时间限制吗？\n答：没有，您的等级一旦激活就永远有效。"
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "激活价格",
+    "back": "返回",
+    "status": "状态",
+    "active": "活跃",
+    "inactive": "未激活",
+    "slots": "槽位",
+    "cycles": "循环",
+    "earned": "已赚取",
+    "cycleProgress": "循环进度",
+    "filled": "已填充",
+    "empty": "空",
+    "slotsFilled": "已填充 {filled}/{total} 个槽位",
+    "nextPayout": "下次支付",
+    "perActivationDistribution": "每次激活分配",
+    "youOwner": "您（所有者）",
+    "referrerL1": "推荐人 L1",
+    "referrerL2": "推荐人 L2",
+    "referrerL3": "推荐人 L3",
+    "platform": "平台",
+    "yourEarningsPerCycle": "每循环您的收益（×3）",
+    "howItWorks": "工作原理",
+    "step1Title": "激活此级别",
+    "step1Desc": "您进入队列，等待3名玩家在您之后激活。",
+    "step2Title": "3个槽位被填满",
+    "step2Desc": "每当有人激活时，您将获得其支付的{percent}%。",
+    "step3Title": "循环完成",
+    "step3Desc": "3次支付后，您的级别会自动回收到队列。",
+    "step4Title": "无限循环",
+    "step4Desc": "只要新玩家继续加入，您就可以无限期地从此级别赚取收益。",
+    "processing": "处理中...",
+    "alreadyActivated": "已激活",
+    "activateFor": "激活 {price} SOL",
+    "levelStatistics": "级别统计",
+    "totalCyclesCompleted": "已完成的总循环数",
+    "totalEarned": "总收益",
+    "perCycleEarnings": "每循环收益",
+    "note": "注意",
+    "noteText": "只要有新玩家加入，此级别将继续产生收益。每个循环都是独立的。"
+  }
+}

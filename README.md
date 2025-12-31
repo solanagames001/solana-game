@@ -1,57 +1,133 @@
-# Solana Verified Builds
+# Solana Game
 
-This repository demonstrates how to implement verified builds for Solana programs. Verified builds ensure that your deployed program matches exactly with your public source code, promoting transparency and security in the Solana ecosystem.
+A decentralized gaming platform built on Solana blockchain with Next.js frontend.
 
-## What are Verified Builds?
+## 🚀 Features
 
-Verified builds allow developers and users to verify that a deployed Solana program matches its source code. This verification:
+- **Multi-level Game System** - 16 levels with progressive pricing
+- **Referral Program** - 3-tier referral system
+- **Real-time Updates** - Optimized with Helius webhooks
+- **Mobile-first Design** - Responsive UI for all devices
+- **Multi-language Support** - 12 languages supported
 
-- Ensures program authenticity
-- Promotes transparency
-- Builds user trust
-- Makes source code discoverable
+## 📋 Prerequisites
 
-## Quick Start
+- Node.js 18.17.0 or higher
+- npm 9.0.0 or higher
 
-1. Install prerequisites:
-
-   - Docker
-   - Cargo
-   - Solana Verify CLI (`cargo install solana-verify`)
-
-2. Build your program:
+## 🛠️ Installation
 
 ```bash
-solana-verify build
+# Clone the repository
+git clone https://github.com/your-repo/solana-game.git
+cd solana-game
+
+# Install dependencies
+npm install
+
+# Create environment file
+cp .env.example .env.local
+# Edit .env.local with your values
 ```
 
-3. Deploy and verify:
+## ⚙️ Environment Variables
+
+Create a `.env.local` file with the following variables:
+
+```env
+# Required
+NEXT_PUBLIC_PROGRAM_ID=your_program_id
+NEXT_PUBLIC_SOLANA_CLUSTER=mainnet-beta
+
+# Helius RPC (recommended for production)
+NEXT_PUBLIC_SOLANA_RPC=https://mainnet.helius-rpc.com/?api-key=your_key
+NEXT_PUBLIC_HELIUS_API_KEY=your_helius_api_key
+
+# Optimization (optional)
+NEXT_PUBLIC_RPC_MODE=optimized
+NEXT_PUBLIC_USE_HELIUS_WEBHOOKS=true
+```
+
+See `ENV_CONFIG.md` for full configuration options.
+
+## 🏃 Development
 
 ```bash
-# Deploy
-solana program deploy -u $NETWORK_URL target/deploy/$PROGRAM_LIB_NAME.so --program-id $PROGRAM_ID
+# Start development server
+npm run dev
 
-# Verify against repository -> upload your build data on chain
-solana-verify verify-from-repo -u $NETWORK_URL --program-id $PROGRAM_ID https://github.com/$REPO_PATH
+# Build for production
+npm run build
 
-# Trigger a remote job
-solana-verify remote submit-job --program-id $PROGRAM_ID --uploader $THE_PUBKEY_THAT_UPLOADED_YOUR_BUILD_DATA
+# Start production server
+npm start
 ```
 
-## Documentation
+## 🚀 Deployment to Vercel
 
-For detailed instructions and best practices, please refer to the [official Solana documentation on verified builds](https://solana.com/developers/guides/advanced/verified-builds).
+### Option 1: Deploy via GitHub
 
-## Security Considerations
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Set environment variables in Vercel dashboard
+4. Deploy!
 
-While verified builds enhance transparency, they should not be considered a complete security solution. Always:
+### Option 2: Deploy via CLI
 
-- Review the source code
-- Use trusted build environments
-- Consider using governance solutions for program upgrades
+```bash
+npm i -g vercel
+vercel --prod
+```
 
-For responsible disclosure of bugs related to verified builds CLI, please email maintainers@ellipsislabs.xyz with a detailed description of the attack vector.
+### Required Vercel Environment Variables
 
-## Contributing
+Set these in your Vercel project settings:
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+- `NEXT_PUBLIC_PROGRAM_ID` - Your Solana program ID
+- `NEXT_PUBLIC_SOLANA_CLUSTER` - `mainnet-beta` for production
+- `NEXT_PUBLIC_SOLANA_RPC` - Your Helius RPC endpoint
+- `NEXT_PUBLIC_HELIUS_API_KEY` - Helius API key (optional)
+
+## 📁 Project Structure
+
+```
+solana-game/
+├── app/                    # Next.js App Router pages
+│   ├── (dashboard)/       # Dashboard routes
+│   ├── api/               # API routes (webhooks)
+│   └── page.tsx           # Home page
+├── components/            # React components
+├── lib/
+│   └── sdk/              # Solana SDK
+│       ├── helius/       # Helius RPC optimization
+│       ├── hooks/        # React hooks
+│       └── history/      # Transaction history
+├── messages/              # i18n translations
+├── public/               # Static assets
+└── docs/                 # Documentation
+```
+
+## 🔧 RPC Optimization
+
+This project includes built-in Helius RPC optimization:
+
+- **Caching** - LRU cache for all RPC responses
+- **Batching** - Automatic request batching
+- **Throttling** - Rate limiting with backoff
+- **Fallback** - Auto-switch to public RPC on limits
+
+See `docs/HELIUS_RPC_OPTIMIZATION.md` for details.
+
+## 🔐 Security
+
+- Never commit `.env.local` or wallet files
+- Use environment variables for all secrets
+- Wallets are excluded via `.gitignore`
+
+## 📄 License
+
+MIT
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a PR.

@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Kết nối ví",
+    "disconnect": "Ngắt kết nối",
+    "dashboard": "Bảng điều khiển",
+    "register": "Đăng ký",
+    "registering": "Đang đăng ký...",
+    "connecting": "Đang kết nối",
+    "loading": "Đang tải...",
+    "processing": "Đang xử lý...",
+    "success": "Thành công",
+    "error": "Lỗi",
+    "copy": "Sao chép",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "submit": "Gửi",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "view": "Xem",
+    "more": "Thêm",
+    "less": "Ít hơn",
+    "all": "Tất cả",
+    "none": "Không có",
+    "yes": "Có",
+    "no": "Không",
+    "on": "Bật",
+    "off": "Tắt",
+    "active": "Đang hoạt động",
+    "inactive": "Không hoạt động",
+    "pending": "Đang chờ",
+    "completed": "Hoàn thành",
+    "failed": "Thất bại",
+    "home": "Trang chủ",
+    "support": "Hỗ trợ",
+    "balance": "Số dư",
+    "tapToCopy": "Nhấn để sao chép",
+    "swipeToClose": "Vuốt xuống để đóng",
+    "connectedWallet": "Ví đã kết nối",
+    "disconnectWallet": "Ngắt kết nối ví",
+    "selectLanguage": "Chọn ngôn ngữ",
+    "language": "Ngôn ngữ",
+    "chooseLanguage": "Chọn ngôn ngữ ưa thích của bạn"
+  },
+  "playerStatus": {
+    "title": "Trạng thái người chơi",
+    "accountInfo": "Thông tin tài khoản",
+    "authority": "Quyền sở hữu",
+    "playerPda": "PDA người chơi",
+    "createdAt": "Tạo lúc",
+    "openLevels": "Mở cấp độ",
+    "copyPda": "Sao chép PDA",
+    "explorer": "Trình duyệt",
+    "register": "Đăng ký",
+    "registering": "Đang đăng ký…",
+    "connectFirst": "Vui lòng kết nối ví trước",
+    "playerRegistered": "Đã đăng ký người chơi",
+    "registrationFailed": "Đăng ký thất bại",
+    "addressCopied": "Đã sao chép địa chỉ",
+    "copyFailed": "Sao chép thất bại"
+  },
+  "levelCard": {
+    "activate": "Kích hoạt",
+    "activating": "Đang kích hoạt…",
+    "activated": "Đã kích hoạt",
+    "notActivated": "Chưa kích hoạt",
+    "checking": "Đang kiểm tra…",
+    "notRegistered": "Chưa đăng ký",
+    "levelActive": "Cấp độ đang hoạt động — phần thưởng đã bật.",
+    "level": "Cấp độ",
+    "price": "Giá (SOL)",
+    "slots": "Vị trí",
+    "cycles": "Chu kỳ",
+    "details": "Chi tiết"
+  },
+  "activations": {
+    "title": "Kích hoạt",
+    "lastDays": "{days} ngày qua",
+    "total": "tổng",
+    "activationsCount": "{count} lần kích hoạt"
+  },
+  "header": {
+    "connectWallet": "Kết nối ví",
+    "dashboard": "Bảng điều khiển",
+    "register": "Đăng ký",
+    "connecting": "Đang kết nối"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Hệ thống ma trận phi tập trung trên blockchain Solana",
+    "poweredBy": "Được hỗ trợ bởi Solana"
+  },
+  "ticker": {
+    "onChain": "Hợp đồng thông minh 100% On-Chain",
+    "noAdminKeys": "Không có khóa admin - Hoàn toàn phi tập trung",
+    "instantPayouts": "Thanh toán tức thì vào ví của bạn",
+    "audited": "Hợp đồng đã được kiểm toán và xác minh",
+    "levels": "16 cấp độ - Lên đến 655.35 SOL",
+    "partnerBonus": "Mời đối tác - Kiếm thưởng 26%",
+    "unlimited": "Chu kỳ không giới hạn - Thu nhập không giới hạn"
+  },
+  "technology": {
+    "smartContract": "Hợp đồng thông minh",
+    "howItWorks": "Cách hoạt động trên",
+    "solana": "Solana",
+    "description": "Hợp đồng thông minh hoàn toàn tự chủ với mô hình ma trận X3, thanh toán tức thì và bảo mật mật mã",
+    "x3Matrix": "Ma trận X3",
+    "x3MatrixDesc": "Mỗi cấp độ hoạt động như một ma trận X3 dựa trên hàng đợi. Khi bạn kích hoạt một cấp độ, bạn vào hàng đợi toàn cầu. Mỗi 3 lần kích hoạt sau bạn sẽ lấp đầy các vị trí, hoàn thành một chu kỳ. Bạn nhận 60% từ mỗi lần lấp đầy và tự động vào lại hàng đợi cho chu kỳ không giới hạn.",
+    "instantPayouts": "Thanh toán tức thì",
+    "instantPayoutsDesc": "Hợp đồng thông minh phân phối thanh toán ngay lập tức: 60% cho chủ sở hữu, 13% cho người giới thiệu tuyến 1, 8% tuyến 2, 5% tuyến 3, và 14% cho quỹ nền tảng.",
+    "sixteenLevels": "16 Cấp độ",
+    "sixteenLevelsDesc": "Hệ thống có 16 cấp độ với giá cố định từ 0.05 SOL (Cấp 1) đến 8.7 SOL (Cấp 16). Mỗi cấp độ có hàng đợi độc lập riêng.",
+    "replayProtection": "Bảo vệ phát lại",
+    "replayProtectionDesc": "Mỗi giao dịch sử dụng nonce duy nhất được lưu trữ trong tài khoản TxGuard. Điều này ngăn chặn các cuộc tấn công phát lại và đảm bảo mỗi lần kích hoạt chỉ được xử lý một lần.",
+    "globalQueue": "Hàng đợi toàn cầu",
+    "globalQueueDesc": "Mỗi cấp độ duy trì một LevelPool với QueuePages được phân trang (64 người chơi mỗi trang). Khi trang đầy, trang mới tự động được tạo.",
+    "referralChain": "Chuỗi giới thiệu",
+    "referralChainDesc": "Khi đăng ký, tuyến trên 3 cấp của bạn được ghi on-chain. Họ chỉ nhận thưởng từ kích hoạt của bạn nếu họ có cùng cấp độ đang hoạt động.",
+    "levels": "Cấp độ",
+    "slotsPerCycle": "Vị trí mỗi chu kỳ",
+    "autoRecycle": "Tái chế tự động",
+    "ownerPayout": "Thanh toán chủ sở hữu",
+    "perActivation": "Mỗi kích hoạt",
+    "referralTotal": "Tổng giới thiệu"
+  },
+  "mechanics": {
+    "gameMechanics": "Cơ chế trò chơi",
+    "howSolanaGameWorks": "Cách Solana Game hoạt động",
+    "description": "Kiếm tiền, nâng cấp và chơi thông qua các cấp độ thông minh phi tập trung được hỗ trợ bởi hợp đồng thông minh Solana",
+    "activateLevel": "Kích hoạt cấp độ",
+    "activateLevelDesc": "Chọn bất kỳ cấp độ nào và kích hoạt trực tiếp on-chain. Quyền sở hữu được ghi vĩnh viễn trên blockchain Solana.",
+    "playRecycle": "Chơi và tái chế",
+    "playRecycleDesc": "Mỗi cấp độ tự động chu kỳ sau khi ba vị trí đóng — phần thưởng được phân phối ngay lập tức.",
+    "earnUpgrade": "Kiếm và nâng cấp",
+    "earnUpgradeDesc": "Thu thập phần thưởng bằng SOL và mở khóa các cấp độ cao hơn để có lợi nhuận lớn hơn."
+  },
+  "stats": {
+    "title": "Lợi ích Cộng đồng",
+    "growingEverySecond": "Trở thành Phần của Điều Gì Đó Lớn Hơn",
+    "description": "Tham gia mạng lưới toàn cầu của những người kiếm tiền tích cực và cùng nhau phát triển.",
+    "worldwideNetwork": "Mạng Lưới Toàn Cầu",
+    "worldwideNetworkDesc": "Truy cập từ bất kỳ đâu trên thế giới",
+    "thrivingCommunity": "Cộng đồng Thịnh vượng",
+    "thrivingCommunityDesc": "Thành viên tích cực kiếm tiền hàng ngày",
+    "alwaysSupported": "Luôn được Hỗ trợ",
+    "alwaysSupportedDesc": "Nhận trợ giúp bất cứ khi nào bạn cần",
+    "collectiveWins": "Chiến thắng Tập thể",
+    "collectiveWinsDesc": "Thành công phát triển cùng mạng lưới",
+    "startEarning": "Bắt đầu kiếm tiền ngay",
+    "goToDashboard": "Đến bảng điều khiển",
+    "walletConnected": "Ví đã kết nối. Sẵn sàng kiếm tiền.",
+    "noHiddenFees": "Không phí ẩn. Thanh toán tức thì. 100% on-chain."
+  },
+  "levels": {
+    "title": "Cấp độ",
+    "level": "Cấp độ",
+    "price": "Giá",
+    "activate": "Kích hoạt",
+    "activating": "Đang kích hoạt...",
+    "activated": "Đã kích hoạt",
+    "locked": "Đã khóa",
+    "cycles": "Chu kỳ",
+    "slots": "Vị trí",
+    "filled": "Đã lấp đầy",
+    "earnings": "Thu nhập",
+    "totalEvents": "Tổng sự kiện",
+    "cyclesDone": "Chu kỳ đã hoàn thành",
+    "queue": "Đang xếp hàng",
+    "yourPosition": "Vị trí của bạn",
+    "recycleAfter": "Tái chế sau khi lấp đầy 3 vị trí"
+  },
+  "history": {
+    "title": "Lịch sử giao dịch",
+    "noTransactions": "Chưa có giao dịch",
+    "activation": "Kích hoạt",
+    "earning": "Thu nhập",
+    "referralBonus": "Thưởng giới thiệu",
+    "referralActivated": "Giới thiệu đã kích hoạt",
+    "referralRegistered": "Giới thiệu đã đăng ký",
+    "cycleClose": "Chu kỳ hoàn thành",
+    "recycled": "Đã tái chế",
+    "reOpened": "Đã mở lại",
+    "viewExplorer": "Xem trong Explorer",
+    "view": "Xem",
+    "viewAll": "Xem tất cả",
+    "synthetic": "tổng hợp",
+    "pending": "Đang chờ",
+    "slot": "slot",
+    "justNow": "Vừa xong",
+    "mAgo": "phút trước",
+    "hAgo": "giờ trước",
+    "dAgo": "ngày trước",
+    "activated": "Đã kích hoạt",
+    "filters": {
+      "all": "Tất cả",
+      "activations": "Kích hoạt",
+      "earnings": "Thu nhập",
+      "pending": "Đang chờ"
+    },
+    "ownerPayout": "Thanh toán chủ sở hữu (60%)",
+    "referralPayoutL1": "Thưởng giới thiệu L1 (13%)",
+    "referralPayoutL2": "Thưởng giới thiệu L2 (8%)",
+    "referralPayoutL3": "Thưởng giới thiệu L3 (5%)",
+    "fromSlot": "Vị trí {slot}"
+  },
+  "info": {
+    "platformFeatures": "Tính năng nền tảng",
+    "builtOn": "Xây dựng trên",
+    "solana": "Solana",
+    "description": "Hợp đồng thông minh minh bạch, giao dịch tức thì và hệ thống giới thiệu phi tập trung",
+    "documentation": "Tài liệu",
+    "documentationDesc": "Hướng dẫn đầy đủ để hiểu hệ thống ma trận X3 và tối đa hóa thu nhập của bạn.",
+    "instantPayouts": "Thanh toán tức thì",
+    "instantPayoutsDesc": "SOL được gửi trực tiếp đến ví của bạn. Không chậm trễ, không trung gian.",
+    "referralSystem": "Hệ thống giới thiệu",
+    "referralSystemDesc": "Kiếm 13%, 8% và 5% từ các tuyến giới thiệu. Xây dựng mạng lưới của bạn.",
+    "readDocs": "Đọc tài liệu",
+    "learnMore": "Tìm hiểu thêm",
+    "startEarning": "Bắt đầu kiếm tiền",
+    "ownerPayout": "Thanh toán chủ sở hữu",
+    "referralRewards": "Phần thưởng giới thiệu",
+    "transactionSpeed": "Tốc độ giao dịch"
+  },
+  "partner": {
+    "title": "Chương trình đối tác",
+    "subtitle": "Mời bạn bè và nhận thưởng 50% từ các lần kích hoạt của họ",
+    "yourReferralLink": "Liên kết giới thiệu của bạn",
+    "copyLink": "Sao chép liên kết",
+    "linkCopied": "Đã sao chép liên kết!",
+    "howItWorks": "Cách thưởng đối tác hoạt động",
+    "level1": "Đối tác cấp 1",
+    "level2": "Đối tác cấp 2",
+    "level3": "Đối tác cấp 3",
+    "bonus1": "13% từ giới thiệu trực tiếp",
+    "bonus2": "8% từ giới thiệu cấp 2",
+    "bonus3": "5% từ giới thiệu cấp 3"
+  },
+  "telegram": {
+    "title": "Tài nguyên Telegram",
+    "community": "Cộng đồng",
+    "communityDesc": "Tham gia trò chuyện",
+    "support": "Hỗ trợ",
+    "supportDesc": "Nhận trợ giúp từ đội ngũ"
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Câu trả lời nhanh để hiểu và bắt đầu với Solana Game",
+    "q1": "Solana Game là gì và hoạt động như thế nào?",
+    "a1": "Solana Game là một nền tảng ma trận phi tập trung hoạt động hoàn toàn trên hợp đồng thông minh Solana. Khi bạn kích hoạt một cấp độ, bạn tham gia vào hàng đợi toàn cầu. Khi người chơi mới kích hoạt cùng cấp độ sau bạn, họ lấp đầy 3 vị trí của bạn. Khi cả 3 vị trí đầy, bạn nhận được thanh toán và tự động vào lại hàng đợi. Chu kỳ này lặp lại vô hạn — một lần kích hoạt mang lại tiềm năng thu nhập không giới hạn.",
+    "q2": "Có bao nhiêu cấp độ và chi phí là bao nhiêu?",
+    "a2": "Có 16 cấp độ với giá cố định bằng SOL: L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Mỗi cấp độ hoạt động độc lập với hàng đợi riêng — bạn có thể kích hoạt bất kỳ cấp độ nào theo bất kỳ thứ tự nào.",
+    "q3": "Tôi kiếm được bao nhiêu và tiền đi đâu?",
+    "a3": "Khi ai đó kích hoạt một cấp độ, thanh toán được phân phối ngay lập tức: 60% cho người đứng đầu hàng đợi (chủ sở hữu cấp độ), 13% cho người giới thiệu tuyến 1, 8% cho tuyến 2, 5% cho tuyến 3, và 14% cho kho bạc nền tảng. Mỗi chu kỳ (3 vị trí đầy), bạn nhận được 180% giá cấp độ. Tất cả chuyển khoản xảy ra nguyên tử trong một giao dịch blockchain.",
+    "q4": "Chương trình giới thiệu hoạt động như thế nào?",
+    "a4": "Khi bạn đăng ký, chuỗi giới thiệu của bạn được ghi trên chuỗi (sâu 3 cấp). Người giới thiệu của bạn kiếm được 13%, 8% và 5% từ mỗi lần kích hoạt cấp độ của bạn. Quan trọng: thưởng giới thiệu chỉ áp dụng nếu tuyến trên của bạn có cùng cấp độ hoạt động. Nếu không, phần của họ đi vào kho bạc. Điều này khuyến khích mọi người kích hoạt nhiều cấp độ hơn.",
+    "q5": "Điều gì xảy ra sau khi 3 vị trí của tôi đầy?",
+    "a5": "Cấp độ của bạn tự động 'tái chế' — vị trí của bạn đặt lại về 0, bộ đếm chu kỳ tăng thêm 1, và bạn vào lại cuối hàng đợi. Bạn giữ vị trí và tiếp tục kiếm từ cùng một lần kích hoạt cấp độ mãi mãi. Không có giới hạn về số chu kỳ bạn có thể hoàn thành.",
+    "q6": "Làm thế nào để bắt đầu?",
+    "a6": "Bước 1: Kết nối ví Phantom (hoặc ví Solana khác). Bước 2: Đăng ký hồ sơ người chơi — điều này tạo tài khoản trên chuỗi và ghi người giới thiệu của bạn. Bước 3: Kích hoạt Cấp độ 1 với 0.05 SOL. Bước 4: Chia sẻ liên kết giới thiệu để kiếm thưởng khi người khác tham gia. Bạn có thể theo dõi vị trí, chu kỳ và thu nhập trong thời gian thực trên bảng điều khiển.",
+    "q7": "Tiền của tôi có an toàn không? Ai đó có thể đánh cắp tiền của tôi không?",
+    "a7": "Tiền của bạn hoàn toàn an toàn. Nền tảng chạy trên các hợp đồng thông minh đã được xác minh, không thể thay đổi — không ai (kể cả nhà phát triển) có thể sửa đổi mã hoặc truy cập ví của bạn. Thanh toán đi trực tiếp từ ví đến ví mà không có trung gian. Hợp đồng bao gồm bảo vệ TxGuard chống giao dịch trùng lặp. Bạn không bao giờ giao quyền giữ tiền cho ai.",
+    "q8": "Nếu không ai kích hoạt sau tôi thì sao?",
+    "a8": "Vị trí của bạn trong hàng đợi là vĩnh viễn và không bao giờ hết hạn. Bạn chỉ cần đợi cho đến khi người chơi mới kích hoạt cấp độ. Hàng đợi là toàn cầu — tất cả người chơi trên thế giới chia sẻ cùng một hàng đợi cho mỗi cấp độ. Cấp độ càng phổ biến, vị trí của bạn càng đầy nhanh. Các cấp độ cao hơn có thể mất nhiều thời gian hơn nhưng cung cấp thanh toán lớn hơn."
+  },
+  "footer": {
+    "description": "Hệ thống ma trận X3 phi tập trung trên blockchain Solana. Thanh toán tức thì, cơ chế minh bạch, 100% on-chain.",
+    "smartContract": "Hợp đồng thông minh",
+    "contractAddress": "Địa chỉ hợp đồng",
+    "verifyExplorer": "Luôn xác minh địa chỉ hợp đồng trên Solana Explorer",
+    "viewOnExplorer": "Xem trên Explorer",
+    "platform": "Nền tảng",
+    "gameLevels": "Cấp độ trò chơi",
+    "resources": "Tài nguyên",
+    "howItWorks": "Cách thức hoạt động",
+    "docs": "Tài liệu",
+    "disclaimer": "Tuyên bố miễn trừ",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Đã kết nối ví",
+    "allRightsReserved": "Bảo lưu mọi quyền"
+  },
+  "wallet": {
+    "connect": "Kết nối ví",
+    "connecting": "Đang kết nối...",
+    "connected": "Đã kết nối",
+    "disconnect": "Ngắt kết nối",
+    "balance": "Số dư",
+    "address": "Địa chỉ",
+    "copyAddress": "Sao chép địa chỉ",
+    "viewExplorer": "Xem trong Explorer",
+    "switchWallet": "Đổi ví",
+    "installPhantom": "Cài đặt Phantom",
+    "phantomRequired": "Yêu cầu ví Phantom",
+    "readyToConnect": "Sẵn sàng kết nối",
+    "supported": "Được hỗ trợ",
+    "connectToContinue": "Kết nối để tiếp tục",
+    "phantomNotFound": "Không tìm thấy Phantom",
+    "pleaseInstall": "Vui lòng cài đặt tiện ích mở rộng Phantom wallet",
+    "byConnecting": "Bằng cách kết nối, bạn đồng ý với Điều khoản Dịch vụ",
+    "notInstalled": "Chưa cài đặt"
+  },
+  "guard": {
+    "title": "Kết nối ví của bạn",
+    "description": "Để truy cập bảng điều khiển, vui lòng kết nối ví Solana của bạn. Ví của bạn cần thiết để tương tác với blockchain.",
+    "backHome": "Quay lại trang chủ",
+    "registerRequired": "Yêu Cầu Đăng Ký",
+    "registerRequiredDesc": "Để truy cập bảng điều khiển, bạn cần đăng ký làm người chơi. Miễn phí và chỉ mất vài giây."
+  },
+  "docs": {
+    "title": "Tài liệu",
+    "startPlaying": "Bắt đầu chơi",
+    "overview": "Tổng quan",
+    "gettingStarted": "Bắt đầu",
+    "matrixSystem": "Hệ thống ma trận X3",
+    "earnings": "Thu nhập và thanh toán",
+    "referrals": "Chương trình giới thiệu",
+    "security": "Bảo mật"
+  },
+  "disclaimer": {
+    "title": "Tuyên bố miễn trừ",
+    "understand": "Tôi hiểu",
+    "intro": "Vui lòng đọc kỹ tuyên bố miễn trừ này trước khi sử dụng Solana Program X3. Bằng cách truy cập hoặc sử dụng nền tảng, bạn đồng ý bị ràng buộc bởi các điều khoản này.",
+    "lastUpdated": "Cập nhật lần cuối: Tháng 12 năm 2024",
+    "importantNotice": "Thông báo Quan trọng",
+    "importantNoticeText": "Đầu tư tiền điện tử có rủi ro cao. Chỉ đầu tư số tiền bạn có thể chấp nhận mất. Nền tảng này hoạt động trên các hợp đồng thông minh không thể thay đổi—giao dịch không thể hoàn tác.",
+    "acceptanceTitle": "Chấp nhận Điều khoản",
+    "acceptanceText": "Bằng cách sử dụng Solana Program X3, bạn thừa nhận rằng bạn đã đọc, hiểu và đồng ý bị ràng buộc bởi tuyên bố miễn trừ này và tất cả các điều khoản và điều kiện áp dụng.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Bản chất của Nền tảng",
+        "content": "Solana Program X3 là một ứng dụng phi tập trung (dApp) được xây dựng trên blockchain Solana. Nền tảng hoạt động thông qua các hợp đồng thông minh không thể thay đổi được triển khai on-chain. Sau khi triển khai, mã hợp đồng thông minh không thể được sửa đổi, thay đổi hoặc kiểm soát bởi bất kỳ bên nào, bao gồm cả các nhà phát triển.\n\nNền tảng tạo điều kiện cho một hệ thống dựa trên ma trận nơi người tham gia có thể kích hoạt cấp độ và nhận thanh toán dựa trên cơ chế được xác định trong hợp đồng thông minh. Tất cả các giao dịch được thực hiện tự động bởi blockchain theo các quy tắc được xác định trước."
+      },
+      "noFinancialAdvice": {
+        "title": "Không phải Tư vấn Tài chính",
+        "content": "Không có gì trên nền tảng này cấu thành tư vấn tài chính, đầu tư, pháp lý hoặc thuế. Thông tin được cung cấp chỉ nhằm mục đích giáo dục và thông tin. Bạn nên tham khảo ý kiến các chuyên gia có trình độ trước khi đưa ra bất kỳ quyết định tài chính nào.\n\nTham gia vào các nền tảng dựa trên blockchain liên quan đến rủi ro đáng kể. Hiệu suất trong quá khứ không đảm bảo kết quả trong tương lai. Giá trị của tiền điện tử có thể biến động đáng kể và bạn có thể mất một phần hoặc toàn bộ khoản đầu tư của mình."
+      },
+      "riskAcknowledgment": {
+        "title": "Thừa nhận Rủi ro",
+        "content": "Bằng cách sử dụng Solana Program X3, bạn thừa nhận và chấp nhận các rủi ro sau:\n\n• Rủi ro Hợp đồng Thông minh: Mặc dù mã đã được phát triển cẩn thận, không có hợp đồng thông minh nào hoàn toàn không có lỗ hổng hoặc lỗi tiềm ẩn.\n\n• Rủi ro Thị trường: Giá trị của SOL và các loại tiền điện tử khác có thể rất biến động và có thể dẫn đến tổn thất đáng kể.\n\n• Rủi ro Quy định: Quy định về tiền điện tử khác nhau tùy theo khu vực pháp lý và có thể thay đổi. Bạn có trách nhiệm đảm bảo tuân thủ các luật áp dụng.\n\n• Rủi ro Mạng: Blockchain Solana có thể gặp tắc nghẽn, gián đoạn hoặc các vấn đề kỹ thuật khác có thể ảnh hưởng đến giao dịch.\n\n• Mất Quyền Truy cập: Nếu bạn mất quyền truy cập vào ví hoặc khóa riêng tư của mình, tiền của bạn có thể trở nên không thể truy cập vĩnh viễn."
+      },
+      "noGuarantees": {
+        "title": "Không có Đảm bảo",
+        "content": "Nền tảng không đưa ra bất kỳ đảm bảo nào liên quan đến:\n\n• Số tiền hoặc thời điểm của bất kỳ thu nhập hoặc lợi nhuận nào\n• Hoạt động liên tục của nền tảng\n• Khả năng sử dụng hoặc chức năng của bất kỳ tính năng nào\n• Độ chính xác của bất kỳ thông tin nào được hiển thị\n• Hành động của những người tham gia khác\n\nKết quả của bạn hoàn toàn phụ thuộc vào hoạt động của những người tham gia khác và cơ chế của hợp đồng thông minh. Không có đảm bảo rằng bạn sẽ nhận được bất kỳ khoản thanh toán nào hoặc thu hồi khoản đầu tư ban đầu của mình."
+      },
+      "yourResponsibilities": {
+        "title": "Trách nhiệm của Bạn",
+        "content": "Là người tham gia, bạn hoàn toàn chịu trách nhiệm về:\n\n• Tiến hành nghiên cứu riêng trước khi tham gia\n• Bảo mật ví và khóa riêng tư của bạn\n• Hiểu cơ chế của nền tảng\n• Tuân thủ tất cả các luật và quy định áp dụng trong khu vực pháp lý của bạn\n• Báo cáo bất kỳ thu nhập nào cho mục đích thuế theo yêu cầu\n• Đưa ra quyết định sáng suốt về sự tham gia của bạn\n\nBạn chỉ nên tham gia với số tiền mà bạn có thể chấp nhận mất hoàn toàn."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Hạn chế về Khu vực Pháp lý",
+        "content": "Nền tảng có thể không khả dụng hoặc bị hạn chế ở một số khu vực pháp lý nhất định. Bạn có trách nhiệm xác định xem việc sử dụng nền tảng của bạn có hợp pháp trong khu vực pháp lý của bạn hay không.\n\nBằng cách truy cập và sử dụng nền tảng, bạn tuyên bố và đảm bảo rằng bạn được phép hợp pháp làm như vậy trong khu vực pháp lý của bạn và bạn sẽ tuân thủ tất cả các luật và quy định địa phương, tiểu bang, quốc gia và quốc tế áp dụng."
+      },
+      "thirdPartyServices": {
+        "title": "Dịch vụ Bên thứ ba",
+        "content": "Nền tảng tích hợp với các dịch vụ bên thứ ba bao gồm:\n\n• Mạng Blockchain Solana\n• Nhà cung cấp Ví (Phantom, Solflare, v.v.)\n• Nhà cung cấp RPC\n\nChúng tôi không có quyền kiểm soát đối với các dịch vụ bên thứ ba này và không chịu trách nhiệm về khả năng sử dụng, bảo mật hoặc bất kỳ vấn đề nào phát sinh từ việc sử dụng chúng."
+      },
+      "limitationOfLiability": {
+        "title": "Giới hạn Trách nhiệm",
+        "content": "Ở mức tối đa được pháp luật cho phép, các nhà phát triển, người đóng góp và bất kỳ bên liên quan nào sẽ không chịu trách nhiệm về bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, đặc biệt, hậu quả hoặc mẫu mực nào phát sinh từ:\n\n• Việc sử dụng hoặc không thể sử dụng nền tảng của bạn\n• Bất kỳ giao dịch nào được thực hiện thông qua nền tảng\n• Bất kỳ quyền truy cập trái phép nào vào ví hoặc tiền của bạn\n• Bất kỳ lỗi hoặc thiếu sót nào trong mã hợp đồng thông minh\n• Bất kỳ vấn đề nào khác liên quan đến nền tảng\n\nGiới hạn này áp dụng bất kể lý thuyết pháp lý và ngay cả khi chúng tôi đã được thông báo về khả năng xảy ra thiệt hại như vậy."
+      },
+      "modifications": {
+        "title": "Sửa đổi",
+        "content": "Tuyên bố miễn trừ này có thể được cập nhật theo thời gian. Mặc dù mã hợp đồng thông minh không thể thay đổi, nhưng giao diện front-end và tuyên bố miễn trừ này có thể được sửa đổi. Bạn có trách nhiệm xem xét tuyên bố miễn trừ này định kỳ để biết bất kỳ thay đổi nào.\n\nViệc tiếp tục sử dụng nền tảng sau bất kỳ sửa đổi nào tạo thành sự chấp nhận các điều khoản đã cập nhật."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "content": "Nếu bạn có bất kỳ câu hỏi nào về tuyên bố miễn trừ này hoặc nền tảng, vui lòng liên hệ qua kênh hỗ trợ Telegram chính thức của chúng tôi.\n\nHãy nhớ: Không bao giờ chia sẻ khóa riêng tư hoặc cụm từ seed của bạn với bất kỳ ai, bao gồm bất kỳ ai tuyên bố là từ nhóm của chúng tôi."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Đã sao chép địa chỉ",
+    "signatureCopied": "Đã sao chép chữ ký",
+    "contractCopied": "Đã sao chép địa chỉ hợp đồng",
+    "linkCopied": "Đã sao chép liên kết",
+    "copyFailed": "Sao chép thất bại",
+    "walletNotConnected": "Ví chưa kết nối",
+    "connectWalletFirst": "Kết nối ví trước",
+    "invalidLevel": "Cấp độ không hợp lệ",
+    "activationSent": "Đã gửi kích hoạt",
+    "activationSentLevel": "Đã gửi kích hoạt L{level}",
+    "activatingLevel": "Đang kích hoạt cấp {level}...",
+    "activationError": "Lỗi kích hoạt",
+    "registrationSuccess": "Đăng ký người chơi thành công",
+    "registrationFailed": "Đăng ký thất bại",
+    "profileCreated": "Đã tạo hồ sơ",
+    "referralActivatedLevel": "Ai đó từ mạng giới thiệu của bạn đã kích hoạt cấp {level}",
+    "creatingProfile": "Đang tạo hồ sơ...",
+    "insufficientFundsForRegistration": "Không đủ tiền để đăng ký. Bạn cần ít nhất 0.0030 SOL.",
+    "transactionProcessing": "Đang xử lý giao dịch...",
+    "clipboardNotSupported": "Khay nhớ tạm không được hỗ trợ",
+    "playerRegistered": "Người chơi đã đăng ký",
+    "viewInExplorer": "Xem trong Explorer",
+    "closeNotification": "Đóng thông báo",
+    "comingSoon": "Sắp ra mắt",
+    "loadError": "Tải dữ liệu thất bại",
+    "activationFinalized": "Kích hoạt hoàn tất",
+    "registrationFinalized": "Đăng ký hoàn tất",
+    "checkingPlayerState": "Đang kiểm tra trạng thái người chơi…",
+    "playerNotFound": "Không tìm thấy người chơi — nhấn Đăng ký",
+    "levelAlreadyActivated": "Cấp đã được kích hoạt",
+    "pressActivate": "Nhấn Kích hoạt để kích hoạt cấp này"
+  },
+  "overlay": {
+    "processing": "Đang xử lý giao dịch..."
+  },
+  "nav": {
+    "dashboard": "Bảng điều khiển",
+    "home": "Trang chủ",
+    "levels": "Cấp độ",
+    "history": "Lịch sử",
+    "information": "Thông tin",
+    "info": "Thông tin",
+    "partnerBonus": "Thưởng đối tác",
+    "partners": "Đối tác",
+    "telegram": "Telegram",
+    "support": "Hỗ trợ",
+    "more": "Thêm"
+  },
+  "mobileMenu": {
+    "connectWallet": "Kết nối ví",
+    "connecting": "Đang kết nối...",
+    "createProfile": "Tạo hồ sơ",
+    "creatingProfile": "Đang tạo hồ sơ...",
+    "goToDashboard": "Đến bảng điều khiển"
+  },
+  "dashboardPage": {
+    "title": "Bảng điều khiển",
+    "subtitle": "Cấp độ, thu nhập và hoạt động của bạn",
+    "yourStatistics": "Thống kê của bạn",
+    "onChainData": "Dữ liệu On-Chain",
+    "activeLevels": "Cấp độ hoạt động",
+    "next": "Tiếp theo",
+    "allDone": "Hoàn tất",
+    "completedCycles": "Chu kỳ hoàn thành",
+    "slotsEquals": "3 slot = 1 chu kỳ",
+    "estEarnings": "Thu nhập ước tính",
+    "ownerPayout": "60% thanh toán chủ sở hữu",
+    "totalSpent": "Tổng chi tiêu",
+    "levelActivations": "kích hoạt cấp độ",
+    "yourLevels": "Cấp độ của bạn",
+    "slotsAndCycles": "Slot và Chu kỳ",
+    "viewAll": "Xem tất cả",
+    "slots": "slot",
+    "cycle": "chu kỳ",
+    "cycles": "chu kỳ",
+    "howItWorks": "Cách hoạt động:",
+    "howItWorksDesc": "Khi 3 người chơi kích hoạt cấp độ của bạn, bạn nhận 60% mỗi khoản thanh toán. Phần còn lại → người giới thiệu (26%) + kho bạc (14%).",
+    "latestActivity": "Hoạt động gần đây",
+    "transactionHistory": "Lịch sử giao dịch",
+    "live": "trực tiếp",
+    "noActivity": "Chưa có hoạt động. Kích hoạt cấp độ đầu tiên để bắt đầu.",
+    "contractIdCopied": "Đã sao chép ID hợp đồng"
+  },
+  "levelsPage": {
+    "title": "Cấp độ",
+    "subtitle": "Kích hoạt cấp độ để kiếm SOL",
+    "active": "Hoạt động",
+    "ready": "sẵn sàng",
+    "noWallet": "không có ví",
+    "registerFirst": "Vui lòng đăng ký người chơi trước",
+    "levelAlreadyActive": "đã kích hoạt",
+    "activated": "đã kích hoạt"
+  },
+  "historyPage": {
+    "title": "Lịch sử giao dịch",
+    "subtitle": "Tất cả kích hoạt, thu nhập và sự kiện hệ thống",
+    "wallet": "Ví",
+    "notConnected": "Chưa kết nối",
+    "totalEvents": "Tổng sự kiện",
+    "activations": "Kích hoạt",
+    "cyclesDone": "Chu kỳ hoàn thành",
+    "pending": "Đang chờ",
+    "all": "Tất cả",
+    "earnings": "Thu nhập",
+    "connectWallet": "Kết nối ví để xem lịch sử",
+    "noTransactions": "Chưa có giao dịch. Kích hoạt cấp độ đầu tiên để bắt đầu.",
+    "noEventsFound": "Không tìm thấy sự kiện {filter}.",
+    "transactionTypes": "Loại giao dịch",
+    "activationsDesc": "Kích hoạt và tái chế cấp độ của bạn. Đây là các giao dịch đi.",
+    "earningsDesc": "Thanh toán nhận được: 60% thanh toán chủ sở hữu + thưởng giới thiệu (13%, 8%, 5%).",
+    "pendingDesc": "Giao dịch đang chờ xác nhận blockchain.",
+    "cyclesDesc": "Chu kỳ hoàn thành — 3 slot đầy, sau đó tự động tái chế vào hàng đợi.",
+    "walletCopied": "Đã sao chép ví",
+    "connectFirst": "Vui lòng kết nối ví trước",
+    "copyFailed": "Sao chép thất bại"
+  },
+  "informationPage": {
+    "title": "Cách hoạt động",
+    "subtitle": "Mọi thứ bạn cần biết về nền tảng",
+    "totalLevels": "Tổng cấp độ",
+    "slotsPerCycle": "Slot mỗi chu kỳ",
+    "yourPayout": "Thanh toán của bạn",
+    "network": "Mạng",
+    "whatIsThis": "Nền tảng này là gì?",
+    "whatIsThisDesc": "Đây là ứng dụng phi tập trung trên blockchain Solana. Mọi thứ chạy tự động thông qua hợp đồng thông minh — không có quản trị viên, không có trung gian. Bạn kích hoạt cấp độ, kiếm tiền khi người khác tham gia sau bạn, và quy trình lặp lại mãi mãi.",
+    "transparent": "Minh bạch",
+    "transparentDesc": "Tất cả giao dịch hiển thị trên blockchain Solana. Không có gì ẩn.",
+    "automatic": "Tự động",
+    "automaticDesc": "Hợp đồng thông minh xử lý thanh toán. Không chậm trễ, không cần phê duyệt.",
+    "unlimited": "Không giới hạn",
+    "unlimitedDesc": "Mỗi cấp độ có thể kiếm mãi mãi. Không giới hạn chu kỳ hoặc thu nhập.",
+    "simpleProcess": "Quy trình 4 bước đơn giản",
+    "step1Title": "Kích hoạt cấp độ",
+    "step1Desc": "Chọn bất kỳ cấp độ nào từ L01 đến L16. Trả giá kích hoạt một lần. Bây giờ bạn sở hữu cấp độ này và vào hàng đợi.",
+    "step2Title": "Chờ 3 kích hoạt",
+    "step2Desc": "Khi 3 người chơi khác kích hoạt cùng cấp độ sau bạn, mỗi người trả 60% giá cấp độ cho bạn. Tổng cộng 3 khoản thanh toán.",
+    "step3Title": "Chu kỳ hoàn thành",
+    "step3Desc": "Sau khi nhận 3 khoản thanh toán, cấp độ của bạn tự động tái chế. Bạn trở lại hàng đợi và có thể kiếm lại.",
+    "step4Title": "Lặp lại mãi mãi",
+    "step4Desc": "Chu kỳ lặp lại vô hạn. Một lần kích hoạt = tiềm năng kiếm tiền không giới hạn miễn là người chơi mới tiếp tục tham gia.",
+    "whereMoneyGoes": "Tiền đi đâu?",
+    "moneyGoesDesc": "Khi ai đó kích hoạt cấp độ, thanh toán được chia ngay lập tức:",
+    "youOwner": "Bạn (Chủ sở hữu)",
+    "yourEarnings": "Thu nhập mỗi kích hoạt",
+    "referrerL1": "Người giới thiệu L1",
+    "directInviter": "Người mời trực tiếp của bạn",
+    "referrerL2": "Người giới thiệu L2",
+    "inviterOfInviter": "Người mời của người mời bạn",
+    "referrerL3": "Người giới thiệu L3",
+    "thirdLevelUpline": "Tuyến trên cấp ba",
+    "platform": "Nền tảng",
+    "projectDevelopment": "Phát triển dự án",
+    "exampleCalculation": "Ví dụ tính toán",
+    "exampleDesc": "L01 giá 0.05 SOL. Khi 3 người kích hoạt sau bạn:",
+    "youReceive": "Bạn nhận:",
+    "perCycle": "mỗi chu kỳ",
+    "levelPrices": "Giá cấp độ",
+    "levelPricesDesc": "16 cấp độ có sẵn. Cấp độ cao hơn = thu nhập cao hơn mỗi chu kỳ.",
+    "allPricesInSol": "Tất cả giá tính bằng SOL",
+    "referralBonuses": "Thưởng giới thiệu",
+    "referralBonusesDesc": "Khi người bạn mời kiếm từ cấp độ của họ, bạn cũng nhận thưởng:",
+    "directReferral": "Giới thiệu trực tiếp (Tuyến 1)",
+    "peopleInvitedDirectly": "Người bạn mời trực tiếp",
+    "secondLine": "Tuyến hai (Tuyến 2)",
+    "peopleInvitedByReferrals": "Người được mời bởi người giới thiệu của bạn",
+    "thirdLine": "Tuyến ba (Tuyến 3)",
+    "thirdLevelNetwork": "Cấp ba của mạng lưới bạn",
+    "referralNote": "Lưu ý: Bạn chỉ nhận thưởng giới thiệu cho các cấp độ đã kích hoạt. Nếu không có L05 hoạt động, thưởng giới thiệu từ L05 sẽ đến nền tảng.",
+    "commonQuestions": "Câu hỏi thường gặp",
+    "q1": "Tôi có cần kích hoạt cấp độ theo thứ tự không?",
+    "a1": "Không. Bạn có thể kích hoạt bất kỳ cấp độ nào bất cứ lúc nào. L01 và L16 hoàn toàn độc lập.",
+    "q2": "Điều gì xảy ra khi chu kỳ của tôi hoàn thành?",
+    "a2": "Cấp độ của bạn tự động quay lại hàng đợi. Bạn có thể kiếm từ nó lặp đi lặp lại.",
+    "q3": "Tôi có thể mất tiền không?",
+    "a3": "Một khi đã kích hoạt, cấp độ hoạt động mãi mãi. Bạn không thể mất nó. Tất cả thanh toán được bảo đảm bởi hợp đồng thông minh.",
+    "q4": "Thanh toán nhanh như thế nào?",
+    "a4": "Tức thì. Ngay khi ai đó kích hoạt, SOL đi thẳng vào ví của bạn. Không chậm trễ.",
+    "q5": "Nếu tôi không có người giới thiệu thì sao?",
+    "a5": "Bạn vẫn kiếm 60% từ cấp độ của mình. Thưởng giới thiệu là thu nhập thêm.",
+    "gettingStarted": "Bắt đầu",
+    "getWallet": "Lấy ví",
+    "getWalletDesc": "Tải ví Phantom hoặc Backpack cho trình duyệt hoặc điện thoại của bạn.",
+    "getSol": "Lấy SOL",
+    "getSolDesc": "Mua SOL trên bất kỳ sàn giao dịch nào (Binance, Coinbase, v.v.) và gửi vào ví của bạn.",
+    "minimumForL01": "Tối thiểu cho L01: ~0.06 SOL (bao gồm phí)",
+    "connectWallet": "Kết nối ví",
+    "connectWalletDesc": "Nhấp vào \"Kết nối\" ở tiêu đề. Phê duyệt kết nối trong ví của bạn.",
+    "activateLevels": "Kích hoạt cấp độ",
+    "activateLevelsDesc": "Đi đến trang Cấp độ, chọn một cấp độ, nhấp Kích hoạt. Xác nhận trong ví. Xong."
+  },
+  "referralTree": {
+    "title": "Cây Giới Thiệu",
+    "subtitle": "Mạng giới thiệu hoạt động của bạn ({count} tổng cộng)",
+    "total": "Tổng",
+    "noReferrals": "Chưa có giới thiệu",
+    "shareLink": "Chia sẻ liên kết giới thiệu của bạn để bắt đầu xây dựng mạng",
+    "line": "Tuyến {number}",
+    "noReferralsInLine": "Không có giới thiệu trong tuyến này",
+    "referralsCount": "{count} {count, plural, other {giới thiệu}}",
+    "copyAddress": "Sao chép địa chỉ",
+    "refresh": "Làm mới",
+    "yourLink": "Liên kết giới thiệu của bạn",
+    "copyLink": "Sao chép liên kết",
+    "linkCopied": "Đã sao chép liên kết!",
+    "addressCopied": "Đã sao chép địa chỉ!",
+    "viewExplorer": "Xem trên Explorer",
+    "copied": "Đã sao chép!",
+    "levels": "Cấp độ:",
+    "loadingLevels": "Đang tải cấp độ..."
+  },
+  "partnerBonusPage": {
+    "title": "Chương trình đối tác",
+    "subtitle": "Mời người khác và kiếm từ hoạt động của họ",
+    "totalEarned": "Tổng kiếm được",
+    "line1": "Tuyến 1 (13%)",
+    "line2": "Tuyến 2 (8%)",
+    "line3": "Tuyến 3 (5%)",
+    "yourReferralLink": "Liên kết giới thiệu của bạn",
+    "copyLink": "Sao chép liên kết",
+    "connectWalletForLink": "Kết nối ví để lấy liên kết giới thiệu",
+    "linkNote": "Khi ai đó đăng ký qua liên kết của bạn, họ trở thành người giới thiệu Tuyến 1 của bạn vĩnh viễn.",
+    "howReferralWorks": "Thưởng giới thiệu hoạt động thế nào",
+    "step1Title": "Chia sẻ liên kết",
+    "step1Desc": "Bất kỳ ai đăng ký qua liên kết của bạn trở thành người giới thiệu Tuyến 1.",
+    "step2Title": "Họ kích hoạt cấp độ",
+    "step2Desc": "Khi người giới thiệu của bạn kiếm từ cấp độ của họ, bạn nhận một tỷ lệ phần trăm.",
+    "step3Title": "Bạn kiếm tự động",
+    "step3Desc": "Thưởng được trả ngay vào ví của bạn. Không cần yêu cầu.",
+    "payoutStructure": "Cấu trúc thanh toán giới thiệu",
+    "directReferrals": "Tuyến 1 — Giới thiệu trực tiếp",
+    "directReferralsDesc": "Người bạn mời trực tiếp",
+    "secondLevel": "Tuyến 2 — Cấp hai",
+    "secondLevelDesc": "Người giới thiệu của người giới thiệu bạn",
+    "thirdLevel": "Tuyến 3 — Cấp ba",
+    "thirdLevelDesc": "Thế hệ thứ ba của mạng lưới bạn",
+    "important": "Quan trọng",
+    "importantDesc": "Bạn chỉ nhận thưởng giới thiệu cho các cấp độ đã kích hoạt. Nếu người giới thiệu của bạn kiếm từ L05 nhưng bạn không có L05 hoạt động, thưởng đó đến nền tảng.",
+    "referralActivity": "Hoạt động giới thiệu",
+    "refresh": "Làm mới",
+    "loading": "Đang tải...",
+    "noActivity": "Chưa có hoạt động giới thiệu",
+    "noActivityDesc": "Chia sẻ liên kết để bắt đầu kiếm thưởng giới thiệu",
+    "showingOf": "Hiển thị {count} trong {total} giao dịch",
+    "tipsForSuccess": "Mẹo thành công",
+    "tip1Title": "Kích hoạt tất cả cấp độ",
+    "tip1Desc": "Càng nhiều cấp độ bạn có, càng nhiều thưởng giới thiệu bạn có thể nhận.",
+    "tip2Title": "Xây dựng mạng lưới",
+    "tip2Desc": "3 tuyến sâu nghĩa là thu nhập thụ động từ người giới thiệu của người giới thiệu bạn.",
+    "tip3Title": "Chia sẻ liên tục",
+    "tip3Desc": "Liên kết của bạn không bao giờ hết hạn. Tiếp tục chia sẻ để phát triển mạng lưới.",
+    "tip4Title": "Giúp đỡ đội của bạn",
+    "tip4Desc": "Khi người giới thiệu của bạn thành công, bạn kiếm nhiều hơn. Hỗ trợ họ.",
+    "connectFirst": "Vui lòng kết nối ví trước",
+    "linkCopied": "Đã sao chép liên kết giới thiệu",
+    "copyFailed": "Sao chép thất bại",
+    "failedToLoad": "Không thể tải lịch sử đối tác",
+    "registration": "Đăng ký",
+    "newReferral": "Người giới thiệu mới"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Tham gia cộng đồng và nhận hỗ trợ",
+    "communityGroup": "Nhóm Cộng Đồng",
+    "communityDesc": "Tham gia nhóm Telegram chính thức của chúng tôi. Trò chuyện với người chơi khác, chia sẻ chiến lược, nhận cập nhật và thông báo.",
+    "joinGroup": "Tham Gia Nhóm",
+    "copyLink": "Sao Chép Liên Kết",
+    "support": "Hỗ Trợ",
+    "supportDesc": "Cần trợ giúp? Liên hệ trực tiếp với đội ngũ hỗ trợ. Chúng tôi phản hồi nhanh chóng tất cả câu hỏi về nền tảng.",
+    "contactSupport": "Liên Hệ Hỗ Trợ",
+    "whatYouGet": "Bạn Nhận Được Gì",
+    "realTimeUpdates": "Cập Nhật Thời Gian Thực",
+    "realTimeUpdatesDesc": "Là người đầu tiên biết về các tính năng mới, cập nhật và thông báo.",
+    "communitySupport": "Hỗ Trợ Cộng Đồng",
+    "communitySupportDesc": "Nhận trợ giúp từ người chơi có kinh nghiệm và chia sẻ kiến thức của bạn.",
+    "directAccess": "Truy Cập Trực Tiếp",
+    "directAccessDesc": "Truy cập nhanh đến đội ngũ hỗ trợ cho bất kỳ vấn đề kỹ thuật nào.",
+    "networkGrowth": "Phát Triển Mạng Lưới",
+    "networkGrowthDesc": "Kết nối với người chơi khác và mở rộng mạng lưới giới thiệu của bạn."
+  },
+  "docsPage": {
+    "title": "Tài liệu",
+    "label": "Tài liệu",
+    "heading": "Cách Solana Program X3 hoạt động",
+    "description": "Tài liệu kỹ thuật đầy đủ để hiểu hệ thống ma trận X3, cơ chế thanh toán và cách tối đa hóa thu nhập của bạn.",
+    "startPlaying": "Bắt đầu chơi",
+    "swipeHint": "Vuốt trái/phải để điều hướng",
+    "of": "/",
+    "more": "Thêm",
+    "footerText": "Solana Program X3 — Ma trận phi tập trung trên Solana Blockchain",
+    "sections": {
+      "overview": {
+        "title": "Tổng quan",
+        "shortTitle": "Tổng quan",
+        "content1": {
+          "heading": "Solana Program X3 là gì?",
+          "text": "Solana Program X3 là một hệ thống ma trận phi tập trung hoàn toàn được xây dựng trên blockchain Solana. Nó hoạt động thông qua các hợp đồng thông minh đã được xác minh mà không có kiểm soát tập trung, có nghĩa là không ai có thể sửa đổi các quy tắc hoặc truy cập vào tiền của bạn.\n\nNền tảng sử dụng mô hình ma trận X3 trong đó mỗi cấp có một hàng đợi toàn cầu. Khi bạn kích hoạt một cấp, bạn vào hàng đợi. Khi người chơi mới kích hoạt cùng cấp, họ lấp đầy các slot của bạn (3 slot mỗi chu kỳ). Khi tất cả các slot được lấp đầy, bạn nhận thanh toán và tự động nhập lại hàng đợi cho các chu kỳ không giới hạn."
+        },
+        "content2": {
+          "heading": "Tính năng chính",
+          "text": "• 16 cấp độc lập với giá cố định (0.05 - 8.7 SOL)\n• 3 slot mỗi chu kỳ với tái chế tự động\n• 60% thanh toán cho chủ sở hữu cấp mỗi kích hoạt\n• Tổng cộng 26% phần thưởng giới thiệu (13% + 8% + 5%)\n• Chuyển tiền ví-ví tức thì\n• Không có độ trễ rút tiền hoặc trung gian\n• Mã hợp đồng thông minh bất biến"
+        },
+        "content3": {
+          "heading": "Tại sao blockchain Solana?",
+          "text": "Solana được chọn vì hiệu suất vượt trội:\n\n• Tốc độ giao dịch: ~400ms thời gian xác nhận\n• Phí thấp: Phần nhỏ của một xu mỗi giao dịch\n• Thông lượng cao: 65,000+ giao dịch mỗi giây\n• Phi tập trung: Hàng nghìn trình xác thực trên toàn thế giới\n• Thành tích đã được chứng minh: Một trong những blockchain hàng đầu theo TVL"
+        },
+        "content4": {
+          "heading": "Cách bạn kiếm tiền",
+          "text": "Có hai cách để kiếm tiền trên nền tảng:\n\n1. Sở hữu cấp: Kích hoạt cấp và nhận 60% từ mỗi người chơi kích hoạt sau bạn (3 thanh toán = 180% mỗi chu kỳ)\n\n2. Tiền thưởng giới thiệu: Mời người khác và kiếm 13%, 8% và 5% từ mạng 3 tuyến của bạn\n\nCả hai phương pháp kiếm tiền hoạt động đồng thời và tăng thu nhập của bạn."
+        },
+        "content5": {
+          "heading": "Tính minh bạch hợp đồng thông minh",
+          "text": "Toàn bộ nền tảng chạy trên các hợp đồng thông minh mã nguồn mở đã được xác minh:\n\n• Địa chỉ hợp đồng có thể xem công khai trên Solana Explorer\n• Tất cả giao dịch được ghi lại trên blockchain\n• Bất kỳ ai cũng có thể xác minh mã và logic\n• Không có chức năng ẩn hoặc cửa sau\n• Hoạt động hoàn toàn không cần tin cậy"
+        }
+      },
+      "levels": {
+        "title": "Hệ thống cấp",
+        "shortTitle": "Cấp",
+        "content1": {
+          "heading": "Giá cấp",
+          "text": "Hệ thống có 16 cấp với giá cố định trong SOL:\n\nCấp 1: 0.05 SOL    Cấp 9: 3.25 SOL\nCấp 2: 0.18 SOL    Cấp 10: 3.90 SOL\nCấp 3: 0.36 SOL    Cấp 11: 4.65 SOL\nCấp 4: 0.68 SOL    Cấp 12: 5.45 SOL\nCấp 5: 1.10 SOL    Cấp 13: 6.40 SOL\nCấp 6: 1.55 SOL    Cấp 14: 7.35 SOL\nCấp 7: 2.10 SOL    Cấp 15: 8.00 SOL\nCấp 8: 2.65 SOL    Cấp 16: 8.70 SOL\n\nMỗi cấp hoạt động độc lập với hàng đợi toàn cầu riêng. Bạn có thể kích hoạt các cấp theo bất kỳ thứ tự nào."
+        },
+        "content2": {
+          "heading": "Cách các cấp hoạt động",
+          "text": "1. Bạn kích hoạt một cấp bằng cách trả giá cố định\n2. Kích hoạt của bạn được ghi nhận on-chain và bạn vào hàng đợi toàn cầu\n3. 3 người chơi tiếp theo kích hoạt cùng cấp sẽ lấp đầy các slot của bạn\n4. Bạn nhận 60% thanh toán của mỗi người chơi (tổng cộng 180% mỗi chu kỳ)\n5. Sau khi 3 slot được lấp đầy, bạn tự động nhập lại hàng đợi\n6. Chu kỳ này lặp lại vô hạn từ một lần kích hoạt"
+        },
+        "content3": {
+          "heading": "Độc lập cấp",
+          "text": "Mỗi trong số 16 cấp hoạt động hoàn toàn độc lập:\n\n• Hàng đợi riêng cho mỗi cấp\n• Không có điều kiện tiên quyết — kích hoạt bất kỳ cấp nào bất cứ lúc nào\n• Nhiều cấp có thể hoạt động đồng thời\n• Mỗi cấp kiếm tiền riêng biệt\n• Tiến trình trên một cấp không ảnh hưởng đến các cấp khác"
+        },
+        "content4": {
+          "heading": "Thu nhập theo cấp",
+          "text": "Thu nhập của bạn mỗi chu kỳ (3 slot được lấp đầy) cho mỗi cấp:\n\nL1: 0.09 SOL    L9: 5.85 SOL\nL2: 0.32 SOL    L10: 7.02 SOL\nL3: 0.65 SOL    L11: 8.37 SOL\nL4: 1.22 SOL    L12: 9.81 SOL\nL5: 1.98 SOL    L13: 11.52 SOL\nL6: 2.79 SOL    L14: 13.23 SOL\nL7: 3.78 SOL    L15: 14.40 SOL\nL8: 4.77 SOL    L16: 15.66 SOL\n\nCông thức: Giá cấp × 60% × 3 slot = Thu nhập chu kỳ"
+        },
+        "content5": {
+          "heading": "Cơ chế tự động tái chế",
+          "text": "Khi 3 slot của bạn được lấp đầy, cấp của bạn tự động tái chế:\n\n• Bộ đếm slot của bạn đặt lại về 0\n• Bộ đếm chu kỳ của bạn tăng lên 1\n• Bạn được di chuyển từ đầu hàng đợi đến cuối hàng đợi\n• Bạn tiếp tục kiếm tiền mà không cần hành động nào\n• Không cần thanh toán bổ sung\n\nĐiều này tạo ra tiềm năng kiếm tiền không giới hạn từ một lần kích hoạt."
+        }
+      },
+      "queue": {
+        "title": "Hàng đợi toàn cầu",
+        "shortTitle": "Hàng đợi",
+        "content1": {
+          "heading": "Cấu trúc hàng đợi",
+          "text": "Mỗi cấp duy trì một LevelPool với QueuePages phân trang. Tính năng chính:\n\n• Mỗi trang chứa tối đa 64 người chơi\n• Khi một trang đầy, trang mới được tự động tạo\n• Người chơi được xử lý theo thứ tự đến trước phục vụ trước\n• Vị trí của bạn là vĩnh viễn và không bao giờ hết hạn\n• Sau mỗi chu kỳ hoàn thành, bạn nhập lại ở cuối hàng đợi"
+        },
+        "content2": {
+          "heading": "Xử lý hàng đợi",
+          "text": "Khi một người chơi mới kích hoạt một cấp:\n\n1. Hợp đồng thông minh xác định đầu hàng đợi (người chơi đầu tiên trong hàng)\n2. Bộ đếm slots_filled của người chơi này tăng 1\n3. Thanh toán được phân phối (60% cho chủ sở hữu, giới thiệu, ngân quỹ)\n4. Nếu slots_filled đạt 3, cấp \"tái chế\":\n   - bộ đếm cycles tăng 1\n   - slots_filled đặt lại về 0\n   - Người chơi bị xóa khỏi đầu và thêm vào cuối\n5. Người chơi mới cũng vào cuối hàng đợi"
+        },
+        "content3": {
+          "heading": "Phân phối công bằng",
+          "text": "Hệ thống hàng đợi đảm bảo đối xử công bằng cho tất cả người tham gia:\n\n• Đến trước phục vụ trước — không thiên vị\n• Không có cách nào để bỏ qua hoặc thao túng vị trí hàng đợi\n• Mọi người đợi lượt của họ một cách bình đẳng\n• Hợp đồng thông minh tự động thực thi các quy tắc\n• Minh bạch và có thể xác minh on-chain"
+        },
+        "content4": {
+          "heading": "Tốc độ hàng đợi",
+          "text": "Tốc độ lấp đầy slot của bạn phụ thuộc vào hoạt động cấp:\n\n• Cấp thấp hơn (L1-L5): Nhiều người chơi hơn, lấp đầy nhanh hơn\n• Cấp cao hơn (L11-L16): Ít người chơi hơn, lấp đầy chậm hơn\n• Hoạt động toàn cầu ảnh hưởng đến tất cả hàng đợi\n• Vị trí hàng đợi của bạn quan trọng — sớm hơn = nhanh hơn\n\nMẹo: Theo dõi hoạt động hàng đợi trong bảng điều khiển để theo dõi tiến trình."
+        },
+        "content5": {
+          "heading": "Vị trí vĩnh viễn",
+          "text": "Khi bạn kích hoạt một cấp, vị trí của bạn không bao giờ hết hạn:\n\n• Không có thời gian chờ hoặc hết hạn\n• Hàng đợi tồn tại mãi mãi trên blockchain\n• Bạn sẽ nhận thanh toán ngay cả sau nhiều tháng\n• Không cần bảo trì hoặc gia hạn\n• Hoàn toàn thụ động sau khi kích hoạt"
+        }
+      },
+      "payouts": {
+        "title": "Phân phối thanh toán",
+        "shortTitle": "Thanh toán",
+        "content1": {
+          "heading": "Phân tích thanh toán",
+          "text": "Mỗi kích hoạt phân phối 100% giá cấp:\n\n• 60% → Chủ sở hữu cấp (đầu hàng đợi)\n• 13% → Người giới thiệu Tuyến 1 (upline1)\n• 8% → Người giới thiệu Tuyến 2 (upline2)\n• 5% → Người giới thiệu Tuyến 3 (upline3)\n• 14% → Ngân quỹ nền tảng\n\nTất cả chuyển khoản xảy ra nguyên tử trong một giao dịch Solana duy nhất. Không có độ trễ, không có trạng thái chờ."
+        },
+        "content2": {
+          "heading": "Tính toán thu nhập",
+          "text": "Mỗi chu kỳ (3 slot được lấp đầy), bạn kiếm được:\n60% × 3 = 180% giá cấp\n\nVí dụ cho Cấp 5 (1.10 SOL):\n• Mỗi slot: 0.66 SOL (60% của 1.10)\n• Mỗi chu kỳ: 1.98 SOL (180% của 1.10)\n• ROI mỗi chu kỳ: +80% lợi nhuận\n\nKhông có giới hạn chu kỳ. Một kích hoạt = tiềm năng kiếm tiền không giới hạn."
+        },
+        "content3": {
+          "heading": "Chuyển khoản tức thì",
+          "text": "Thanh toán được thực hiện ngay lập tức qua hợp đồng thông minh:\n\n• Không có trạng thái chờ hoặc độ trễ\n• Chuyển khoản trực tiếp ví-ví\n• SOL xuất hiện trong ví của bạn ngay lập tức\n• Không cần yêu cầu thủ công\n• Không có số tiền rút tối thiểu"
+        },
+        "content4": {
+          "heading": "Tiềm năng thu nhập tổng thể",
+          "text": "Nếu bạn kích hoạt tất cả 16 cấp và hoàn thành nhiều chu kỳ:\n\nTổng chi phí cấp: ~42 SOL\nThu nhập mỗi chu kỳ: ~100 SOL (tất cả cấp)\n\nCộng với tiền thưởng giới thiệu từ mạng của bạn có thể tăng đáng kể thu nhập của bạn. Càng nhiều cấp bạn kích hoạt và mạng của bạn càng lớn, thu nhập của bạn càng cao."
+        },
+        "content5": {
+          "heading": "Theo dõi thu nhập của bạn",
+          "text": "Theo dõi thu nhập của bạn theo thời gian thực:\n\n• Bảng điều khiển hiển thị slot được lấp đầy theo cấp\n• Xem số lượng chu kỳ đã hoàn thành\n• Theo dõi tổng SOL đã kiếm được\n• Xem slot đang chờ lấp đầy\n• Lịch sử giao dịch có sẵn\n\nTất cả dữ liệu được lấy trực tiếp từ blockchain."
+        }
+      },
+      "referrals": {
+        "title": "Hệ thống giới thiệu",
+        "shortTitle": "Giới thiệu",
+        "content1": {
+          "heading": "Cách giới thiệu hoạt động",
+          "text": "Khi bạn đăng ký, chuỗi giới thiệu của bạn được ghi nhận on-chain:\n\n• upline1: Người giới thiệu trực tiếp của bạn (kiếm 13%)\n• upline2: Người giới thiệu của người giới thiệu bạn (kiếm 8%)\n• upline3: Cấp thứ ba lên trên (kiếm 5%)\n\nQuan trọng: Tiền thưởng giới thiệu chỉ áp dụng nếu upline của bạn có cùng cấp hoạt động. Nếu không, phần của họ đi vào ngân quỹ nền tảng."
+        },
+        "content2": {
+          "heading": "Xây dựng mạng lưới của bạn",
+          "text": "Để tối đa hóa thu nhập giới thiệu:\n\n1. Chia sẻ liên kết giới thiệu của bạn (chứa player PDA của bạn)\n2. Khi ai đó đăng ký qua liên kết của bạn, bạn trở thành upline1 của họ\n3. Bạn kiếm 13% từ mọi cấp họ kích hoạt (nếu bạn có cấp đó hoạt động)\n4. Bạn cũng kiếm 8% từ giới thiệu của họ (tuyến 2 của bạn)\n5. Và 5% từ giới thiệu tuyến 3\n\nChìa khóa là kích hoạt tất cả 16 cấp để thu được thu nhập giới thiệu tối đa."
+        },
+        "content3": {
+          "heading": "Liên kết giới thiệu của bạn",
+          "text": "Liên kết giới thiệu duy nhất của bạn chứa Player PDA của bạn:\n\nhttps://[domain]/?ref=[your_player_pda]\n\nChia sẻ liên kết này ở bất cứ đâu:\n• Mạng xã hội (Twitter, Telegram, Discord)\n• Video YouTube và mô tả\n• Bài đăng blog và diễn đàn\n• Tin nhắn trực tiếp cho bạn bè\n\nBất kỳ ai đăng ký qua liên kết của bạn sẽ trở thành giới thiệu vĩnh viễn của bạn."
+        },
+        "content4": {
+          "heading": "Quy tắc khớp cấp",
+          "text": "Quy tắc quan trọng: Bạn chỉ kiếm tiền thưởng giới thiệu cho các cấp BẠN đã kích hoạt.\n\nVí dụ:\n• Bạn có L1, L2, L3 hoạt động\n• Giới thiệu của bạn kích hoạt L5\n• Bạn kiếm 0% vì bạn không có L5\n\nGiải pháp: Kích hoạt tất cả 16 cấp để thu được 100% thu nhập giới thiệu có thể."
+        },
+        "content5": {
+          "heading": "Tăng trưởng mạng lưới",
+          "text": "Mạng lưới của bạn phát triển tự động qua 3 tuyến:\n\nTuyến 1: Những người bạn mời trực tiếp (13%)\nTuyến 2: Những người Tuyến 1 của bạn mời (8%)\nTuyến 3: Những người Tuyến 2 của bạn mời (5%)\n\nTiềm năng giới thiệu tổng thể: 26% của mỗi kích hoạt trong mạng 3 tuyến của bạn. Điều này tạo ra thu nhập thụ động mạnh mẽ."
+        },
+        "content6": {
+          "heading": "Ví dụ thu nhập giới thiệu",
+          "text": "Nếu bạn có 10 giới thiệu hoạt động và mỗi người kích hoạt L5 (1.10 SOL):\n\nTuyến 1 (10 người): 10 × 1.10 × 13% = 1.43 SOL\n\nNếu mỗi người trong số đó mời thêm 5 người (Tuyến 2):\n50 × 1.10 × 8% = 4.40 SOL\n\nNếu Tuyến 2 mời 5 người mỗi người (Tuyến 3):\n250 × 1.10 × 5% = 13.75 SOL\n\nTổng chỉ từ L5: 19.58 SOL"
+        }
+      },
+      "security": {
+        "title": "Bảo mật",
+        "shortTitle": "Bảo mật",
+        "content1": {
+          "heading": "Bảo mật hợp đồng thông minh",
+          "text": "Nền tảng triển khai nhiều biện pháp bảo mật:\n\n• TxGuard: Mỗi giao dịch sử dụng nonce duy nhất để ngăn chặn tấn công phát lại\n• Xác minh PDA: Tất cả tài khoản được xác thực bằng mật mã\n• Chuyển khoản nguyên tử: Thanh toán xảy ra trong một giao dịch duy nhất (tất cả hoặc không)\n• Mã bất biến: Hợp đồng thông minh không thể sửa đổi sau khi triển khai\n• Không có khóa admin: Không ai có thể rút tiền hoặc thay đổi quy tắc"
+        },
+        "content2": {
+          "heading": "Tiền của bạn an toàn",
+          "text": "• Bạn không bao giờ giao quyền giám sát ví của mình cho bất kỳ ai\n• Thanh toán đi trực tiếp từ ví đến ví qua hợp đồng thông minh\n• Không có hệ thống nạp/rút — SOL của bạn ở trong ví của bạn\n• Tất cả giao dịch có thể xác minh công khai trên Solana Explorer\n• Hợp đồng không có chức năng admin có thể lấy cắp tiền"
+        },
+        "content3": {
+          "heading": "Đã được xác minh trên Solana Explorer",
+          "text": "Hợp đồng thông minh hoàn toàn minh bạch:\n\n• Địa chỉ hợp đồng có sẵn công khai\n• Tất cả mã được xác minh và có thể đọc được\n• Mọi giao dịch có thể nhìn thấy trên Explorer\n• Trạng thái tài khoản có thể được kiểm tra\n• Không có logic hoặc chức năng ẩn\n\nBạn có thể tự xác minh mọi thứ."
+        },
+        "content4": {
+          "heading": "Rug Pull không thể xảy ra",
+          "text": "Thiết kế hợp đồng ngăn chặn mọi hình thức rug pull:\n\n• Không có chức năng rút tiền cho chủ sở hữu\n• Không có cơ chế tạm dừng hoặc đóng băng\n• Không có mẫu proxy có thể nâng cấp\n• Tiền chảy trực tiếp giữa các ví\n• Ngân quỹ nền tảng minh bạch\n\nNgay cả các nhà phát triển cũng không thể truy cập tiền của bạn."
+        },
+        "content5": {
+          "heading": "Mẹo bảo mật ví",
+          "text": "Giữ ví của bạn an toàn:\n\n• Không bao giờ chia sẻ cụm từ seed của bạn với bất kỳ ai\n• Sử dụng ví phần cứng cho số tiền lớn\n• Xác minh chi tiết giao dịch trước khi ký\n• Chỉ kết nối với URL nền tảng chính thức\n• Cảnh giác với các nỗ lực lừa đảo\n• Lưu trữ cụm từ seed ngoại tuyến một cách an toàn"
+        },
+        "content6": {
+          "heading": "Bảo vệ giao dịch",
+          "text": "Mỗi giao dịch được bảo vệ bởi TxGuard:\n\n• Nonce duy nhất ngăn chặn giao dịch trùng lặp\n• Bảo vệ chống lại các cuộc tấn công phát lại\n• Đảm bảo mỗi kích hoạt được xử lý một lần\n• Xác thực tự động trước khi thực thi\n• Giao dịch thất bại được hoàn nguyên an toàn"
+        }
+      },
+      "getting-started": {
+        "title": "Bắt đầu",
+        "shortTitle": "Bắt đầu",
+        "content1": {
+          "heading": "Hướng dẫn từng bước",
+          "text": "1. Cài đặt Phantom Wallet\n   Tải xuống từ phantom.app và tạo ví của bạn\n\n2. Nạp tiền vào ví\n   Chuyển SOL đến địa chỉ ví Phantom của bạn\n\n3. Kết nối ví\n   Nhấp vào Kết nối Ví trên nền tảng của chúng tôi\n\n4. Đăng ký người chơi\n   Tạo hồ sơ người chơi on-chain của bạn (một lần)\n\n5. Kích hoạt Cấp 1\n   Trả 0.05 SOL để kích hoạt cấp đầu tiên của bạn\n\n6. Chia sẻ & Kiếm tiền\n   Sao chép liên kết giới thiệu của bạn và mời người khác"
+        },
+        "content2": {
+          "heading": "Mẹo thành công",
+          "text": "• Bắt đầu với Cấp 1 và tiến lên\n• Kích hoạt nhiều cấp nhất có thể\n• Chia sẻ liên kết giới thiệu trên mạng xã hội\n• Nhớ rằng: tiền thưởng giới thiệu yêu cầu các cấp hoạt động phù hợp\n• Theo dõi bảng điều khiển để xem việc lấp đầy slot và chu kỳ\n• Cấp cao hơn = thanh toán cao hơn nhưng di chuyển hàng đợi chậm hơn"
+        },
+        "content3": {
+          "heading": "Ví được hỗ trợ",
+          "text": "Nền tảng hỗ trợ các ví Solana phổ biến:\n\n• Phantom (được khuyến nghị)\n• Solflare\n• Backpack\n• Ledger (qua Phantom)\n• Các ví tương thích Solana khác\n\nChúng tôi khuyến nghị Phantom để có trải nghiệm tốt nhất."
+        },
+        "content4": {
+          "heading": "Nhận SOL",
+          "text": "Bạn cần SOL để tham gia. Cách nhận SOL:\n\n• Mua trên các sàn giao dịch (Binance, Coinbase, Kraken)\n• Sử dụng on-ramp fiat (MoonPay, Transak)\n• Hoán đổi từ các loại tiền điện tử khác\n• Nhận từ người dùng khác\n\nTối thiểu cần: ~0.06 SOL cho Cấp 1 + phí"
+        },
+        "content5": {
+          "heading": "Quy trình đăng ký",
+          "text": "Đăng ký người chơi một lần:\n\n1. Kết nối ví của bạn\n2. Nhấp vào nút 'Đăng ký'\n3. Phê duyệt giao dịch trong ví\n4. Player PDA của bạn được tạo on-chain\n5. Bạn đã sẵn sàng kích hoạt cấp\n\nĐăng ký yêu cầu số dư tối thiểu 0.0030 SOL để trang trải phí giao dịch."
+        },
+        "content6": {
+          "heading": "Sử dụng bảng điều khiển của bạn",
+          "text": "Sau khi đăng ký, bảng điều khiển của bạn hiển thị:\n\n• Các cấp hoạt động và trạng thái của chúng\n• Slot đã lấp đầy và chu kỳ đã hoàn thành\n• Tổng thu nhập (ước tính)\n• Liên kết giới thiệu của bạn\n• Lịch sử giao dịch\n• Nút kích hoạt cấp"
+        },
+        "content7": {
+          "heading": "Câu hỏi thường gặp",
+          "text": "H: Nếu tôi mất liên kết người giới thiệu thì sao?\nĐ: Bạn có thể đăng ký với người giới thiệu mặc định.\n\nH: Tôi có thể thay đổi người giới thiệu không?\nĐ: Không, chuỗi giới thiệu là vĩnh viễn on-chain.\n\nH: Đầu tư tối thiểu là bao nhiêu?\nĐ: Cấp 1 chỉ tốn 0.05 SOL.\n\nH: Có giới hạn thời gian không?\nĐ: Không, cấp của bạn hoạt động mãi mãi sau khi kích hoạt."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Giá kích hoạt",
+    "back": "Quay lại",
+    "status": "Trạng thái",
+    "active": "Hoạt động",
+    "inactive": "Không hoạt động",
+    "slots": "Slot",
+    "cycles": "Vòng",
+    "earned": "Đã kiếm",
+    "cycleProgress": "Tiến trình Vòng",
+    "filled": "Đã điền",
+    "empty": "Trống",
+    "slotsFilled": "Đã điền {filled}/{total} slot",
+    "nextPayout": "Thanh toán tiếp theo",
+    "perActivationDistribution": "Phân phối theo Kích hoạt",
+    "youOwner": "Bạn (Chủ sở hữu)",
+    "referrerL1": "Người giới thiệu L1",
+    "referrerL2": "Người giới thiệu L2",
+    "referrerL3": "Người giới thiệu L3",
+    "platform": "Nền tảng",
+    "yourEarningsPerCycle": "Thu nhập mỗi vòng (×3)",
+    "howItWorks": "Cách hoạt động",
+    "step1Title": "Kích hoạt cấp độ này",
+    "step1Desc": "bạn vào hàng đợi và chờ 3 người chơi kích hoạt sau bạn.",
+    "step2Title": "3 slot được điền",
+    "step2Desc": "mỗi khi ai đó kích hoạt, bạn nhận {percent}% thanh toán của họ.",
+    "step3Title": "Vòng hoàn thành",
+    "step3Desc": "sau 3 lần thanh toán, cấp độ của bạn tự động quay lại hàng đợi.",
+    "step4Title": "Vòng không giới hạn",
+    "step4Desc": "bạn có thể kiếm từ cấp độ này vô thời hạn khi người chơi mới tiếp tục tham gia.",
+    "processing": "Đang xử lý...",
+    "alreadyActivated": "Đã kích hoạt",
+    "activateFor": "Kích hoạt với {price} SOL",
+    "levelStatistics": "Thống kê Cấp độ",
+    "totalCyclesCompleted": "Tổng Vòng Hoàn thành",
+    "totalEarned": "Tổng Thu nhập",
+    "perCycleEarnings": "Thu nhập mỗi Vòng",
+    "note": "Lưu ý",
+    "noteText": "Cấp độ này sẽ tiếp tục kiếm tiền khi người chơi mới tham gia. Mỗi vòng là độc lập."
+  }
+}

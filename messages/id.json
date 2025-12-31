@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Hubungkan Dompet",
+    "disconnect": "Putuskan",
+    "dashboard": "Dasbor",
+    "register": "Daftar",
+    "registering": "Mendaftar...",
+    "connecting": "Menghubungkan",
+    "loading": "Memuat...",
+    "processing": "Memproses...",
+    "success": "Berhasil",
+    "error": "Kesalahan",
+    "copy": "Salin",
+    "close": "Tutup",
+    "back": "Kembali",
+    "next": "Berikutnya",
+    "submit": "Kirim",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "view": "Lihat",
+    "more": "Lebih",
+    "less": "Kurang",
+    "all": "Semua",
+    "none": "Tidak ada",
+    "yes": "Ya",
+    "no": "Tidak",
+    "on": "Nyala",
+    "off": "Mati",
+    "active": "Aktif",
+    "inactive": "Tidak aktif",
+    "pending": "Menunggu",
+    "completed": "Selesai",
+    "failed": "Gagal",
+    "home": "Beranda",
+    "support": "Dukungan",
+    "balance": "Saldo",
+    "tapToCopy": "Ketuk untuk menyalin",
+    "swipeToClose": "Geser ke bawah untuk menutup",
+    "connectedWallet": "Dompet terhubung",
+    "disconnectWallet": "Putuskan dompet",
+    "selectLanguage": "Pilih bahasa",
+    "language": "Bahasa",
+    "chooseLanguage": "Pilih bahasa pilihan Anda"
+  },
+  "playerStatus": {
+    "title": "Status Pemain",
+    "accountInfo": "Info Akun",
+    "authority": "Otoritas",
+    "playerPda": "PDA Pemain",
+    "createdAt": "Dibuat",
+    "openLevels": "Buka Level",
+    "copyPda": "Salin PDA",
+    "explorer": "Explorer",
+    "register": "Daftar",
+    "registering": "Mendaftar…",
+    "connectFirst": "Hubungkan dompet terlebih dahulu",
+    "playerRegistered": "Pemain terdaftar",
+    "registrationFailed": "Pendaftaran gagal",
+    "addressCopied": "Alamat disalin",
+    "copyFailed": "Gagal menyalin"
+  },
+  "levelCard": {
+    "activate": "Aktifkan",
+    "activating": "Mengaktifkan…",
+    "activated": "Diaktifkan",
+    "notActivated": "Tidak aktif",
+    "checking": "Memeriksa…",
+    "notRegistered": "Tidak terdaftar",
+    "levelActive": "Level aktif — hadiah diaktifkan.",
+    "level": "Level",
+    "price": "Harga (SOL)",
+    "slots": "Slot",
+    "cycles": "Siklus",
+    "details": "Detail"
+  },
+  "activations": {
+    "title": "Aktivasi",
+    "lastDays": "{days} hari terakhir",
+    "total": "total",
+    "activationsCount": "{count} aktivasi"
+  },
+  "header": {
+    "connectWallet": "Hubungkan Dompet",
+    "dashboard": "Dasbor",
+    "register": "Daftar",
+    "connecting": "Menghubungkan"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Sistem matriks terdesentralisasi di blockchain Solana",
+    "poweredBy": "Didukung oleh Solana"
+  },
+  "ticker": {
+    "onChain": "Smart Contract 100% On-Chain",
+    "noAdminKeys": "Tanpa Kunci Admin - Sepenuhnya Terdesentralisasi",
+    "instantPayouts": "Pembayaran Instan ke Dompet Anda",
+    "audited": "Kontrak Diaudit & Terverifikasi",
+    "levels": "16 Level - Hingga 655.35 SOL",
+    "partnerBonus": "Undang Partner - Dapatkan Bonus 26%",
+    "unlimited": "Siklus Tak Terbatas - Penghasilan Tak Terbatas"
+  },
+  "technology": {
+    "smartContract": "Smart Contract",
+    "howItWorks": "Cara Kerja di",
+    "solana": "Solana",
+    "description": "Smart contract yang sepenuhnya otonom dengan model matriks X3, pembayaran instan, dan keamanan kriptografi",
+    "x3Matrix": "Matriks X3",
+    "x3MatrixDesc": "Setiap level beroperasi sebagai matriks X3 berbasis antrian. Saat Anda mengaktifkan level, Anda masuk ke antrian global. Setiap 3 aktivasi setelah Anda mengisi slot Anda, menyelesaikan satu siklus. Anda menerima 60% dari setiap pengisian dan secara otomatis masuk kembali untuk siklus tak terbatas.",
+    "instantPayouts": "Pembayaran Instan",
+    "instantPayoutsDesc": "Smart contract mendistribusikan pembayaran secara instan: 60% ke pemilik level, 13% ke referral lini 1, 8% lini 2, 5% lini 3, dan 14% ke treasury platform.",
+    "sixteenLevels": "16 Level",
+    "sixteenLevelsDesc": "Sistem memiliki 16 level dengan harga tetap dari 0.05 SOL (Level 1) hingga 8.7 SOL (Level 16). Setiap level memiliki antrian independennya sendiri.",
+    "replayProtection": "Perlindungan Replay",
+    "replayProtectionDesc": "Setiap transaksi menggunakan nonce unik yang disimpan di akun TxGuard. Ini mencegah serangan replay dan memastikan setiap aktivasi hanya diproses sekali.",
+    "globalQueue": "Antrian Global",
+    "globalQueueDesc": "Setiap level mempertahankan LevelPool dengan QueuePages yang dipaginasi (64 pemain per halaman). Saat halaman penuh, halaman baru dibuat secara otomatis.",
+    "referralChain": "Rantai Referral",
+    "referralChainDesc": "Saat mendaftar, upline 3 level Anda dicatat on-chain. Mereka hanya menerima bonus dari aktivasi Anda jika mereka memiliki level yang sama aktif.",
+    "levels": "Level",
+    "slotsPerCycle": "Slot per Siklus",
+    "autoRecycle": "Daur Ulang Otomatis",
+    "ownerPayout": "Pembayaran Pemilik",
+    "perActivation": "Per Aktivasi",
+    "referralTotal": "Total Referral"
+  },
+  "mechanics": {
+    "gameMechanics": "Mekanik Permainan",
+    "howSolanaGameWorks": "Cara Kerja Solana Game",
+    "description": "Hasilkan, tingkatkan, dan mainkan melalui level smart terdesentralisasi yang didukung oleh smart contract Solana",
+    "activateLevel": "Aktifkan Level",
+    "activateLevelDesc": "Pilih level mana saja dan aktifkan langsung on-chain. Kepemilikan dicatat secara permanen di blockchain Solana.",
+    "playRecycle": "Main & Daur Ulang",
+    "playRecycleDesc": "Setiap level otomatis bersiklus setelah tiga slot ditutup — hadiah didistribusikan secara instan.",
+    "earnUpgrade": "Hasilkan & Tingkatkan",
+    "earnUpgradeDesc": "Kumpulkan hadiah dalam SOL dan buka level yang lebih tinggi untuk pengembalian yang lebih besar."
+  },
+  "stats": {
+    "title": "Manfaat Komunitas",
+    "growingEverySecond": "Jadilah Bagian dari Sesuatu yang Lebih Besar",
+    "description": "Bergabunglah dengan jaringan global para pencari aktif dan tumbuh bersama.",
+    "worldwideNetwork": "Jaringan Dunia",
+    "worldwideNetworkDesc": "Akses dari mana saja di dunia",
+    "thrivingCommunity": "Komunitas yang Berkembang",
+    "thrivingCommunityDesc": "Anggota aktif menghasilkan setiap hari",
+    "alwaysSupported": "Selalu Didukung",
+    "alwaysSupportedDesc": "Dapatkan bantuan kapan pun Anda membutuhkannya",
+    "collectiveWins": "Kemenangan Kolektif",
+    "collectiveWinsDesc": "Kesuksesan tumbuh dengan jaringan",
+    "startEarning": "Mulai Menghasilkan Sekarang",
+    "goToDashboard": "Ke Dashboard",
+    "walletConnected": "Dompet terhubung. Siap menghasilkan.",
+    "noHiddenFees": "Tanpa biaya tersembunyi. Pembayaran instan. 100% on-chain."
+  },
+  "levels": {
+    "title": "Level",
+    "level": "Level",
+    "price": "Harga",
+    "activate": "Aktifkan",
+    "activating": "Mengaktifkan...",
+    "activated": "Diaktifkan",
+    "locked": "Terkunci",
+    "cycles": "Siklus",
+    "slots": "Slot",
+    "filled": "Terisi",
+    "earnings": "Penghasilan",
+    "totalEvents": "Total Event",
+    "cyclesDone": "Siklus Selesai",
+    "queue": "Dalam Antrian",
+    "yourPosition": "Posisi Anda",
+    "recycleAfter": "Daur ulang setelah 3 slot terisi"
+  },
+  "history": {
+    "title": "Riwayat Transaksi",
+    "noTransactions": "Belum ada transaksi",
+    "activation": "Aktivasi",
+    "earning": "Penghasilan",
+    "referralBonus": "Bonus Referral",
+    "referralActivated": "Referral Diaktifkan",
+    "referralRegistered": "Referral Terdaftar",
+    "cycleClose": "Siklus Selesai",
+    "recycled": "Didaur Ulang",
+    "reOpened": "Dibuka Kembali",
+    "viewExplorer": "Lihat di Explorer",
+    "view": "Lihat",
+    "viewAll": "Lihat semua",
+    "synthetic": "sintetis",
+    "pending": "Menunggu",
+    "slot": "slot",
+    "justNow": "Baru saja",
+    "mAgo": "mnt lalu",
+    "hAgo": "j lalu",
+    "dAgo": "h lalu",
+    "activated": "Diaktifkan",
+    "filters": {
+      "all": "Semua",
+      "activations": "Aktivasi",
+      "earnings": "Penghasilan",
+      "pending": "Menunggu"
+    },
+    "ownerPayout": "Pembayaran Pemilik (60%)",
+    "referralPayoutL1": "Bonus Referral L1 (13%)",
+    "referralPayoutL2": "Bonus Referral L2 (8%)",
+    "referralPayoutL3": "Bonus Referral L3 (5%)",
+    "fromSlot": "Slot {slot}"
+  },
+  "info": {
+    "platformFeatures": "Fitur Platform",
+    "builtOn": "Dibangun di",
+    "solana": "Solana",
+    "description": "Smart contract transparan, transaksi instan, dan sistem referral terdesentralisasi",
+    "documentation": "Dokumentasi",
+    "documentationDesc": "Panduan lengkap untuk memahami sistem matriks X3 dan memaksimalkan penghasilan Anda.",
+    "instantPayouts": "Pembayaran Instan",
+    "instantPayoutsDesc": "SOL dikirim langsung ke dompet Anda. Tanpa penundaan, tanpa perantara.",
+    "referralSystem": "Sistem Referral",
+    "referralSystemDesc": "Dapatkan 13%, 8%, dan 5% dari lini referral Anda. Bangun jaringan Anda.",
+    "readDocs": "Baca Docs",
+    "learnMore": "Pelajari Lebih",
+    "startEarning": "Mulai Menghasilkan",
+    "ownerPayout": "Pembayaran Pemilik",
+    "referralRewards": "Hadiah Referral",
+    "transactionSpeed": "Kecepatan Transaksi"
+  },
+  "partner": {
+    "title": "Program Partner",
+    "subtitle": "Undang teman dan dapatkan bonus 50% dari aktivasi mereka",
+    "yourReferralLink": "Link Referral Anda",
+    "copyLink": "Salin Link",
+    "linkCopied": "Link disalin!",
+    "howItWorks": "Cara Kerja Bonus Partner",
+    "level1": "Partner Level 1",
+    "level2": "Partner Level 2",
+    "level3": "Partner Level 3",
+    "bonus1": "13% dari referral langsung",
+    "bonus2": "8% dari referral level 2",
+    "bonus3": "5% dari referral level 3"
+  },
+  "telegram": {
+    "title": "Sumber Telegram",
+    "community": "Komunitas",
+    "communityDesc": "Bergabung dengan chat kami",
+    "support": "Dukungan",
+    "supportDesc": "Dapatkan bantuan dari tim"
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Jawaban cepat untuk memahami dan memulai dengan Solana Game",
+    "q1": "Apa itu Solana Game dan bagaimana cara kerjanya?",
+    "a1": "Solana Game adalah platform matriks terdesentralisasi yang berjalan sepenuhnya di smart contract Solana. Ketika Anda mengaktifkan level, Anda bergabung dengan antrian global. Ketika pemain baru mengaktifkan level yang sama setelah Anda, mereka mengisi 3 slot Anda. Setelah ketiga slot terisi, Anda menerima pembayaran dan secara otomatis masuk kembali ke antrian. Siklus ini berulang tanpa batas — satu aktivasi memberi Anda potensi penghasilan tak terbatas.",
+    "q2": "Berapa banyak level yang ada dan berapa biayanya?",
+    "a2": "Ada 16 level dengan harga tetap dalam SOL: L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Setiap level beroperasi secara independen dengan antriannya sendiri — Anda dapat mengaktifkan level mana pun dalam urutan apa pun.",
+    "q3": "Berapa banyak yang saya hasilkan dan ke mana uangnya pergi?",
+    "a3": "Ketika seseorang mengaktifkan level, pembayaran didistribusikan secara instan: 60% ke pemimpin antrian (pemilik level), 13% ke perujuk lini 1, 8% ke lini 2, 5% ke lini 3, dan 14% ke treasury platform. Per siklus (3 slot terisi), Anda menerima 180% dari harga level. Semua transfer terjadi secara atomik dalam satu transaksi blockchain.",
+    "q4": "Bagaimana cara kerja program referral?",
+    "a4": "Saat Anda mendaftar, rantai referral Anda dicatat on-chain (kedalaman 3 level). Perujuk Anda mendapatkan 13%, 8%, dan 5% dari setiap aktivasi level Anda. Penting: bonus referral hanya berlaku jika upline Anda memiliki level yang sama aktif. Jika tidak, bagian mereka masuk ke treasury. Ini mendorong semua orang untuk mengaktifkan lebih banyak level.",
+    "q5": "Apa yang terjadi setelah 3 slot saya terisi?",
+    "a5": "Level Anda secara otomatis 'daur ulang' — slot Anda reset ke 0, penghitung siklus Anda bertambah 1, dan Anda masuk kembali ke antrian di akhir. Anda mempertahankan posisi dan terus menghasilkan dari aktivasi level yang sama selamanya. Tidak ada batasan berapa banyak siklus yang bisa Anda selesaikan.",
+    "q6": "Bagaimana cara memulai?",
+    "a6": "Langkah 1: Hubungkan dompet Phantom (atau dompet Solana lainnya). Langkah 2: Daftarkan profil pemain Anda — ini membuat akun on-chain dan mencatat perujuk Anda. Langkah 3: Aktifkan Level 1 seharga 0.05 SOL. Langkah 4: Bagikan link referral untuk mendapatkan bonus ketika orang lain bergabung. Anda dapat memantau slot, siklus, dan penghasilan secara real-time di dasbor.",
+    "q7": "Apakah uang saya aman? Bisakah seseorang mencuri dana saya?",
+    "a7": "Dana Anda sepenuhnya aman. Platform berjalan di smart contract yang terverifikasi dan tidak dapat diubah — tidak ada seorang pun (termasuk pengembang) yang dapat memodifikasi kode atau mengakses dompet Anda. Pembayaran langsung dari dompet ke dompet tanpa perantara. Kontrak mencakup perlindungan TxGuard terhadap transaksi duplikat. Anda tidak pernah menyerahkan kustodi dana Anda kepada siapa pun.",
+    "q8": "Bagaimana jika tidak ada yang mengaktifkan setelah saya?",
+    "a8": "Posisi Anda dalam antrian bersifat permanen dan tidak pernah kedaluwarsa. Anda cukup menunggu sampai pemain baru mengaktifkan level. Antrian bersifat global — semua pemain di seluruh dunia berbagi antrian yang sama untuk setiap level. Semakin populer levelnya, semakin cepat slot Anda terisi. Level yang lebih tinggi mungkin membutuhkan waktu lebih lama tetapi menawarkan pembayaran lebih besar."
+  },
+  "footer": {
+    "description": "Sistem matriks X3 terdesentralisasi di blockchain Solana. Pembayaran instan, mekanik transparan, 100% on-chain.",
+    "smartContract": "Smart Contract",
+    "contractAddress": "Alamat Kontrak",
+    "verifyExplorer": "Selalu verifikasi alamat kontrak di Solana Explorer",
+    "viewOnExplorer": "Lihat di Explorer",
+    "platform": "Platform",
+    "gameLevels": "Level Permainan",
+    "resources": "Sumber",
+    "howItWorks": "Cara Kerja",
+    "docs": "Dokumentasi",
+    "disclaimer": "Penafian",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Dompet Terhubung",
+    "allRightsReserved": "Hak cipta dilindungi"
+  },
+  "wallet": {
+    "connect": "Hubungkan Dompet",
+    "connecting": "Menghubungkan...",
+    "connected": "Terhubung",
+    "disconnect": "Putuskan",
+    "balance": "Saldo",
+    "address": "Alamat",
+    "copyAddress": "Salin Alamat",
+    "viewExplorer": "Lihat di Explorer",
+    "switchWallet": "Ganti Dompet",
+    "installPhantom": "Instal Phantom",
+    "phantomRequired": "Dompet Phantom diperlukan",
+    "readyToConnect": "Siap untuk terhubung",
+    "supported": "Didukung",
+    "connectToContinue": "Hubungkan untuk melanjutkan",
+    "phantomNotFound": "Phantom tidak ditemukan",
+    "pleaseInstall": "Silakan instal ekstensi Phantom wallet",
+    "byConnecting": "Dengan menghubungkan, Anda menyetujui Syarat Layanan",
+    "notInstalled": "Tidak terpasang"
+  },
+  "guard": {
+    "title": "Hubungkan Dompet Anda",
+    "description": "Untuk mengakses dasbor, silakan hubungkan dompet Solana Anda. Dompet Anda diperlukan untuk berinteraksi dengan blockchain.",
+    "backHome": "Kembali ke Beranda",
+    "registerRequired": "Registrasi Diperlukan",
+    "registerRequiredDesc": "Untuk mengakses dasbor, Anda perlu mendaftar sebagai pemain. Gratis dan hanya membutuhkan beberapa detik."
+  },
+  "docs": {
+    "title": "Dokumentasi",
+    "startPlaying": "Mulai Bermain",
+    "overview": "Ikhtisar",
+    "gettingStarted": "Memulai",
+    "matrixSystem": "Sistem Matriks X3",
+    "earnings": "Penghasilan & Pembayaran",
+    "referrals": "Program Referral",
+    "security": "Keamanan"
+  },
+  "disclaimer": {
+    "title": "Penafian",
+    "understand": "Saya Mengerti",
+    "intro": "Harap baca penafian ini dengan hati-hati sebelum menggunakan Solana Program X3. Dengan mengakses atau menggunakan platform, Anda setuju untuk terikat oleh ketentuan ini.",
+    "lastUpdated": "Terakhir diperbarui: Desember 2024",
+    "importantNotice": "Pemberitahuan Penting",
+    "importantNoticeText": "Investasi cryptocurrency membawa risiko tinggi. Hanya investasikan apa yang Anda mampu untuk kehilangan. Platform ini beroperasi pada kontrak pintar yang tidak dapat diubah—transaksi tidak dapat dibatalkan.",
+    "acceptanceTitle": "Penerimaan Ketentuan",
+    "acceptanceText": "Dengan menggunakan Solana Program X3, Anda mengakui bahwa Anda telah membaca, memahami, dan setuju untuk terikat oleh penafian ini dan semua ketentuan dan kondisi yang berlaku.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Sifat Platform",
+        "content": "Solana Program X3 adalah aplikasi terdesentralisasi (dApp) yang dibangun di blockchain Solana. Platform beroperasi melalui kontrak pintar yang tidak dapat diubah yang di-deploy on-chain. Setelah di-deploy, kode kontrak pintar tidak dapat dimodifikasi, diubah, atau dikendalikan oleh pihak mana pun, termasuk pengembang.\n\nPlatform memfasilitasi sistem berbasis matriks di mana peserta dapat mengaktifkan level dan menerima pembayaran berdasarkan mekanik yang ditentukan dalam kontrak pintar. Semua transaksi dieksekusi secara otomatis oleh blockchain sesuai dengan aturan yang telah ditentukan sebelumnya."
+      },
+      "noFinancialAdvice": {
+        "title": "Bukan Nasihat Keuangan",
+        "content": "Tidak ada di platform ini yang merupakan nasihat keuangan, investasi, hukum, atau pajak. Informasi yang disediakan hanya untuk tujuan pendidikan dan informasi. Anda harus berkonsultasi dengan profesional yang memenuhi syarat sebelum membuat keputusan keuangan apa pun.\n\nBerpartisipasi dalam platform berbasis blockchain melibatkan risiko signifikan. Kinerja masa lalu tidak menjamin hasil di masa depan. Nilai cryptocurrency dapat berfluktuasi secara signifikan, dan Anda mungkin kehilangan sebagian atau seluruh investasi Anda."
+      },
+      "riskAcknowledgment": {
+        "title": "Pengakuan Risiko",
+        "content": "Dengan menggunakan Solana Program X3, Anda mengakui dan menerima risiko berikut:\n\n• Risiko Kontrak Pintar: Meskipun kode telah dikembangkan dengan hati-hati, tidak ada kontrak pintar yang sepenuhnya bebas dari kerentanan atau bug potensial.\n\n• Risiko Pasar: Nilai SOL dan cryptocurrency lainnya dapat sangat volatil dan dapat mengakibatkan kerugian signifikan.\n\n• Risiko Regulasi: Peraturan cryptocurrency bervariasi menurut yurisdiksi dan dapat berubah. Adalah tanggung jawab Anda untuk memastikan kepatuhan dengan hukum yang berlaku.\n\n• Risiko Jaringan: Blockchain Solana dapat mengalami kemacetan, gangguan, atau masalah teknis lainnya yang dapat mempengaruhi transaksi.\n\n• Kehilangan Akses: Jika Anda kehilangan akses ke dompet atau kunci pribadi Anda, dana Anda mungkin menjadi tidak dapat diakses secara permanen."
+      },
+      "noGuarantees": {
+        "title": "Tidak Ada Jaminan",
+        "content": "Platform tidak memberikan jaminan mengenai:\n\n• Jumlah atau waktu dari setiap pendapatan atau pengembalian\n• Operasi berkelanjutan dari platform\n• Ketersediaan atau fungsionalitas dari fitur apa pun\n• Akurasi dari informasi yang ditampilkan\n• Tindakan peserta lain\n\nHasil Anda sepenuhnya bergantung pada aktivitas peserta lain dan mekanik kontrak pintar. Tidak ada jaminan bahwa Anda akan menerima pembayaran apa pun atau memulihkan investasi awal Anda."
+      },
+      "yourResponsibilities": {
+        "title": "Tanggung Jawab Anda",
+        "content": "Sebagai peserta, Anda bertanggung jawab sepenuhnya untuk:\n\n• Melakukan penelitian sendiri sebelum berpartisipasi\n• Mengamankan dompet dan kunci pribadi Anda\n• Memahami mekanik platform\n• Mematuhi semua hukum dan peraturan yang berlaku di yurisdiksi Anda\n• Melaporkan pendapatan apa pun untuk tujuan pajak sesuai kebutuhan\n• Membuat keputusan yang tepat tentang partisipasi Anda\n\nAnda harus berpartisipasi hanya dengan dana yang Anda mampu untuk kehilangan sepenuhnya."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Pembatasan Yurisdiksi",
+        "content": "Platform mungkin tidak tersedia atau dibatasi di yurisdiksi tertentu. Adalah tanggung jawab Anda untuk menentukan apakah penggunaan platform Anda legal di yurisdiksi Anda.\n\nDengan mengakses dan menggunakan platform, Anda menyatakan dan menjamin bahwa Anda secara hukum diizinkan untuk melakukannya di yurisdiksi Anda dan bahwa Anda akan mematuhi semua hukum dan peraturan lokal, negara bagian, nasional, dan internasional yang berlaku."
+      },
+      "thirdPartyServices": {
+        "title": "Layanan Pihak Ketiga",
+        "content": "Platform terintegrasi dengan layanan pihak ketiga termasuk:\n\n• Jaringan Blockchain Solana\n• Penyedia Dompet (Phantom, Solflare, dll.)\n• Penyedia RPC\n\nKami tidak memiliki kendali atas layanan pihak ketiga ini dan tidak bertanggung jawab atas ketersediaan, keamanan, atau masalah apa pun yang timbul dari penggunaannya."
+      },
+      "limitationOfLiability": {
+        "title": "Pembatasan Tanggung Jawab",
+        "content": "Sejauh diizinkan oleh hukum, pengembang, kontributor, dan pihak terkait tidak akan bertanggung jawab atas kerusakan langsung, tidak langsung, insidental, khusus, konsekuensial, atau teladan yang timbul dari:\n\n• Penggunaan atau ketidakmampuan Anda untuk menggunakan platform\n• Transaksi apa pun yang dilakukan melalui platform\n• Akses tidak sah ke dompet atau dana Anda\n• Kesalahan atau kelalaian dalam kode kontrak pintar\n• Masalah lain yang berkaitan dengan platform\n\nPembatasan ini berlaku terlepas dari teori hukum dan bahkan jika kami telah diberitahu tentang kemungkinan kerusakan tersebut."
+      },
+      "modifications": {
+        "title": "Modifikasi",
+        "content": "Penafian ini dapat diperbarui dari waktu ke waktu. Meskipun kode kontrak pintar tidak dapat diubah, antarmuka front-end dan penafian ini dapat dimodifikasi. Adalah tanggung jawab Anda untuk meninjau penafian ini secara berkala untuk perubahan apa pun.\n\nPenggunaan platform yang berkelanjutan setelah modifikasi apa pun merupakan penerimaan ketentuan yang diperbarui."
+      },
+      "contact": {
+        "title": "Kontak",
+        "content": "Jika Anda memiliki pertanyaan tentang penafian ini atau platform, silakan hubungi melalui saluran dukungan Telegram resmi kami.\n\nIngat: Jangan pernah membagikan kunci pribadi atau frase benih Anda kepada siapa pun, termasuk siapa pun yang mengklaim dari tim kami."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Alamat disalin",
+    "signatureCopied": "Tanda tangan disalin",
+    "contractCopied": "Alamat kontrak disalin",
+    "linkCopied": "Link disalin",
+    "copyFailed": "Gagal menyalin",
+    "walletNotConnected": "Dompet tidak terhubung",
+    "connectWalletFirst": "Hubungkan dompet terlebih dahulu",
+    "invalidLevel": "Level tidak valid",
+    "activationSent": "Aktivasi terkirim",
+    "activationSentLevel": "Aktivasi L{level} terkirim",
+    "activatingLevel": "Mengaktifkan level {level}...",
+    "activationError": "Kesalahan aktivasi",
+    "registrationSuccess": "Pemain berhasil terdaftar",
+    "registrationFailed": "Pendaftaran gagal",
+    "profileCreated": "Profil dibuat",
+    "referralActivatedLevel": "Seseorang dari jaringan referral Anda mengaktifkan level {level}",
+    "creatingProfile": "Membuat profil...",
+    "insufficientFundsForRegistration": "Dana tidak cukup untuk pendaftaran. Anda memerlukan setidaknya 0.0030 SOL.",
+    "transactionProcessing": "Memproses transaksi...",
+    "clipboardNotSupported": "Papan klip tidak didukung",
+    "playerRegistered": "Pemain terdaftar",
+    "viewInExplorer": "Lihat di Explorer",
+    "closeNotification": "Tutup notifikasi",
+    "comingSoon": "Segera hadir",
+    "loadError": "Gagal memuat data",
+    "activationFinalized": "Aktivasi selesai",
+    "registrationFinalized": "Registrasi selesai",
+    "checkingPlayerState": "Memeriksa status pemain…",
+    "playerNotFound": "Pemain tidak ditemukan — tekan Daftar",
+    "levelAlreadyActivated": "Level sudah diaktifkan",
+    "pressActivate": "Tekan Aktifkan untuk mengaktifkan level ini"
+  },
+  "overlay": {
+    "processing": "Memproses transaksi..."
+  },
+  "nav": {
+    "dashboard": "Dasbor",
+    "home": "Beranda",
+    "levels": "Level",
+    "history": "Riwayat",
+    "information": "Informasi",
+    "info": "Info",
+    "partnerBonus": "Bonus Partner",
+    "partners": "Partner",
+    "telegram": "Telegram",
+    "support": "Dukungan",
+    "more": "Lebih"
+  },
+  "mobileMenu": {
+    "connectWallet": "Hubungkan dompet",
+    "connecting": "Menghubungkan...",
+    "createProfile": "Buat profil",
+    "creatingProfile": "Membuat profil...",
+    "goToDashboard": "Ke dasbor"
+  },
+  "dashboardPage": {
+    "title": "Dasbor",
+    "subtitle": "Level, penghasilan, dan aktivitas Anda",
+    "yourStatistics": "Statistik Anda",
+    "onChainData": "Data On-Chain",
+    "activeLevels": "Level Aktif",
+    "next": "Berikutnya",
+    "allDone": "Selesai semua",
+    "completedCycles": "Siklus Selesai",
+    "slotsEquals": "3 slot = 1 siklus",
+    "estEarnings": "Perkiraan Penghasilan",
+    "ownerPayout": "60% pembayaran pemilik",
+    "totalSpent": "Total Dibelanjakan",
+    "levelActivations": "aktivasi level",
+    "yourLevels": "Level Anda",
+    "slotsAndCycles": "Slot dan Siklus",
+    "viewAll": "Lihat semua",
+    "slots": "slot",
+    "cycle": "siklus",
+    "cycles": "siklus",
+    "howItWorks": "Cara kerjanya:",
+    "howItWorksDesc": "Ketika 3 pemain mengaktifkan level Anda, Anda menerima 60% dari setiap pembayaran. Sisanya → perujuk (26%) + kas (14%).",
+    "latestActivity": "Aktivitas Terbaru",
+    "transactionHistory": "Riwayat Transaksi",
+    "live": "langsung",
+    "noActivity": "Belum ada aktivitas. Aktifkan level pertama Anda untuk memulai.",
+    "contractIdCopied": "ID kontrak disalin"
+  },
+  "levelsPage": {
+    "title": "Level",
+    "subtitle": "Aktifkan level untuk mendapatkan SOL",
+    "active": "Aktif",
+    "ready": "siap",
+    "noWallet": "tidak ada dompet",
+    "registerFirst": "Silakan daftarkan pemain terlebih dahulu",
+    "levelAlreadyActive": "sudah aktif",
+    "activated": "diaktifkan"
+  },
+  "historyPage": {
+    "title": "Riwayat Transaksi",
+    "subtitle": "Semua aktivasi, pendapatan, dan acara sistem Anda",
+    "wallet": "Dompet",
+    "notConnected": "Tidak terhubung",
+    "totalEvents": "Total Acara",
+    "activations": "Aktivasi",
+    "cyclesDone": "Siklus Selesai",
+    "pending": "Tertunda",
+    "all": "Semua",
+    "earnings": "Pendapatan",
+    "connectWallet": "Hubungkan dompet Anda untuk melihat riwayat",
+    "noTransactions": "Belum ada transaksi. Aktifkan level pertama Anda untuk memulai.",
+    "noEventsFound": "Tidak ditemukan acara {filter}.",
+    "transactionTypes": "Jenis Transaksi",
+    "activationsDesc": "Aktivasi dan daur ulang level Anda. Ini adalah transaksi keluar.",
+    "earningsDesc": "Pembayaran yang diterima: 60% pembayaran pemilik + bonus rujukan (13%, 8%, 5%).",
+    "pendingDesc": "Transaksi menunggu konfirmasi blockchain.",
+    "cyclesDesc": "Siklus selesai — 3 slot terisi, lalu daur ulang otomatis kembali ke antrian.",
+    "walletCopied": "Dompet disalin",
+    "connectFirst": "Hubungkan dompet terlebih dahulu",
+    "copyFailed": "Gagal menyalin"
+  },
+  "informationPage": {
+    "title": "Cara Kerjanya",
+    "subtitle": "Semua yang perlu Anda ketahui tentang platform",
+    "totalLevels": "Total Level",
+    "slotsPerCycle": "Slot per Siklus",
+    "yourPayout": "Pembayaran Anda",
+    "network": "Jaringan",
+    "whatIsThis": "Apa platform ini?",
+    "whatIsThisDesc": "Ini adalah aplikasi terdesentralisasi di blockchain Solana. Semuanya berjalan secara otomatis melalui kontrak pintar — tanpa admin, tanpa perantara. Anda mengaktifkan level, mendapatkan penghasilan saat orang lain bergabung setelah Anda, dan prosesnya berulang selamanya.",
+    "transparent": "Transparan",
+    "transparentDesc": "Semua transaksi terlihat di blockchain Solana. Tidak ada yang tersembunyi.",
+    "automatic": "Otomatis",
+    "automaticDesc": "Kontrak pintar menangani pembayaran. Tanpa penundaan, tanpa persetujuan diperlukan.",
+    "unlimited": "Tidak Terbatas",
+    "unlimitedDesc": "Setiap level dapat menghasilkan selamanya. Tidak ada batasan siklus atau pendapatan.",
+    "simpleProcess": "Proses 4 Langkah Sederhana",
+    "step1Title": "Aktifkan Level",
+    "step1Desc": "Pilih level apa saja dari L01 hingga L16. Bayar harga aktivasi sekali. Anda sekarang memiliki level ini dan masuk antrian.",
+    "step2Title": "Tunggu 3 Aktivasi",
+    "step2Desc": "Ketika 3 pemain lain mengaktifkan level yang sama setelah Anda, masing-masing membayar 60% dari harga level kepada Anda. Total 3 pembayaran.",
+    "step3Title": "Siklus Selesai",
+    "step3Desc": "Setelah menerima 3 pembayaran, level Anda otomatis didaur ulang. Anda kembali ke antrian dan dapat menghasilkan lagi.",
+    "step4Title": "Ulangi Selamanya",
+    "step4Desc": "Siklus berulang tanpa batas. Satu aktivasi = potensi penghasilan tidak terbatas selama pemain baru terus bergabung.",
+    "whereMoneyGoes": "Ke Mana Uangnya?",
+    "moneyGoesDesc": "Ketika seseorang mengaktifkan level, pembayaran mereka langsung dibagi:",
+    "youOwner": "Anda (Pemilik)",
+    "yourEarnings": "Penghasilan Anda per aktivasi",
+    "referrerL1": "Perujuk L1",
+    "directInviter": "Pengundang langsung Anda",
+    "referrerL2": "Perujuk L2",
+    "inviterOfInviter": "Pengundang pengundang Anda",
+    "referrerL3": "Perujuk L3",
+    "thirdLevelUpline": "Upline level ketiga",
+    "platform": "Platform",
+    "projectDevelopment": "Pengembangan proyek",
+    "exampleCalculation": "Contoh Perhitungan",
+    "exampleDesc": "L01 harganya 0.05 SOL. Ketika 3 orang mengaktifkan setelah Anda:",
+    "youReceive": "Anda menerima:",
+    "perCycle": "per siklus",
+    "levelPrices": "Harga Level",
+    "levelPricesDesc": "16 level tersedia. Level lebih tinggi = penghasilan lebih tinggi per siklus.",
+    "allPricesInSol": "Semua harga dalam SOL",
+    "referralBonuses": "Bonus Rujukan",
+    "referralBonusesDesc": "Ketika seseorang yang Anda undang menghasilkan dari level mereka, Anda juga mendapat bonus:",
+    "directReferral": "Rujukan Langsung (Baris 1)",
+    "peopleInvitedDirectly": "Orang yang Anda undang langsung",
+    "secondLine": "Baris Kedua (Baris 2)",
+    "peopleInvitedByReferrals": "Orang yang diundang oleh rujukan Anda",
+    "thirdLine": "Baris Ketiga (Baris 3)",
+    "thirdLevelNetwork": "Level ketiga jaringan Anda",
+    "referralNote": "Catatan: Anda hanya menerima bonus rujukan untuk level yang telah Anda aktifkan. Jika Anda tidak memiliki L05 aktif, bonus rujukan dari L05 masuk ke platform.",
+    "commonQuestions": "Pertanyaan Umum",
+    "q1": "Apakah saya perlu mengaktifkan level secara berurutan?",
+    "a1": "Tidak. Anda dapat mengaktifkan level apa saja kapan saja. L01 dan L16 sepenuhnya independen.",
+    "q2": "Apa yang terjadi saat siklus saya selesai?",
+    "a2": "Level Anda otomatis kembali ke antrian. Anda dapat menghasilkan darinya berulang kali.",
+    "q3": "Bisakah saya kehilangan uang saya?",
+    "a3": "Setelah diaktifkan, level bekerja selamanya. Anda tidak bisa kehilangannya. Semua pembayaran dijamin oleh kontrak pintar.",
+    "q4": "Seberapa cepat pembayaran?",
+    "a4": "Instan. Saat seseorang mengaktifkan, SOL langsung masuk ke dompet Anda. Tanpa penundaan.",
+    "q5": "Bagaimana jika saya tidak punya rujukan?",
+    "a5": "Anda tetap mendapat 60% dari level Anda. Bonus rujukan adalah penghasilan tambahan.",
+    "gettingStarted": "Memulai",
+    "getWallet": "Dapatkan Dompet",
+    "getWalletDesc": "Unduh dompet Phantom atau Backpack untuk browser atau ponsel Anda.",
+    "getSol": "Dapatkan SOL",
+    "getSolDesc": "Beli SOL di bursa mana saja (Binance, Coinbase, dll.) dan kirim ke dompet Anda.",
+    "minimumForL01": "Minimum untuk L01: ~0.06 SOL (termasuk biaya)",
+    "connectWallet": "Hubungkan Dompet",
+    "connectWalletDesc": "Klik \"Hubungkan\" di header. Setujui koneksi di dompet Anda.",
+    "activateLevels": "Aktifkan Level",
+    "activateLevelsDesc": "Buka halaman Level, pilih level, klik Aktifkan. Konfirmasi di dompet. Selesai."
+  },
+  "referralTree": {
+    "title": "Pohon Referral",
+    "subtitle": "Jaringan referral aktif Anda ({count} total)",
+    "total": "Total",
+    "noReferrals": "Belum ada referral",
+    "shareLink": "Bagikan tautan referral Anda untuk mulai membangun jaringan",
+    "line": "Baris {number}",
+    "noReferralsInLine": "Tidak ada referral di baris ini",
+    "referralsCount": "{count} {count, plural, other {referral}}",
+    "copyAddress": "Salin alamat",
+    "refresh": "Segarkan",
+    "yourLink": "Tautan referral Anda",
+    "copyLink": "Salin tautan",
+    "linkCopied": "Tautan disalin!",
+    "addressCopied": "Alamat disalin!",
+    "viewExplorer": "Lihat di Explorer",
+    "copied": "Disalin!",
+    "levels": "Level:",
+    "loadingLevels": "Memuat level..."
+  },
+  "partnerBonusPage": {
+    "title": "Program Mitra",
+    "subtitle": "Undang orang lain dan dapatkan dari aktivitas mereka",
+    "totalEarned": "Total Didapat",
+    "line1": "Baris 1 (13%)",
+    "line2": "Baris 2 (8%)",
+    "line3": "Baris 3 (5%)",
+    "yourReferralLink": "Link Rujukan Anda",
+    "copyLink": "Salin Link",
+    "connectWalletForLink": "Hubungkan dompet untuk mendapatkan link rujukan Anda",
+    "linkNote": "Ketika seseorang mendaftar menggunakan link Anda, mereka menjadi rujukan Baris 1 Anda secara permanen.",
+    "howReferralWorks": "Cara Kerja Bonus Rujukan",
+    "step1Title": "Bagikan link Anda",
+    "step1Desc": "Siapa pun yang mendaftar melalui link Anda menjadi rujukan Baris 1 Anda.",
+    "step2Title": "Mereka mengaktifkan level",
+    "step2Desc": "Ketika rujukan Anda menghasilkan dari level mereka, Anda menerima persentase.",
+    "step3Title": "Anda mendapat otomatis",
+    "step3Desc": "Bonus dibayar langsung ke dompet Anda. Tidak perlu klaim.",
+    "payoutStructure": "Struktur Pembayaran Rujukan",
+    "directReferrals": "Baris 1 — Rujukan Langsung",
+    "directReferralsDesc": "Orang yang Anda undang langsung",
+    "secondLevel": "Baris 2 — Level Kedua",
+    "secondLevelDesc": "Rujukan dari rujukan Anda",
+    "thirdLevel": "Baris 3 — Level Ketiga",
+    "thirdLevelDesc": "Generasi ketiga jaringan Anda",
+    "important": "Penting",
+    "importantDesc": "Anda hanya menerima bonus rujukan untuk level yang telah Anda aktifkan. Jika rujukan Anda menghasilkan dari L05 tapi Anda tidak memiliki L05 aktif, bonus itu masuk ke platform.",
+    "referralActivity": "Aktivitas Rujukan",
+    "refresh": "Segarkan",
+    "loading": "Memuat...",
+    "noActivity": "Belum ada aktivitas rujukan",
+    "noActivityDesc": "Bagikan link Anda untuk mulai mendapatkan bonus rujukan",
+    "showingOf": "Menampilkan {count} dari {total} transaksi",
+    "tipsForSuccess": "Tips untuk Sukses",
+    "tip1Title": "Aktifkan semua level",
+    "tip1Desc": "Semakin banyak level yang Anda miliki, semakin banyak bonus rujukan yang bisa Anda terima.",
+    "tip2Title": "Bangun jaringan Anda",
+    "tip2Desc": "3 baris dalam berarti penghasilan pasif dari rujukan rujukan Anda.",
+    "tip3Title": "Bagikan secara konsisten",
+    "tip3Desc": "Link Anda tidak pernah kedaluwarsa. Terus bagikan untuk mengembangkan jaringan Anda.",
+    "tip4Title": "Bantu tim Anda",
+    "tip4Desc": "Ketika rujukan Anda sukses, Anda menghasilkan lebih banyak. Dukung mereka.",
+    "connectFirst": "Hubungkan dompet terlebih dahulu",
+    "linkCopied": "Link rujukan disalin",
+    "copyFailed": "Gagal menyalin",
+    "failedToLoad": "Gagal memuat riwayat mitra",
+    "registration": "Pendaftaran",
+    "newReferral": "Rujukan baru"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Bergabunglah dengan komunitas kami dan dapatkan dukungan",
+    "communityGroup": "Grup Komunitas",
+    "communityDesc": "Bergabunglah dengan grup Telegram resmi kami. Ngobrol dengan pemain lain, berbagi strategi, dapatkan pembaruan dan pengumuman.",
+    "joinGroup": "Gabung Grup",
+    "copyLink": "Salin Tautan",
+    "support": "Dukungan",
+    "supportDesc": "Butuh bantuan? Hubungi tim dukungan kami langsung. Kami merespons dengan cepat semua pertanyaan tentang platform.",
+    "contactSupport": "Hubungi Dukungan",
+    "whatYouGet": "Apa yang Anda Dapatkan",
+    "realTimeUpdates": "Pembaruan Real-Time",
+    "realTimeUpdatesDesc": "Jadilah yang pertama mengetahui fitur baru, pembaruan, dan pengumuman.",
+    "communitySupport": "Dukungan Komunitas",
+    "communitySupportDesc": "Dapatkan bantuan dari pemain berpengalaman dan bagikan pengetahuan Anda.",
+    "directAccess": "Akses Langsung",
+    "directAccessDesc": "Akses cepat ke tim dukungan untuk masalah teknis apa pun.",
+    "networkGrowth": "Pertumbuhan Jaringan",
+    "networkGrowthDesc": "Terhubung dengan pemain lain dan kembangkan jaringan rujukan Anda."
+  },
+  "docsPage": {
+    "title": "Dokumentasi",
+    "label": "Dokumentasi",
+    "heading": "Cara Kerja Solana Program X3",
+    "description": "Dokumentasi teknis lengkap untuk memahami sistem matriks X3, mekanisme pembayaran, dan cara memaksimalkan penghasilan Anda.",
+    "startPlaying": "Mulai Bermain",
+    "swipeHint": "Geser kiri/kanan untuk navigasi",
+    "of": "dari",
+    "more": "Lainnya",
+    "footerText": "Solana Program X3 — Matriks Terdesentralisasi di Solana Blockchain",
+    "sections": {
+      "overview": {
+        "title": "Ikhtisar",
+        "shortTitle": "Ikhtisar",
+        "content1": {
+          "heading": "Apa itu Solana Program X3?",
+          "text": "Solana Program X3 adalah sistem matriks terdesentralisasi sepenuhnya yang dibangun di blockchain Solana. Ini beroperasi melalui kontrak pintar terverifikasi tanpa kontrol pusat, yang berarti tidak ada yang bisa mengubah aturan atau mengakses dana Anda.\n\nPlatform menggunakan model matriks X3 di mana setiap level memiliki antrian global. Saat Anda mengaktifkan level, Anda masuk antrian. Saat pemain baru mengaktifkan level yang sama, mereka mengisi slot Anda (3 slot per siklus). Setelah semua slot terisi, Anda menerima pembayaran dan secara otomatis masuk kembali ke antrian untuk siklus tak terbatas."
+        },
+        "content2": {
+          "heading": "Fitur Utama",
+          "text": "• 16 level independen dengan harga tetap (0,05 - 8,7 SOL)\n• 3 slot per siklus dengan daur ulang otomatis\n• Pembayaran 60% ke pemilik level per aktivasi\n• Total 26% hadiah rujukan (13% + 8% + 5%)\n• Transfer dompet ke dompet instan\n• Tidak ada penundaan penarikan atau perantara\n• Kode kontrak pintar tidak dapat diubah"
+        },
+        "content3": {
+          "heading": "Mengapa Blockchain Solana?",
+          "text": "Solana dipilih karena kinerjanya yang luar biasa:\n\n• Kecepatan Transaksi: ~400ms waktu konfirmasi\n• Biaya Rendah: Pecahan sen per transaksi\n• Throughput Tinggi: 65.000+ transaksi per detik\n• Desentralisasi: Ribuan validator di seluruh dunia\n• Rekam Jejak Terbukti: Salah satu blockchain teratas berdasarkan TVL"
+        },
+        "content4": {
+          "heading": "Cara Anda Menghasilkan",
+          "text": "Ada dua cara untuk menghasilkan di platform:\n\n1. Kepemilikan Level: Aktifkan level dan terima 60% dari setiap pemain yang mengaktifkan setelah Anda (3 pembayaran = 180% per siklus)\n\n2. Bonus Rujukan: Undang orang lain dan dapatkan 13%, 8%, dan 5% dari jaringan 3 baris Anda\n\nKedua metode menghasilkan bekerja bersamaan dan meningkatkan pendapatan Anda."
+        },
+        "content5": {
+          "heading": "Transparansi Kontrak Pintar",
+          "text": "Seluruh platform berjalan pada kontrak pintar sumber terbuka yang terverifikasi:\n\n• Alamat kontrak terlihat publik di Solana Explorer\n• Semua transaksi dicatat di blockchain\n• Siapa pun dapat memverifikasi kode dan logika\n• Tidak ada fungsi tersembunyi atau backdoor\n• Operasi sepenuhnya tanpa kepercayaan"
+        }
+      },
+      "levels": {
+        "title": "Sistem Level",
+        "shortTitle": "Level",
+        "content1": {
+          "heading": "Harga Level",
+          "text": "Sistem memiliki 16 level dengan harga tetap dalam SOL:\n\nLevel 1: 0,05 SOL    Level 9: 3,25 SOL\nLevel 2: 0,18 SOL    Level 10: 3,90 SOL\nLevel 3: 0,36 SOL    Level 11: 4,65 SOL\nLevel 4: 0,68 SOL    Level 12: 5,45 SOL\nLevel 5: 1,10 SOL    Level 13: 6,40 SOL\nLevel 6: 1,55 SOL    Level 14: 7,35 SOL\nLevel 7: 2,10 SOL    Level 15: 8,00 SOL\nLevel 8: 2,65 SOL    Level 16: 8,70 SOL\n\nSetiap level beroperasi secara independen dengan antrian globalnya sendiri. Anda dapat mengaktifkan level dalam urutan apa pun."
+        },
+        "content2": {
+          "heading": "Cara Kerja Level",
+          "text": "1. Anda mengaktifkan level dengan membayar harga tetap\n2. Aktivasi Anda dicatat on-chain dan Anda masuk antrian global\n3. 3 pemain berikutnya yang mengaktifkan level yang sama mengisi slot Anda\n4. Anda menerima 60% dari pembayaran setiap pemain (total 180% per siklus)\n5. Setelah 3 slot terisi, Anda secara otomatis masuk kembali ke antrian\n6. Siklus ini berulang tanpa batas dari satu aktivasi"
+        },
+        "content3": {
+          "heading": "Independensi Level",
+          "text": "Setiap dari 16 level beroperasi sepenuhnya independen:\n\n• Antrian terpisah untuk setiap level\n• Tidak ada prasyarat — aktifkan level apa pun kapan saja\n• Beberapa level dapat aktif bersamaan\n• Setiap level menghasilkan secara terpisah\n• Kemajuan pada satu level tidak mempengaruhi yang lain"
+        },
+        "content4": {
+          "heading": "Penghasilan Per Level",
+          "text": "Penghasilan Anda per siklus (3 slot terisi) untuk setiap level:\n\nL1: 0,09 SOL    L9: 5,85 SOL\nL2: 0,32 SOL    L10: 7,02 SOL\nL3: 0,65 SOL    L11: 8,37 SOL\nL4: 1,22 SOL    L12: 9,81 SOL\nL5: 1,98 SOL    L13: 11,52 SOL\nL6: 2,79 SOL    L14: 13,23 SOL\nL7: 3,78 SOL    L15: 14,40 SOL\nL8: 4,77 SOL    L16: 15,66 SOL\n\nRumus: Harga Level × 60% × 3 slot = Penghasilan Siklus"
+        },
+        "content5": {
+          "heading": "Mekanisme Auto-Daur Ulang",
+          "text": "Ketika 3 slot Anda terisi, level Anda secara otomatis didaur ulang:\n\n• Penghitung slot Anda direset ke 0\n• Penghitung siklus Anda meningkat 1\n• Anda dipindahkan dari kepala antrian ke ekor antrian\n• Anda terus menghasilkan tanpa tindakan apa pun\n• Tidak ada pembayaran tambahan yang diperlukan\n\nIni menciptakan potensi penghasilan tak terbatas dari satu aktivasi."
+        }
+      },
+      "queue": {
+        "title": "Antrian Global",
+        "shortTitle": "Antrian",
+        "content1": {
+          "heading": "Struktur Antrian",
+          "text": "Setiap level memelihara LevelPool dengan QueuePages terpaginasi. Fitur utama:\n\n• Setiap halaman menampung hingga 64 pemain\n• Saat halaman penuh, halaman baru dibuat secara otomatis\n• Pemain diproses berdasarkan urutan kedatangan\n• Posisi Anda permanen dan tidak pernah kedaluwarsa\n• Setelah setiap siklus selesai, Anda masuk kembali di ekor antrian"
+        },
+        "content2": {
+          "heading": "Pemrosesan Antrian",
+          "text": "Saat pemain baru mengaktifkan level:\n\n1. Kontrak pintar mengidentifikasi kepala antrian (pemain pertama dalam barisan)\n2. Penghitung slots_filled pemain ini meningkat 1\n3. Pembayaran didistribusikan (60% ke pemilik, rujukan, treasury)\n4. Jika slots_filled mencapai 3, level \"didaur ulang\":\n   - penghitung cycles meningkat 1\n   - slots_filled direset ke 0\n   - Pemain dihapus dari kepala dan ditambahkan ke ekor\n5. Pemain baru juga masuk ke ekor antrian"
+        },
+        "content3": {
+          "heading": "Distribusi Adil",
+          "text": "Sistem antrian memastikan perlakuan adil untuk semua peserta:\n\n• Datang pertama, dilayani pertama — tidak ada favoritisme\n• Tidak ada cara untuk melewati atau memanipulasi posisi antrian\n• Semua orang menunggu giliran mereka secara setara\n• Kontrak pintar menegakkan aturan secara otomatis\n• Transparan dan dapat diverifikasi on-chain"
+        },
+        "content4": {
+          "heading": "Kecepatan Antrian",
+          "text": "Seberapa cepat slot Anda terisi tergantung pada aktivitas level:\n\n• Level lebih rendah (L1-L5): Lebih banyak pemain, pengisian lebih cepat\n• Level lebih tinggi (L11-L16): Lebih sedikit pemain, pengisian lebih lambat\n• Aktivitas global mempengaruhi semua antrian\n• Posisi antrian Anda penting — lebih awal = lebih cepat\n\nTip: Pantau aktivitas antrian di dasbor Anda untuk melacak kemajuan."
+        },
+        "content5": {
+          "heading": "Posisi Permanen",
+          "text": "Setelah Anda mengaktifkan level, posisi Anda tidak pernah kedaluwarsa:\n\n• Tidak ada batas waktu atau kedaluwarsa\n• Antrian bertahan selamanya di blockchain\n• Anda akan menerima pembayaran bahkan setelah berbulan-bulan\n• Tidak perlu perawatan atau pembaruan\n• Sepenuhnya pasif setelah diaktifkan"
+        }
+      },
+      "payouts": {
+        "title": "Distribusi Pembayaran",
+        "shortTitle": "Pembayaran",
+        "content1": {
+          "heading": "Rincian Pembayaran",
+          "text": "Setiap aktivasi mendistribusikan 100% dari harga level:\n\n• 60% → Pemilik Level (kepala antrian)\n• 13% → Perujuk Baris 1 (upline1)\n• 8% → Perujuk Baris 2 (upline2)\n• 5% → Perujuk Baris 3 (upline3)\n• 14% → Treasury Platform\n\nSemua transfer terjadi secara atomik dalam satu transaksi Solana. Tidak ada penundaan, tidak ada status tertunda."
+        },
+        "content2": {
+          "heading": "Perhitungan Penghasilan",
+          "text": "Per siklus (3 slot terisi), Anda mendapatkan:\n60% × 3 = 180% dari harga level\n\nContoh untuk Level 5 (1,10 SOL):\n• Per slot: 0,66 SOL (60% dari 1,10)\n• Per siklus: 1,98 SOL (180% dari 1,10)\n• ROI per siklus: +80% keuntungan\n\nTidak ada batas siklus. Satu aktivasi = potensi penghasilan tak terbatas."
+        },
+        "content3": {
+          "heading": "Transfer Instan",
+          "text": "Pembayaran dilakukan secara instan melalui kontrak pintar:\n\n• Tidak ada status tertunda atau penundaan\n• Transfer langsung dari dompet ke dompet\n• SOL muncul di dompet Anda segera\n• Tidak perlu klaim manual\n• Tidak ada jumlah penarikan minimum"
+        },
+        "content4": {
+          "heading": "Potensi Penghasilan Total",
+          "text": "Jika Anda mengaktifkan semua 16 level dan menyelesaikan beberapa siklus:\n\nTotal biaya level: ~42 SOL\nPenghasilan per siklus: ~100 SOL (semua level)\n\nDitambah bonus rujukan dari jaringan Anda dapat meningkatkan pendapatan Anda secara signifikan. Semakin banyak level yang Anda aktifkan dan semakin besar jaringan Anda, semakin tinggi penghasilan Anda."
+        },
+        "content5": {
+          "heading": "Melacak Penghasilan Anda",
+          "text": "Pantau pendapatan Anda secara real-time:\n\n• Dasbor menunjukkan slot terisi per level\n• Lihat jumlah siklus yang diselesaikan\n• Lacak total SOL yang diperoleh\n• Lihat pengisian slot yang tertunda\n• Riwayat transaksi tersedia\n\nSemua data diambil langsung dari blockchain."
+        }
+      },
+      "referrals": {
+        "title": "Sistem Rujukan",
+        "shortTitle": "Rujukan",
+        "content1": {
+          "heading": "Cara Kerja Rujukan",
+          "text": "Saat Anda mendaftar, rantai rujukan Anda dicatat on-chain:\n\n• upline1: Perujuk langsung Anda (mendapat 13%)\n• upline2: Perujuk dari perujuk Anda (mendapat 8%)\n• upline3: Level ketiga ke atas (mendapat 5%)\n\nPenting: Bonus rujukan hanya berlaku jika upline Anda memiliki level yang SAMA aktif. Jika tidak, bagian mereka masuk ke treasury platform."
+        },
+        "content2": {
+          "heading": "Membangun Jaringan Anda",
+          "text": "Untuk memaksimalkan penghasilan rujukan:\n\n1. Bagikan tautan rujukan Anda (berisi player PDA Anda)\n2. Saat seseorang mendaftar melalui tautan Anda, Anda menjadi upline1 mereka\n3. Anda mendapat 13% dari setiap level yang mereka aktifkan (jika Anda memilikinya aktif)\n4. Anda juga mendapat 8% dari rujukan mereka (baris 2 Anda)\n5. Dan 5% dari rujukan baris 3\n\nKuncinya adalah mengaktifkan semua 16 level untuk mendapatkan pendapatan rujukan maksimal."
+        },
+        "content3": {
+          "heading": "Tautan Rujukan Anda",
+          "text": "Tautan rujukan unik Anda berisi Player PDA Anda:\n\nhttps://[domain]/?ref=[your_player_pda]\n\nBagikan tautan ini di mana saja:\n• Media sosial (Twitter, Telegram, Discord)\n• Video YouTube dan deskripsi\n• Posting blog dan forum\n• Pesan langsung ke teman\n\nSiapa pun yang mendaftar melalui tautan Anda menjadi rujukan permanen Anda."
+        },
+        "content4": {
+          "heading": "Aturan Pencocokan Level",
+          "text": "Aturan kritis: Anda hanya mendapatkan bonus rujukan untuk level yang ANDA miliki aktif.\n\nContoh:\n• Anda memiliki L1, L2, L3 aktif\n• Rujukan Anda mengaktifkan L5\n• Anda mendapat 0% karena Anda tidak memiliki L5\n\nSolusi: Aktifkan semua 16 level untuk mendapatkan 100% dari pendapatan rujukan yang mungkin."
+        },
+        "content5": {
+          "heading": "Pertumbuhan Jaringan",
+          "text": "Jaringan Anda tumbuh secara otomatis melalui 3 baris:\n\nBaris 1: Orang yang Anda undang langsung (13%)\nBaris 2: Orang yang Baris 1 Anda undang (8%)\nBaris 3: Orang yang Baris 2 Anda undang (5%)\n\nPotensi rujukan total: 26% dari setiap aktivasi di jaringan 3 baris Anda. Ini menciptakan pendapatan pasif yang kuat."
+        },
+        "content6": {
+          "heading": "Contoh Penghasilan Rujukan",
+          "text": "Jika Anda memiliki 10 rujukan aktif dan masing-masing mengaktifkan L5 (1,10 SOL):\n\nBaris 1 (10 orang): 10 × 1,10 × 13% = 1,43 SOL\n\nJika masing-masing mengundang 5 lagi (Baris 2):\n50 × 1,10 × 8% = 4,40 SOL\n\nJika Baris 2 mengundang 5 masing-masing (Baris 3):\n250 × 1,10 × 5% = 13,75 SOL\n\nTotal hanya dari L5: 19,58 SOL"
+        }
+      },
+      "security": {
+        "title": "Keamanan",
+        "shortTitle": "Keamanan",
+        "content1": {
+          "heading": "Keamanan Kontrak Pintar",
+          "text": "Platform menerapkan beberapa langkah keamanan:\n\n• TxGuard: Setiap transaksi menggunakan nonce unik untuk mencegah serangan replay\n• Verifikasi PDA: Semua akun divalidasi secara kriptografis\n• Transfer Atomik: Pembayaran terjadi dalam satu transaksi (semua atau tidak sama sekali)\n• Kode Tidak Dapat Diubah: Kontrak pintar tidak dapat dimodifikasi setelah deployment\n• Tidak Ada Kunci Admin: Tidak ada yang bisa menguras dana atau mengubah aturan"
+        },
+        "content2": {
+          "heading": "Dana Anda Aman",
+          "text": "• Anda tidak pernah memberikan hak asuh dompet Anda kepada siapa pun\n• Pembayaran langsung dari dompet ke dompet melalui kontrak pintar\n• Tidak ada sistem deposit/penarikan — SOL Anda tetap di dompet Anda\n• Semua transaksi dapat diverifikasi secara publik di Solana Explorer\n• Kontrak tidak memiliki fungsi admin yang dapat mencuri dana"
+        },
+        "content3": {
+          "heading": "Terverifikasi di Solana Explorer",
+          "text": "Kontrak pintar sepenuhnya transparan:\n\n• Alamat kontrak tersedia secara publik\n• Semua kode terverifikasi dan dapat dibaca\n• Setiap transaksi terlihat di Explorer\n• Status akun dapat diperiksa\n• Tidak ada logika atau fungsi tersembunyi\n\nAnda dapat memverifikasi semuanya secara independen."
+        },
+        "content4": {
+          "heading": "Rug Pull Tidak Mungkin",
+          "text": "Desain kontrak mencegah segala bentuk rug pull:\n\n• Tidak ada fungsi penarikan untuk pemilik\n• Tidak ada mekanisme jeda atau pembekuan\n• Tidak ada pola proxy yang dapat ditingkatkan\n• Dana mengalir langsung antar dompet\n• Treasury platform transparan\n\nBahkan pengembang tidak dapat mengakses dana Anda."
+        },
+        "content5": {
+          "heading": "Tips Keamanan Dompet",
+          "text": "Jaga dompet Anda tetap aman:\n\n• Jangan pernah membagikan frase seed Anda kepada siapa pun\n• Gunakan dompet perangkat keras untuk jumlah besar\n• Verifikasi detail transaksi sebelum menandatangani\n• Hanya terhubung ke URL platform resmi\n• Waspadai upaya phishing\n• Simpan frase seed offline dengan aman"
+        },
+        "content6": {
+          "heading": "Perlindungan Transaksi",
+          "text": "Setiap transaksi dilindungi oleh TxGuard:\n\n• Nonce unik mencegah transaksi duplikat\n• Melindungi dari serangan replay\n• Memastikan setiap aktivasi diproses sekali\n• Validasi otomatis sebelum eksekusi\n• Transaksi yang gagal dibatalkan dengan aman"
+        }
+      },
+      "getting-started": {
+        "title": "Memulai",
+        "shortTitle": "Mulai",
+        "content1": {
+          "heading": "Panduan Langkah demi Langkah",
+          "text": "1. Instal Phantom Wallet\n   Unduh dari phantom.app dan buat dompet Anda\n\n2. Isi Dompet Anda\n   Transfer SOL ke alamat dompet Phantom Anda\n\n3. Hubungkan Dompet\n   Klik Hubungkan Dompet di platform kami\n\n4. Daftarkan Pemain\n   Buat profil pemain on-chain Anda (sekali saja)\n\n5. Aktifkan Level 1\n   Bayar 0,05 SOL untuk mengaktifkan level pertama Anda\n\n6. Bagikan & Dapatkan\n   Salin tautan rujukan Anda dan undang orang lain"
+        },
+        "content2": {
+          "heading": "Tips Sukses",
+          "text": "• Mulai dengan Level 1 dan naik ke atas\n• Aktifkan sebanyak mungkin level yang Anda mampu\n• Bagikan tautan rujukan Anda di media sosial\n• Ingat: bonus rujukan memerlukan level aktif yang cocok\n• Pantau dasbor Anda untuk pengisian slot dan siklus\n• Level lebih tinggi = pembayaran lebih tinggi tapi pergerakan antrian lebih lambat"
+        },
+        "content3": {
+          "heading": "Dompet yang Didukung",
+          "text": "Platform mendukung dompet Solana populer:\n\n• Phantom (disarankan)\n• Solflare\n• Backpack\n• Ledger (melalui Phantom)\n• Dompet kompatibel Solana lainnya\n\nKami merekomendasikan Phantom untuk pengalaman terbaik."
+        },
+        "content4": {
+          "heading": "Mendapatkan SOL",
+          "text": "Anda memerlukan SOL untuk berpartisipasi. Cara mendapatkan SOL:\n\n• Beli di bursa (Binance, Coinbase, Kraken)\n• Gunakan on-ramp fiat (MoonPay, Transak)\n• Tukar dari crypto lain\n• Terima dari pengguna lain\n\nMinimum diperlukan: ~0,06 SOL untuk Level 1 + biaya"
+        },
+        "content5": {
+          "heading": "Proses Pendaftaran",
+          "text": "Pendaftaran pemain satu kali:\n\n1. Hubungkan dompet Anda\n2. Klik tombol 'Daftar'\n3. Setujui transaksi di dompet\n4. Player PDA Anda dibuat on-chain\n5. Anda siap untuk mengaktifkan level\n\nPendaftaran memerlukan saldo minimum 0.0030 SOL untuk menutupi biaya transaksi."
+        },
+        "content6": {
+          "heading": "Menggunakan Dasbor Anda",
+          "text": "Setelah pendaftaran, dasbor Anda menampilkan:\n\n• Level aktif dan statusnya\n• Slot terisi dan siklus yang diselesaikan\n• Total penghasilan (diperkirakan)\n• Tautan rujukan Anda\n• Riwayat transaksi\n• Tombol aktivasi level"
+        },
+        "content7": {
+          "heading": "Pertanyaan Umum",
+          "text": "T: Bagaimana jika saya kehilangan tautan perujuk saya?\nJ: Anda dapat mendaftar dengan perujuk default.\n\nT: Bisakah saya mengubah perujuk saya?\nJ: Tidak, rantai rujukan permanen on-chain.\n\nT: Berapa investasi minimum?\nJ: Level 1 hanya berharga 0,05 SOL.\n\nT: Apakah ada batas waktu?\nJ: Tidak, level Anda bekerja selamanya setelah diaktifkan."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Harga aktivasi",
+    "back": "Kembali",
+    "status": "Status",
+    "active": "Aktif",
+    "inactive": "Tidak aktif",
+    "slots": "Slot",
+    "cycles": "Siklus",
+    "earned": "Diperoleh",
+    "cycleProgress": "Progres Siklus",
+    "filled": "Terisi",
+    "empty": "Kosong",
+    "slotsFilled": "{filled} dari {total} slot terisi",
+    "nextPayout": "Pembayaran berikutnya",
+    "perActivationDistribution": "Distribusi per Aktivasi",
+    "youOwner": "Anda (Pemilik)",
+    "referrerL1": "Perujuk L1",
+    "referrerL2": "Perujuk L2",
+    "referrerL3": "Perujuk L3",
+    "platform": "Platform",
+    "yourEarningsPerCycle": "Penghasilan Anda per siklus (×3)",
+    "howItWorks": "Cara Kerja",
+    "step1Title": "Aktifkan level ini",
+    "step1Desc": "Anda masuk antrian dan menunggu 3 pemain mengaktifkan setelah Anda.",
+    "step2Title": "3 slot terisi",
+    "step2Desc": "setiap kali seseorang mengaktifkan, Anda menerima {percent}% dari pembayaran mereka.",
+    "step3Title": "Siklus selesai",
+    "step3Desc": "setelah 3 pembayaran, level Anda didaur ulang kembali ke antrian secara otomatis.",
+    "step4Title": "Siklus tak terbatas",
+    "step4Desc": "Anda dapat menghasilkan dari level ini tanpa batas selama pemain baru terus bergabung.",
+    "processing": "Memproses...",
+    "alreadyActivated": "Sudah diaktifkan",
+    "activateFor": "Aktifkan untuk {price} SOL",
+    "levelStatistics": "Statistik Level",
+    "totalCyclesCompleted": "Total Siklus Selesai",
+    "totalEarned": "Total Diperoleh",
+    "perCycleEarnings": "Penghasilan per Siklus",
+    "note": "Catatan",
+    "noteText": "Level ini akan terus menghasilkan selama pemain baru bergabung. Setiap siklus bersifat independen."
+  }
+}

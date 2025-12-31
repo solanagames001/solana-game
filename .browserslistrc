@@ -1,0 +1,8 @@
+# Browserslist configuration for modern browser support
+# This reduces transpiled code size by targeting modern browsers only
+
+> 0.5%
+last 2 versions
+not dead
+not IE 11
+

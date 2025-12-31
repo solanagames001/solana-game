@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Cüzdan Bağla",
+    "disconnect": "Bağlantıyı Kes",
+    "dashboard": "Panel",
+    "register": "Kayıt Ol",
+    "registering": "Kayıt olunuyor...",
+    "connecting": "Bağlanıyor",
+    "loading": "Yükleniyor...",
+    "processing": "İşleniyor...",
+    "success": "Başarılı",
+    "error": "Hata",
+    "copy": "Kopyala",
+    "close": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "view": "Görüntüle",
+    "more": "Daha fazla",
+    "less": "Daha az",
+    "all": "Tümü",
+    "none": "Hiçbiri",
+    "yes": "Evet",
+    "no": "Hayır",
+    "on": "Açık",
+    "off": "Kapalı",
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "pending": "Beklemede",
+    "completed": "Tamamlandı",
+    "failed": "Başarısız",
+    "home": "Ana Sayfa",
+    "support": "Destek",
+    "balance": "Bakiye",
+    "tapToCopy": "Kopyalamak için dokun",
+    "swipeToClose": "Kapatmak için aşağı kaydır",
+    "connectedWallet": "Bağlı cüzdan",
+    "disconnectWallet": "Cüzdanı ayır",
+    "selectLanguage": "Dil seç",
+    "language": "Dil",
+    "chooseLanguage": "Tercih ettiğiniz dili seçin"
+  },
+  "playerStatus": {
+    "title": "Oyuncu Durumu",
+    "accountInfo": "Hesap Bilgisi",
+    "authority": "Yetki",
+    "playerPda": "Oyuncu PDA",
+    "createdAt": "Oluşturulma",
+    "openLevels": "Seviyeleri Aç",
+    "copyPda": "PDA Kopyala",
+    "explorer": "Explorer",
+    "register": "Kayıt Ol",
+    "registering": "Kaydediliyor…",
+    "connectFirst": "Önce cüzdanınızı bağlayın",
+    "playerRegistered": "Oyuncu kaydedildi",
+    "registrationFailed": "Kayıt başarısız",
+    "addressCopied": "Adres kopyalandı",
+    "copyFailed": "Kopyalama başarısız"
+  },
+  "levelCard": {
+    "activate": "Aktive Et",
+    "activating": "Aktive ediliyor…",
+    "activated": "Aktive edildi",
+    "notActivated": "Aktive edilmedi",
+    "checking": "Kontrol ediliyor…",
+    "notRegistered": "Kayıtlı değil",
+    "levelActive": "Seviye aktif — ödüller etkin.",
+    "level": "Seviye",
+    "price": "Fiyat (SOL)",
+    "slots": "Slotlar",
+    "cycles": "Döngüler",
+    "details": "Detaylar"
+  },
+  "activations": {
+    "title": "Aktivasyonlar",
+    "lastDays": "son {days} gün",
+    "total": "toplam",
+    "activationsCount": "{count} aktivasyon"
+  },
+  "header": {
+    "connectWallet": "Cüzdan Bağla",
+    "dashboard": "Panel",
+    "register": "Kayıt Ol",
+    "connecting": "Bağlanıyor"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Solana blok zincirinde merkeziyetsiz matris sistemi",
+    "poweredBy": "Solana ile güçlendirildi"
+  },
+  "ticker": {
+    "onChain": "%100 On-Chain Akıllı Sözleşme",
+    "noAdminKeys": "Admin anahtarı yok - Tamamen merkeziyetsiz",
+    "instantPayouts": "Cüzdanınıza anında ödeme",
+    "audited": "Denetlenmiş ve doğrulanmış sözleşme",
+    "levels": "16 Seviye - 655.35 SOL'a kadar",
+    "partnerBonus": "Partner davet et - %26 bonus kazan",
+    "unlimited": "Sınırsız döngü - Sınırsız kazanç"
+  },
+  "technology": {
+    "smartContract": "Akıllı Sözleşme",
+    "howItWorks": "Nasıl Çalışır",
+    "solana": "Solana",
+    "description": "X3 matris modeli, anında ödemeler ve kriptografik güvenlik ile tamamen otonom akıllı sözleşme",
+    "x3Matrix": "X3 Matris",
+    "x3MatrixDesc": "Her seviye kuyruk tabanlı X3 matrisi olarak çalışır. Bir seviyeyi aktifleştirdiğinizde global kuyruğa girersiniz. Sizden sonraki her 3 aktivasyon slotlarınızı doldurur ve bir döngüyü tamamlar. Her slot doldurma için %60 alırsınız ve sınırsız döngü için otomatik olarak tekrar kuyruğa girersiniz.",
+    "instantPayouts": "Anında Ödemeler",
+    "instantPayoutsDesc": "Akıllı sözleşme ödemeleri anında dağıtır: %60 seviye sahibine, %13 referans satır 1'e, %8 satır 2'ye, %5 satır 3'e ve %14 platform hazinesine.",
+    "sixteenLevels": "16 Seviye",
+    "sixteenLevelsDesc": "Sistem 0.05 SOL (Seviye 1) ile 8.7 SOL (Seviye 16) arasında sabit fiyatlarla 16 seviyeye sahiptir. Her seviyenin kendi bağımsız kuyruğu vardır.",
+    "replayProtection": "Tekrar Koruması",
+    "replayProtectionDesc": "Her işlem TxGuard hesabında saklanan benzersiz bir nonce kullanır. Bu, tekrar saldırılarını önler ve her aktivasyonun yalnızca bir kez işlenmesini sağlar.",
+    "globalQueue": "Global Kuyruk",
+    "globalQueueDesc": "Her seviye sayfalanmış QueuePages (sayfa başına 64 oyuncu) ile bir LevelPool tutar. Sayfa dolduğunda otomatik olarak yeni sayfa oluşturulur.",
+    "referralChain": "Referans Zinciri",
+    "referralChainDesc": "Kayıt olduğunuzda 3 seviyeli üst hattınız on-chain kaydedilir. Yalnızca aynı seviye aktifse aktivasyonlarınızdan bonus alırlar.",
+    "levels": "Seviyeler",
+    "slotsPerCycle": "Döngü Başına Slot",
+    "autoRecycle": "Otomatik Geri Dönüşüm",
+    "ownerPayout": "Sahip Ödemesi",
+    "perActivation": "Aktivasyon Başına",
+    "referralTotal": "Referans Toplamı"
+  },
+  "mechanics": {
+    "gameMechanics": "Oyun Mekaniği",
+    "howSolanaGameWorks": "Solana Game Nasıl Çalışır",
+    "description": "Solana akıllı sözleşmeleri ile desteklenen merkezi olmayan akıllı seviyeler aracılığıyla kazan, yükselt ve oyna",
+    "activateLevel": "Seviye Aktifleştir",
+    "activateLevelDesc": "Herhangi bir seviyeyi seçin ve doğrudan on-chain aktifleştirin. Sahiplik Solana blockchain'inde kalıcı olarak kaydedilir.",
+    "playRecycle": "Oyna ve Geri Dönüştür",
+    "playRecycleDesc": "Her seviye üç slot kapandıktan sonra otomatik olarak döngü yapar — ödüller anında dağıtılır.",
+    "earnUpgrade": "Kazan ve Yükselt",
+    "earnUpgradeDesc": "SOL olarak ödül toplayın ve daha yüksek getiri için daha yüksek seviyeleri açın."
+  },
+  "stats": {
+    "title": "Topluluk Avantajları",
+    "growingEverySecond": "Daha Büyük Bir Şeyin Parçası Olun",
+    "description": "Aktif kazananların küresel ağına katılın ve birlikte büyüyin.",
+    "worldwideNetwork": "Dünya Çapında Ağ",
+    "worldwideNetworkDesc": "Dünyanın her yerinden erişim",
+    "thrivingCommunity": "Gelişen Topluluk",
+    "thrivingCommunityDesc": "Günlük kazanan aktif üyeler",
+    "alwaysSupported": "Her Zaman Desteklenir",
+    "alwaysSupportedDesc": "İhtiyacınız olduğunda yardım alın",
+    "collectiveWins": "Kolektif Zaferler",
+    "collectiveWinsDesc": "Başarı ağ ile birlikte büyür",
+    "startEarning": "Şimdi Kazanmaya Başla",
+    "goToDashboard": "Panele Git",
+    "walletConnected": "Cüzdan bağlandı. Kazanmaya hazır.",
+    "noHiddenFees": "Gizli ücret yok. Anında ödemeler. %100 on-chain."
+  },
+  "levels": {
+    "title": "Seviyeler",
+    "level": "Seviye",
+    "price": "Fiyat",
+    "activate": "Aktifleştir",
+    "activating": "Aktifleştiriliyor...",
+    "activated": "Aktifleştirildi",
+    "locked": "Kilitli",
+    "cycles": "Döngüler",
+    "slots": "Slotlar",
+    "filled": "Dolu",
+    "earnings": "Kazançlar",
+    "totalEvents": "Toplam Olay",
+    "cyclesDone": "Tamamlanan Döngü",
+    "queue": "Sırada",
+    "yourPosition": "Pozisyonunuz",
+    "recycleAfter": "3 slot dolduktan sonra geri dönüşüm"
+  },
+  "history": {
+    "title": "İşlem Geçmişi",
+    "noTransactions": "Henüz işlem yok",
+    "activation": "Aktivasyon",
+    "earning": "Kazanç",
+    "referralBonus": "Referans Bonusu",
+    "referralActivated": "Referans Etkinleştirildi",
+    "referralRegistered": "Referans Kaydedildi",
+    "cycleClose": "Döngü Tamamlandı",
+    "recycled": "Yeniden Döngüye Alındı",
+    "reOpened": "Yeniden Açıldı",
+    "viewExplorer": "Explorer'da görüntüle",
+    "view": "Görüntüle",
+    "viewAll": "Tümünü gör",
+    "synthetic": "sentetik",
+    "pending": "Bekliyor",
+    "slot": "slot",
+    "justNow": "Şimdi",
+    "mAgo": "dk önce",
+    "hAgo": "sa önce",
+    "dAgo": "gün önce",
+    "activated": "Etkinleştirildi",
+    "filters": {
+      "all": "Tümü",
+      "activations": "Aktivasyonlar",
+      "earnings": "Kazançlar",
+      "pending": "Beklemede"
+    },
+    "ownerPayout": "Sahip Ödemesi (60%)",
+    "referralPayoutL1": "Referans Bonusu L1 (13%)",
+    "referralPayoutL2": "Referans Bonusu L2 (8%)",
+    "referralPayoutL3": "Referans Bonusu L3 (5%)",
+    "fromSlot": "Slot {slot}"
+  },
+  "info": {
+    "platformFeatures": "Platform Özellikleri",
+    "builtOn": "Üzerine Kurulu",
+    "solana": "Solana",
+    "description": "Şeffaf akıllı sözleşmeler, anında işlemler ve merkezi olmayan referans sistemi",
+    "documentation": "Dokümantasyon",
+    "documentationDesc": "X3 matris sistemini anlamak ve kazançlarınızı maksimize etmek için kapsamlı rehberler.",
+    "instantPayouts": "Anında Ödemeler",
+    "instantPayoutsDesc": "SOL doğrudan cüzdanınıza gönderilir. Gecikme yok, aracı yok.",
+    "referralSystem": "Referans Sistemi",
+    "referralSystemDesc": "Referans hatlarınızdan %13, %8 ve %5 kazanın. Ağınızı kurun.",
+    "readDocs": "Dokumanları Oku",
+    "learnMore": "Daha Fazla Öğren",
+    "startEarning": "Kazanmaya Başla",
+    "ownerPayout": "Sahip Ödemesi",
+    "referralRewards": "Referans Ödülleri",
+    "transactionSpeed": "İşlem Hızı"
+  },
+  "partner": {
+    "title": "Partner Programı",
+    "subtitle": "Arkadaşlarınızı davet edin ve aktivasyonlarından %50 bonus kazanın",
+    "yourReferralLink": "Referans Linkiniz",
+    "copyLink": "Linki Kopyala",
+    "linkCopied": "Link kopyalandı!",
+    "howItWorks": "Partner Bonusu Nasıl Çalışır",
+    "level1": "Seviye 1 Partner",
+    "level2": "Seviye 2 Partner",
+    "level3": "Seviye 3 Partner",
+    "bonus1": "Direkt referanslardan %13",
+    "bonus2": "Seviye 2 referanslardan %8",
+    "bonus3": "Seviye 3 referanslardan %5"
+  },
+  "telegram": {
+    "title": "Telegram Kaynakları",
+    "community": "Topluluk",
+    "communityDesc": "Sohbetimize katılın",
+    "support": "Destek",
+    "supportDesc": "Ekipten yardım alın"
+  },
+  "faq": {
+    "title": "Sık Sorulan Sorular",
+    "subtitle": "Solana Game'i anlamak ve başlamak için hızlı cevaplar",
+    "q1": "Solana Game nedir ve nasıl çalışır?",
+    "a1": "Solana Game, tamamen Solana akıllı sözleşmeleri üzerinde çalışan merkeziyetsiz bir matris platformudur. Bir seviyeyi aktifleştirdiğinizde, küresel bir sıraya katılırsınız. Sizden sonra yeni oyuncular aynı seviyeyi aktifleştirdiğinde, 3 slotunuzu doldururlar. 3 slot dolduktan sonra, ödemelerinizi alır ve otomatik olarak sıraya yeniden girersiniz. Bu döngü süresiz tekrarlanır — bir aktivasyon size sınırsız kazanç potansiyeli verir.",
+    "q2": "Kaç seviye var ve maliyetleri ne kadar?",
+    "a2": "SOL cinsinden sabit fiyatlı 16 seviye var: L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Her seviye kendi sırasıyla bağımsız çalışır — herhangi bir seviyeyi istediğiniz sırayla aktifleştirebilirsiniz.",
+    "q3": "Ne kadar kazanıyorum ve para nereye gidiyor?",
+    "a3": "Birisi bir seviyeyi aktifleştirdiğinde, ödemeler anında dağıtılır: %60 sıra liderine (seviye sahibine), %13 1. hat referansına, %8 2. hata, %5 3. hata ve %14 platform hazinesine gider. Döngü başına (3 slot dolu), seviye fiyatının %180'ini alırsınız. Tüm transferler tek bir blok zinciri işleminde atomik olarak gerçekleşir.",
+    "q4": "Referans programı nasıl çalışır?",
+    "a4": "Kayıt olduğunuzda, referans zinciriniz zincir üzerinde kaydedilir (3 seviye derinliğinde). Referanslarınız her seviye aktivasyonunuzdan %13, %8 ve %5 kazanır. Önemli: referans bonusları yalnızca üst hattınız aynı seviyeyi aktif ettiyse uygulanır. Değilse, payları hazineye gider. Bu herkesi daha fazla seviye aktifleştirmeye teşvik eder.",
+    "q5": "3 slotum dolduktan sonra ne olur?",
+    "a5": "Seviyeniz otomatik olarak 'geri dönüşür' — slotlarınız 0'a sıfırlanır, döngü sayacınız 1 artar ve sıranın sonuna yeniden girersiniz. Pozisyonunuzu korur ve aynı seviye aktivasyonundan sonsuza kadar kazanmaya devam edersiniz. Tamamlayabileceğiniz döngü sayısında sınır yoktur.",
+    "q6": "Nasıl başlarım?",
+    "a6": "Adım 1: Phantom cüzdanınızı (veya başka bir Solana cüzdanını) bağlayın. Adım 2: Oyuncu profilinizi kaydedin — bu zincir üstü hesabınızı oluşturur ve referansınızı kaydeder. Adım 3: 0.05 SOL karşılığında Seviye 1'i aktifleştirin. Adım 4: Başkaları katıldığında bonus kazanmak için referans linkinizi paylaşın. Slotlarınızı, döngülerinizi ve kazançlarınızı panelde gerçek zamanlı olarak izleyebilirsiniz.",
+    "q7": "Param güvende mi? Birisi fonlarımı çalabilir mi?",
+    "a7": "Fonlarınız tamamen güvendedir. Platform doğrulanmış, değiştirilemez akıllı sözleşmeler üzerinde çalışır — geliştiriciler dahil hiç kimse kodu değiştiremez veya cüzdanınıza erişemez. Ödemeler herhangi bir aracı olmadan doğrudan cüzdandan cüzdana gider. Sözleşme, yinelenen işlemlere karşı TxGuard koruması içerir. Fonlarınızın velayetini asla kimseye vermezsiniz.",
+    "q8": "Benden sonra kimse aktifleştirmezse ne olur?",
+    "a8": "Sıradaki pozisyonunuz kalıcıdır ve asla sona ermez. Sadece yeni oyuncular seviyeyi aktifleştirene kadar beklersiniz. Sıra küreseldir — dünya çapındaki tüm oyuncular her seviye için aynı sırayı paylaşır. Seviye ne kadar popülerse, slotlarınız o kadar hızlı dolar. Daha yüksek seviyeler daha uzun sürebilir ama daha büyük ödemeler sunar."
+  },
+  "footer": {
+    "description": "Solana blok zincirinde merkeziyetsiz X3 matris sistemi. Anında ödemeler, şeffaf mekanizma, %100 on-chain.",
+    "smartContract": "Akıllı Sözleşme",
+    "contractAddress": "Sözleşme Adresi",
+    "verifyExplorer": "Sözleşme adresini Solana Explorer'da doğrulayın",
+    "viewOnExplorer": "Explorer'da görüntüle",
+    "platform": "Platform",
+    "gameLevels": "Oyun Seviyeleri",
+    "resources": "Kaynaklar",
+    "howItWorks": "Nasıl Çalışır",
+    "docs": "Dokümantasyon",
+    "disclaimer": "Sorumluluk Reddi",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Cüzdan Bağlı",
+    "allRightsReserved": "Tüm hakları saklıdır"
+  },
+  "wallet": {
+    "connect": "Cüzdan Bağla",
+    "connecting": "Bağlanıyor...",
+    "connected": "Bağlı",
+    "disconnect": "Bağlantıyı Kes",
+    "balance": "Bakiye",
+    "address": "Adres",
+    "copyAddress": "Adresi Kopyala",
+    "viewExplorer": "Explorer'da görüntüle",
+    "switchWallet": "Cüzdan Değiştir",
+    "installPhantom": "Phantom Yükle",
+    "phantomRequired": "Phantom cüzdan gerekli",
+    "readyToConnect": "Bağlanmaya hazır",
+    "supported": "Destekleniyor",
+    "connectToContinue": "Devam etmek için bağlanın",
+    "phantomNotFound": "Phantom bulunamadı",
+    "pleaseInstall": "Lütfen Phantom cüzdan uzantısını yükleyin",
+    "byConnecting": "Bağlanarak Hizmet Şartlarını kabul etmiş olursunuz",
+    "notInstalled": "Yüklü değil"
+  },
+  "guard": {
+    "title": "Cüzdanınızı Bağlayın",
+    "description": "Panele erişmek için lütfen Solana cüzdanınızı bağlayın. Blok zinciri ile etkileşim için cüzdanınız gereklidir.",
+    "backHome": "Ana Sayfaya Dön",
+    "registerRequired": "Kayıt Gerekli",
+    "registerRequiredDesc": "Panele erişmek için oyuncu olarak kayıt olmanız gerekir. Ücretsizdir ve sadece birkaç saniye sürer."
+  },
+  "docs": {
+    "title": "Dokümantasyon",
+    "startPlaying": "Oynamaya Başla",
+    "overview": "Genel Bakış",
+    "gettingStarted": "Başlarken",
+    "matrixSystem": "X3 Matris Sistemi",
+    "earnings": "Kazançlar ve Ödemeler",
+    "referrals": "Referans Programı",
+    "security": "Güvenlik"
+  },
+  "disclaimer": {
+    "title": "Sorumluluk Reddi",
+    "understand": "Anlıyorum",
+    "intro": "Solana Program X3'ü kullanmadan önce lütfen bu sorumluluk reddini dikkatlice okuyun. Platforma erişerek veya kullanarak bu şartlara bağlı kalmayı kabul etmiş sayılırsınız.",
+    "lastUpdated": "Son güncelleme: Aralık 2024",
+    "importantNotice": "Önemli Uyarı",
+    "importantNoticeText": "Kripto para yatırımları yüksek risk taşır. Sadece kaybetmeyi göze alabileceğiniz miktarı yatırın. Bu platform değiştirilemez akıllı sözleşmeler üzerinde çalışır—işlemler geri alınamaz.",
+    "acceptanceTitle": "Şartları Kabul Etme",
+    "acceptanceText": "Solana Program X3'ü kullanarak, bu sorumluluk reddini ve tüm geçerli şartları ve koşulları okuduğunuzu, anladığınızı ve bunlara bağlı kalmayı kabul ettiğinizi beyan edersiniz.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Platformun Doğası",
+        "content": "Solana Program X3, Solana blok zinciri üzerine inşa edilmiş merkezi olmayan bir uygulamadır (dApp). Platform, zincir üzerinde dağıtılan değiştirilemez akıllı sözleşmeler aracılığıyla çalışır. Dağıtıldıktan sonra, akıllı sözleşme kodu geliştiriciler dahil hiçbir taraf tarafından değiştirilemez, değiştirilemez veya kontrol edilemez.\n\nPlatform, katılımcıların seviyeleri etkinleştirebileceği ve akıllı sözleşmede tanımlanan mekaniklere göre ödeme alabileceği matris tabanlı bir sistem sağlar. Tüm işlemler, önceden tanımlanmış kurallara göre blok zinciri tarafından otomatik olarak yürütülür."
+      },
+      "noFinancialAdvice": {
+        "title": "Mali Tavsiye Değildir",
+        "content": "Bu platformdaki hiçbir şey mali, yatırım, hukuki veya vergi tavsiyesi oluşturmaz. Sağlanan bilgiler yalnızca eğitim ve bilgilendirme amaçlıdır. Herhangi bir mali karar vermeden önce nitelikli profesyonellerle danışmalısınız.\n\nBlok zinciri tabanlı platformlara katılmak önemli riskler içerir. Geçmiş performans gelecekteki sonuçları garanti etmez. Kripto paraların değeri önemli ölçüde dalgalanabilir ve yatırımınızın bir kısmını veya tamamını kaybedebilirsiniz."
+      },
+      "riskAcknowledgment": {
+        "title": "Risk Tanıma",
+        "content": "Solana Program X3'ü kullanarak aşağıdaki riskleri kabul edersiniz:\n\n• Akıllı Sözleşme Riski: Kod dikkatli bir şekilde geliştirilmiş olsa da, hiçbir akıllı sözleşme potansiyel güvenlik açıklarından veya hatalardan tamamen arınmış değildir.\n\n• Piyasa Riski: SOL ve diğer kripto paraların değeri oldukça değişken olabilir ve önemli kayıplara neden olabilir.\n\n• Düzenleyici Risk: Kripto para düzenlemeleri yargı yetkisine göre değişir ve değişebilir. Geçerli yasalara uygunluğu sağlamak sizin sorumluluğunuzdadır.\n\n• Ağ Riski: Solana blok zinciri, işlemleri etkileyebilecek tıkanıklık, kesintiler veya diğer teknik sorunlar yaşayabilir.\n\n• Erişim Kaybı: Cüzdanınıza veya özel anahtarlarınıza erişimi kaybederseniz, fonlarınız kalıcı olarak erişilemez hale gelebilir."
+      },
+      "noGuarantees": {
+        "title": "Garanti Yok",
+        "content": "Platform aşağıdakiler hakkında garanti vermez:\n\n• Herhangi bir kazanç veya getirinin miktarı veya zamanlaması\n• Platformun sürekli çalışması\n• Herhangi bir özelliğin kullanılabilirliği veya işlevselliği\n• Görüntülenen bilgilerin doğruluğu\n• Diğer katılımcıların eylemleri\n\nSonuçlarınız tamamen diğer katılımcıların faaliyetine ve akıllı sözleşmenin mekaniğine bağlıdır. Herhangi bir ödeme alacağınız veya ilk yatırımınızı geri kazanacağınız garantisi yoktur."
+      },
+      "yourResponsibilities": {
+        "title": "Sorumluluklarınız",
+        "content": "Bir katılımcı olarak, yalnızca siz sorumlusunuz:\n\n• Katılmadan önce kendi araştırmanızı yapmak\n• Cüzdanınızı ve özel anahtarlarınızı güvence altına almak\n• Platformun mekaniğini anlamak\n• Yargı yetkinizdeki tüm geçerli yasa ve düzenlemelere uymak\n• Gerektiğinde vergi amaçlı kazançları bildirmek\n• Katılımınız hakkında bilinçli kararlar vermek\n\nSadece tamamen kaybetmeyi göze alabileceğiniz fonlarla katılmalısınız."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Yargı Yetkisi Kısıtlamaları",
+        "content": "Platform belirli yargı yetkilerinde mevcut olmayabilir veya kısıtlanabilir. Platform kullanımınızın yargı yetkinizde yasal olup olmadığını belirlemek sizin sorumluluğunuzdadır.\n\nPlatforma erişerek ve kullanarak, yargı yetkinizde bunu yapmaya yasal olarak izin verildiğinizi ve tüm geçerli yerel, eyalet, ulusal ve uluslararası yasa ve düzenlemelere uyacağınızı beyan eder ve garanti edersiniz."
+      },
+      "thirdPartyServices": {
+        "title": "Üçüncü Taraf Hizmetleri",
+        "content": "Platform aşağıdakiler dahil üçüncü taraf hizmetlerle entegre edilmiştir:\n\n• Solana Blok Zinciri Ağı\n• Cüzdan Sağlayıcıları (Phantom, Solflare vb.)\n• RPC Sağlayıcıları\n\nBu üçüncü taraf hizmetler üzerinde kontrolümüz yoktur ve bunların kullanılabilirliği, güvenliği veya kullanımlarından kaynaklanan sorunlardan sorumlu değiliz."
+      },
+      "limitationOfLiability": {
+        "title": "Sorumluluk Sınırlaması",
+        "content": "Yasaların izin verdiği azami ölçüde, geliştiriciler, katkıda bulunanlar ve ilişkili taraflar aşağıdakilerden kaynaklanan doğrudan, dolaylı, arızi, özel, sonuçsal veya örnek nitelikteki zararlardan sorumlu olmayacaktır:\n\n• Platformu kullanmanız veya kullanamamanız\n• Platform üzerinden yapılan işlemler\n• Cüzdanınıza veya fonlarınıza yetkisiz erişim\n• Akıllı sözleşme kodundaki hatalar veya eksiklikler\n• Platformla ilgili diğer herhangi bir konu\n\nBu sınırlama, yasal teoriye bakılmaksızın ve böyle bir zarar olasılığından haberdar edilmiş olsak bile geçerlidir."
+      },
+      "modifications": {
+        "title": "Değişiklikler",
+        "content": "Bu sorumluluk reddi zaman zaman güncellenebilir. Akıllı sözleşme kodu değiştirilemez olsa da, ön uç arayüzü ve bu sorumluluk reddi değiştirilebilir. Değişiklikleri kontrol etmek için bu sorumluluk reddini periyodik olarak gözden geçirmek sizin sorumluluğunuzdadır.\n\nHerhangi bir değişiklikten sonra platformu kullanmaya devam etmek, güncellenmiş şartların kabulünü oluşturur."
+      },
+      "contact": {
+        "title": "İletişim",
+        "content": "Bu sorumluluk reddi veya platform hakkında sorularınız varsa, lütfen resmi Telegram destek kanalımız aracılığıyla bizimle iletişime geçin.\n\nUnutmayın: Ekibimizden olduğunu iddia eden herhangi biri dahil olmak üzere özel anahtarlarınızı veya tohum ifadenizi kimseyle paylaşmayın."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Adres kopyalandı",
+    "signatureCopied": "İmza kopyalandı",
+    "contractCopied": "Sözleşme adresi kopyalandı",
+    "linkCopied": "Link kopyalandı",
+    "copyFailed": "Kopyalama başarısız",
+    "walletNotConnected": "Cüzdan bağlı değil",
+    "connectWalletFirst": "Önce cüzdanınızı bağlayın",
+    "invalidLevel": "Geçersiz seviye",
+    "activationSent": "Aktivasyon gönderildi",
+    "activationSentLevel": "L{level} aktivasyon gönderildi",
+    "activatingLevel": "Seviye {level} etkinleştiriliyor...",
+    "activationError": "Aktivasyon hatası",
+    "registrationSuccess": "Oyuncu başarıyla kaydedildi",
+    "registrationFailed": "Kayıt başarısız",
+    "profileCreated": "Profil oluşturuldu",
+    "referralActivatedLevel": "Referans ağınızdan biri {level} seviyesini etkinleştirdi",
+    "creatingProfile": "Profil oluşturuluyor...",
+    "insufficientFundsForRegistration": "Kayıt için yetersiz bakiye. En az 0.0030 SOL gerekir.",
+    "transactionProcessing": "İşlem işleniyor...",
+    "clipboardNotSupported": "Pano desteklenmiyor",
+    "playerRegistered": "Oyuncu kayıtlı",
+    "viewInExplorer": "Explorer'da görüntüle",
+    "closeNotification": "Bildirimi kapat",
+    "comingSoon": "Yakında",
+    "loadError": "Veri yüklenemedi",
+    "activationFinalized": "Aktivasyon tamamlandı",
+    "registrationFinalized": "Kayıt tamamlandı",
+    "checkingPlayerState": "Oyuncu durumu kontrol ediliyor…",
+    "playerNotFound": "Oyuncu bulunamadı — Kayıt Ol'a basın",
+    "levelAlreadyActivated": "Seviye zaten etkinleştirildi",
+    "pressActivate": "Bu seviyeyi etkinleştirmek için Etkinleştir'e basın"
+  },
+  "overlay": {
+    "processing": "İşlem işleniyor..."
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "home": "Ana Sayfa",
+    "levels": "Seviyeler",
+    "history": "Geçmiş",
+    "information": "Bilgi",
+    "info": "Bilgi",
+    "partnerBonus": "Partner Bonusu",
+    "partners": "Partnerler",
+    "telegram": "Telegram",
+    "support": "Destek",
+    "more": "Daha fazla"
+  },
+  "mobileMenu": {
+    "connectWallet": "Cüzdan bağla",
+    "connecting": "Bağlanıyor...",
+    "createProfile": "Profil oluştur",
+    "creatingProfile": "Profil oluşturuluyor...",
+    "goToDashboard": "Panele git"
+  },
+  "dashboardPage": {
+    "title": "Kontrol Paneli",
+    "subtitle": "Seviyeleriniz, kazançlarınız ve aktiviteleriniz",
+    "yourStatistics": "İstatistikleriniz",
+    "onChainData": "Zincir Üstü Veriler",
+    "activeLevels": "Aktif Seviyeler",
+    "next": "Sonraki",
+    "allDone": "Tamamlandı",
+    "completedCycles": "Tamamlanan Döngüler",
+    "slotsEquals": "3 slot = 1 döngü",
+    "estEarnings": "Tahmini Kazanç",
+    "ownerPayout": "60% sahip ödemesi",
+    "totalSpent": "Toplam Harcanan",
+    "levelActivations": "seviye aktivasyonları",
+    "yourLevels": "Seviyeleriniz",
+    "slotsAndCycles": "Slotlar ve Döngüler",
+    "viewAll": "Tümünü gör",
+    "slots": "slot",
+    "cycle": "döngü",
+    "cycles": "döngü",
+    "howItWorks": "Nasıl çalışır:",
+    "howItWorksDesc": "3 oyuncu seviyenizi aktive ettiğinde, her ödemeden %60 alırsınız. Geri kalan → yönlendirenler (%26) + hazine (%14).",
+    "latestActivity": "Son Aktivite",
+    "transactionHistory": "İşlem Geçmişi",
+    "live": "canlı",
+    "noActivity": "Henüz aktivite yok. Başlamak için ilk seviyenizi aktive edin.",
+    "contractIdCopied": "Sözleşme ID kopyalandı"
+  },
+  "levelsPage": {
+    "title": "Seviyeler",
+    "subtitle": "SOL kazanmak için seviyeleri aktive edin",
+    "active": "Aktif",
+    "ready": "hazır",
+    "noWallet": "cüzdan yok",
+    "registerFirst": "Lütfen önce bir oyuncu kaydedin",
+    "levelAlreadyActive": "zaten aktif",
+    "activated": "aktive edildi"
+  },
+  "historyPage": {
+    "title": "İşlem Geçmişi",
+    "subtitle": "Tüm aktivasyonlarınız, kazançlarınız ve sistem olayları",
+    "wallet": "Cüzdan",
+    "notConnected": "Bağlı değil",
+    "totalEvents": "Toplam Olay",
+    "activations": "Aktivasyonlar",
+    "cyclesDone": "Tamamlanan Döngüler",
+    "pending": "Bekleyen",
+    "all": "Tümü",
+    "earnings": "Kazançlar",
+    "connectWallet": "Geçmişi görmek için cüzdanınızı bağlayın",
+    "noTransactions": "Henüz işlem yok. Başlamak için ilk seviyenizi aktive edin.",
+    "noEventsFound": "{filter} olayı bulunamadı.",
+    "transactionTypes": "İşlem Türleri",
+    "activationsDesc": "Seviye aktivasyonlarınız ve geri dönüşümleriniz. Bunlar giden işlemlerdir.",
+    "earningsDesc": "Aldığınız ödemeler: %60 sahip ödemesi + yönlendirme bonusları (%13, %8, %5).",
+    "pendingDesc": "Blockchain onayı bekleyen işlemler.",
+    "cyclesDesc": "Tamamlanan döngüler — 3 slot dolu, sonra sıraya otomatik geri dönüşüm.",
+    "walletCopied": "Cüzdan kopyalandı",
+    "connectFirst": "Önce cüzdanınızı bağlayın",
+    "copyFailed": "Kopyalama başarısız"
+  },
+  "informationPage": {
+    "title": "Nasıl Çalışır",
+    "subtitle": "Platform hakkında bilmeniz gereken her şey",
+    "totalLevels": "Toplam Seviye",
+    "slotsPerCycle": "Döngü Başına Slot",
+    "yourPayout": "Ödemeniz",
+    "network": "Ağ",
+    "whatIsThis": "Bu platform nedir?",
+    "whatIsThisDesc": "Bu, Solana blok zincirinde merkezi olmayan bir uygulamadır. Her şey akıllı sözleşmeler aracılığıyla otomatik olarak çalışır — yönetici yok, aracı yok. Seviyeleri aktive edersiniz, sizden sonra başkaları katıldığında kazanırsınız ve süreç sonsuza kadar tekrarlanır.",
+    "transparent": "Şeffaf",
+    "transparentDesc": "Tüm işlemler Solana blok zincirinde görünür. Gizli bir şey yok.",
+    "automatic": "Otomatik",
+    "automaticDesc": "Akıllı sözleşme ödemeleri işler. Gecikme yok, onay gerekmez.",
+    "unlimited": "Sınırsız",
+    "unlimitedDesc": "Her seviye sonsuza kadar kazanabilir. Döngü veya kazanç limiti yok.",
+    "simpleProcess": "Basit 4 Adımlı Süreç",
+    "step1Title": "Seviye Aktive Et",
+    "step1Desc": "L01'den L16'ya kadar herhangi bir seviye seçin. Aktivasyon fiyatını bir kez ödeyin. Artık bu seviyeye sahipsiniz ve sıraya giriyorsunuz.",
+    "step2Title": "3 Aktivasyon Bekle",
+    "step2Desc": "Sizden sonra 3 oyuncu aynı seviyeyi aktive ettiğinde, her biri seviye fiyatının %60'ını size öder. Toplamda 3 ödeme.",
+    "step3Title": "Döngü Tamamlandı",
+    "step3Desc": "3 ödeme aldıktan sonra seviyeniz otomatik olarak geri dönüşür. Sıraya geri dönersiniz ve tekrar kazanabilirsiniz.",
+    "step4Title": "Sonsuza Kadar Tekrarla",
+    "step4Desc": "Döngü süresiz olarak tekrarlanır. Bir aktivasyon = yeni oyuncular katılmaya devam ettiği sürece sınırsız kazanç potansiyeli.",
+    "whereMoneyGoes": "Para Nereye Gidiyor?",
+    "moneyGoesDesc": "Biri bir seviyeyi aktive ettiğinde, ödeme anında bölünür:",
+    "youOwner": "Siz (Sahip)",
+    "yourEarnings": "Aktivasyon başına kazancınız",
+    "referrerL1": "Yönlendiren L1",
+    "directInviter": "Doğrudan davetçiniz",
+    "referrerL2": "Yönlendiren L2",
+    "inviterOfInviter": "Davetçinizin davetçisi",
+    "referrerL3": "Yönlendiren L3",
+    "thirdLevelUpline": "Üçüncü seviye upline",
+    "platform": "Platform",
+    "projectDevelopment": "Proje geliştirme",
+    "exampleCalculation": "Örnek Hesaplama",
+    "exampleDesc": "L01 0.05 SOL'dur. Sizden sonra 3 kişi aktive ettiğinde:",
+    "youReceive": "Aldığınız:",
+    "perCycle": "döngü başına",
+    "levelPrices": "Seviye Fiyatları",
+    "levelPricesDesc": "16 seviye mevcut. Daha yüksek seviye = döngü başına daha yüksek kazanç.",
+    "allPricesInSol": "Tüm fiyatlar SOL cinsinden",
+    "referralBonuses": "Yönlendirme Bonusları",
+    "referralBonusesDesc": "Davet ettiğiniz biri seviyelerinden kazandığında, siz de bonus alırsınız:",
+    "directReferral": "Doğrudan Yönlendirme (Çizgi 1)",
+    "peopleInvitedDirectly": "Doğrudan davet ettiğiniz kişiler",
+    "secondLine": "İkinci Çizgi (Çizgi 2)",
+    "peopleInvitedByReferrals": "Yönlendirmeleriniz tarafından davet edilen kişiler",
+    "thirdLine": "Üçüncü Çizgi (Çizgi 3)",
+    "thirdLevelNetwork": "Ağınızın üçüncü seviyesi",
+    "referralNote": "Not: Sadece aktive ettiğiniz seviyeler için yönlendirme bonusu alırsınız. L05 aktif değilse, L05'ten yönlendirme bonusları platforma gider.",
+    "commonQuestions": "Sık Sorulan Sorular",
+    "q1": "Seviyeleri sırayla mı aktive etmeliyim?",
+    "a1": "Hayır. İstediğiniz zaman herhangi bir seviyeyi aktive edebilirsiniz. L01 ve L16 tamamen bağımsızdır.",
+    "q2": "Döngüm tamamlandığında ne olur?",
+    "a2": "Seviyeniz otomatik olarak sıraya geri döner. Tekrar tekrar kazanabilirsiniz.",
+    "q3": "Paramı kaybedebilir miyim?",
+    "a3": "Bir kez aktive edildiğinde, seviye sonsuza kadar çalışır. Kaybedemezsiniz. Tüm ödemeler akıllı sözleşme tarafından garanti edilir.",
+    "q4": "Ödemeler ne kadar hızlı?",
+    "a4": "Anında. Biri aktive ettiği anda SOL doğrudan cüzdanınıza gider. Gecikme yok.",
+    "q5": "Yönlendirmem yoksa ne olur?",
+    "a5": "Yine de seviyelerinizden %60 kazanırsınız. Yönlendirme bonusları ekstra gelirdir.",
+    "gettingStarted": "Başlarken",
+    "getWallet": "Cüzdan Edinin",
+    "getWalletDesc": "Tarayıcınız veya telefonunuz için Phantom veya Backpack cüzdanını indirin.",
+    "getSol": "SOL Edinin",
+    "getSolDesc": "Herhangi bir borsadan (Binance, Coinbase vb.) SOL satın alın ve cüzdanınıza gönderin.",
+    "minimumForL01": "L01 için minimum: ~0.06 SOL (ücretler dahil)",
+    "connectWallet": "Cüzdan Bağla",
+    "connectWalletDesc": "Başlıkta \"Bağlan\" düğmesine tıklayın. Cüzdanınızda bağlantıyı onaylayın.",
+    "activateLevels": "Seviyeleri Aktive Et",
+    "activateLevelsDesc": "Seviyeler sayfasına gidin, bir seviye seçin, Aktive Et'e tıklayın. Cüzdanda onaylayın. Bitti."
+  },
+  "referralTree": {
+    "title": "Referans Ağacı",
+    "subtitle": "Aktif referans ağınız (toplam {count})",
+    "total": "Toplam",
+    "noReferrals": "Henüz referans yok",
+    "shareLink": "Ağınızı oluşturmaya başlamak için referans bağlantınızı paylaşın",
+    "line": "Çizgi {number}",
+    "noReferralsInLine": "Bu çizgide referans yok",
+    "referralsCount": "{count} {count, plural, one {referans} other {referans}}",
+    "copyAddress": "Adresi kopyala",
+    "refresh": "Yenile",
+    "yourLink": "Referans bağlantınız",
+    "copyLink": "Bağlantıyı kopyala",
+    "linkCopied": "Bağlantı kopyalandı!",
+    "addressCopied": "Adres kopyalandı!",
+    "viewExplorer": "Explorer'da görüntüle",
+    "copied": "Kopyalandı!",
+    "levels": "Seviyeler:",
+    "loadingLevels": "Seviyeler yükleniyor..."
+  },
+  "partnerBonusPage": {
+    "title": "Partner Programı",
+    "subtitle": "Başkalarını davet edin ve aktivitelerinden kazanın",
+    "totalEarned": "Toplam Kazanılan",
+    "line1": "Çizgi 1 (%13)",
+    "line2": "Çizgi 2 (%8)",
+    "line3": "Çizgi 3 (%5)",
+    "yourReferralLink": "Yönlendirme Linkiniz",
+    "copyLink": "Linki Kopyala",
+    "connectWalletForLink": "Yönlendirme linkinizi almak için cüzdanınızı bağlayın",
+    "linkNote": "Biri linkinizle kaydolduğunda, kalıcı olarak Çizgi 1 yönlendirmeniz olur.",
+    "howReferralWorks": "Yönlendirme Bonusları Nasıl Çalışır",
+    "step1Title": "Linkinizi paylaşın",
+    "step1Desc": "Linkiniz aracılığıyla kaydolan herkes Çizgi 1 yönlendirmeniz olur.",
+    "step2Title": "Seviye aktive ederler",
+    "step2Desc": "Yönlendirmeleriniz seviyelerinden kazandığında, bir yüzde alırsınız.",
+    "step3Title": "Otomatik kazanırsınız",
+    "step3Desc": "Bonuslar anında cüzdanınıza ödenir. Talep etmeye gerek yok.",
+    "payoutStructure": "Yönlendirme Ödeme Yapısı",
+    "directReferrals": "Çizgi 1 — Doğrudan Yönlendirmeler",
+    "directReferralsDesc": "Doğrudan davet ettiğiniz kişiler",
+    "secondLevel": "Çizgi 2 — İkinci Seviye",
+    "secondLevelDesc": "Yönlendirmelerinizin yönlendirmeleri",
+    "thirdLevel": "Çizgi 3 — Üçüncü Seviye",
+    "thirdLevelDesc": "Ağınızın üçüncü nesli",
+    "important": "Önemli",
+    "importantDesc": "Sadece aktive ettiğiniz seviyeler için yönlendirme bonusu alırsınız. Yönlendirmeniz L05'ten kazanır ama L05 aktif değilse, bu bonus platforma gider.",
+    "referralActivity": "Yönlendirme Aktivitesi",
+    "refresh": "Yenile",
+    "loading": "Yükleniyor...",
+    "noActivity": "Henüz yönlendirme aktivitesi yok",
+    "noActivityDesc": "Yönlendirme bonusu kazanmaya başlamak için linkinizi paylaşın",
+    "showingOf": "{total} işlemden {count} tanesi gösteriliyor",
+    "tipsForSuccess": "Başarı İçin İpuçları",
+    "tip1Title": "Tüm seviyeleri aktive edin",
+    "tip1Desc": "Ne kadar çok seviyeniz varsa, o kadar çok yönlendirme bonusu alabilirsiniz.",
+    "tip2Title": "Ağınızı oluşturun",
+    "tip2Desc": "3 çizgi derinlik, yönlendirmelerinizin yönlendirmelerinden pasif gelir demektir.",
+    "tip3Title": "Sürekli paylaşın",
+    "tip3Desc": "Linkiniz asla sona ermez. Ağınızı büyütmek için paylaşmaya devam edin.",
+    "tip4Title": "Ekibinize yardım edin",
+    "tip4Desc": "Yönlendirmeleriniz başarılı olduğunda, daha fazla kazanırsınız. Onları destekleyin.",
+    "connectFirst": "Önce cüzdanınızı bağlayın",
+    "linkCopied": "Yönlendirme linki kopyalandı",
+    "copyFailed": "Kopyalama başarısız",
+    "failedToLoad": "Partner geçmişi yüklenemedi",
+    "registration": "Kayıt",
+    "newReferral": "Yeni yönlendirme"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Topluluğumuza katılın ve destek alın",
+    "communityGroup": "Topluluk Grubu",
+    "communityDesc": "Resmi Telegram grubumuza katılın. Diğer oyuncularla sohbet edin, stratejiler paylaşın, güncellemeler ve duyurular alın.",
+    "joinGroup": "Gruba Katıl",
+    "copyLink": "Linki Kopyala",
+    "support": "Destek",
+    "supportDesc": "Yardıma mı ihtiyacınız var? Destek ekibimizle doğrudan iletişime geçin. Platform hakkındaki tüm sorulara hızlıca yanıt veriyoruz.",
+    "contactSupport": "Desteğe Ulaş",
+    "whatYouGet": "Ne Elde Edersiniz",
+    "realTimeUpdates": "Gerçek Zamanlı Güncellemeler",
+    "realTimeUpdatesDesc": "Yeni özellikler, güncellemeler ve duyurulardan ilk siz haberdar olun.",
+    "communitySupport": "Topluluk Desteği",
+    "communitySupportDesc": "Deneyimli oyunculardan yardım alın ve bilginizi paylaşın.",
+    "directAccess": "Doğrudan Erişim",
+    "directAccessDesc": "Teknik sorunlar için destek ekibine hızlı erişim.",
+    "networkGrowth": "Ağ Büyümesi",
+    "networkGrowthDesc": "Diğer oyuncularla bağlantı kurun ve yönlendirme ağınızı büyütün."
+  },
+  "docsPage": {
+    "title": "Dokümantasyon",
+    "label": "Dokümantasyon",
+    "heading": "Solana Program X3 Nasıl Çalışır",
+    "description": "X3 matris sistemini, ödeme mekaniklerini ve kazancınızı nasıl maksimize edeceğinizi anlamak için eksiksiz teknik dokümantasyon.",
+    "startPlaying": "Oynamaya Başla",
+    "swipeHint": "Gezinmek için sola/sağa kaydırın",
+    "of": "/",
+    "more": "Daha fazla",
+    "footerText": "Solana Program X3 — Solana Blockchain'de Merkeziyetsiz Matris",
+    "sections": {
+      "overview": {
+        "title": "Genel Bakış",
+        "shortTitle": "Genel",
+        "content1": {
+          "heading": "Solana Program X3 Nedir?",
+          "text": "Solana Program X3, Solana blockchain üzerine kurulmuş tamamen merkeziyetsiz bir matris sistemidir. Merkezi kontrol olmadan doğrulanmış akıllı sözleşmeler aracılığıyla çalışır, bu da hiç kimsenin kuralları değiştiremeyeceği veya fonlarınıza erişemeyeceği anlamına gelir.\n\nPlatform, her seviyenin global bir kuyruğa sahip olduğu X3 matris modelini kullanır. Bir seviyeyi aktive ettiğinizde, kuyruğa girersiniz. Yeni oyuncular aynı seviyeyi aktive ettikçe, slotlarınızı doldururlar (döngü başına 3 slot). Tüm slotlar dolduğunda, ödemeler alırsınız ve sınırsız döngüler için otomatik olarak kuyruğa yeniden girersiniz."
+        },
+        "content2": {
+          "heading": "Temel Özellikler",
+          "text": "• Sabit fiyatlı 16 bağımsız seviye (0,05 - 8,7 SOL)\n• Otomatik geri dönüşümlü döngü başına 3 slot\n• Aktivasyon başına seviye sahibine %60 ödeme\n• Toplam %26 yönlendirme ödülü (%13 + %8 + %5)\n• Anında cüzdandan cüzdana transferler\n• Çekim gecikmesi veya aracı yok\n• Değiştirilemez akıllı sözleşme kodu"
+        },
+        "content3": {
+          "heading": "Neden Solana Blockchain?",
+          "text": "Solana olağanüstü performansı nedeniyle seçildi:\n\n• İşlem Hızı: ~400ms onay süresi\n• Düşük Ücretler: İşlem başına kuruşun kesirleri\n• Yüksek İşlem Hacmi: Saniyede 65.000+ işlem\n• Merkezi Olmayan: Dünya çapında binlerce doğrulayıcı\n• Kanıtlanmış Geçmiş: TVL'ye göre en iyi blockchain'lerden biri"
+        },
+        "content4": {
+          "heading": "Nasıl Kazanırsınız",
+          "text": "Platformda kazanmanın iki yolu vardır:\n\n1. Seviye Sahipliği: Seviyeleri aktifleştirin ve sizden sonra aktifleştiren her oyuncudan %60 alın (3 ödeme = döngü başına %180)\n\n2. Yönlendirme Bonusları: Başkalarını davet edin ve 3 hatlık ağınızdan %13, %8 ve %5 kazanın\n\nHer iki kazanç yöntemi de aynı anda çalışır ve gelirinizi artırır."
+        },
+        "content5": {
+          "heading": "Akıllı Sözleşme Şeffaflığı",
+          "text": "Tüm platform doğrulanmış, açık kaynaklı akıllı sözleşmeler üzerinde çalışır:\n\n• Sözleşme adresi Solana Explorer'da herkese açık görünür\n• Tüm işlemler blockchain'de kaydedilir\n• Herkes kodu ve mantığı doğrulayabilir\n• Gizli işlev veya arka kapı yok\n• Tamamen güvensiz çalışma"
+        }
+      },
+      "levels": {
+        "title": "Seviye Sistemi",
+        "shortTitle": "Seviyeler",
+        "content1": {
+          "heading": "Seviye Fiyatları",
+          "text": "Sistem, SOL cinsinden sabit fiyatlı 16 seviyeye sahiptir:\n\nSeviye 1: 0,05 SOL    Seviye 9: 3,25 SOL\nSeviye 2: 0,18 SOL    Seviye 10: 3,90 SOL\nSeviye 3: 0,36 SOL    Seviye 11: 4,65 SOL\nSeviye 4: 0,68 SOL    Seviye 12: 5,45 SOL\nSeviye 5: 1,10 SOL    Seviye 13: 6,40 SOL\nSeviye 6: 1,55 SOL    Seviye 14: 7,35 SOL\nSeviye 7: 2,10 SOL    Seviye 15: 8,00 SOL\nSeviye 8: 2,65 SOL    Seviye 16: 8,70 SOL\n\nHer seviye kendi global kuyruğuyla bağımsız çalışır. Seviyeleri istediğiniz sırayla aktive edebilirsiniz."
+        },
+        "content2": {
+          "heading": "Seviyeler Nasıl Çalışır",
+          "text": "1. Sabit fiyatı ödeyerek bir seviyeyi aktive edersiniz\n2. Aktivasyonunuz zincir üzerinde kaydedilir ve global kuyruğa girersiniz\n3. Aynı seviyeyi aktive eden sonraki 3 oyuncu slotlarınızı doldurur\n4. Her oyuncunun ödemesinin %60'ını alırsınız (döngü başına toplam %180)\n5. 3 slot dolduktan sonra otomatik olarak kuyruğa yeniden girersiniz\n6. Bu döngü tek bir aktivasyondan sonsuz tekrarlanır"
+        },
+        "content3": {
+          "heading": "Seviye Bağımsızlığı",
+          "text": "16 seviyenin her biri tamamen bağımsız çalışır:\n\n• Her seviye için ayrı kuyruk\n• Ön koşul yok — istediğiniz zaman herhangi bir seviyeyi aktive edin\n• Birden fazla seviye aynı anda aktif olabilir\n• Her seviye ayrı ayrı kazanır\n• Bir seviyedeki ilerleme diğerlerini etkilemez"
+        },
+        "content4": {
+          "heading": "Seviye Başına Kazançlar",
+          "text": "Her seviye için döngü başına kazançlarınız (3 slot dolu):\n\nL1: 0,09 SOL    L9: 5,85 SOL\nL2: 0,32 SOL    L10: 7,02 SOL\nL3: 0,65 SOL    L11: 8,37 SOL\nL4: 1,22 SOL    L12: 9,81 SOL\nL5: 1,98 SOL    L13: 11,52 SOL\nL6: 2,79 SOL    L14: 13,23 SOL\nL7: 3,78 SOL    L15: 14,40 SOL\nL8: 4,77 SOL    L16: 15,66 SOL\n\nFormül: Seviye Fiyatı × %60 × 3 slot = Döngü Kazançları"
+        },
+        "content5": {
+          "heading": "Otomatik Geri Dönüşüm Mekanizması",
+          "text": "3 slotunuz dolduğunda, seviyeniz otomatik olarak geri dönüştürülür:\n\n• Slot sayacınız 0'a sıfırlanır\n• Döngü sayacınız 1 artar\n• Kuyruk başından kuyruk sonuna taşınırsınız\n• Herhangi bir işlem olmadan kazanmaya devam edersiniz\n• Ek ödeme gerekmez\n\nBu, tek bir aktivasyondan sınırsız kazanç potansiyeli yaratır."
+        }
+      },
+      "queue": {
+        "title": "Global Kuyruk",
+        "shortTitle": "Kuyruk",
+        "content1": {
+          "heading": "Kuyruk Yapısı",
+          "text": "Her seviye, sayfalanmış QueuePages ile bir LevelPool tutar. Temel özellikler:\n\n• Her sayfa 64 oyuncuya kadar tutar\n• Bir sayfa dolduğunda otomatik olarak yeni bir sayfa oluşturulur\n• Oyuncular ilk gelen ilk hizmet alır sırasıyla işlenir\n• Pozisyonunuz kalıcıdır ve asla sona ermez\n• Her döngü tamamlandıktan sonra kuyruğun sonuna yeniden girersiniz"
+        },
+        "content2": {
+          "heading": "Kuyruk İşleme",
+          "text": "Yeni bir oyuncu bir seviyeyi aktive ettiğinde:\n\n1. Akıllı sözleşme kuyruk başını tanımlar\n2. Bu oyuncunun slots_filled sayacı 1 artar\n3. Ödeme dağıtılır (%60 sahibine, yönlendirmeler, hazine)\n4. slots_filled 3'e ulaşırsa, seviye geri dönüştürülür:\n   - döngü sayacı 1 artar\n   - slots_filled 0'a sıfırlanır\n   - Oyuncu baştan çıkarılır ve sona eklenir\n5. Yeni oyuncu da kuyruğun sonuna girer"
+        },
+        "content3": {
+          "heading": "Adil Dağıtım",
+          "text": "Kuyruk sistemi tüm katılımcılara adil muamele sağlar:\n\n• İlk gelen ilk hizmet alır — kayırmacılık yok\n• Kuyruk pozisyonunu atlamanın veya manipüle etmenin yolu yok\n• Herkes eşit şekilde sırasını bekler\n• Akıllı sözleşme kuralları otomatik olarak uygular\n• Şeffaf ve zincir üzerinde doğrulanabilir"
+        },
+        "content4": {
+          "heading": "Kuyruk Hızı",
+          "text": "Slotlarınızın dolma hızı seviye aktivitesine bağlıdır:\n\n• Daha düşük seviyeler (L1-L5): Daha fazla oyuncu, daha hızlı dolma\n• Daha yüksek seviyeler (L11-L16): Daha az oyuncu, daha yavaş dolma\n• Global aktivite tüm kuyrukları etkiler\n• Kuyruk pozisyonunuz önemlidir — daha erken = daha hızlı\n\nİpucu: İlerlemeyi takip etmek için panonuzda kuyruk aktivitesini izleyin."
+        },
+        "content5": {
+          "heading": "Kalıcı Pozisyon",
+          "text": "Bir seviyeyi aktive ettiğinizde, pozisyonunuz asla sona ermez:\n\n• Zaman aşımı veya sona erme yok\n• Kuyruk blockchain'de sonsuza kadar devam eder\n• Aylar sonra bile ödeme alırsınız\n• Bakım veya yenileme gerekmez\n• Aktive edildikten sonra tamamen pasif"
+        }
+      },
+      "payouts": {
+        "title": "Ödeme Dağılımı",
+        "shortTitle": "Ödemeler",
+        "content1": {
+          "heading": "Ödeme Dökümü",
+          "text": "Her aktivasyon seviye fiyatının %100'ünü dağıtır:\n\n• %60 → Seviye Sahibi (kuyruk başı)\n• %13 → Yönlendiren Hat 1 (upline1)\n• %8 → Yönlendiren Hat 2 (upline2)\n• %5 → Yönlendiren Hat 3 (upline3)\n• %14 → Platform Hazinesi\n\nTüm transferler tek bir Solana işleminde atomik olarak gerçekleşir. Gecikme yok, bekleyen durum yok."
+        },
+        "content2": {
+          "heading": "Kazanç Hesaplama",
+          "text": "Döngü başına (3 slot dolu) kazanırsınız:\n%60 × 3 = seviye fiyatının %180'i\n\nSeviye 5 için örnek (1,10 SOL):\n• Slot başına: 0,66 SOL (1,10'un %60'ı)\n• Döngü başına: 1,98 SOL (1,10'un %180'i)\n• Döngü başına ROI: +%80 kar\n\nDöngü sınırı yoktur. Bir aktivasyon = sınırsız kazanç potansiyeli."
+        },
+        "content3": {
+          "heading": "Anında Transferler",
+          "text": "Ödemeler akıllı sözleşme aracılığıyla anında yapılır:\n\n• Bekleyen durum veya gecikme yok\n• Doğrudan cüzdandan cüzdana transferler\n• SOL hemen cüzdanınızda görünür\n• Manuel talep gerekmez\n• Minimum çekim tutarı yok"
+        },
+        "content4": {
+          "heading": "Toplam Kazanç Potansiyeli",
+          "text": "Tüm 16 seviyeyi aktive edip birden fazla döngü tamamlarsanız:\n\nToplam seviye maliyeti: ~42 SOL\nDöngü başına kazançlar: ~100 SOL (tüm seviyeler)\n\nAyrıca ağınızdan yönlendirme bonusları gelirinizi önemli ölçüde artırabilir. Ne kadar çok seviye aktive ederseniz ve ağınız ne kadar büyükse, kazançlarınız o kadar yüksek olur."
+        },
+        "content5": {
+          "heading": "Kazançlarınızı Takip Etme",
+          "text": "Gelirinizi gerçek zamanlı olarak izleyin:\n\n• Pano seviye başına dolu slotları gösterir\n• Tamamlanan döngü sayısını görüntüleyin\n• Kazanılan toplam SOL'u takip edin\n• Bekleyen slot dolumlarını görün\n• İşlem geçmişi mevcut\n\nTüm veriler doğrudan blockchain'den alınır."
+        }
+      },
+      "referrals": {
+        "title": "Yönlendirme Sistemi",
+        "shortTitle": "Yönlendirmeler",
+        "content1": {
+          "heading": "Yönlendirmeler Nasıl Çalışır",
+          "text": "Kayıt olduğunuzda, yönlendirme zinciriniz zincir üzerinde kaydedilir:\n\n• upline1: Doğrudan yönlendireniniz (%13 kazanır)\n• upline2: Yönlendireninizin yönlendireni (%8 kazanır)\n• upline3: Üçüncü seviye yukarı (%5 kazanır)\n\nÖnemli: Yönlendirme bonusları yalnızca upline'ınız AYNI seviyeyi aktif tutuyorsa geçerlidir. Tutmuyorsa, payları platform hazinesine gider."
+        },
+        "content2": {
+          "heading": "Ağınızı Oluşturma",
+          "text": "Yönlendirme kazançlarını maksimize etmek için:\n\n1. Yönlendirme linkinizi paylaşın (player PDA'nızı içerir)\n2. Biri linkinizle kayıt olduğunda, onların upline1'i olursunuz\n3. Aktive ettikleri her seviyeden %13 kazanırsınız (sizde aktifse)\n4. Onların yönlendirmelerinden de %8 kazanırsınız (hat 2'niz)\n5. Ve hat 3 yönlendirmelerinden %5\n\nAnahtar, maksimum yönlendirme geliri için 16 seviyenin tamamını aktive etmektir."
+        },
+        "content3": {
+          "heading": "Yönlendirme Linkiniz",
+          "text": "Benzersiz yönlendirme linkiniz Player PDA'nızı içerir:\n\nhttps://[domain]/?ref=[your_player_pda]\n\nBu linki her yerde paylaşın:\n• Sosyal medya (Twitter, Telegram, Discord)\n• YouTube videoları ve açıklamaları\n• Blog gönderileri ve forumlar\n• Arkadaşlara doğrudan mesajlar\n\nLinkinizle kayıt olan herkes kalıcı yönlendirmeniz olur."
+        },
+        "content4": {
+          "heading": "Seviye Eşleştirme Kuralı",
+          "text": "Kritik kural: Yalnızca SİZİN aktif tuttuğunuz seviyeler için yönlendirme bonusu kazanırsınız.\n\nÖrnek:\n• L1, L2, L3 aktif\n• Yönlendirmeniz L5'i aktive eder\n• L5'iniz olmadığı için %0 kazanırsınız\n\nÇözüm: Olası yönlendirme gelirinin %100'ünü yakalamak için tüm 16 seviyeyi aktive edin."
+        },
+        "content5": {
+          "heading": "Ağ Büyümesi",
+          "text": "Ağınız 3 hat üzerinden otomatik olarak büyür:\n\nHat 1: Doğrudan davet ettiğiniz kişiler (%13)\nHat 2: Hat 1'inizin davet ettiği kişiler (%8)\nHat 3: Hat 2'nizin davet ettiği kişiler (%5)\n\nToplam yönlendirme potansiyeli: 3 hatlık ağınızdaki her aktivasyonun %26'sı. Bu güçlü pasif gelir yaratır."
+        },
+        "content6": {
+          "heading": "Yönlendirme Kazanç Örneği",
+          "text": "10 aktif yönlendirmeniz varsa ve her biri L5'i (1,10 SOL) aktive ederse:\n\nHat 1 (10 kişi): 10 × 1,10 × %13 = 1,43 SOL\n\nHer biri 5 kişi daha davet ederse (Hat 2):\n50 × 1,10 × %8 = 4,40 SOL\n\nHat 2 her biri 5 kişi davet ederse (Hat 3):\n250 × 1,10 × %5 = 13,75 SOL\n\nSadece L5'ten toplam: 19,58 SOL"
+        }
+      },
+      "security": {
+        "title": "Güvenlik",
+        "shortTitle": "Güvenlik",
+        "content1": {
+          "heading": "Akıllı Sözleşme Güvenliği",
+          "text": "Platform birden fazla güvenlik önlemi uygular:\n\n• TxGuard: Her işlem tekrar saldırılarını önlemek için benzersiz bir nonce kullanır\n• PDA Doğrulama: Tüm hesaplar kriptografik olarak doğrulanır\n• Atomik Transferler: Ödemeler tek bir işlemde gerçekleşir (ya hep ya hiç)\n• Değiştirilemez Kod: Akıllı sözleşme dağıtımdan sonra değiştirilemez\n• Admin Anahtarı Yok: Kimse fonları boşaltamaz veya kuralları değiştiremez"
+        },
+        "content2": {
+          "heading": "Fonlarınız Güvende",
+          "text": "• Cüzdanınızın velayetini asla kimseye vermezsiniz\n• Ödemeler akıllı sözleşme aracılığıyla doğrudan cüzdandan cüzdana gider\n• Para yatırma/çekme sistemi yok — SOL'unuz cüzdanınızda kalır\n• Tüm işlemler Solana Explorer'da herkese açık olarak doğrulanabilir\n• Sözleşmenin fon çalabilecek admin fonksiyonları yoktur"
+        },
+        "content3": {
+          "heading": "Solana Explorer'da Doğrulandı",
+          "text": "Akıllı sözleşme tamamen şeffaftır:\n\n• Sözleşme adresi herkese açık olarak mevcut\n• Tüm kod doğrulanmış ve okunabilir\n• Her işlem Explorer'da görünür\n• Hesap durumları incelenebilir\n• Gizli mantık veya işlev yok\n\nHer şeyi bağımsız olarak doğrulayabilirsiniz."
+        },
+        "content4": {
+          "heading": "Rug Pull Mümkün Değil",
+          "text": "Sözleşme tasarımı her türlü rug pull'u önler:\n\n• Sahip çekme fonksiyonları yok\n• Duraklatma veya dondurma mekanizmaları yok\n• Yükseltilebilir proxy desenleri yok\n• Fonlar doğrudan cüzdanlar arasında akar\n• Platform hazinesi şeffaftır\n\nGeliştiriciler bile fonlarınıza erişemez."
+        },
+        "content5": {
+          "heading": "Cüzdan Güvenlik İpuçları",
+          "text": "Cüzdanınızı güvende tutun:\n\n• Seed ifadenizi asla kimseyle paylaşmayın\n• Büyük miktarlar için donanım cüzdanı kullanın\n• İmzalamadan önce işlem ayrıntılarını doğrulayın\n• Yalnızca resmi platform URL'sine bağlanın\n• Phishing girişimlerinin farkında olun\n• Seed ifadesini çevrimdışı güvenli bir şekilde saklayın"
+        },
+        "content6": {
+          "heading": "İşlem Koruması",
+          "text": "Her işlem TxGuard tarafından korunur:\n\n• Benzersiz nonce yinelenen işlemleri önler\n• Tekrar saldırılarına karşı korur\n• Her aktivasyonun bir kez işlendiğini garanti eder\n• Yürütmeden önce otomatik doğrulama\n• Başarısız işlemler güvenli bir şekilde geri alınır"
+        }
+      },
+      "getting-started": {
+        "title": "Başlarken",
+        "shortTitle": "Başla",
+        "content1": {
+          "heading": "Adım Adım Kılavuz",
+          "text": "1. Phantom Wallet'ı Kurun\n   phantom.app'ten indirin ve cüzdanınızı oluşturun\n\n2. Cüzdanınızı Doldurun\n   Phantom cüzdan adresinize SOL transfer edin\n\n3. Cüzdanı Bağlayın\n   Platformumuzda Cüzdanı Bağla'ya tıklayın\n\n4. Oyuncu Kaydedin\n   Zincir üstü oyuncu profilinizi oluşturun (tek seferlik)\n\n5. Seviye 1'i Aktive Edin\n   İlk seviyenizi aktive etmek için 0,05 SOL ödeyin\n\n6. Paylaşın ve Kazanın\n   Yönlendirme linkinizi kopyalayın ve başkalarını davet edin"
+        },
+        "content2": {
+          "heading": "Başarı İçin İpuçları",
+          "text": "• Seviye 1'den başlayın ve yukarı doğru ilerleyin\n• Karşılayabileceğiniz kadar çok seviye aktive edin\n• Yönlendirme linkinizi sosyal medyada paylaşın\n• Unutmayın: yönlendirme bonusları eşleşen aktif seviyeler gerektirir\n• Slot doluşları ve döngüler için panonuzu izleyin\n• Daha yüksek seviyeler = daha yüksek ödemeler ama daha yavaş kuyruk hareketi"
+        },
+        "content3": {
+          "heading": "Desteklenen Cüzdanlar",
+          "text": "Platform popüler Solana cüzdanlarını destekler:\n\n• Phantom (önerilir)\n• Solflare\n• Backpack\n• Ledger (Phantom üzerinden)\n• Diğer Solana uyumlu cüzdanlar\n\nEn iyi deneyim için Phantom'u öneriyoruz."
+        },
+        "content4": {
+          "heading": "SOL Alma",
+          "text": "Katılmak için SOL'a ihtiyacınız var. SOL alma yolları:\n\n• Borsalarda satın alın (Binance, Coinbase, Kraken)\n• Fiat on-ramp'leri kullanın (MoonPay, Transak)\n• Diğer kriptolardan takas edin\n• Diğer kullanıcılardan alın\n\nMinimum gerekli: Seviye 1 + ücretler için ~0,06 SOL"
+        },
+        "content5": {
+          "heading": "Kayıt Süreci",
+          "text": "Tek seferlik oyuncu kaydı:\n\n1. Cüzdanınızı bağlayın\n2. 'Kayıt' düğmesine tıklayın\n3. Cüzdanda işlemi onaylayın\n4. Player PDA'nız zincir üzerinde oluşturulur\n5. Seviyeleri aktive etmeye hazırsınız\n\nKayıt için işlem ücretlerini karşılamak üzere en az 0.0030 SOL bakiyesi gereklidir."
+        },
+        "content6": {
+          "heading": "Panonuzu Kullanma",
+          "text": "Kayıttan sonra panonuz şunları gösterir:\n\n• Aktif seviyeler ve durumları\n• Dolu slotlar ve tamamlanan döngüler\n• Toplam kazançlar (tahmini)\n• Yönlendirme linkiniz\n• İşlem geçmişi\n• Seviye aktivasyon düğmeleri"
+        },
+        "content7": {
+          "heading": "Yaygın Sorular",
+          "text": "S: Yönlendirenimin linkini kaybedersem ne olur?\nC: Varsayılan yönlendirenle kayıt olabilirsiniz.\n\nS: Yönlendirenimi değiştirebilir miyim?\nC: Hayır, yönlendirme zincirleri zincir üzerinde kalıcıdır.\n\nS: Minimum yatırım nedir?\nC: Seviye 1 yalnızca 0,05 SOL'a mal olur.\n\nS: Zaman sınırı var mı?\nC: Hayır, seviyeleriniz bir kez aktive edildikten sonra sonsuza kadar çalışır."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Aktivasyon fiyatı",
+    "back": "Geri",
+    "status": "Durum",
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "slots": "Slotlar",
+    "cycles": "Döngüler",
+    "earned": "Kazanılan",
+    "cycleProgress": "Döngü İlerlemesi",
+    "filled": "Dolu",
+    "empty": "Boş",
+    "slotsFilled": "{total} slottan {filled}'i dolu",
+    "nextPayout": "Sonraki ödeme",
+    "perActivationDistribution": "Aktivasyon Başına Dağılım",
+    "youOwner": "Siz (Sahip)",
+    "referrerL1": "Yönlendiren L1",
+    "referrerL2": "Yönlendiren L2",
+    "referrerL3": "Yönlendiren L3",
+    "platform": "Platform",
+    "yourEarningsPerCycle": "Döngü başına kazancınız (×3)",
+    "howItWorks": "Nasıl Çalışır",
+    "step1Title": "Bu seviyeyi aktive edin",
+    "step1Desc": "sıraya girersiniz ve sizden sonra 3 oyuncunun aktive etmesini beklersiniz.",
+    "step2Title": "3 slot doldu",
+    "step2Desc": "birisi her aktive ettiğinde, ödemelerinin %{percent}'ini alırsınız.",
+    "step3Title": "Döngü tamamlandı",
+    "step3Desc": "3 ödemeden sonra, seviyeniz otomatik olarak sıraya geri döner.",
+    "step4Title": "Sınırsız döngüler",
+    "step4Desc": "yeni oyuncular katılmaya devam ettikçe bu seviyeden sınırsız kazanabilirsiniz.",
+    "processing": "İşleniyor...",
+    "alreadyActivated": "Zaten aktive edildi",
+    "activateFor": "{price} SOL için aktive et",
+    "levelStatistics": "Seviye İstatistikleri",
+    "totalCyclesCompleted": "Tamamlanan Toplam Döngü",
+    "totalEarned": "Toplam Kazanılan",
+    "perCycleEarnings": "Döngü Başına Kazanç",
+    "note": "Not",
+    "noteText": "Bu seviye, yeni oyuncular katıldıkça kazanmaya devam edecektir. Her döngü bağımsızdır."
+  }
+}

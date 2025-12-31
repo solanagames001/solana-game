@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Connect Wallet",
+    "disconnect": "Disconnect",
+    "dashboard": "Dashboard",
+    "register": "Register",
+    "registering": "Registering...",
+    "connecting": "Connecting",
+    "loading": "Loading...",
+    "processing": "Processing...",
+    "success": "Success",
+    "error": "Error",
+    "copy": "Copy",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "more": "More",
+    "less": "Less",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "on": "On",
+    "off": "Off",
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "completed": "Completed",
+    "failed": "Failed",
+    "home": "Home",
+    "support": "Support",
+    "balance": "Balance",
+    "tapToCopy": "Tap to copy",
+    "swipeToClose": "Swipe down to close",
+    "connectedWallet": "Connected Wallet",
+    "disconnectWallet": "Disconnect Wallet",
+    "selectLanguage": "Select Language",
+    "language": "Language",
+    "chooseLanguage": "Choose your preferred language"
+  },
+  "playerStatus": {
+    "title": "Player Status",
+    "accountInfo": "Account Info",
+    "authority": "Authority",
+    "playerPda": "Player PDA",
+    "createdAt": "Created at",
+    "openLevels": "Open Levels",
+    "copyPda": "Copy PDA",
+    "explorer": "Explorer",
+    "register": "Register",
+    "registering": "Registering…",
+    "connectFirst": "Connect wallet first",
+    "playerRegistered": "Player registered",
+    "registrationFailed": "Registration failed",
+    "addressCopied": "Address copied",
+    "copyFailed": "Copy failed"
+  },
+  "levelCard": {
+    "activate": "Activate",
+    "activating": "Activating…",
+    "activated": "Activated",
+    "notActivated": "Not activated",
+    "checking": "Checking…",
+    "notRegistered": "Not registered",
+    "levelActive": "Level is active — rewards enabled.",
+    "level": "Level",
+    "price": "Price (SOL)",
+    "slots": "Slots",
+    "cycles": "Cycles",
+    "details": "Details"
+  },
+  "activations": {
+    "title": "Activations",
+    "lastDays": "last {days}d",
+    "total": "total",
+    "activationsCount": "{count} activations"
+  },
+  "header": {
+    "connectWallet": "Connect Wallet",
+    "dashboard": "Dashboard",
+    "register": "Register",
+    "connecting": "Connecting"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Decentralized matrix system on Solana blockchain",
+    "poweredBy": "Powered by Solana"
+  },
+  "ticker": {
+    "onChain": "100% On-Chain Smart Contract",
+    "noAdminKeys": "No Admin Keys - Fully Decentralized",
+    "instantPayouts": "Instant Payouts to Your Wallet",
+    "audited": "Audited & Verified Contract",
+    "levels": "16 Levels - Up to 655.35 SOL",
+    "partnerBonus": "Invite Partners - Earn 26% Bonus",
+    "unlimited": "Unlimited Cycles - Unlimited Earnings"
+  },
+  "stats": {
+    "title": "Community Benefits",
+    "growingEverySecond": "Be Part of Something Bigger",
+    "description": "Join a global network of active earners and grow together.",
+    "worldwideNetwork": "Worldwide Network",
+    "worldwideNetworkDesc": "Access from anywhere in the world",
+    "thrivingCommunity": "Thriving Community",
+    "thrivingCommunityDesc": "Active members earning daily",
+    "alwaysSupported": "Always Supported",
+    "alwaysSupportedDesc": "Get assistance whenever you need it",
+    "collectiveWins": "Collective Wins",
+    "collectiveWinsDesc": "Success grows with the network",
+    "startEarning": "Start Earning Now",
+    "goToDashboard": "Go to Dashboard",
+    "walletConnected": "Wallet connected. Ready to earn.",
+    "noHiddenFees": "No hidden fees. Instant payouts. 100% on-chain."
+  },
+  "info": {
+    "platformFeatures": "Platform Features",
+    "builtOn": "Built on",
+    "solana": "Solana",
+    "description": "Transparent smart contracts, instant transactions, and a decentralized referral system",
+    "documentation": "Documentation",
+    "documentationDesc": "Complete guides to understand how the X3 matrix system works and how to maximize your earnings.",
+    "instantPayouts": "Instant Payouts",
+    "instantPayoutsDesc": "Receive SOL directly to your wallet. No delays, no intermediaries. Smart contract handles everything.",
+    "referralSystem": "Referral System",
+    "referralSystemDesc": "Earn 13%, 8%, and 5% from your referral lines. Build your network and grow your passive income.",
+    "readDocs": "Read Docs",
+    "learnMore": "Learn More",
+    "startEarning": "Start Earning",
+    "ownerPayout": "Owner Payout",
+    "referralRewards": "Referral Rewards",
+    "transactionSpeed": "Transaction Speed"
+  },
+  "technology": {
+    "smartContract": "Smart Contract",
+    "howItWorks": "How It Works on",
+    "solana": "Solana",
+    "description": "Fully autonomous smart contract with X3 matrix model, instant payouts, and cryptographic security",
+    "x3Matrix": "X3 Matrix",
+    "x3MatrixDesc": "Each level operates as a queue-based X3 matrix. When you activate a level, you enter a global queue. Every 3 activations after you fill your slots, completing a cycle. You receive 60% from each slot fill, then automatically re-enter the queue for unlimited cycles.",
+    "instantPayouts": "Instant Payouts",
+    "instantPayoutsDesc": "Smart contract distributes payments instantly: 60% to level owner, 13% to referrer line 1, 8% to line 2, 5% to line 3, and 14% to platform treasury. All transfers happen in a single atomic transaction — no delays, no intermediaries.",
+    "sixteenLevels": "16 Levels",
+    "sixteenLevelsDesc": "The system has 16 levels with fixed prices from 0.05 SOL (Level 1) up to 8.7 SOL (Level 16). Each level has its own independent queue. Higher levels mean higher payouts per slot fill. Activate levels in any order you prefer.",
+    "replayProtection": "Replay Protection",
+    "replayProtectionDesc": "Every transaction uses a unique nonce stored in a TxGuard account. This prevents replay attacks and ensures each activation is processed exactly once. The smart contract validates all PDAs cryptographically before any transfer.",
+    "globalQueue": "Global Queue",
+    "globalQueueDesc": "Each level maintains a LevelPool with paginated QueuePages (64 players per page). When a page fills up, a new page is created automatically. The queue ensures fair, first-come-first-served distribution of slot fills.",
+    "referralChain": "Referral Chain",
+    "referralChainDesc": "When you register, your 3-level upline is recorded on-chain (upline1, upline2, upline3). They receive bonuses from your activations only if they have the same level active. Otherwise, bonuses go to the platform treasury.",
+    "levels": "Levels",
+    "slotsPerCycle": "Slots per Cycle",
+    "autoRecycle": "Auto-recycle",
+    "ownerPayout": "Owner Payout",
+    "perActivation": "Per activation",
+    "referralTotal": "Referral Total"
+  },
+  "mechanics": {
+    "gameMechanics": "Game Mechanics",
+    "howSolanaGameWorks": "How Solana Game Works",
+    "description": "Earn, upgrade, and play through decentralized smart levels powered by Solana smart contracts",
+    "activateLevel": "Activate a Level",
+    "activateLevelDesc": "Choose any level and activate it directly on-chain. Ownership is permanently recorded on the Solana blockchain.",
+    "playRecycle": "Play & Recycle",
+    "playRecycleDesc": "Each level auto-cycles after three slots close — rewards are distributed instantly and the level reopens automatically.",
+    "earnUpgrade": "Earn & Upgrade",
+    "earnUpgradeDesc": "Collect rewards in SOL and unlock higher levels for greater returns in the decentralized ecosystem."
+  },
+  "levels": {
+    "title": "Levels",
+    "level": "Level",
+    "price": "Price",
+    "activate": "Activate",
+    "activating": "Activating...",
+    "activated": "Activated",
+    "locked": "Locked",
+    "cycles": "Cycles",
+    "slots": "Slots",
+    "filled": "Filled",
+    "earnings": "Earnings",
+    "totalEvents": "Total Events",
+    "cyclesDone": "Cycles Done",
+    "queue": "In Queue",
+    "yourPosition": "Your Position",
+    "recycleAfter": "Recycle after 3 slots filled"
+  },
+  "history": {
+    "title": "Transaction History",
+    "noTransactions": "No transactions yet",
+    "activation": "Activation",
+    "earning": "Earning",
+    "referralBonus": "Referral Bonus",
+    "referralActivated": "Referral Activated",
+    "referralRegistered": "Referral Registered",
+    "cycleClose": "Cycle Done",
+    "recycled": "Recycled",
+    "reOpened": "Re-opened",
+    "ownerPayout": "Owner Payout (60%)",
+    "referralPayoutL1": "Referral Bonus L1 (13%)",
+    "referralPayoutL2": "Referral Bonus L2 (8%)",
+    "referralPayoutL3": "Referral Bonus L3 (5%)",
+    "fromSlot": "Slot {slot}",
+    "viewExplorer": "View in Explorer",
+    "view": "View",
+    "viewAll": "View all",
+    "synthetic": "synthetic",
+    "pending": "Pending",
+    "slot": "slot",
+    "justNow": "Just now",
+    "mAgo": "m ago",
+    "hAgo": "h ago",
+    "dAgo": "d ago",
+    "activated": "Activated",
+    "filters": {
+      "all": "All",
+      "activations": "Activations",
+      "earnings": "Earnings",
+      "pending": "Pending"
+    }
+  },
+  "partner": {
+    "title": "Partner Program",
+    "subtitle": "Invite friends and earn 50% bonus from their activations",
+    "yourReferralLink": "Your Referral Link",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link copied!",
+    "howItWorks": "How Partner Bonus Works",
+    "level1": "Level 1 Partner",
+    "level2": "Level 2 Partner",
+    "level3": "Level 3 Partner",
+    "bonus1": "13% from direct referrals",
+    "bonus2": "8% from level 2 referrals",
+    "bonus3": "5% from level 3 referrals"
+  },
+  "telegram": {
+    "title": "Telegram Resources",
+    "community": "Community",
+    "communityDesc": "Join our community chat",
+    "support": "Support",
+    "supportDesc": "Get help from our team"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to help you understand and start with Solana Game",
+    "q1": "What is Solana Game and how does it work?",
+    "a1": "Solana Game is a decentralized matrix platform running entirely on Solana smart contracts. When you activate a level, you join a global queue. As new players activate the same level after you, they fill your 3 slots. Once all 3 slots are filled, you receive payouts and automatically re-enter the queue. This cycle repeats indefinitely — one activation gives you unlimited earning potential.",
+    "q2": "How many levels are there and what do they cost?",
+    "a2": "There are 16 levels with fixed prices in SOL: L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Each level operates independently with its own queue — you can activate any level in any order.",
+    "q3": "How much do I earn and where does the money go?",
+    "a3": "When someone activates a level, payments are distributed instantly: 60% goes to the queue leader (level owner), 13% to their 1st line referrer, 8% to 2nd line, 5% to 3rd line, and 14% to platform treasury. Per cycle (3 slots filled), you receive 180% of the level price. All transfers happen atomically in one blockchain transaction.",
+    "q4": "How does the referral program work?",
+    "a4": "When you register, your referral chain is recorded on-chain (3 levels deep). Your referrers earn 13%, 8%, and 5% from each of your level activations. Important: referral bonuses only apply if your upline has the same level active. If not, their share goes to treasury. This incentivizes everyone to activate more levels.",
+    "q5": "What happens after my 3 slots are filled?",
+    "a5": "Your level automatically 'recycles' — your slots reset to 0, your cycle counter increases by 1, and you re-enter the queue at the end. You keep your position and continue earning from the same level activation forever. There is no limit to how many cycles you can complete.",
+    "q6": "How do I get started?",
+    "a6": "Step 1: Connect your Phantom wallet (or another Solana wallet). Step 2: Register your player profile — this creates your on-chain account and records your referrer. Step 3: Activate Level 1 for 0.05 SOL. Step 4: Share your referral link to earn bonuses when others join. You can monitor your slots, cycles, and earnings in real-time on your dashboard.",
+    "q7": "Is my money safe? Can anyone steal my funds?",
+    "a7": "Your funds are completely safe. The platform runs on verified, immutable smart contracts — no one (including developers) can modify the code or access your wallet. Payments go directly wallet-to-wallet without any intermediaries. The contract includes TxGuard protection against duplicate transactions. You never give custody of your funds to anyone.",
+    "q8": "What if no one activates after me?",
+    "a8": "Your position in the queue is permanent and never expires. You simply wait until new players activate the level. The queue is global — all players worldwide share the same queue for each level. The more popular the level, the faster your slots fill. Higher levels may take longer but offer larger payouts."
+  },
+  "footer": {
+    "description": "Decentralized X3 matrix system on Solana blockchain. Instant payouts, transparent mechanics, 100% on-chain.",
+    "smartContract": "Smart Contract",
+    "contractAddress": "Contract Address",
+    "verifyExplorer": "Always verify the contract address on Solana Explorer",
+    "viewOnExplorer": "View on Explorer",
+    "platform": "Platform",
+    "gameLevels": "Game Levels",
+    "resources": "Resources",
+    "howItWorks": "How It Works",
+    "docs": "Documentation",
+    "disclaimer": "Disclaimer",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Wallet Connected",
+    "allRightsReserved": "All rights reserved"
+  },
+  "wallet": {
+    "connect": "Connect Wallet",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "disconnect": "Disconnect",
+    "balance": "Balance",
+    "address": "Address",
+    "copyAddress": "Copy Address",
+    "viewExplorer": "View in Explorer",
+    "switchWallet": "Switch Wallet",
+    "installPhantom": "Install Phantom",
+    "phantomRequired": "Phantom wallet is required",
+    "readyToConnect": "Ready to connect",
+    "supported": "Supported",
+    "connectToContinue": "Connect to continue",
+    "phantomNotFound": "Phantom Not Found",
+    "pleaseInstall": "Please install Phantom wallet extension",
+    "byConnecting": "By connecting, you agree to the Terms of Service",
+    "notInstalled": "Not installed"
+  },
+  "guard": {
+    "title": "Connect Your Wallet",
+    "description": "To access the dashboard, please connect your Solana wallet. Your wallet is required to interact with the blockchain.",
+    "backHome": "Back to Home",
+    "registerRequired": "Registration Required",
+    "registerRequiredDesc": "To access the dashboard, you need to register as a player. It's free and takes just a few seconds."
+  },
+  "docs": {
+    "title": "Documentation",
+    "startPlaying": "Start Playing",
+    "overview": "Overview",
+    "gettingStarted": "Getting Started",
+    "matrixSystem": "X3 Matrix System",
+    "earnings": "Earnings & Payouts",
+    "referrals": "Referral Program",
+    "security": "Security"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "understand": "I Understand",
+    "intro": "Please read this disclaimer carefully before using Solana Program X3. By accessing or using the platform, you agree to be bound by these terms.",
+    "lastUpdated": "Last updated: December 2024",
+    "importantNotice": "Important Notice",
+    "importantNoticeText": "Cryptocurrency investments carry high risk. Only invest what you can afford to lose. This platform operates on immutable smart contracts — transactions cannot be reversed.",
+    "acceptanceTitle": "Acceptance of Terms",
+    "acceptanceText": "By using Solana Program X3, you acknowledge that you have read, understood, and agree to be bound by this disclaimer and all applicable terms and conditions.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Nature of the Platform",
+        "content": "Solana Program X3 is a decentralized application (dApp) built on the Solana blockchain. The platform operates through immutable smart contracts deployed on-chain. Once deployed, the smart contract code cannot be modified, altered, or controlled by any party, including the developers.\n\nThe platform facilitates a matrix-based system where participants can activate levels and receive payments based on the mechanics defined in the smart contract. All transactions are executed automatically by the blockchain according to the predefined rules."
+      },
+      "noFinancialAdvice": {
+        "title": "No Financial Advice",
+        "content": "Nothing on this platform constitutes financial, investment, legal, or tax advice. The information provided is for educational and informational purposes only. You should consult with qualified professionals before making any financial decisions.\n\nParticipating in blockchain-based platforms involves significant risks. Past performance does not guarantee future results. The value of cryptocurrencies can fluctuate significantly, and you may lose some or all of your investment."
+      },
+      "riskAcknowledgment": {
+        "title": "Risk Acknowledgment",
+        "content": "By using Solana Program X3, you acknowledge and accept the following risks:\n\n• Smart Contract Risk: While the code has been carefully developed, no smart contract is completely free from potential vulnerabilities or bugs.\n\n• Market Risk: The value of SOL and other cryptocurrencies can be highly volatile and may result in significant losses.\n\n• Regulatory Risk: Cryptocurrency regulations vary by jurisdiction and may change. It is your responsibility to ensure compliance with applicable laws.\n\n• Network Risk: The Solana blockchain may experience congestion, outages, or other technical issues that could affect transactions.\n\n• Loss of Access: If you lose access to your wallet or private keys, your funds may be permanently inaccessible."
+      },
+      "noGuarantees": {
+        "title": "No Guarantees",
+        "content": "The platform makes no guarantees regarding:\n\n• The amount or timing of any earnings or returns\n• The continued operation of the platform\n• The availability or functionality of any features\n• The accuracy of any information displayed\n• The actions of other participants\n\nYour results depend entirely on the activity of other participants and the mechanics of the smart contract. There is no guarantee that you will receive any payments or recover your initial investment."
+      },
+      "yourResponsibilities": {
+        "title": "Your Responsibilities",
+        "content": "As a participant, you are solely responsible for:\n\n• Conducting your own research before participating\n• Securing your wallet and private keys\n• Understanding the mechanics of the platform\n• Complying with all applicable laws and regulations in your jurisdiction\n• Reporting any earnings for tax purposes as required\n• Making informed decisions about your participation\n\nYou should only participate with funds you can afford to lose completely."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Jurisdictional Restrictions",
+        "content": "The platform may not be available or may be restricted in certain jurisdictions. It is your responsibility to determine whether your use of the platform is legal in your jurisdiction.\n\nBy accessing and using the platform, you represent and warrant that you are legally permitted to do so in your jurisdiction and that you will comply with all applicable local, state, national, and international laws and regulations."
+      },
+      "thirdPartyServices": {
+        "title": "Third-Party Services",
+        "content": "The platform integrates with third-party services including:\n\n• Solana Blockchain Network\n• Wallet Providers (Phantom, Solflare, etc.)\n• RPC Providers\n\nWe have no control over these third-party services and are not responsible for their availability, security, or any issues arising from their use."
+      },
+      "limitationOfLiability": {
+        "title": "Limitation of Liability",
+        "content": "To the maximum extent permitted by law, the developers, contributors, and any associated parties shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages arising from:\n\n• Your use of or inability to use the platform\n• Any transactions made through the platform\n• Any unauthorized access to your wallet or funds\n• Any errors or omissions in the smart contract code\n• Any other matter relating to the platform\n\nThis limitation applies regardless of the legal theory and even if we have been advised of the possibility of such damages."
+      },
+      "modifications": {
+        "title": "Modifications",
+        "content": "This disclaimer may be updated from time to time. While the smart contract code is immutable, the front-end interface and this disclaimer may be modified. It is your responsibility to review this disclaimer periodically for any changes.\n\nContinued use of the platform after any modifications constitutes acceptance of the updated terms."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "If you have any questions about this disclaimer or the platform, please reach out through our official Telegram support channel.\n\nRemember: Never share your private keys or seed phrase with anyone, including anyone claiming to be from our team."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Address copied",
+    "signatureCopied": "Signature copied",
+    "contractCopied": "Contract address copied",
+    "linkCopied": "Link copied",
+    "copyFailed": "Copy failed",
+    "walletNotConnected": "Wallet not connected",
+    "connectWalletFirst": "Connect wallet first",
+    "invalidLevel": "Invalid level",
+    "activationSent": "Activation sent",
+    "activationSentLevel": "L{level} activation sent",
+    "activatingLevel": "Activating level {level}...",
+    "activationError": "Activation error",
+    "registrationSuccess": "Player registered",
+    "registrationFailed": "Registration failed",
+    "referralActivatedLevel": "Someone from your referral network activated level {level}",
+    "profileCreated": "Profile created",
+    "creatingProfile": "Creating profile...",
+    "insufficientFundsForRegistration": "Insufficient funds for registration. You need at least 0.0030 SOL.",
+    "transactionProcessing": "Processing transaction...",
+    "clipboardNotSupported": "Clipboard not supported",
+    "playerRegistered": "Player registered",
+    "viewInExplorer": "View in Explorer",
+    "closeNotification": "Close notification",
+    "comingSoon": "Coming soon",
+    "loadError": "Failed to load data",
+    "activationFinalized": "Activation finalized",
+    "registrationFinalized": "Registration finalized",
+    "checkingPlayerState": "Checking player state…",
+    "playerNotFound": "Player not found — press Register",
+    "levelAlreadyActivated": "Level already activated",
+    "pressActivate": "Press Activate to activate this level"
+  },
+  "overlay": {
+    "processing": "Processing transaction..."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "home": "Home",
+    "levels": "Levels",
+    "history": "History",
+    "information": "Information",
+    "info": "Info",
+    "partnerBonus": "Partner Bonus",
+    "partners": "Partners",
+    "telegram": "Telegram",
+    "support": "Support",
+    "more": "More"
+  },
+  "mobileMenu": {
+    "connectWallet": "Connect Wallet",
+    "connecting": "Connecting...",
+    "createProfile": "Create Profile",
+    "creatingProfile": "Creating Profile...",
+    "goToDashboard": "Go to Dashboard"
+  },
+  "dashboardPage": {
+    "title": "Dashboard",
+    "subtitle": "Your levels, earnings & activity",
+    "yourStatistics": "Your Statistics",
+    "onChainData": "On-Chain Data",
+    "activeLevels": "Active Levels",
+    "next": "Next",
+    "allDone": "All done",
+    "completedCycles": "Completed Cycles",
+    "slotsEquals": "3 slots = 1 cycle",
+    "estEarnings": "Est. Earnings",
+    "ownerPayout": "60% owner payout",
+    "totalSpent": "Total Spent",
+    "levelActivations": "level activations",
+    "yourLevels": "Your Levels",
+    "slotsAndCycles": "Slots & Cycles",
+    "viewAll": "View all",
+    "slots": "slots",
+    "cycle": "cycle",
+    "cycles": "cycles",
+    "howItWorks": "How it works:",
+    "howItWorksDesc": "When 3 players activate your level, you receive 60% of each payment. The rest → referrers (26%) + treasury (14%).",
+    "latestActivity": "Latest Activity",
+    "transactionHistory": "Transaction History",
+    "live": "live",
+    "noActivity": "No activity yet. Activate your first level to start.",
+    "contractIdCopied": "Contract ID copied"
+  },
+  "levelsPage": {
+    "title": "Levels",
+    "subtitle": "Activate levels to earn SOL",
+    "active": "Active",
+    "ready": "ready",
+    "noWallet": "no wallet",
+    "registerFirst": "Register a player first",
+    "levelAlreadyActive": "already active",
+    "activated": "activated"
+  },
+  "historyPage": {
+    "title": "Transaction History",
+    "subtitle": "All your activations, earnings & system events",
+    "wallet": "Wallet",
+    "notConnected": "Not connected",
+    "totalEvents": "Total Events",
+    "activations": "Activations",
+    "cyclesDone": "Cycles Done",
+    "pending": "Pending",
+    "all": "All",
+    "earnings": "Earnings",
+    "connectWallet": "Connect your wallet to view history",
+    "noTransactions": "No transactions yet. Activate your first level to start.",
+    "noEventsFound": "No {filter} events found",
+    "transactionTypes": "Transaction Types",
+    "activationsDesc": "Your level activations and recycles. These are outgoing transactions.",
+    "earningsDesc": "Payments you receive: 60% owner payouts + referral bonuses (13%, 8%, 5%).",
+    "pendingDesc": "Transactions waiting for blockchain confirmation.",
+    "cyclesDesc": "Completed cycles — 3 slots filled, then auto-recycle back to queue.",
+    "walletCopied": "Wallet copied",
+    "connectFirst": "Connect wallet first",
+    "copyFailed": "Copy failed"
+  },
+  "informationPage": {
+    "title": "How It Works",
+    "subtitle": "Everything you need to know about the platform",
+    "totalLevels": "Total Levels",
+    "slotsPerCycle": "Slots per Cycle",
+    "yourPayout": "Your Payout",
+    "network": "Network",
+    "whatIsThis": "What is this platform?",
+    "whatIsThisDesc": "This is a decentralized application on Solana blockchain. Everything runs automatically through smart contracts — no admins, no middlemen. You activate levels, earn when others join after you, and the process repeats forever.",
+    "transparent": "Transparent",
+    "transparentDesc": "All transactions visible on Solana blockchain. Nothing hidden.",
+    "automatic": "Automatic",
+    "automaticDesc": "Smart contract handles payments. No delays, no approvals needed.",
+    "unlimited": "Unlimited",
+    "unlimitedDesc": "Each level can earn forever. No limits on cycles or earnings.",
+    "simpleProcess": "Simple 4-Step Process",
+    "step1Title": "Activate a Level",
+    "step1Desc": "Choose any level from L01 to L16. Pay the activation price once. You now own this level and enter the queue.",
+    "step2Title": "Wait for 3 Activations",
+    "step2Desc": "When 3 other players activate the same level after you, each one pays you 60% of the level price. That means 3 payments total.",
+    "step3Title": "Cycle Completes",
+    "step3Desc": "After receiving 3 payments, your level automatically recycles. You go back to the queue and can earn again.",
+    "step4Title": "Repeat Forever",
+    "step4Desc": "The cycle repeats indefinitely. One activation = unlimited earning potential as long as new players keep joining.",
+    "whereMoneyGoes": "Where Does the Money Go?",
+    "moneyGoesDesc": "When someone activates a level, their payment is instantly split:",
+    "youOwner": "You (Owner)",
+    "yourEarnings": "Your earnings per activation",
+    "referrerL1": "Referrer L1",
+    "directInviter": "Your direct inviter",
+    "referrerL2": "Referrer L2",
+    "inviterOfInviter": "Inviter of your inviter",
+    "referrerL3": "Referrer L3",
+    "thirdLevelUpline": "Third level upline",
+    "platform": "Platform",
+    "projectDevelopment": "Project development",
+    "exampleCalculation": "Example Calculation",
+    "exampleDesc": "L01 costs 0.05 SOL. When 3 people activate after you:",
+    "youReceive": "You receive:",
+    "perCycle": "per cycle",
+    "levelPrices": "Level Prices",
+    "levelPricesDesc": "16 levels available. Higher levels = higher earnings per cycle.",
+    "allPricesInSol": "All prices in SOL",
+    "referralBonuses": "Referral Bonuses",
+    "referralBonusesDesc": "When someone you invited earns from their levels, you also earn a bonus:",
+    "directReferral": "Direct Referral (Line 1)",
+    "peopleInvitedDirectly": "People you invited directly",
+    "secondLine": "Second Line (Line 2)",
+    "peopleInvitedByReferrals": "People invited by your referrals",
+    "thirdLine": "Third Line (Line 3)",
+    "thirdLevelNetwork": "Third level of your network",
+    "referralNote": "Note: You only receive referral bonuses for levels you have activated. If you don't have L05 active, referral bonuses from L05 go to the platform.",
+    "commonQuestions": "Common Questions",
+    "q1": "Do I need to activate levels in order?",
+    "a1": "No. You can activate any level at any time. L01 and L16 are completely independent.",
+    "q2": "What happens when my cycle completes?",
+    "a2": "Your level automatically goes back to the queue. You can earn from it again and again.",
+    "q3": "Can I lose my money?",
+    "a3": "Once activated, a level works forever. You cannot lose it. All payments are guaranteed by the smart contract.",
+    "q4": "How fast are payouts?",
+    "a4": "Instant. The moment someone activates, SOL goes directly to your wallet. No delays.",
+    "q5": "What if I have no referrals?",
+    "a5": "You still earn 60% from your levels. Referral bonuses are extra income on top.",
+    "gettingStarted": "Getting Started",
+    "getWallet": "Get a Wallet",
+    "getWalletDesc": "Download Phantom or Backpack wallet for your browser or phone.",
+    "getSol": "Get SOL",
+    "getSolDesc": "Buy SOL on any exchange (Binance, Coinbase, etc.) and send to your wallet.",
+    "minimumForL01": "Minimum for L01: ~0.06 SOL (including fees)",
+    "connectWallet": "Connect Wallet",
+    "connectWalletDesc": "Click \"Connect\" in the header. Approve the connection in your wallet.",
+    "activateLevels": "Activate Levels",
+    "activateLevelsDesc": "Go to Levels page, choose a level, click Activate. Confirm in wallet. Done."
+  },
+  "referralTree": {
+    "title": "Referral Tree",
+    "subtitle": "Your active referral network ({count} total)",
+    "total": "Total",
+    "noReferrals": "No referrals yet",
+    "shareLink": "Share your referral link to start building your network",
+    "line": "Line {number}",
+    "noReferralsInLine": "No referrals in this line",
+    "referralsCount": "{count} {count, plural, one {referral} other {referrals}}",
+    "copyAddress": "Copy address",
+    "refresh": "Refresh",
+    "yourLink": "Your referral link",
+    "copyLink": "Copy Link",
+    "linkCopied": "Link copied to clipboard!",
+    "addressCopied": "Address copied!",
+    "viewExplorer": "View in Explorer",
+    "copied": "Copied!",
+    "levels": "Levels:",
+    "loadingLevels": "Loading levels..."
+  },
+  "partnerBonusPage": {
+    "title": "Partner Program",
+    "subtitle": "Invite others and earn from their activity",
+    "totalEarned": "Total Earned",
+    "line1": "Line 1 (13%)",
+    "line2": "Line 2 (8%)",
+    "line3": "Line 3 (5%)",
+    "yourReferralLink": "Your Referral Link",
+    "copyLink": "Copy Link",
+    "connectWalletForLink": "Connect wallet to get your referral link",
+    "linkNote": "When someone registers using your link, they become your Line 1 referral permanently.",
+    "howReferralWorks": "How Referral Bonuses Work",
+    "step1Title": "Share your link",
+    "step1Desc": "Anyone who registers through your link becomes your Line 1 referral.",
+    "step2Title": "They activate levels",
+    "step2Desc": "When your referrals earn from their levels, you receive a percentage.",
+    "step3Title": "You earn automatically",
+    "step3Desc": "Bonuses are paid instantly to your wallet. No claiming needed.",
+    "payoutStructure": "Referral Payout Structure",
+    "directReferrals": "Line 1 — Direct Referrals",
+    "directReferralsDesc": "People you invited directly",
+    "secondLevel": "Line 2 — Second Level",
+    "secondLevelDesc": "Referrals of your referrals",
+    "thirdLevel": "Line 3 — Third Level",
+    "thirdLevelDesc": "Third generation of your network",
+    "important": "Important",
+    "importantDesc": "You only receive referral bonuses for levels you have activated. If your referral earns from L05 but you don't have L05 active, that bonus goes to the platform instead.",
+    "referralActivity": "Referral Activity",
+    "refresh": "Refresh",
+    "loading": "Loading...",
+    "noActivity": "No referral activity yet",
+    "noActivityDesc": "Share your link. Activity will appear when your referral activates a level",
+    "showingOf": "Showing {count} of {total} transactions",
+    "tipsForSuccess": "Tips for Success",
+    "tip1Title": "Activate all levels",
+    "tip1Desc": "The more levels you have, the more referral bonuses you can receive.",
+    "tip2Title": "Build your network",
+    "tip2Desc": "3 lines deep means passive income from your referrals' referrals.",
+    "tip3Title": "Share consistently",
+    "tip3Desc": "Your link never expires. Keep sharing to grow your network.",
+    "tip4Title": "Help your team",
+    "tip4Desc": "When your referrals succeed, you earn more. Support them.",
+    "connectFirst": "Connect wallet first",
+    "linkCopied": "Referral link copied",
+    "copyFailed": "Copy failed",
+    "failedToLoad": "Failed to load partner history",
+    "registration": "Registration",
+    "newReferral": "New referral"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Join our community and get support",
+    "communityGroup": "Community Group",
+    "communityDesc": "Join our official Telegram group. Chat with other players, share strategies, get updates and announcements.",
+    "joinGroup": "Join Group",
+    "copyLink": "Copy Link",
+    "support": "Support",
+    "supportDesc": "Need help? Contact our support team directly. We respond quickly to all questions about the platform.",
+    "contactSupport": "Contact Support",
+    "whatYouGet": "What You Get",
+    "realTimeUpdates": "Real-Time Updates",
+    "realTimeUpdatesDesc": "Be the first to know about new features, updates, and announcements.",
+    "communitySupport": "Community Support",
+    "communitySupportDesc": "Get help from experienced players and share your knowledge.",
+    "directAccess": "Direct Access",
+    "directAccessDesc": "Quick access to the support team for any technical issues.",
+    "networkGrowth": "Network Growth",
+    "networkGrowthDesc": "Connect with other players and grow your referral network."
+  },
+  "docsPage": {
+    "title": "Documentation",
+    "label": "Documentation",
+    "heading": "How Solana Program X3 Works",
+    "description": "Complete technical documentation to understand the X3 matrix system, payout mechanics, and how to maximize your earnings.",
+    "startPlaying": "Start Playing",
+    "swipeHint": "Swipe left/right to navigate",
+    "of": "of",
+    "more": "More",
+    "footerText": "Solana Program X3 — Decentralized Matrix on Solana Blockchain",
+    "sections": {
+      "overview": {
+        "title": "Overview",
+        "shortTitle": "Overview",
+        "content1": {
+          "heading": "What is Solana Program X3?",
+          "text": "Solana Program X3 is a fully decentralized matrix system built on the Solana blockchain. It operates through verified smart contracts with no central control, meaning no one can modify the rules or access your funds.\n\nThe platform uses an X3 matrix model where each level has a global queue. When you activate a level, you enter the queue. As new players activate the same level, they fill your slots (3 slots per cycle). Once all slots are filled, you receive payouts and automatically re-enter the queue for unlimited cycles."
+        },
+        "content2": {
+          "heading": "Key Features",
+          "text": "• 16 independent levels with fixed prices (0.05 - 8.7 SOL)\n• 3 slots per cycle with automatic recycling\n• 60% payout to level owner per activation\n• 26% total referral rewards (13% + 8% + 5%)\n• Instant wallet-to-wallet transfers\n• No withdrawal delays or intermediaries\n• Immutable smart contract code"
+        },
+        "content3": {
+          "heading": "Why Solana Blockchain?",
+          "text": "Solana was chosen for its exceptional performance:\n\n• Transaction Speed: ~400ms confirmation time\n• Low Fees: Fractions of a cent per transaction\n• High Throughput: 65,000+ transactions per second\n• Decentralization: Thousands of validators worldwide\n• Proven Track Record: One of the top blockchains by TVL"
+        },
+        "content4": {
+          "heading": "How You Earn",
+          "text": "There are two ways to earn on the platform:\n\n1. Level Ownership: Activate levels and receive 60% from each player who activates after you (3 payments = 180% per cycle)\n\n2. Referral Bonuses: Invite others and earn 13%, 8%, and 5% from your 3-line network\n\nBoth earning methods work simultaneously and compound your income."
+        },
+        "content5": {
+          "heading": "Smart Contract Transparency",
+          "text": "The entire platform runs on verified, open-source smart contracts:\n\n• Contract address is publicly visible on Solana Explorer\n• All transactions are recorded on the blockchain\n• Anyone can verify the code and logic\n• No hidden functions or backdoors\n• Completely trustless operation"
+        }
+      },
+      "levels": {
+        "title": "Level System",
+        "shortTitle": "Levels",
+        "content1": {
+          "heading": "Level Prices",
+          "text": "The system has 16 levels with the following fixed prices in SOL:\n\nLevel 1: 0.05 SOL    Level 9: 3.25 SOL\nLevel 2: 0.18 SOL    Level 10: 3.90 SOL\nLevel 3: 0.36 SOL    Level 11: 4.65 SOL\nLevel 4: 0.68 SOL    Level 12: 5.45 SOL\nLevel 5: 1.10 SOL    Level 13: 6.40 SOL\nLevel 6: 1.55 SOL    Level 14: 7.35 SOL\nLevel 7: 2.10 SOL    Level 15: 8.00 SOL\nLevel 8: 2.65 SOL    Level 16: 8.70 SOL\n\nEach level operates independently with its own global queue. You can activate levels in any order."
+        },
+        "content2": {
+          "heading": "How Levels Work",
+          "text": "1. You activate a level by paying the fixed price\n2. Your activation is recorded on-chain and you enter the global queue\n3. The next 3 players who activate the same level fill your slots\n4. You receive 60% of each player's payment (180% total per cycle)\n5. After 3 slots are filled, you automatically re-enter the queue\n6. This cycle repeats infinitely from a single activation"
+        },
+        "content3": {
+          "heading": "Level Independence",
+          "text": "Each of the 16 levels operates completely independently:\n\n• Separate queue for each level\n• No prerequisites — activate any level at any time\n• Multiple levels can be active simultaneously\n• Each level earns separately\n• Progress on one level doesn't affect others"
+        },
+        "content4": {
+          "heading": "Earnings Per Level",
+          "text": "Your earnings per cycle (3 slots filled) for each level:\n\nL1: 0.09 SOL    L9: 5.85 SOL\nL2: 0.32 SOL    L10: 7.02 SOL\nL3: 0.65 SOL    L11: 8.37 SOL\nL4: 1.22 SOL    L12: 9.81 SOL\nL5: 1.98 SOL    L13: 11.52 SOL\nL6: 2.79 SOL    L14: 13.23 SOL\nL7: 3.78 SOL    L15: 14.40 SOL\nL8: 4.77 SOL    L16: 15.66 SOL\n\nFormula: Level Price × 60% × 3 slots = Cycle Earnings"
+        },
+        "content5": {
+          "heading": "Auto-Recycle Mechanism",
+          "text": "When your 3 slots are filled, your level automatically recycles:\n\n• Your slots counter resets to 0\n• Your cycles counter increases by 1\n• You're moved from queue head to queue tail\n• You continue earning without any action\n• No additional payment required\n\nThis creates unlimited earning potential from a single activation."
+        }
+      },
+      "queue": {
+        "title": "Global Queue",
+        "shortTitle": "Queue",
+        "content1": {
+          "heading": "Queue Structure",
+          "text": "Each level maintains a LevelPool with paginated QueuePages. Key features:\n\n• Each page holds up to 64 players\n• When a page fills up, a new page is automatically created\n• Players are processed in first-come-first-served order\n• Your position is permanent and never expires\n• After each cycle completion, you re-enter at the queue tail"
+        },
+        "content2": {
+          "heading": "Queue Processing",
+          "text": "When a new player activates a level:\n\n1. The smart contract identifies the queue head (first player in line)\n2. This player's slots_filled counter increases by 1\n3. Payment is distributed (60% to owner, referrals, treasury)\n4. If slots_filled reaches 3, the level recycles:\n   - cycles counter increases by 1\n   - slots_filled resets to 0\n   - Player is removed from head and added to tail\n5. The new player also enters the queue tail"
+        },
+        "content3": {
+          "heading": "Fair Distribution",
+          "text": "The queue system ensures fair treatment for all participants:\n\n• First-come, first-served — no favoritism\n• No way to skip or manipulate queue position\n• Everyone waits their turn equally\n• Smart contract enforces the rules automatically\n• Transparent and verifiable on-chain"
+        },
+        "content4": {
+          "heading": "Queue Speed",
+          "text": "How fast your slots fill depends on level activity:\n\n• Lower levels (L1-L5): More players, faster fills\n• Higher levels (L11-L16): Fewer players, slower fills\n• Global activity affects all queues\n• Your queue position matters — earlier = faster\n\nTip: Monitor queue activity in your dashboard to track progress."
+        },
+        "content5": {
+          "heading": "Permanent Position",
+          "text": "Once you activate a level, your position never expires:\n\n• No timeout or expiration\n• Queue persists forever on blockchain\n• You'll receive payments even after months\n• No maintenance or renewal needed\n• Fully passive once activated"
+        }
+      },
+      "payouts": {
+        "title": "Payout Distribution",
+        "shortTitle": "Payouts",
+        "content1": {
+          "heading": "Payment Breakdown",
+          "text": "Every activation distributes 100% of the level price:\n\n• 60% → Level Owner (queue head)\n• 13% → Referrer Line 1 (upline1)\n• 8% → Referrer Line 2 (upline2)\n• 5% → Referrer Line 3 (upline3)\n• 14% → Platform Treasury\n\nAll transfers happen atomically in a single Solana transaction. No delays, no pending states."
+        },
+        "content2": {
+          "heading": "Earnings Calculation",
+          "text": "Per cycle (3 slots filled), you earn:\n60% × 3 = 180% of the level price\n\nExample for Level 5 (1.10 SOL):\n• Per slot: 0.66 SOL (60% of 1.10)\n• Per cycle: 1.98 SOL (180% of 1.10)\n• ROI per cycle: +80% profit\n\nThere is no limit to cycles. One activation = unlimited earning potential."
+        },
+        "content3": {
+          "heading": "Instant Transfers",
+          "text": "Payments are made instantly via smart contract:\n\n• No pending states or delays\n• Direct wallet-to-wallet transfers\n• SOL appears in your wallet immediately\n• No manual claiming required\n• No minimum withdrawal amount"
+        },
+        "content4": {
+          "heading": "Total Earning Potential",
+          "text": "If you activate all 16 levels and complete multiple cycles:\n\nTotal level cost: ~42 SOL\nPer cycle earnings: ~100 SOL (all levels)\n\nPlus referral bonuses from your network can significantly increase your income. The more levels you activate and the larger your network, the higher your earnings."
+        },
+        "content5": {
+          "heading": "Tracking Your Earnings",
+          "text": "Monitor your income in real-time:\n\n• Dashboard shows slots filled per level\n• View completed cycles count\n• Track total SOL earned\n• See pending slot fills\n• Transaction history available\n\nAll data is fetched directly from the blockchain."
+        }
+      },
+      "referrals": {
+        "title": "Referral System",
+        "shortTitle": "Referrals",
+        "content1": {
+          "heading": "How Referrals Work",
+          "text": "When you register, your referral chain is recorded on-chain:\n\n• upline1: Your direct referrer (earns 13%)\n• upline2: Your referrer's referrer (earns 8%)\n• upline3: Third level up (earns 5%)\n\nImportant: Referral bonuses only apply if your upline has the SAME level active. If they don't, their share goes to the platform treasury instead."
+        },
+        "content2": {
+          "heading": "Building Your Network",
+          "text": "To maximize referral earnings:\n\n1. Share your referral link (contains your player PDA)\n2. When someone registers through your link, you become their upline1\n3. You earn 13% from every level they activate (if you have it active)\n4. You also earn 8% from their referrals (your line 2)\n5. And 5% from line 3 referrals\n\nThe key is to activate all 16 levels yourself to capture maximum referral income."
+        },
+        "content3": {
+          "heading": "Your Referral Link",
+          "text": "Your unique referral link contains your Player PDA:\n\nhttps://[domain]/?ref=[your_player_pda]\n\nShare this link anywhere:\n• Social media (Twitter, Telegram, Discord)\n• YouTube videos and descriptions\n• Blog posts and forums\n• Direct messages to friends\n\nAnyone who registers through your link becomes your permanent referral."
+        },
+        "content4": {
+          "heading": "Level Matching Rule",
+          "text": "Critical rule: You only earn referral bonuses for levels YOU have active.\n\nExample:\n• You have L1, L2, L3 active\n• Your referral activates L5\n• You earn 0% because you don't have L5\n\nSolution: Activate all 16 levels to capture 100% of possible referral income."
+        },
+        "content5": {
+          "heading": "Network Growth",
+          "text": "Your network grows automatically through 3 lines:\n\nLine 1: People you invite directly (13%)\nLine 2: People your Line 1 invites (8%)\nLine 3: People your Line 2 invites (5%)\n\nTotal referral potential: 26% of every activation in your 3-line network. This creates powerful passive income."
+        },
+        "content6": {
+          "heading": "Referral Earnings Example",
+          "text": "If you have 10 active referrals and each activates L5 (1.10 SOL):\n\nLine 1 (10 people): 10 × 1.10 × 13% = 1.43 SOL\n\nIf each of those invites 5 more (Line 2):\n50 × 1.10 × 8% = 4.40 SOL\n\nIf Line 2 invites 5 each (Line 3):\n250 × 1.10 × 5% = 13.75 SOL\n\nTotal from just L5: 19.58 SOL"
+        }
+      },
+      "security": {
+        "title": "Security",
+        "shortTitle": "Security",
+        "content1": {
+          "heading": "Smart Contract Security",
+          "text": "The platform implements multiple security measures:\n\n• TxGuard: Each transaction uses a unique nonce to prevent replay attacks\n• PDA Verification: All accounts are cryptographically validated\n• Atomic Transfers: Payments happen in a single transaction (all or nothing)\n• Immutable Code: Smart contract cannot be modified after deployment\n• No Admin Keys: No one can drain funds or change rules"
+        },
+        "content2": {
+          "heading": "Your Funds Are Safe",
+          "text": "• You never give custody of your wallet to anyone\n• Payments go directly wallet-to-wallet via smart contract\n• No deposit/withdrawal system — your SOL stays in your wallet\n• All transactions are publicly verifiable on Solana Explorer\n• The contract has no admin functions that could steal funds"
+        },
+        "content3": {
+          "heading": "Verified on Solana Explorer",
+          "text": "The smart contract is fully transparent:\n\n• Contract address publicly available\n• All code verified and readable\n• Every transaction visible on Explorer\n• Account states can be inspected\n• No hidden logic or functions\n\nYou can independently verify everything."
+        },
+        "content4": {
+          "heading": "No Rug Pull Possible",
+          "text": "The contract design prevents any form of rug pull:\n\n• No owner withdrawal functions\n• No pause or freeze mechanisms\n• No upgradeable proxy patterns\n• Funds flow directly between wallets\n• Platform treasury is transparent\n\nEven developers cannot access your funds."
+        },
+        "content5": {
+          "heading": "Wallet Security Tips",
+          "text": "Keep your wallet safe:\n\n• Never share your seed phrase with anyone\n• Use hardware wallet for large amounts\n• Verify transaction details before signing\n• Only connect to the official platform URL\n• Be aware of phishing attempts\n• Store seed phrase offline securely"
+        },
+        "content6": {
+          "heading": "Transaction Protection",
+          "text": "Every transaction is protected by TxGuard:\n\n• Unique nonce prevents duplicate transactions\n• Protects against replay attacks\n• Ensures each activation is processed once\n• Automatic validation before execution\n• Failed transactions are safely reverted"
+        }
+      },
+      "getting-started": {
+        "title": "Getting Started",
+        "shortTitle": "Start",
+        "content1": {
+          "heading": "Step-by-Step Guide",
+          "text": "1. Install Phantom Wallet\n   Download from phantom.app and create your wallet\n\n2. Fund Your Wallet\n   Transfer SOL to your Phantom wallet address\n\n3. Connect Wallet\n   Click Connect Wallet on our platform\n\n4. Register Player\n   Create your on-chain player profile (one-time)\n\n5. Activate Level 1\n   Pay 0.05 SOL to activate your first level\n\n6. Share & Earn\n   Copy your referral link and invite others"
+        },
+        "content2": {
+          "heading": "Tips for Success",
+          "text": "• Start with Level 1 and work your way up\n• Activate as many levels as you can afford\n• Share your referral link on social media\n• Remember: referral bonuses require matching active levels\n• Monitor your dashboard for slot fills and cycles\n• Higher levels = higher payouts but slower queue movement"
+        },
+        "content3": {
+          "heading": "Supported Wallets",
+          "text": "The platform supports popular Solana wallets:\n\n• Phantom (recommended)\n• Solflare\n• Backpack\n• Ledger (via Phantom)\n• Other Solana-compatible wallets\n\nWe recommend Phantom for the best experience."
+        },
+        "content4": {
+          "heading": "Getting SOL",
+          "text": "You need SOL to participate. Ways to get SOL:\n\n• Buy on exchanges (Binance, Coinbase, Kraken)\n• Use fiat on-ramps (MoonPay, Transak)\n• Swap from other crypto\n• Receive from other users\n\nMinimum needed: ~0.06 SOL for Level 1 + fees"
+        },
+        "content5": {
+          "heading": "Registration Process",
+          "text": "One-time player registration:\n\n1. Connect your wallet\n2. Click 'Register' button\n3. Approve transaction in wallet\n4. Your player PDA is created on-chain\n5. You're ready to activate levels\n\nRegistration requires a minimum balance of 0.0030 SOL to cover transaction fees."
+        },
+        "content6": {
+          "heading": "Using Your Dashboard",
+          "text": "After registration, your dashboard shows:\n\n• Active levels and their status\n• Slots filled and cycles completed\n• Total earnings (estimated)\n• Your referral link\n• Transaction history\n• Level activation buttons"
+        },
+        "content7": {
+          "heading": "Common Questions",
+          "text": "Q: What if I lose my referrer's link?\nA: You can register with the default referrer.\n\nQ: Can I change my referrer?\nA: No, referral chains are permanent on-chain.\n\nQ: What's the minimum investment?\nA: Level 1 costs just 0.05 SOL.\n\nQ: Is there a time limit?\nA: No, your levels work forever once activated."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Activation price",
+    "back": "Back",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "slots": "Slots",
+    "cycles": "Cycles",
+    "earned": "Earned",
+    "cycleProgress": "Cycle Progress",
+    "filled": "Filled",
+    "empty": "Empty",
+    "slotsFilled": "{filled} of {total} slots filled",
+    "nextPayout": "Next payout",
+    "perActivationDistribution": "Per Activation Distribution",
+    "youOwner": "You (Owner)",
+    "referrerL1": "Referrer L1",
+    "referrerL2": "Referrer L2",
+    "referrerL3": "Referrer L3",
+    "platform": "Platform",
+    "yourEarningsPerCycle": "Your earnings per cycle (×3)",
+    "howItWorks": "How It Works",
+    "step1Title": "Activate this level",
+    "step1Desc": "you enter the queue and wait for 3 players to activate after you.",
+    "step2Title": "3 slots get filled",
+    "step2Desc": "each time someone activates, you receive {percent}% of their payment.",
+    "step3Title": "Cycle completes",
+    "step3Desc": "after 3 payments, your level is recycled back to queue automatically.",
+    "step4Title": "Unlimited cycles",
+    "step4Desc": "you can earn from this level indefinitely as long as new players keep joining.",
+    "processing": "Processing...",
+    "alreadyActivated": "Already activated",
+    "activateFor": "Activate for {price} SOL",
+    "levelStatistics": "Level Statistics",
+    "totalCyclesCompleted": "Total Cycles Completed",
+    "totalEarned": "Total Earned",
+    "perCycleEarnings": "Per Cycle Earnings",
+    "note": "Note",
+    "noteText": "This level will continue earning as long as new players join. Each cycle is independent."
+  }
+}

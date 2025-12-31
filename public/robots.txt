@@ -1,0 +1,25 @@
+# Solana Game - robots.txt
+# https://solanagame.io
+
+User-agent: *
+Allow: /
+
+# Block admin/api routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /generate-og-image.html
+
+# Allow important pages
+Allow: /dashboard/
+Allow: /levels/
+Allow: /history/
+Allow: /information/
+Allow: /docs/
+Allow: /disclaimer/
+
+# Sitemap location
+Sitemap: https://solanagame.io/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+

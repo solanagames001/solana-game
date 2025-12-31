@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Wallet verbinden",
+    "disconnect": "Trennen",
+    "dashboard": "Dashboard",
+    "register": "Registrieren",
+    "registering": "Registrierung...",
+    "connecting": "Verbinde",
+    "loading": "Laden...",
+    "processing": "Verarbeitung...",
+    "success": "Erfolg",
+    "error": "Fehler",
+    "copy": "Kopieren",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "submit": "Absenden",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Ansehen",
+    "more": "Mehr",
+    "less": "Weniger",
+    "all": "Alle",
+    "none": "Keine",
+    "yes": "Ja",
+    "no": "Nein",
+    "on": "An",
+    "off": "Aus",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "pending": "Ausstehend",
+    "completed": "Abgeschlossen",
+    "failed": "Fehlgeschlagen",
+    "home": "Startseite",
+    "support": "Support",
+    "balance": "Guthaben",
+    "tapToCopy": "Zum Kopieren tippen",
+    "swipeToClose": "Nach unten wischen zum Schließen",
+    "connectedWallet": "Verbundene Wallet",
+    "disconnectWallet": "Wallet trennen",
+    "selectLanguage": "Sprache auswählen",
+    "language": "Sprache",
+    "chooseLanguage": "Wählen Sie Ihre bevorzugte Sprache"
+  },
+  "playerStatus": {
+    "title": "Spielerstatus",
+    "accountInfo": "Kontoinformationen",
+    "authority": "Autorität",
+    "playerPda": "Spieler-PDA",
+    "createdAt": "Erstellt am",
+    "openLevels": "Level öffnen",
+    "copyPda": "PDA kopieren",
+    "explorer": "Explorer",
+    "register": "Registrieren",
+    "registering": "Registriere…",
+    "connectFirst": "Bitte zuerst Wallet verbinden",
+    "playerRegistered": "Spieler registriert",
+    "registrationFailed": "Registrierung fehlgeschlagen",
+    "addressCopied": "Adresse kopiert",
+    "copyFailed": "Kopieren fehlgeschlagen"
+  },
+  "levelCard": {
+    "activate": "Aktivieren",
+    "activating": "Aktiviere…",
+    "activated": "Aktiviert",
+    "notActivated": "Nicht aktiviert",
+    "checking": "Prüfe…",
+    "notRegistered": "Nicht registriert",
+    "levelActive": "Level ist aktiv — Belohnungen aktiviert.",
+    "level": "Level",
+    "price": "Preis (SOL)",
+    "slots": "Slots",
+    "cycles": "Zyklen",
+    "details": "Details"
+  },
+  "activations": {
+    "title": "Aktivierungen",
+    "lastDays": "letzte {days} Tage",
+    "total": "gesamt",
+    "activationsCount": "{count} Aktivierungen"
+  },
+  "header": {
+    "connectWallet": "Wallet verbinden",
+    "dashboard": "Dashboard",
+    "register": "Registrieren",
+    "connecting": "Verbinde"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Dezentrales Matrix-System auf der Solana-Blockchain",
+    "poweredBy": "Betrieben von Solana"
+  },
+  "ticker": {
+    "onChain": "100% On-Chain Smart Contract",
+    "noAdminKeys": "Keine Admin-Keys - Vollständig dezentralisiert",
+    "instantPayouts": "Sofortige Auszahlungen auf Ihr Wallet",
+    "audited": "Geprüfter & verifizierter Vertrag",
+    "levels": "16 Level - Bis zu 655.35 SOL",
+    "partnerBonus": "Partner einladen - 26% Bonus verdienen",
+    "unlimited": "Unbegrenzte Zyklen - Unbegrenzte Einnahmen"
+  },
+  "technology": {
+    "smartContract": "Smart Contract",
+    "howItWorks": "So funktioniert es auf",
+    "solana": "Solana",
+    "description": "Vollständig autonomer Smart Contract mit X3-Matrix-Modell, sofortigen Auszahlungen und kryptographischer Sicherheit",
+    "x3Matrix": "X3 Matrix",
+    "x3MatrixDesc": "Jedes Level arbeitet als warteschlangenbasierte X3-Matrix. Wenn Sie ein Level aktivieren, treten Sie einer globalen Warteschlange bei. Alle 3 Aktivierungen nach Ihnen füllen Ihre Slots und vervollständigen einen Zyklus. Sie erhalten 60% von jeder Slot-Füllung und treten dann automatisch für unbegrenzte Zyklen wieder in die Warteschlange ein.",
+    "instantPayouts": "Sofortige Auszahlungen",
+    "instantPayoutsDesc": "Smart Contract verteilt Zahlungen sofort: 60% an den Level-Besitzer, 13% an Empfehler Linie 1, 8% an Linie 2, 5% an Linie 3 und 14% an die Plattform-Schatzkammer. Alle Transfers erfolgen in einer einzigen atomaren Transaktion — keine Verzögerungen, keine Mittelsmänner.",
+    "sixteenLevels": "16 Level",
+    "sixteenLevelsDesc": "Das System hat 16 Level mit festen Preisen von 0.05 SOL (Level 1) bis 8.7 SOL (Level 16). Jedes Level hat seine eigene unabhängige Warteschlange. Höhere Level bedeuten höhere Auszahlungen pro Slot-Füllung. Aktivieren Sie Level in beliebiger Reihenfolge.",
+    "replayProtection": "Replay-Schutz",
+    "replayProtectionDesc": "Jede Transaktion verwendet eine eindeutige Nonce, die in einem TxGuard-Konto gespeichert ist. Dies verhindert Replay-Angriffe und stellt sicher, dass jede Aktivierung genau einmal verarbeitet wird. Der Smart Contract validiert alle PDAs kryptographisch vor jeder Übertragung.",
+    "globalQueue": "Globale Warteschlange",
+    "globalQueueDesc": "Jedes Level unterhält einen LevelPool mit paginierten QueuePages (64 Spieler pro Seite). Wenn eine Seite voll ist, wird automatisch eine neue Seite erstellt. Die Warteschlange sorgt für faire, First-Come-First-Served Verteilung der Slot-Füllungen.",
+    "referralChain": "Empfehlungskette",
+    "referralChainDesc": "Bei der Registrierung wird Ihre 3-stufige Upline on-chain aufgezeichnet (upline1, upline2, upline3). Sie erhalten Boni von Ihren Aktivierungen nur, wenn sie dasselbe Level aktiv haben. Andernfalls gehen Boni an die Plattform-Schatzkammer.",
+    "levels": "Level",
+    "slotsPerCycle": "Slots pro Zyklus",
+    "autoRecycle": "Auto-Recycling",
+    "ownerPayout": "Eigentümer-Auszahlung",
+    "perActivation": "Pro Aktivierung",
+    "referralTotal": "Empfehlungen gesamt"
+  },
+  "mechanics": {
+    "gameMechanics": "Spielmechanik",
+    "howSolanaGameWorks": "Wie Solana Game funktioniert",
+    "description": "Verdienen, upgraden und spielen Sie durch dezentrale Smart-Level, angetrieben von Solana Smart Contracts",
+    "activateLevel": "Level aktivieren",
+    "activateLevelDesc": "Wählen Sie ein beliebiges Level und aktivieren Sie es direkt on-chain. Das Eigentum wird dauerhaft auf der Solana-Blockchain aufgezeichnet.",
+    "playRecycle": "Spielen & Recyclen",
+    "playRecycleDesc": "Jedes Level recycelt automatisch nach drei geschlossenen Slots — Belohnungen werden sofort verteilt und das Level öffnet sich automatisch wieder.",
+    "earnUpgrade": "Verdienen & Upgraden",
+    "earnUpgradeDesc": "Sammeln Sie Belohnungen in SOL und schalten Sie höhere Level für größere Renditen im dezentralen Ökosystem frei."
+  },
+  "stats": {
+    "title": "Gemeinschaftsvorteile",
+    "growingEverySecond": "Werden Sie Teil von etwas Größerem",
+    "description": "Schließen Sie sich einem globalen Netzwerk aktiver Verdienstmöglichkeiten an und wachsen Sie gemeinsam.",
+    "worldwideNetwork": "Weltweites Netzwerk",
+    "worldwideNetworkDesc": "Zugang von überall auf der Welt",
+    "thrivingCommunity": "Blühende Gemeinschaft",
+    "thrivingCommunityDesc": "Aktive Mitglieder verdienen täglich",
+    "alwaysSupported": "Immer unterstützt",
+    "alwaysSupportedDesc": "Erhalten Sie Hilfe, wann immer Sie sie brauchen",
+    "collectiveWins": "Gemeinsame Erfolge",
+    "collectiveWinsDesc": "Erfolg wächst mit dem Netzwerk",
+    "startEarning": "Jetzt verdienen starten",
+    "goToDashboard": "Zum Dashboard",
+    "walletConnected": "Wallet verbunden. Bereit zum Verdienen.",
+    "noHiddenFees": "Keine versteckten Gebühren. Sofortige Auszahlungen. 100% on-chain."
+  },
+  "levels": {
+    "title": "Level",
+    "level": "Level",
+    "price": "Preis",
+    "activate": "Aktivieren",
+    "activating": "Aktiviere...",
+    "activated": "Aktiviert",
+    "locked": "Gesperrt",
+    "cycles": "Zyklen",
+    "slots": "Slots",
+    "filled": "Gefüllt",
+    "earnings": "Einnahmen",
+    "totalEvents": "Gesamt Events",
+    "cyclesDone": "Abgeschlossene Zyklen",
+    "queue": "In Warteschlange",
+    "yourPosition": "Ihre Position",
+    "recycleAfter": "Recycling nach 3 gefüllten Slots"
+  },
+  "history": {
+    "title": "Transaktionsverlauf",
+    "noTransactions": "Noch keine Transaktionen",
+    "activation": "Aktivierung",
+    "earning": "Einnahme",
+    "referralBonus": "Empfehlungsbonus",
+    "referralActivated": "Empfehlung aktiviert",
+    "referralRegistered": "Empfehlung registriert",
+    "cycleClose": "Zyklus Abgeschlossen",
+    "recycled": "Recycelt",
+    "reOpened": "Wieder Geöffnet",
+    "viewExplorer": "Im Explorer ansehen",
+    "view": "Ansehen",
+    "viewAll": "Alle anzeigen",
+    "synthetic": "synthetisch",
+    "pending": "Ausstehend",
+    "slot": "Slot",
+    "justNow": "Gerade eben",
+    "mAgo": "Min. vor",
+    "hAgo": "Std. vor",
+    "dAgo": "T. vor",
+    "activated": "Aktiviert",
+    "filters": {
+      "all": "Alle",
+      "activations": "Aktivierungen",
+      "earnings": "Einnahmen",
+      "pending": "Ausstehend"
+    },
+    "ownerPayout": "Eigentümer-Auszahlung (60%)",
+    "referralPayoutL1": "Empfehlungsbonus L1 (13%)",
+    "referralPayoutL2": "Empfehlungsbonus L2 (8%)",
+    "referralPayoutL3": "Empfehlungsbonus L3 (5%)",
+    "fromSlot": "Slot {slot}"
+  },
+  "info": {
+    "platformFeatures": "Plattform-Funktionen",
+    "builtOn": "Gebaut auf",
+    "solana": "Solana",
+    "description": "Transparente Smart Contracts, sofortige Transaktionen und ein dezentrales Empfehlungssystem",
+    "documentation": "Dokumentation",
+    "documentationDesc": "Vollständige Anleitungen zum Verständnis des X3-Matrix-Systems und zur Maximierung Ihrer Einnahmen.",
+    "instantPayouts": "Sofortige Auszahlungen",
+    "instantPayoutsDesc": "SOL wird direkt an Ihr Wallet gesendet. Keine Verzögerungen, keine Mittelsmänner. Smart Contract erledigt alles.",
+    "referralSystem": "Empfehlungssystem",
+    "referralSystemDesc": "Verdienen Sie 13%, 8% und 5% von Ihren Empfehlungslinien. Bauen Sie Ihr Netzwerk auf und steigern Sie Ihr passives Einkommen.",
+    "readDocs": "Docs lesen",
+    "learnMore": "Mehr erfahren",
+    "startEarning": "Verdienen starten",
+    "ownerPayout": "Eigentümer-Auszahlung",
+    "referralRewards": "Empfehlungsbelohnungen",
+    "transactionSpeed": "Transaktionsgeschwindigkeit"
+  },
+  "partner": {
+    "title": "Partnerprogramm",
+    "subtitle": "Freunde einladen und 50% Bonus von deren Aktivierungen verdienen",
+    "yourReferralLink": "Ihr Empfehlungslink",
+    "copyLink": "Link kopieren",
+    "linkCopied": "Link kopiert!",
+    "howItWorks": "So funktioniert der Partnerbonus",
+    "level1": "Level 1 Partner",
+    "level2": "Level 2 Partner",
+    "level3": "Level 3 Partner",
+    "bonus1": "13% von direkten Empfehlungen",
+    "bonus2": "8% von Level 2 Empfehlungen",
+    "bonus3": "5% von Level 3 Empfehlungen"
+  },
+  "telegram": {
+    "title": "Telegram Ressourcen",
+    "community": "Community",
+    "communityDesc": "Unserem Chat beitreten",
+    "support": "Support",
+    "supportDesc": "Hilfe vom Team erhalten"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Schnelle Antworten zum Verständnis und Einstieg bei Solana Game",
+    "q1": "Was ist Solana Game und wie funktioniert es?",
+    "a1": "Solana Game ist eine dezentrale Matrix-Plattform, die vollständig auf Solana Smart Contracts läuft. Wenn Sie ein Level aktivieren, treten Sie einer globalen Warteschlange bei. Wenn neue Spieler dasselbe Level nach Ihnen aktivieren, füllen sie Ihre 3 Slots. Sobald alle 3 Slots gefüllt sind, erhalten Sie Auszahlungen und treten automatisch wieder der Warteschlange bei. Dieser Zyklus wiederholt sich unbegrenzt — eine Aktivierung gibt Ihnen unbegrenztes Verdienstpotenzial.",
+    "q2": "Wie viele Level gibt es und was kosten sie?",
+    "a2": "Es gibt 16 Level mit festen Preisen in SOL: L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Jedes Level arbeitet unabhängig mit eigener Warteschlange — Sie können jedes Level in beliebiger Reihenfolge aktivieren.",
+    "q3": "Wie viel verdiene ich und wohin geht das Geld?",
+    "a3": "Wenn jemand ein Level aktiviert, werden Zahlungen sofort verteilt: 60% gehen an den Warteschlangenführer (Level-Besitzer), 13% an den Empfehler der 1. Linie, 8% an die 2. Linie, 5% an die 3. Linie und 14% an die Plattform-Schatzkammer. Pro Zyklus (3 gefüllte Slots) erhalten Sie 180% des Level-Preises. Alle Transfers erfolgen atomar in einer Blockchain-Transaktion.",
+    "q4": "Wie funktioniert das Empfehlungsprogramm?",
+    "a4": "Bei der Registrierung wird Ihre Empfehlungskette on-chain aufgezeichnet (3 Ebenen tief). Ihre Empfehler verdienen 13%, 8% und 5% von jeder Ihrer Level-Aktivierungen. Wichtig: Empfehlungsboni gelten nur, wenn Ihre Upline dasselbe Level aktiv hat. Wenn nicht, geht ihr Anteil an die Schatzkammer. Dies motiviert alle, mehr Level zu aktivieren.",
+    "q5": "Was passiert, nachdem meine 3 Slots gefüllt sind?",
+    "a5": "Ihr Level wird automatisch 'recycelt' — Ihre Slots werden auf 0 zurückgesetzt, Ihr Zykluszähler erhöht sich um 1, und Sie treten am Ende wieder der Warteschlange bei. Sie behalten Ihre Position und verdienen für immer von derselben Level-Aktivierung. Es gibt keine Begrenzung für die Anzahl der Zyklen.",
+    "q6": "Wie fange ich an?",
+    "a6": "Schritt 1: Verbinden Sie Ihr Phantom Wallet (oder ein anderes Solana Wallet). Schritt 2: Registrieren Sie Ihr Spielerprofil — dies erstellt Ihr On-Chain-Konto und zeichnet Ihren Empfehler auf. Schritt 3: Aktivieren Sie Level 1 für 0.05 SOL. Schritt 4: Teilen Sie Ihren Empfehlungslink, um Boni zu verdienen, wenn andere beitreten. Sie können Ihre Slots, Zyklen und Einnahmen in Echtzeit im Dashboard überwachen.",
+    "q7": "Ist mein Geld sicher? Kann jemand meine Mittel stehlen?",
+    "a7": "Ihre Mittel sind absolut sicher. Die Plattform läuft auf verifizierten, unveränderlichen Smart Contracts — niemand (einschließlich Entwickler) kann den Code ändern oder auf Ihr Wallet zugreifen. Zahlungen gehen direkt von Wallet zu Wallet ohne Zwischenhändler. Der Vertrag enthält TxGuard-Schutz gegen doppelte Transaktionen. Sie geben niemals die Verwahrung Ihrer Mittel an jemanden ab.",
+    "q8": "Was ist, wenn niemand nach mir aktiviert?",
+    "a8": "Ihre Position in der Warteschlange ist dauerhaft und verfällt nie. Sie warten einfach, bis neue Spieler das Level aktivieren. Die Warteschlange ist global — alle Spieler weltweit teilen dieselbe Warteschlange für jedes Level. Je beliebter das Level, desto schneller füllen sich Ihre Slots. Höhere Level können länger dauern, bieten aber größere Auszahlungen."
+  },
+  "footer": {
+    "description": "Dezentrales X3 Matrix-System auf der Solana-Blockchain. Sofortige Auszahlungen, transparente Mechanik, 100% on-chain.",
+    "smartContract": "Smart Contract",
+    "contractAddress": "Vertragsadresse",
+    "verifyExplorer": "Überprüfen Sie die Vertragsadresse im Solana Explorer",
+    "viewOnExplorer": "Im Explorer ansehen",
+    "platform": "Plattform",
+    "gameLevels": "Spiellevel",
+    "resources": "Ressourcen",
+    "howItWorks": "So funktioniert es",
+    "docs": "Dokumentation",
+    "disclaimer": "Haftungsausschluss",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Wallet verbunden",
+    "allRightsReserved": "Alle Rechte vorbehalten"
+  },
+  "wallet": {
+    "connect": "Wallet verbinden",
+    "connecting": "Verbinde...",
+    "connected": "Verbunden",
+    "disconnect": "Trennen",
+    "balance": "Guthaben",
+    "address": "Adresse",
+    "copyAddress": "Adresse kopieren",
+    "viewExplorer": "Im Explorer ansehen",
+    "switchWallet": "Wallet wechseln",
+    "installPhantom": "Phantom installieren",
+    "phantomRequired": "Phantom Wallet erforderlich",
+    "readyToConnect": "Bereit zum Verbinden",
+    "supported": "Unterstützt",
+    "connectToContinue": "Verbinden Sie sich, um fortzufahren",
+    "phantomNotFound": "Phantom nicht gefunden",
+    "pleaseInstall": "Bitte installieren Sie die Phantom-Wallet-Erweiterung",
+    "byConnecting": "Durch das Verbinden stimmen Sie den Nutzungsbedingungen zu",
+    "notInstalled": "Nicht installiert"
+  },
+  "guard": {
+    "title": "Wallet verbinden",
+    "description": "Um auf das Dashboard zuzugreifen, verbinden Sie bitte Ihr Solana Wallet. Ihr Wallet ist für die Interaktion mit der Blockchain erforderlich.",
+    "backHome": "Zurück zur Startseite",
+    "registerRequired": "Registrierung erforderlich",
+    "registerRequiredDesc": "Um auf das Dashboard zuzugreifen, müssen Sie sich als Spieler registrieren. Es ist kostenlos und dauert nur wenige Sekunden."
+  },
+  "docs": {
+    "title": "Dokumentation",
+    "startPlaying": "Spielen starten",
+    "overview": "Übersicht",
+    "gettingStarted": "Erste Schritte",
+    "matrixSystem": "X3 Matrix-System",
+    "earnings": "Einnahmen & Auszahlungen",
+    "referrals": "Empfehlungsprogramm",
+    "security": "Sicherheit"
+  },
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "understand": "Ich verstehe",
+    "intro": "Bitte lesen Sie diesen Haftungsausschluss sorgfältig durch, bevor Sie Solana Program X3 verwenden. Durch den Zugriff auf die Plattform oder deren Nutzung erklären Sie sich mit diesen Bedingungen einverstanden.",
+    "lastUpdated": "Zuletzt aktualisiert: Dezember 2024",
+    "importantNotice": "Wichtiger Hinweis",
+    "importantNoticeText": "Kryptowährungsinvestitionen bergen hohe Risiken. Investieren Sie nur, was Sie sich leisten können zu verlieren. Diese Plattform arbeitet mit unveränderlichen Smart Contracts — Transaktionen können nicht rückgängig gemacht werden.",
+    "acceptanceTitle": "Annahme der Bedingungen",
+    "acceptanceText": "Durch die Nutzung von Solana Program X3 bestätigen Sie, dass Sie diesen Haftungsausschluss gelesen, verstanden haben und sich an alle anwendbaren Bedingungen gebunden fühlen.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Art der Plattform",
+        "content": "Solana Program X3 ist eine dezentralisierte Anwendung (dApp), die auf der Solana-Blockchain aufbaut. Die Plattform arbeitet über unveränderliche Smart Contracts, die in der Blockchain bereitgestellt werden. Nach der Bereitstellung kann der Smart-Contract-Code von keiner Partei, einschließlich der Entwickler, geändert, modifiziert oder kontrolliert werden.\n\nDie Plattform ermöglicht ein Matrix-basiertes System, in dem Teilnehmer Level aktivieren und Zahlungen basierend auf der im Smart Contract definierten Mechanik erhalten können. Alle Transaktionen werden automatisch von der Blockchain gemäß den vordefinierten Regeln ausgeführt."
+      },
+      "noFinancialAdvice": {
+        "title": "Keine Finanzberatung",
+        "content": "Nichts auf dieser Plattform stellt eine finanzielle, investitions-, rechtliche oder steuerliche Beratung dar. Die bereitgestellten Informationen dienen nur zu Bildungs- und Informationszwecken. Sie sollten qualifizierte Fachleute konsultieren, bevor Sie finanzielle Entscheidungen treffen.\n\nDie Teilnahme an Blockchain-basierten Plattformen birgt erhebliche Risiken. Vergangene Ergebnisse garantieren keine zukünftigen Ergebnisse. Der Wert von Kryptowährungen kann erheblich schwanken, und Sie können einen Teil oder Ihre gesamte Investition verlieren."
+      },
+      "riskAcknowledgment": {
+        "title": "Risikoanerkennung",
+        "content": "Durch die Nutzung von Solana Program X3 erkennen Sie die folgenden Risiken an und akzeptieren sie:\n\n• Smart-Contract-Risiko: Obwohl der Code sorgfältig entwickelt wurde, ist kein Smart Contract vollständig frei von potenziellen Schwachstellen oder Fehlern.\n\n• Marktrisiko: Der Wert von SOL und anderen Kryptowährungen kann sehr volatil sein und zu erheblichen Verlusten führen.\n\n• Regulierungsrisiko: Kryptowährungsvorschriften variieren je nach Rechtsordnung und können sich ändern. Es liegt in Ihrer Verantwortung, die Einhaltung der geltenden Gesetze sicherzustellen.\n\n• Netzwerkrisiko: Die Solana-Blockchain kann Überlastungen, Ausfälle oder andere technische Probleme erleben, die Transaktionen beeinträchtigen könnten.\n\n• Zugriffsverlust: Wenn Sie den Zugang zu Ihrer Wallet oder Ihren privaten Schlüsseln verlieren, können Ihre Mittel dauerhaft unzugänglich werden."
+      },
+      "noGuarantees": {
+        "title": "Keine Garantien",
+        "content": "Die Plattform gibt keine Garantien bezüglich:\n\n• Der Höhe oder des Zeitpunkts von Einnahmen oder Renditen\n• Der fortgesetzten Betrieb der Plattform\n• Der Verfügbarkeit oder Funktionalität von Funktionen\n• Der Genauigkeit der angezeigten Informationen\n• Der Handlungen anderer Teilnehmer\n\nIhre Ergebnisse hängen vollständig von der Aktivität anderer Teilnehmer und der Mechanik des Smart Contracts ab. Es gibt keine Garantie, dass Sie Zahlungen erhalten oder Ihre ursprüngliche Investition zurückerhalten."
+      },
+      "yourResponsibilities": {
+        "title": "Ihre Verantwortlichkeiten",
+        "content": "Als Teilnehmer sind Sie allein verantwortlich für:\n\n• Die Durchführung eigener Recherchen vor der Teilnahme\n• Die Sicherung Ihrer Wallet und privaten Schlüssel\n• Das Verständnis der Plattform-Mechanik\n• Die Einhaltung aller geltenden Gesetze und Vorschriften in Ihrer Rechtsordnung\n• Die Meldung von Einnahmen für Steuerzwecke nach Bedarf\n• Die Treffen informierter Entscheidungen über Ihre Teilnahme\n\nSie sollten nur mit Mitteln teilnehmen, die Sie sich leisten können, vollständig zu verlieren."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Jurisdiktionelle Beschränkungen",
+        "content": "Die Plattform ist möglicherweise nicht verfügbar oder in bestimmten Rechtsordnungen eingeschränkt. Es liegt in Ihrer Verantwortung, zu bestimmen, ob Ihre Nutzung der Plattform in Ihrer Rechtsordnung legal ist.\n\nDurch den Zugriff auf die Plattform und deren Nutzung erklären und garantieren Sie, dass Sie rechtlich berechtigt sind, dies in Ihrer Rechtsordnung zu tun, und dass Sie alle geltenden lokalen, staatlichen, nationalen und internationalen Gesetze und Vorschriften einhalten werden."
+      },
+      "thirdPartyServices": {
+        "title": "Drittanbieterdienste",
+        "content": "Die Plattform integriert Drittanbieterdienste, einschließlich:\n\n• Solana Blockchain Network\n• Wallet-Anbieter (Phantom, Solflare, etc.)\n• RPC-Anbieter\n\nWir haben keine Kontrolle über diese Drittanbieterdienste und sind nicht für deren Verfügbarkeit, Sicherheit oder Probleme verantwortlich, die aus deren Nutzung entstehen."
+      },
+      "limitationOfLiability": {
+        "title": "Haftungsbeschränkung",
+        "content": "Soweit gesetzlich zulässig, haften die Entwickler, Mitwirkenden und alle verbundenen Parteien nicht für direkte, indirekte, zufällige, besondere, Folgeschäden oder beispielhafte Schäden, die sich aus ergeben:\n\n• Ihrer Nutzung oder Unfähigkeit, die Plattform zu nutzen\n• Alle Transaktionen, die über die Plattform durchgeführt werden\n• Jeglicher unbefugter Zugriff auf Ihre Wallet oder Mittel\n• Fehler oder Auslassungen im Smart-Contract-Code\n• Anderen Angelegenheiten in Bezug auf die Plattform\n\nDiese Beschränkung gilt unabhängig von der Rechtsauffassung und auch wenn wir über die Möglichkeit solcher Schäden informiert wurden."
+      },
+      "modifications": {
+        "title": "Änderungen",
+        "content": "Dieser Haftungsausschluss kann von Zeit zu Zeit aktualisiert werden. Während der Smart-Contract-Code unveränderlich ist, können die Frontend-Oberfläche und dieser Haftungsausschluss geändert werden. Es liegt in Ihrer Verantwortung, diesen Haftungsausschluss regelmäßig auf Änderungen zu überprüfen.\n\nDie fortgesetzte Nutzung der Plattform nach Änderungen stellt eine Annahme der aktualisierten Bedingungen dar."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Wenn Sie Fragen zu diesem Haftungsausschluss oder der Plattform haben, kontaktieren Sie uns bitte über unseren offiziellen Telegram-Support-Kanal.\n\nErinnern Sie sich: Teilen Sie niemals Ihre privaten Schlüssel oder Seed-Phrase mit jemandem, einschließlich Personen, die behaupten, Teil unseres Teams zu sein."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Adresse kopiert",
+    "signatureCopied": "Signatur kopiert",
+    "contractCopied": "Vertragsadresse kopiert",
+    "linkCopied": "Link kopiert",
+    "copyFailed": "Kopieren fehlgeschlagen",
+    "walletNotConnected": "Wallet nicht verbunden",
+    "connectWalletFirst": "Verbinden Sie zuerst Ihr Wallet",
+    "invalidLevel": "Ungültiges Level",
+    "activationSent": "Aktivierung gesendet",
+    "activationSentLevel": "L{level} Aktivierung gesendet",
+    "activatingLevel": "Aktiviere Level {level}...",
+    "activationError": "Aktivierungsfehler",
+    "registrationSuccess": "Spieler erfolgreich registriert",
+    "registrationFailed": "Registrierung fehlgeschlagen",
+    "profileCreated": "Profil erstellt",
+    "referralActivatedLevel": "Jemand aus Ihrem Empfehlungsnetzwerk hat Level {level} aktiviert",
+    "creatingProfile": "Erstelle Profil...",
+    "insufficientFundsForRegistration": "Unzureichende Mittel für die Registrierung. Sie benötigen mindestens 0.0030 SOL.",
+    "transactionProcessing": "Transaktion wird verarbeitet...",
+    "clipboardNotSupported": "Zwischenablage wird nicht unterstützt",
+    "playerRegistered": "Spieler registriert",
+    "viewInExplorer": "Im Explorer anzeigen",
+    "closeNotification": "Benachrichtigung schließen",
+    "comingSoon": "Demnächst verfügbar",
+    "loadError": "Fehler beim Laden der Daten",
+    "activationFinalized": "Aktivierung abgeschlossen",
+    "registrationFinalized": "Registrierung abgeschlossen",
+    "checkingPlayerState": "Spielerstatus wird überprüft…",
+    "playerNotFound": "Spieler nicht gefunden — drücken Sie Registrieren",
+    "levelAlreadyActivated": "Level bereits aktiviert",
+    "pressActivate": "Drücken Sie Aktivieren, um dieses Level zu aktivieren"
+  },
+  "overlay": {
+    "processing": "Transaktion wird verarbeitet..."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "home": "Startseite",
+    "levels": "Level",
+    "history": "Verlauf",
+    "information": "Information",
+    "info": "Info",
+    "partnerBonus": "Partnerbonus",
+    "partners": "Partner",
+    "telegram": "Telegram",
+    "support": "Support",
+    "more": "Mehr"
+  },
+  "mobileMenu": {
+    "connectWallet": "Wallet verbinden",
+    "connecting": "Verbinde...",
+    "createProfile": "Profil erstellen",
+    "creatingProfile": "Erstelle Profil...",
+    "goToDashboard": "Zum Dashboard"
+  },
+  "dashboardPage": {
+    "title": "Dashboard",
+    "subtitle": "Ihre Level, Einnahmen & Aktivität",
+    "yourStatistics": "Ihre Statistiken",
+    "onChainData": "On-Chain-Daten",
+    "activeLevels": "Aktive Level",
+    "next": "Nächstes",
+    "allDone": "Alles erledigt",
+    "completedCycles": "Abgeschlossene Zyklen",
+    "slotsEquals": "3 Slots = 1 Zyklus",
+    "estEarnings": "Geschätzte Einnahmen",
+    "ownerPayout": "60% Eigentümer-Auszahlung",
+    "totalSpent": "Gesamtausgaben",
+    "levelActivations": "Level-Aktivierungen",
+    "yourLevels": "Ihre Level",
+    "slotsAndCycles": "Slots & Zyklen",
+    "viewAll": "Alle anzeigen",
+    "slots": "Slots",
+    "cycle": "Zyklus",
+    "cycles": "Zyklen",
+    "howItWorks": "So funktioniert es:",
+    "howItWorksDesc": "Wenn 3 Spieler Ihr Level aktivieren, erhalten Sie 60% jeder Zahlung. Der Rest → Empfehler (26%) + Schatzkammer (14%).",
+    "latestActivity": "Letzte Aktivität",
+    "transactionHistory": "Transaktionsverlauf",
+    "live": "Live",
+    "noActivity": "Noch keine Aktivität. Aktivieren Sie Ihr erstes Level, um zu starten.",
+    "contractIdCopied": "Vertrags-ID kopiert"
+  },
+  "levelsPage": {
+    "title": "Level",
+    "subtitle": "Aktivieren Sie Level, um SOL zu verdienen",
+    "active": "Aktiv",
+    "ready": "Bereit",
+    "noWallet": "Kein Wallet",
+    "registerFirst": "Bitte registrieren Sie zuerst einen Spieler",
+    "levelAlreadyActive": "Bereits aktiv",
+    "activated": "Aktiviert"
+  },
+  "historyPage": {
+    "title": "Transaktionsverlauf",
+    "subtitle": "Alle Ihre Aktivierungen, Einnahmen und Systemereignisse",
+    "wallet": "Wallet",
+    "notConnected": "Nicht verbunden",
+    "totalEvents": "Gesamtereignisse",
+    "activations": "Aktivierungen",
+    "cyclesDone": "Zyklen abgeschlossen",
+    "pending": "Ausstehend",
+    "all": "Alle",
+    "earnings": "Einnahmen",
+    "connectWallet": "Verbinden Sie Ihr Wallet, um den Verlauf anzuzeigen",
+    "noTransactions": "Noch keine Transaktionen. Aktivieren Sie Ihr erstes Level, um zu starten.",
+    "noEventsFound": "Keine {filter}-Ereignisse gefunden.",
+    "transactionTypes": "Transaktionstypen",
+    "activationsDesc": "Ihre Level-Aktivierungen und Recyclings. Dies sind ausgehende Transaktionen.",
+    "earningsDesc": "Zahlungen die Sie erhalten: 60% Eigentümer-Auszahlungen + Empfehlungsboni (13%, 8%, 5%).",
+    "pendingDesc": "Transaktionen, die auf Blockchain-Bestätigung warten.",
+    "cyclesDesc": "Abgeschlossene Zyklen — 3 Slots gefüllt, dann Auto-Recycle zurück in die Warteschlange.",
+    "walletCopied": "Wallet kopiert",
+    "connectFirst": "Verbinden Sie zuerst Ihr Wallet",
+    "copyFailed": "Kopieren fehlgeschlagen"
+  },
+  "informationPage": {
+    "title": "So funktioniert es",
+    "subtitle": "Alles, was Sie über die Plattform wissen müssen",
+    "totalLevels": "Level insgesamt",
+    "slotsPerCycle": "Slots pro Zyklus",
+    "yourPayout": "Ihre Auszahlung",
+    "network": "Netzwerk",
+    "whatIsThis": "Was ist diese Plattform?",
+    "whatIsThisDesc": "Dies ist eine dezentrale Anwendung auf der Solana-Blockchain. Alles läuft automatisch über Smart Contracts — keine Administratoren, keine Mittelsmänner. Sie aktivieren Level, verdienen wenn andere nach Ihnen beitreten, und der Prozess wiederholt sich endlos.",
+    "transparent": "Transparent",
+    "transparentDesc": "Alle Transaktionen auf der Solana-Blockchain sichtbar. Nichts versteckt.",
+    "automatic": "Automatisch",
+    "automaticDesc": "Smart Contract wickelt Zahlungen ab. Keine Verzögerungen, keine Genehmigungen nötig.",
+    "unlimited": "Unbegrenzt",
+    "unlimitedDesc": "Jedes Level kann für immer verdienen. Keine Limits für Zyklen oder Einnahmen.",
+    "simpleProcess": "Einfacher 4-Schritte-Prozess",
+    "step1Title": "Level aktivieren",
+    "step1Desc": "Wählen Sie ein beliebiges Level von L01 bis L16. Zahlen Sie den Aktivierungspreis einmal. Sie besitzen jetzt dieses Level und treten in die Warteschlange ein.",
+    "step2Title": "Warten auf 3 Aktivierungen",
+    "step2Desc": "Wenn 3 andere Spieler dasselbe Level nach Ihnen aktivieren, zahlt Ihnen jeder 60% des Levelpreises. Das sind insgesamt 3 Zahlungen.",
+    "step3Title": "Zyklus abgeschlossen",
+    "step3Desc": "Nach Erhalt von 3 Zahlungen recycelt Ihr Level automatisch. Sie kehren in die Warteschlange zurück und können erneut verdienen.",
+    "step4Title": "Endlos wiederholen",
+    "step4Desc": "Der Zyklus wiederholt sich unbegrenzt. Eine Aktivierung = unbegrenztes Verdienstpotenzial, solange neue Spieler beitreten.",
+    "whereMoneyGoes": "Wohin geht das Geld?",
+    "moneyGoesDesc": "Wenn jemand ein Level aktiviert, wird seine Zahlung sofort aufgeteilt:",
+    "youOwner": "Sie (Eigentümer)",
+    "yourEarnings": "Ihre Einnahmen pro Aktivierung",
+    "referrerL1": "Empfehler L1",
+    "directInviter": "Ihr direkter Einlader",
+    "referrerL2": "Empfehler L2",
+    "inviterOfInviter": "Einlader Ihres Einladers",
+    "referrerL3": "Empfehler L3",
+    "thirdLevelUpline": "Dritte Upline-Ebene",
+    "platform": "Plattform",
+    "projectDevelopment": "Projektentwicklung",
+    "exampleCalculation": "Beispielrechnung",
+    "exampleDesc": "L01 kostet 0.05 SOL. Wenn 3 Personen nach Ihnen aktivieren:",
+    "youReceive": "Sie erhalten:",
+    "perCycle": "pro Zyklus",
+    "levelPrices": "Level-Preise",
+    "levelPricesDesc": "16 Level verfügbar. Höheres Level = höhere Einnahmen pro Zyklus.",
+    "allPricesInSol": "Alle Preise in SOL",
+    "referralBonuses": "Empfehlungsboni",
+    "referralBonusesDesc": "Wenn jemand, den Sie eingeladen haben, von seinen Leveln verdient, erhalten auch Sie einen Bonus:",
+    "directReferral": "Direkter Empfehler (Linie 1)",
+    "peopleInvitedDirectly": "Personen, die Sie direkt eingeladen haben",
+    "secondLine": "Zweite Linie (Linie 2)",
+    "peopleInvitedByReferrals": "Personen, die von Ihren Empfehlungen eingeladen wurden",
+    "thirdLine": "Dritte Linie (Linie 3)",
+    "thirdLevelNetwork": "Dritte Ebene Ihres Netzwerks",
+    "referralNote": "Hinweis: Sie erhalten Empfehlungsboni nur für Level, die Sie aktiviert haben. Wenn Sie L05 nicht aktiv haben, gehen Empfehlungsboni von L05 an die Plattform.",
+    "commonQuestions": "Häufige Fragen",
+    "q1": "Muss ich Level der Reihe nach aktivieren?",
+    "a1": "Nein. Sie können jedes Level jederzeit aktivieren. L01 und L16 sind völlig unabhängig.",
+    "q2": "Was passiert wenn mein Zyklus abgeschlossen ist?",
+    "a2": "Ihr Level kehrt automatisch in die Warteschlange zurück. Sie können immer wieder davon verdienen.",
+    "q3": "Kann ich mein Geld verlieren?",
+    "a3": "Einmal aktiviert, arbeitet ein Level für immer. Sie können es nicht verlieren. Alle Zahlungen werden durch den Smart Contract garantiert.",
+    "q4": "Wie schnell sind Auszahlungen?",
+    "a4": "Sofort. In dem Moment, wenn jemand aktiviert, geht SOL direkt in Ihr Wallet. Keine Verzögerungen.",
+    "q5": "Was wenn ich keine Empfehlungen habe?",
+    "a5": "Sie verdienen trotzdem 60% von Ihren Leveln. Empfehlungsboni sind zusätzliches Einkommen obendrauf.",
+    "gettingStarted": "Erste Schritte",
+    "getWallet": "Wallet besorgen",
+    "getWalletDesc": "Laden Sie Phantom oder Backpack Wallet für Ihren Browser oder Ihr Handy herunter.",
+    "getSol": "SOL besorgen",
+    "getSolDesc": "Kaufen Sie SOL auf einer Börse (Binance, Coinbase usw.) und senden Sie es an Ihr Wallet.",
+    "minimumForL01": "Minimum für L01: ~0.06 SOL (inkl. Gebühren)",
+    "connectWallet": "Wallet verbinden",
+    "connectWalletDesc": "Klicken Sie auf \"Verbinden\" in der Kopfzeile. Bestätigen Sie die Verbindung in Ihrem Wallet.",
+    "activateLevels": "Level aktivieren",
+    "activateLevelsDesc": "Gehen Sie zur Level-Seite, wählen Sie ein Level, klicken Sie auf Aktivieren. Im Wallet bestätigen. Fertig."
+  },
+  "referralTree": {
+    "title": "Empfehlungsbaum",
+    "subtitle": "Ihr aktives Empfehlungsnetzwerk ({count} gesamt)",
+    "total": "Gesamt",
+    "noReferrals": "Noch keine Empfehlungen",
+    "shareLink": "Teilen Sie Ihren Empfehlungslink, um Ihr Netzwerk aufzubauen",
+    "line": "Linie {number}",
+    "noReferralsInLine": "Keine Empfehlungen in dieser Linie",
+    "referralsCount": "{count} {count, plural, one {Empfehlung} other {Empfehlungen}}",
+    "copyAddress": "Adresse kopieren",
+    "refresh": "Aktualisieren",
+    "yourLink": "Ihr Empfehlungslink",
+    "copyLink": "Link kopieren",
+    "linkCopied": "Link kopiert!",
+    "addressCopied": "Adresse kopiert!",
+    "viewExplorer": "In Explorer anzeigen",
+    "copied": "Kopiert!",
+    "levels": "Ebenen:",
+    "loadingLevels": "Ebenen werden geladen..."
+  },
+  "partnerBonusPage": {
+    "title": "Partnerprogramm",
+    "subtitle": "Laden Sie andere ein und verdienen Sie an deren Aktivität",
+    "totalEarned": "Gesamt verdient",
+    "line1": "Linie 1 (13%)",
+    "line2": "Linie 2 (8%)",
+    "line3": "Linie 3 (5%)",
+    "yourReferralLink": "Ihr Empfehlungslink",
+    "copyLink": "Link kopieren",
+    "connectWalletForLink": "Verbinden Sie Ihr Wallet, um Ihren Empfehlungslink zu erhalten",
+    "linkNote": "Wenn sich jemand über Ihren Link registriert, wird er dauerhaft Ihr Linie-1-Empfehler.",
+    "howReferralWorks": "So funktionieren Empfehlungsboni",
+    "step1Title": "Teilen Sie Ihren Link",
+    "step1Desc": "Jeder, der sich über Ihren Link registriert, wird Ihr Linie-1-Empfehler.",
+    "step2Title": "Sie aktivieren Level",
+    "step2Desc": "Wenn Ihre Empfehlungen von ihren Leveln verdienen, erhalten Sie einen Prozentsatz.",
+    "step3Title": "Sie verdienen automatisch",
+    "step3Desc": "Boni werden sofort an Ihr Wallet gezahlt. Kein Anfordern nötig.",
+    "payoutStructure": "Empfehlungs-Auszahlungsstruktur",
+    "directReferrals": "Linie 1 — Direkte Empfehlungen",
+    "directReferralsDesc": "Personen, die Sie direkt eingeladen haben",
+    "secondLevel": "Linie 2 — Zweite Ebene",
+    "secondLevelDesc": "Empfehlungen Ihrer Empfehlungen",
+    "thirdLevel": "Linie 3 — Dritte Ebene",
+    "thirdLevelDesc": "Dritte Generation Ihres Netzwerks",
+    "important": "Wichtig",
+    "importantDesc": "Sie erhalten Empfehlungsboni nur für Level, die Sie aktiviert haben. Wenn Ihre Empfehlung von L05 verdient, aber Sie L05 nicht aktiv haben, geht dieser Bonus an die Plattform.",
+    "referralActivity": "Empfehlungsaktivität",
+    "refresh": "Aktualisieren",
+    "loading": "Laden...",
+    "noActivity": "Noch keine Empfehlungsaktivität",
+    "noActivityDesc": "Teilen Sie Ihren Link, um Empfehlungsboni zu verdienen",
+    "showingOf": "Zeige {count} von {total} Transaktionen",
+    "tipsForSuccess": "Tipps für Erfolg",
+    "tip1Title": "Alle Level aktivieren",
+    "tip1Desc": "Je mehr Level Sie haben, desto mehr Empfehlungsboni können Sie erhalten.",
+    "tip2Title": "Bauen Sie Ihr Netzwerk auf",
+    "tip2Desc": "3 Linien tief bedeutet passives Einkommen von den Empfehlungen Ihrer Empfehlungen.",
+    "tip3Title": "Regelmäßig teilen",
+    "tip3Desc": "Ihr Link läuft nie ab. Teilen Sie weiter, um Ihr Netzwerk zu vergrößern.",
+    "tip4Title": "Helfen Sie Ihrem Team",
+    "tip4Desc": "Wenn Ihre Empfehlungen erfolgreich sind, verdienen Sie mehr. Unterstützen Sie sie.",
+    "connectFirst": "Verbinden Sie zuerst Ihr Wallet",
+    "linkCopied": "Empfehlungslink kopiert",
+    "copyFailed": "Kopieren fehlgeschlagen",
+    "failedToLoad": "Partnerverlauf konnte nicht geladen werden",
+    "registration": "Registrierung",
+    "newReferral": "Neue Empfehlung"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Treten Sie unserer Community bei und erhalten Sie Unterstützung",
+    "communityGroup": "Community-Gruppe",
+    "communityDesc": "Treten Sie unserer offiziellen Telegram-Gruppe bei. Chatten Sie mit anderen Spielern, teilen Sie Strategien, erhalten Sie Updates und Ankündigungen.",
+    "joinGroup": "Gruppe beitreten",
+    "copyLink": "Link kopieren",
+    "support": "Support",
+    "supportDesc": "Brauchen Sie Hilfe? Kontaktieren Sie unser Support-Team direkt. Wir antworten schnell auf alle Fragen zur Plattform.",
+    "contactSupport": "Support kontaktieren",
+    "whatYouGet": "Was Sie bekommen",
+    "realTimeUpdates": "Echtzeit-Updates",
+    "realTimeUpdatesDesc": "Seien Sie der Erste, der von neuen Funktionen, Updates und Ankündigungen erfährt.",
+    "communitySupport": "Community-Support",
+    "communitySupportDesc": "Erhalten Sie Hilfe von erfahrenen Spielern und teilen Sie Ihr Wissen.",
+    "directAccess": "Direkter Zugang",
+    "directAccessDesc": "Schneller Zugang zum Support-Team bei technischen Problemen.",
+    "networkGrowth": "Netzwerkwachstum",
+    "networkGrowthDesc": "Verbinden Sie sich mit anderen Spielern und erweitern Sie Ihr Empfehlungsnetzwerk."
+  },
+  "docsPage": {
+    "title": "Dokumentation",
+    "label": "Dokumentation",
+    "heading": "Wie Solana Program X3 funktioniert",
+    "description": "Vollständige technische Dokumentation zum Verständnis des X3-Matrixsystems, der Auszahlungsmechaniken und wie Sie Ihre Einnahmen maximieren können.",
+    "startPlaying": "Jetzt spielen",
+    "swipeHint": "Wischen Sie links/rechts zum Navigieren",
+    "of": "von",
+    "more": "Mehr",
+    "footerText": "Solana Program X3 — Dezentralisierte Matrix auf Solana Blockchain",
+    "sections": {
+      "overview": {
+        "title": "Übersicht",
+        "shortTitle": "Übersicht",
+        "content1": {
+          "heading": "Was ist Solana Program X3?",
+          "text": "Solana Program X3 ist ein vollständig dezentralisiertes Matrixsystem auf der Solana-Blockchain. Es arbeitet durch verifizierte Smart Contracts ohne zentrale Kontrolle, was bedeutet, dass niemand die Regeln ändern oder auf Ihre Gelder zugreifen kann.\n\nDie Plattform verwendet ein X3-Matrixmodell, bei dem jede Ebene eine globale Warteschlange hat. Wenn Sie eine Ebene aktivieren, treten Sie in die Warteschlange ein. Wenn neue Spieler dieselbe Ebene aktivieren, füllen sie Ihre Slots (3 Slots pro Zyklus). Sobald alle Slots gefüllt sind, erhalten Sie Auszahlungen und treten automatisch wieder in die Warteschlange für unbegrenzte Zyklen ein."
+        },
+        "content2": {
+          "heading": "Hauptmerkmale",
+          "text": "• 16 unabhängige Ebenen mit festen Preisen (0,05 - 8,7 SOL)\n• 3 Slots pro Zyklus mit automatischem Recycling\n• 60% Auszahlung an den Ebenenbesitzer pro Aktivierung\n• 26% Gesamtempfehlungsprämien (13% + 8% + 5%)\n• Sofortige Wallet-zu-Wallet-Überweisungen\n• Keine Auszahlungsverzögerungen oder Vermittler\n• Unveränderlicher Smart-Contract-Code"
+        },
+        "content3": {
+          "heading": "Warum Solana Blockchain?",
+          "text": "Solana wurde wegen seiner außergewöhnlichen Leistung gewählt:\n\n• Transaktionsgeschwindigkeit: ~400ms Bestätigung\n• Niedrige Gebühren: Bruchteile eines Cents pro Transaktion\n• Hoher Durchsatz: 65.000+ Transaktionen pro Sekunde\n• Dezentralisierung: Tausende Validatoren weltweit\n• Bewährte Erfolgsbilanz: Eine der führenden Blockchains nach TVL"
+        },
+        "content4": {
+          "heading": "Wie Sie verdienen",
+          "text": "Es gibt zwei Wege, auf der Plattform zu verdienen:\n\n1. Ebenenbesitz: Aktivieren Sie Ebenen und erhalten Sie 60% von jedem Spieler, der nach Ihnen aktiviert (3 Zahlungen = 180% pro Zyklus)\n\n2. Empfehlungsboni: Laden Sie andere ein und verdienen Sie 13%, 8% und 5% von Ihrem 3-Linien-Netzwerk\n\nBeide Methoden funktionieren gleichzeitig und vervielfachen Ihr Einkommen."
+        },
+        "content5": {
+          "heading": "Smart-Contract-Transparenz",
+          "text": "Die gesamte Plattform läuft auf verifizierten Open-Source Smart Contracts:\n\n• Vertragsadresse öffentlich sichtbar im Solana Explorer\n• Alle Transaktionen auf der Blockchain aufgezeichnet\n• Jeder kann den Code und die Logik überprüfen\n• Keine versteckten Funktionen oder Hintertüren\n• Vollständig vertrauensloser Betrieb"
+        }
+      },
+      "levels": {
+        "title": "Ebenensystem",
+        "shortTitle": "Ebenen",
+        "content1": {
+          "heading": "Ebenenpreise",
+          "text": "Das System hat 16 Ebenen mit festen Preisen in SOL:\n\nEbene 1: 0,05 SOL    Ebene 9: 3,25 SOL\nEbene 2: 0,18 SOL    Ebene 10: 3,90 SOL\nEbene 3: 0,36 SOL    Ebene 11: 4,65 SOL\nEbene 4: 0,68 SOL    Ebene 12: 5,45 SOL\nEbene 5: 1,10 SOL    Ebene 13: 6,40 SOL\nEbene 6: 1,55 SOL    Ebene 14: 7,35 SOL\nEbene 7: 2,10 SOL    Ebene 15: 8,00 SOL\nEbene 8: 2,65 SOL    Ebene 16: 8,70 SOL\n\nJede Ebene arbeitet unabhängig mit ihrer eigenen globalen Warteschlange. Sie können Ebenen in beliebiger Reihenfolge aktivieren."
+        },
+        "content2": {
+          "heading": "Wie Ebenen funktionieren",
+          "text": "1. Sie aktivieren eine Ebene durch Zahlung des festen Preises\n2. Ihre Aktivierung wird on-chain aufgezeichnet und Sie treten in die globale Warteschlange ein\n3. Die nächsten 3 Spieler, die dieselbe Ebene aktivieren, füllen Ihre Slots\n4. Sie erhalten 60% der Zahlung jedes Spielers (180% insgesamt pro Zyklus)\n5. Nach 3 gefüllten Slots treten Sie automatisch wieder in die Warteschlange ein\n6. Dieser Zyklus wiederholt sich unendlich aus einer einzigen Aktivierung"
+        },
+        "content3": {
+          "heading": "Ebenenunabhängigkeit",
+          "text": "Jede der 16 Ebenen arbeitet völlig unabhängig:\n\n• Separate Warteschlange für jede Ebene\n• Keine Voraussetzungen — aktivieren Sie jede Ebene jederzeit\n• Mehrere Ebenen können gleichzeitig aktiv sein\n• Jede Ebene verdient separat\n• Fortschritt auf einer Ebene beeinflusst andere nicht"
+        },
+        "content4": {
+          "heading": "Verdienst pro Ebene",
+          "text": "Ihre Verdienste pro Zyklus (3 gefüllte Slots) für jede Ebene:\n\nL1: 0,09 SOL    L9: 5,85 SOL\nL2: 0,32 SOL    L10: 7,02 SOL\nL3: 0,65 SOL    L11: 8,37 SOL\nL4: 1,22 SOL    L12: 9,81 SOL\nL5: 1,98 SOL    L13: 11,52 SOL\nL6: 2,79 SOL    L14: 13,23 SOL\nL7: 3,78 SOL    L15: 14,40 SOL\nL8: 4,77 SOL    L16: 15,66 SOL\n\nFormel: Ebenenpreis × 60% × 3 Slots = Zyklusverdienst"
+        },
+        "content5": {
+          "heading": "Auto-Recycling-Mechanismus",
+          "text": "Wenn Ihre 3 Slots gefüllt sind, recycelt sich Ihre Ebene automatisch:\n\n• Ihr Slot-Zähler wird auf 0 zurückgesetzt\n• Ihr Zyklus-Zähler erhöht sich um 1\n• Sie werden vom Warteschlangenkopf ans Ende verschoben\n• Sie verdienen weiter ohne jede Aktion\n• Keine zusätzliche Zahlung erforderlich\n\nDies schafft unbegrenztes Verdienstpotenzial aus einer einzigen Aktivierung."
+        }
+      },
+      "queue": {
+        "title": "Globale Warteschlange",
+        "shortTitle": "Warteschlange",
+        "content1": {
+          "heading": "Warteschlangenstruktur",
+          "text": "Jede Ebene verwaltet einen LevelPool mit paginierten QueuePages. Hauptmerkmale:\n\n• Jede Seite fasst bis zu 64 Spieler\n• Wenn eine Seite voll ist, wird automatisch eine neue erstellt\n• Spieler werden nach dem First-Come-First-Served-Prinzip verarbeitet\n• Ihre Position ist permanent und verfällt nie\n• Nach jedem abgeschlossenen Zyklus treten Sie am Ende der Warteschlange wieder ein"
+        },
+        "content2": {
+          "heading": "Warteschlangenverarbeitung",
+          "text": "Wenn ein neuer Spieler eine Ebene aktiviert:\n\n1. Der Smart Contract identifiziert den Warteschlangenkopf\n2. Der slots_filled-Zähler dieses Spielers erhöht sich um 1\n3. Die Zahlung wird verteilt (60% an Besitzer, Empfehlungen, Schatzkammer)\n4. Wenn slots_filled 3 erreicht, wird die Ebene recycelt:\n   - Der Zyklenzähler erhöht sich um 1\n   - slots_filled wird auf 0 zurückgesetzt\n   - Der Spieler wird vom Kopf entfernt und ans Ende hinzugefügt\n5. Der neue Spieler tritt ebenfalls am Ende der Warteschlange ein"
+        },
+        "content3": {
+          "heading": "Faire Verteilung",
+          "text": "Das Warteschlangensystem gewährleistet faire Behandlung für alle:\n\n• First-Come-First-Served — keine Bevorzugung\n• Unmöglich, die Position zu überspringen oder zu manipulieren\n• Jeder wartet gleich auf seinen Platz\n• Smart Contract setzt Regeln automatisch durch\n• Transparent und on-chain überprüfbar"
+        },
+        "content4": {
+          "heading": "Warteschlangengeschwindigkeit",
+          "text": "Wie schnell Ihre Slots gefüllt werden, hängt von der Ebenenaktivität ab:\n\n• Niedrigere Ebenen (L1-L5): Mehr Spieler, schnellere Füllung\n• Höhere Ebenen (L11-L16): Weniger Spieler, langsamere Füllung\n• Globale Aktivität beeinflusst alle Warteschlangen\n• Ihre Position zählt — früher = schneller\n\nTipp: Überwachen Sie die Warteschlangenaktivität in Ihrem Dashboard."
+        },
+        "content5": {
+          "heading": "Permanente Position",
+          "text": "Sobald Sie eine Ebene aktivieren, verfällt Ihre Position nie:\n\n• Kein Timeout oder Ablauf\n• Warteschlange bleibt für immer auf der Blockchain\n• Sie erhalten Zahlungen auch nach Monaten\n• Keine Wartung oder Erneuerung nötig\n• Vollständig passiv nach Aktivierung"
+        }
+      },
+      "payouts": {
+        "title": "Auszahlungsverteilung",
+        "shortTitle": "Auszahlungen",
+        "content1": {
+          "heading": "Zahlungsaufschlüsselung",
+          "text": "Jede Aktivierung verteilt 100% des Ebenenpreises:\n\n• 60% → Ebenenbesitzer (Warteschlangenkopf)\n• 13% → Empfehler Linie 1 (upline1)\n• 8% → Empfehler Linie 2 (upline2)\n• 5% → Empfehler Linie 3 (upline3)\n• 14% → Plattform-Schatzkammer\n\nAlle Überweisungen erfolgen atomar in einer einzigen Solana-Transaktion. Keine Verzögerungen, keine ausstehenden Zustände."
+        },
+        "content2": {
+          "heading": "Verdienstberechnung",
+          "text": "Pro Zyklus (3 gefüllte Slots) verdienen Sie:\n60% × 3 = 180% des Ebenenpreises\n\nBeispiel für Ebene 5 (1,10 SOL):\n• Pro Slot: 0,66 SOL (60% von 1,10)\n• Pro Zyklus: 1,98 SOL (180% von 1,10)\n• ROI pro Zyklus: +80% Gewinn\n\nEs gibt keine Zyklusbegrenzung. Eine Aktivierung = unbegrenztes Verdienstpotenzial."
+        },
+        "content3": {
+          "heading": "Sofortige Überweisungen",
+          "text": "Zahlungen erfolgen sofort über den Smart Contract:\n\n• Keine ausstehenden Zustände oder Verzögerungen\n• Direkte Wallet-zu-Wallet-Überweisungen\n• SOL erscheint sofort in Ihrer Wallet\n• Keine manuelle Abrufung erforderlich\n• Kein Mindestauszahlungsbetrag"
+        },
+        "content4": {
+          "heading": "Gesamtverdienstpotenzial",
+          "text": "Wenn Sie alle 16 Ebenen aktivieren und mehrere Zyklen abschließen:\n\nGesamtkosten der Ebenen: ~42 SOL\nVerdienst pro Zyklus: ~100 SOL (alle Ebenen)\n\nPlus Empfehlungsboni aus Ihrem Netzwerk können Ihr Einkommen erheblich steigern. Je mehr Ebenen Sie aktivieren und je größer Ihr Netzwerk, desto höher Ihre Verdienste."
+        },
+        "content5": {
+          "heading": "Verfolgung Ihrer Verdienste",
+          "text": "Überwachen Sie Ihre Einnahmen in Echtzeit:\n\n• Dashboard zeigt gefüllte Slots pro Ebene\n• Sehen Sie die Anzahl abgeschlossener Zyklen\n• Verfolgen Sie den Gesamt-SOL-Verdienst\n• Sehen Sie ausstehende Slot-Füllungen\n• Transaktionsverlauf verfügbar\n\nAlle Daten werden direkt von der Blockchain abgerufen."
+        }
+      },
+      "referrals": {
+        "title": "Empfehlungssystem",
+        "shortTitle": "Empfehlungen",
+        "content1": {
+          "heading": "Wie Empfehlungen funktionieren",
+          "text": "Bei der Registrierung wird Ihre Empfehlungskette on-chain aufgezeichnet:\n\n• upline1: Ihr direkter Empfehler (verdient 13%)\n• upline2: Der Empfehler Ihres Empfehlers (verdient 8%)\n• upline3: Dritte Ebene nach oben (verdient 5%)\n\nWichtig: Empfehlungsboni gelten nur, wenn Ihr Upline dieselbe Ebene aktiv hat. Andernfalls geht deren Anteil an die Plattform-Schatzkammer."
+        },
+        "content2": {
+          "heading": "Netzwerk aufbauen",
+          "text": "Um Empfehlungsverdienste zu maximieren:\n\n1. Teilen Sie Ihren Empfehlungslink (enthält Ihre Player-PDA)\n2. Wenn sich jemand über Ihren Link registriert, werden Sie deren upline1\n3. Sie verdienen 13% von jeder Ebene, die sie aktivieren (wenn Sie sie aktiv haben)\n4. Sie verdienen auch 8% von deren Empfehlungen (Ihre Linie 2)\n5. Und 5% von Linie-3-Empfehlungen\n\nDer Schlüssel ist, alle 16 Ebenen zu aktivieren, um maximale Empfehlungseinnahmen zu erzielen."
+        },
+        "content3": {
+          "heading": "Ihr Empfehlungslink",
+          "text": "Ihr einzigartiger Empfehlungslink enthält Ihre Player-PDA:\n\nhttps://[domain]/?ref=[ihre_player_pda]\n\nTeilen Sie diesen Link überall:\n• Soziale Medien (Twitter, Telegram, Discord)\n• YouTube-Videos und Beschreibungen\n• Blogposts und Foren\n• Direktnachrichten an Freunde\n\nJeder, der sich über Ihren Link registriert, wird Ihr permanenter Empfehlung."
+        },
+        "content4": {
+          "heading": "Ebenen-Übereinstimmungsregel",
+          "text": "Wichtige Regel: Sie erhalten nur Empfehlungsboni für Ebenen, die SIE aktiviert haben.\n\nBeispiel:\n• Sie haben L1, L2, L3 aktiv\n• Ihre Empfehlung aktiviert L5\n• Sie verdienen 0%, weil Sie L5 nicht haben\n\nLösung: Aktivieren Sie alle 16 Ebenen, um 100% der möglichen Empfehlungseinnahmen zu erhalten."
+        },
+        "content5": {
+          "heading": "Netzwerkwachstum",
+          "text": "Ihr Netzwerk wächst automatisch über 3 Linien:\n\nLinie 1: Personen, die Sie direkt einladen (13%)\nLinie 2: Personen, die Ihre Linie 1 einlädt (8%)\nLinie 3: Personen, die Ihre Linie 2 einlädt (5%)\n\nGesamtes Empfehlungspotenzial: 26% von jeder Aktivierung in Ihrem 3-Linien-Netzwerk."
+        },
+        "content6": {
+          "heading": "Beispiel für Empfehlungsverdienste",
+          "text": "Wenn Sie 10 aktive Empfehlungen haben und jede L5 aktiviert (1,10 SOL):\n\nLinie 1 (10 Personen): 10 × 1,10 × 13% = 1,43 SOL\n\nWenn jede 5 weitere einlädt (Linie 2):\n50 × 1,10 × 8% = 4,40 SOL\n\nWenn Linie 2 jeweils 5 einlädt (Linie 3):\n250 × 1,10 × 5% = 13,75 SOL\n\nGesamt nur von L5: 19,58 SOL"
+        }
+      },
+      "security": {
+        "title": "Sicherheit",
+        "shortTitle": "Sicherheit",
+        "content1": {
+          "heading": "Smart-Contract-Sicherheit",
+          "text": "Die Plattform implementiert mehrere Sicherheitsmaßnahmen:\n\n• TxGuard: Jede Transaktion verwendet eine eindeutige Nonce zur Verhinderung von Replay-Angriffen\n• PDA-Verifizierung: Alle Konten werden kryptographisch validiert\n• Atomare Übertragungen: Zahlungen erfolgen in einer einzigen Transaktion (alles oder nichts)\n• Unveränderlicher Code: Smart Contract kann nach der Bereitstellung nicht geändert werden\n• Keine Admin-Schlüssel: Niemand kann Gelder abziehen oder Regeln ändern"
+        },
+        "content2": {
+          "heading": "Ihre Gelder sind sicher",
+          "text": "• Sie geben niemals die Kontrolle über Ihre Wallet ab\n• Zahlungen gehen direkt von Wallet zu Wallet über den Smart Contract\n• Kein Ein-/Auszahlungssystem — Ihre SOL bleiben in Ihrer Wallet\n• Alle Transaktionen sind öffentlich im Solana Explorer überprüfbar\n• Der Vertrag hat keine Admin-Funktionen, die Gelder stehlen könnten"
+        },
+        "content3": {
+          "heading": "Im Solana Explorer verifiziert",
+          "text": "Der Smart Contract ist vollständig transparent:\n\n• Vertragsadresse öffentlich verfügbar\n• Gesamter Code verifiziert und lesbar\n• Jede Transaktion im Explorer sichtbar\n• Kontostände überprüfbar\n• Keine versteckte Logik oder Funktionen\n\nSie können alles unabhängig verifizieren."
+        },
+        "content4": {
+          "heading": "Rug Pull unmöglich",
+          "text": "Das Vertragsdesign verhindert jede Form von Rug Pull:\n\n• Keine Auszahlungsfunktion für Besitzer\n• Keine Pause- oder Einfrierungsmechanismen\n• Keine upgradefähigen Proxy-Muster\n• Gelder fließen direkt zwischen Wallets\n• Plattform-Schatzkammer ist transparent\n\nSelbst Entwickler können nicht auf Ihre Gelder zugreifen."
+        },
+        "content5": {
+          "heading": "Wallet-Sicherheitstipps",
+          "text": "Halten Sie Ihre Wallet sicher:\n\n• Teilen Sie niemals Ihre Seed-Phrase mit jemandem\n• Verwenden Sie eine Hardware-Wallet für große Beträge\n• Überprüfen Sie Transaktionsdetails vor dem Signieren\n• Verbinden Sie nur mit der offiziellen Plattform-URL\n• Vorsicht vor Phishing-Versuchen\n• Speichern Sie Seed-Phrase offline sicher"
+        },
+        "content6": {
+          "heading": "Transaktionsschutz",
+          "text": "Jede Transaktion ist durch TxGuard geschützt:\n\n• Eindeutige Nonce verhindert Duplikate\n• Schützt vor Replay-Angriffen\n• Stellt sicher, dass jede Aktivierung einmal verarbeitet wird\n• Automatische Validierung vor Ausführung\n• Fehlgeschlagene Transaktionen werden sicher rückgängig gemacht"
+        }
+      },
+      "getting-started": {
+        "title": "Erste Schritte",
+        "shortTitle": "Start",
+        "content1": {
+          "heading": "Schritt-für-Schritt-Anleitung",
+          "text": "1. Installieren Sie Phantom Wallet\n   Download von phantom.app und erstellen Sie Ihre Wallet\n\n2. Wallet aufladen\n   Überweisen Sie SOL an Ihre Phantom-Wallet-Adresse\n\n3. Wallet verbinden\n   Klicken Sie auf Wallet verbinden auf unserer Plattform\n\n4. Spieler registrieren\n   Erstellen Sie Ihr On-Chain-Spielerprofil (einmalig)\n\n5. Ebene 1 aktivieren\n   Zahlen Sie 0,05 SOL um Ihre erste Ebene zu aktivieren\n\n6. Teilen & Verdienen\n   Kopieren Sie Ihren Empfehlungslink und laden Sie andere ein"
+        },
+        "content2": {
+          "heading": "Tipps für den Erfolg",
+          "text": "• Beginnen Sie mit Ebene 1 und arbeiten Sie sich hoch\n• Aktivieren Sie so viele Ebenen wie Sie sich leisten können\n• Teilen Sie Ihren Empfehlungslink in sozialen Medien\n• Denken Sie daran: Empfehlungsboni erfordern übereinstimmende aktive Ebenen\n• Überwachen Sie Ihr Dashboard für Slot-Füllungen und Zyklen\n• Höhere Ebenen = höhere Auszahlungen aber langsamere Warteschlangenbewegung"
+        },
+        "content3": {
+          "heading": "Unterstützte Wallets",
+          "text": "Die Plattform unterstützt beliebte Solana-Wallets:\n\n• Phantom (empfohlen)\n• Solflare\n• Backpack\n• Ledger (über Phantom)\n• Andere Solana-kompatible Wallets\n\nWir empfehlen Phantom für die beste Erfahrung."
+        },
+        "content4": {
+          "heading": "SOL erhalten",
+          "text": "Sie benötigen SOL zur Teilnahme. So erhalten Sie SOL:\n\n• Auf Börsen kaufen (Binance, Coinbase, Kraken)\n• Fiat-On-Ramps nutzen (MoonPay, Transak)\n• Von anderen Kryptos tauschen\n• Von anderen Benutzern erhalten\n\nMinimum benötigt: ~0,06 SOL für Ebene 1 + Gebühren"
+        },
+        "content5": {
+          "heading": "Registrierungsprozess",
+          "text": "Einmalige Spielerregistrierung:\n\n1. Verbinden Sie Ihre Wallet\n2. Klicken Sie auf den Registrieren-Button\n3. Genehmigen Sie die Transaktion in Ihrer Wallet\n4. Ihre Player-PDA wird on-chain erstellt\n5. Sie sind bereit, Ebenen zu aktivieren\n\nDie Registrierung erfordert ein Mindestguthaben von 0.0030 SOL zur Deckung der Transaktionsgebühren."
+        },
+        "content6": {
+          "heading": "Nutzung Ihres Dashboards",
+          "text": "Nach der Registrierung zeigt Ihr Dashboard:\n\n• Aktive Ebenen und deren Status\n• Gefüllte Slots und abgeschlossene Zyklen\n• Gesamtverdienste (geschätzt)\n• Ihren Empfehlungslink\n• Transaktionsverlauf\n• Ebenenaktivierungs-Buttons"
+        },
+        "content7": {
+          "heading": "Häufige Fragen",
+          "text": "F: Was, wenn ich den Link meines Empfehlers verliere?\nA: Sie können sich mit dem Standard-Empfehler registrieren.\n\nF: Kann ich meinen Empfehler ändern?\nA: Nein, Empfehlungsketten sind permanent auf der Blockchain.\n\nF: Was ist die Mindestinvestition?\nA: Ebene 1 kostet nur 0,05 SOL.\n\nF: Gibt es ein Zeitlimit?\nA: Nein, Ihre Ebenen funktionieren für immer nach Aktivierung."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Aktivierungspreis",
+    "back": "Zurück",
+    "status": "Status",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "slots": "Slots",
+    "cycles": "Zyklen",
+    "earned": "Verdient",
+    "cycleProgress": "Zyklusfortschritt",
+    "filled": "Gefüllt",
+    "empty": "Leer",
+    "slotsFilled": "{filled} von {total} Slots gefüllt",
+    "nextPayout": "Nächste Auszahlung",
+    "perActivationDistribution": "Verteilung pro Aktivierung",
+    "youOwner": "Sie (Besitzer)",
+    "referrerL1": "Empfehler L1",
+    "referrerL2": "Empfehler L2",
+    "referrerL3": "Empfehler L3",
+    "platform": "Plattform",
+    "yourEarningsPerCycle": "Ihre Einnahmen pro Zyklus (×3)",
+    "howItWorks": "So funktioniert es",
+    "step1Title": "Aktivieren Sie dieses Level",
+    "step1Desc": "Sie treten in die Warteschlange ein und warten darauf, dass 3 Spieler nach Ihnen aktivieren.",
+    "step2Title": "3 Slots werden gefüllt",
+    "step2Desc": "Jedes Mal, wenn jemand aktiviert, erhalten Sie {percent}% der Zahlung.",
+    "step3Title": "Zyklus abgeschlossen",
+    "step3Desc": "Nach 3 Zahlungen wird Ihr Level automatisch in die Warteschlange zurückgesetzt.",
+    "step4Title": "Unbegrenzte Zyklen",
+    "step4Desc": "Sie können von diesem Level unbegrenzt verdienen, solange neue Spieler beitreten.",
+    "processing": "Wird verarbeitet...",
+    "alreadyActivated": "Bereits aktiviert",
+    "activateFor": "Aktivieren für {price} SOL",
+    "levelStatistics": "Level-Statistiken",
+    "totalCyclesCompleted": "Abgeschlossene Zyklen gesamt",
+    "totalEarned": "Gesamt verdient",
+    "perCycleEarnings": "Einnahmen pro Zyklus",
+    "note": "Hinweis",
+    "noteText": "Dieses Level wird weiter verdienen, solange neue Spieler beitreten. Jeder Zyklus ist unabhängig."
+  }
+}

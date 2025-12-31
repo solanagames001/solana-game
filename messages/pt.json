@@ -1,0 +1,889 @@
+{
+  "common": {
+    "connectWallet": "Conectar Carteira",
+    "disconnect": "Desconectar",
+    "dashboard": "Painel",
+    "register": "Registrar",
+    "registering": "Registrando...",
+    "connecting": "Conectando",
+    "loading": "Carregando...",
+    "processing": "Processando...",
+    "success": "Sucesso",
+    "error": "Erro",
+    "copy": "Copiar",
+    "close": "Fechar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "view": "Ver",
+    "more": "Mais",
+    "less": "Menos",
+    "all": "Todos",
+    "none": "Nenhum",
+    "yes": "Sim",
+    "no": "Não",
+    "on": "Ligado",
+    "off": "Desligado",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "pending": "Pendente",
+    "completed": "Concluído",
+    "failed": "Falhou",
+    "home": "Início",
+    "support": "Suporte",
+    "balance": "Saldo",
+    "tapToCopy": "Toque para copiar",
+    "swipeToClose": "Deslize para baixo para fechar",
+    "connectedWallet": "Carteira conectada",
+    "disconnectWallet": "Desconectar carteira",
+    "selectLanguage": "Selecionar idioma",
+    "language": "Idioma",
+    "chooseLanguage": "Escolha seu idioma preferido"
+  },
+  "playerStatus": {
+    "title": "Status do Jogador",
+    "accountInfo": "Info da Conta",
+    "authority": "Autoridade",
+    "playerPda": "PDA do Jogador",
+    "createdAt": "Criado em",
+    "openLevels": "Abrir Níveis",
+    "copyPda": "Copiar PDA",
+    "explorer": "Explorador",
+    "register": "Registrar",
+    "registering": "Registrando…",
+    "connectFirst": "Primeiro conecte sua carteira",
+    "playerRegistered": "Jogador registrado",
+    "registrationFailed": "Falha no registro",
+    "addressCopied": "Endereço copiado",
+    "copyFailed": "Falha ao copiar"
+  },
+  "levelCard": {
+    "activate": "Ativar",
+    "activating": "Ativando…",
+    "activated": "Ativado",
+    "notActivated": "Não ativado",
+    "checking": "Verificando…",
+    "notRegistered": "Não registrado",
+    "levelActive": "Nível ativo — recompensas ativadas.",
+    "level": "Nível",
+    "price": "Preço (SOL)",
+    "slots": "Slots",
+    "cycles": "Ciclos",
+    "details": "Detalhes"
+  },
+  "activations": {
+    "title": "Ativações",
+    "lastDays": "últimos {days}d",
+    "total": "total",
+    "activationsCount": "{count} ativações"
+  },
+  "header": {
+    "connectWallet": "Conectar Carteira",
+    "dashboard": "Painel",
+    "register": "Registrar",
+    "connecting": "Conectando"
+  },
+  "hero": {
+    "title": "SOLANA PROGRAM X3",
+    "subtitle": "Sistema de matriz descentralizado na blockchain Solana",
+    "poweredBy": "Alimentado por Solana"
+  },
+  "ticker": {
+    "onChain": "Contrato inteligente 100% On-Chain",
+    "noAdminKeys": "Sem chaves admin - Totalmente descentralizado",
+    "instantPayouts": "Pagamentos instantâneos para sua carteira",
+    "audited": "Contrato auditado e verificado",
+    "levels": "16 níveis - Até 655.35 SOL",
+    "partnerBonus": "Convide parceiros - Ganhe 26% de bônus",
+    "unlimited": "Ciclos ilimitados - Ganhos ilimitados"
+  },
+  "technology": {
+    "smartContract": "Contrato Inteligente",
+    "howItWorks": "Como Funciona no",
+    "solana": "Solana",
+    "description": "Contrato inteligente totalmente autônomo com modelo de matriz X3, pagamentos instantâneos e segurança criptográfica",
+    "x3Matrix": "Matriz X3",
+    "x3MatrixDesc": "Cada nível opera como uma matriz X3 baseada em fila. Ao ativar um nível, você entra em uma fila global. Cada 3 ativações após você preenchem seus slots, completando um ciclo. Você recebe 60% de cada preenchimento e reentra automaticamente para ciclos ilimitados.",
+    "instantPayouts": "Pagamentos Instantâneos",
+    "instantPayoutsDesc": "O contrato inteligente distribui pagamentos instantaneamente: 60% para o proprietário, 13% para indicação linha 1, 8% linha 2, 5% linha 3, e 14% para o tesouro da plataforma.",
+    "sixteenLevels": "16 Níveis",
+    "sixteenLevelsDesc": "O sistema tem 16 níveis com preços fixos de 0.05 SOL (Nível 1) a 8.7 SOL (Nível 16). Cada nível tem sua própria fila independente.",
+    "replayProtection": "Proteção contra Replay",
+    "replayProtectionDesc": "Cada transação usa um nonce único armazenado em uma conta TxGuard. Isso previne ataques de replay e garante que cada ativação seja processada apenas uma vez.",
+    "globalQueue": "Fila Global",
+    "globalQueueDesc": "Cada nível mantém um LevelPool com QueuePages paginadas (64 jogadores por página). Quando uma página está cheia, uma nova página é criada automaticamente.",
+    "referralChain": "Cadeia de Indicação",
+    "referralChainDesc": "Ao se registrar, sua linha ascendente de 3 níveis é registrada on-chain. Eles recebem bônus apenas se tiverem o mesmo nível ativo.",
+    "levels": "Níveis",
+    "slotsPerCycle": "Slots por Ciclo",
+    "autoRecycle": "Reciclagem Auto",
+    "ownerPayout": "Pagamento Proprietário",
+    "perActivation": "Por Ativação",
+    "referralTotal": "Total Indicação"
+  },
+  "mechanics": {
+    "gameMechanics": "Mecânicas do Jogo",
+    "howSolanaGameWorks": "Como o Solana Game Funciona",
+    "description": "Ganhe, melhore e jogue através de níveis inteligentes descentralizados alimentados por contratos inteligentes Solana",
+    "activateLevel": "Ativar um Nível",
+    "activateLevelDesc": "Escolha qualquer nível e ative-o diretamente on-chain. A propriedade é registrada permanentemente na blockchain Solana.",
+    "playRecycle": "Jogar e Reciclar",
+    "playRecycleDesc": "Cada nível recicla automaticamente após três slots fecharem — recompensas são distribuídas instantaneamente.",
+    "earnUpgrade": "Ganhar e Melhorar",
+    "earnUpgradeDesc": "Colete recompensas em SOL e desbloqueie níveis mais altos para maiores retornos."
+  },
+  "stats": {
+    "title": "Benefícios da Comunidade",
+    "growingEverySecond": "Seja Parte de Algo Maior",
+    "description": "Junte-se a uma rede global de ganhadores ativos e cresça junto.",
+    "worldwideNetwork": "Rede Mundial",
+    "worldwideNetworkDesc": "Acesso de qualquer lugar do mundo",
+    "thrivingCommunity": "Comunidade Próspera",
+    "thrivingCommunityDesc": "Membros ativos ganhando diariamente",
+    "alwaysSupported": "Sempre Apoiado",
+    "alwaysSupportedDesc": "Obtenha assistência sempre que precisar",
+    "collectiveWins": "Vitórias Coletivas",
+    "collectiveWinsDesc": "O sucesso cresce com a rede",
+    "startEarning": "Começar a Ganhar Agora",
+    "goToDashboard": "Ir para o Painel",
+    "walletConnected": "Carteira conectada. Pronto para ganhar.",
+    "noHiddenFees": "Sem taxas ocultas. Pagamentos instantâneos. 100% on-chain."
+  },
+  "levels": {
+    "title": "Níveis",
+    "level": "Nível",
+    "price": "Preço",
+    "activate": "Ativar",
+    "activating": "Ativando...",
+    "activated": "Ativado",
+    "locked": "Bloqueado",
+    "cycles": "Ciclos",
+    "slots": "Slots",
+    "filled": "Preenchido",
+    "earnings": "Ganhos",
+    "totalEvents": "Total de Eventos",
+    "cyclesDone": "Ciclos Concluídos",
+    "queue": "Na Fila",
+    "yourPosition": "Sua Posição",
+    "recycleAfter": "Recicla após preencher 3 slots"
+  },
+  "history": {
+    "title": "Histórico de Transações",
+    "noTransactions": "Ainda sem transações",
+    "activation": "Ativação",
+    "earning": "Ganho",
+    "referralBonus": "Bônus de Indicação",
+    "referralActivated": "Indicação Ativada",
+    "referralRegistered": "Indicação Registrada",
+    "cycleClose": "Ciclo Concluído",
+    "recycled": "Reciclado",
+    "reOpened": "Reaberto",
+    "viewExplorer": "Ver no Explorer",
+    "view": "Ver",
+    "viewAll": "Ver tudo",
+    "synthetic": "sintético",
+    "pending": "Pendente",
+    "slot": "slot",
+    "justNow": "Agora mesmo",
+    "mAgo": "min atrás",
+    "hAgo": "h atrás",
+    "dAgo": "d atrás",
+    "activated": "Ativado",
+    "filters": {
+      "all": "Todos",
+      "activations": "Ativações",
+      "earnings": "Ganhos",
+      "pending": "Pendentes"
+    },
+    "ownerPayout": "Pagamento do Proprietário (60%)",
+    "referralPayoutL1": "Bônus de Indicação L1 (13%)",
+    "referralPayoutL2": "Bônus de Indicação L2 (8%)",
+    "referralPayoutL3": "Bônus de Indicação L3 (5%)",
+    "fromSlot": "Slot {slot}"
+  },
+  "info": {
+    "platformFeatures": "Recursos da Plataforma",
+    "builtOn": "Construído em",
+    "solana": "Solana",
+    "description": "Contratos inteligentes transparentes, transações instantâneas e sistema de indicação descentralizado",
+    "documentation": "Documentação",
+    "documentationDesc": "Guias completos para entender o sistema de matriz X3 e maximizar seus ganhos.",
+    "instantPayouts": "Pagamentos Instantâneos",
+    "instantPayoutsDesc": "SOL é enviado diretamente para sua carteira. Sem atrasos, sem intermediários.",
+    "referralSystem": "Sistema de Indicação",
+    "referralSystemDesc": "Ganhe 13%, 8% e 5% das suas linhas de indicação. Construa sua rede.",
+    "readDocs": "Ler Docs",
+    "learnMore": "Saiba Mais",
+    "startEarning": "Começar a Ganhar",
+    "ownerPayout": "Pagamento Proprietário",
+    "referralRewards": "Recompensas de Indicação",
+    "transactionSpeed": "Velocidade de Transação"
+  },
+  "partner": {
+    "title": "Programa de Parceiros",
+    "subtitle": "Convide amigos e ganhe 50% de bônus das ativações deles",
+    "yourReferralLink": "Seu Link de Indicação",
+    "copyLink": "Copiar Link",
+    "linkCopied": "Link copiado!",
+    "howItWorks": "Como Funciona o Bônus de Parceiro",
+    "level1": "Parceiro Nível 1",
+    "level2": "Parceiro Nível 2",
+    "level3": "Parceiro Nível 3",
+    "bonus1": "13% de indicações diretas",
+    "bonus2": "8% de indicações nível 2",
+    "bonus3": "5% de indicações nível 3"
+  },
+  "telegram": {
+    "title": "Recursos do Telegram",
+    "community": "Comunidade",
+    "communityDesc": "Junte-se ao nosso chat",
+    "support": "Suporte",
+    "supportDesc": "Obtenha ajuda da equipe"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Respostas rápidas para entender e começar com Solana Game",
+    "q1": "O que é Solana Game e como funciona?",
+    "a1": "Solana Game é uma plataforma de matriz descentralizada que funciona inteiramente em contratos inteligentes Solana. Quando você ativa um nível, entra em uma fila global. Quando novos jogadores ativam o mesmo nível depois de você, eles preenchem seus 3 slots. Uma vez que todos os 3 slots estejam preenchidos, você recebe pagamentos e volta automaticamente para a fila. Este ciclo se repete indefinidamente — uma ativação dá potencial de ganhos ilimitado.",
+    "q2": "Quantos níveis existem e quanto custam?",
+    "a2": "Há 16 níveis com preços fixos em SOL: L1 = 0.05, L2 = 0.18, L3 = 0.36, L4 = 0.68, L5 = 1.1, L6 = 1.55, L7 = 2.1, L8 = 2.65, L9 = 3.25, L10 = 3.9, L11 = 4.65, L12 = 5.45, L13 = 6.4, L14 = 7.35, L15 = 8.0, L16 = 8.7 SOL. Cada nível opera independentemente com sua própria fila — você pode ativar qualquer nível em qualquer ordem.",
+    "q3": "Quanto ganho e para onde vai o dinheiro?",
+    "a3": "Quando alguém ativa um nível, os pagamentos são distribuídos instantaneamente: 60% vai para o líder da fila (dono do nível), 13% para o indicador de 1ª linha, 8% para 2ª linha, 5% para 3ª linha, e 14% para o tesouro da plataforma. Por ciclo (3 slots preenchidos), você recebe 180% do preço do nível. Todas as transferências acontecem atomicamente em uma transação blockchain.",
+    "q4": "Como funciona o programa de indicação?",
+    "a4": "Ao se registrar, sua cadeia de indicação é registrada on-chain (3 níveis de profundidade). Seus indicadores ganham 13%, 8% e 5% de cada uma das suas ativações de nível. Importante: bônus de indicação só se aplicam se sua upline tem o mesmo nível ativo. Se não, a parte deles vai para o tesouro. Isso incentiva todos a ativar mais níveis.",
+    "q5": "O que acontece depois que meus 3 slots são preenchidos?",
+    "a5": "Seu nível automaticamente 'recicla' — seus slots resetam para 0, seu contador de ciclos aumenta em 1, e você volta para o final da fila. Você mantém sua posição e continua ganhando da mesma ativação de nível para sempre. Não há limite para quantos ciclos você pode completar.",
+    "q6": "Como começo?",
+    "a6": "Passo 1: Conecte sua carteira Phantom (ou outra carteira Solana). Passo 2: Registre seu perfil de jogador — isso cria sua conta on-chain e registra seu indicador. Passo 3: Ative o Nível 1 por 0.05 SOL. Passo 4: Compartilhe seu link de indicação para ganhar bônus quando outros entrarem. Você pode monitorar seus slots, ciclos e ganhos em tempo real no painel.",
+    "q7": "Meu dinheiro está seguro? Alguém pode roubar meus fundos?",
+    "a7": "Seus fundos estão completamente seguros. A plataforma funciona em contratos inteligentes verificados e imutáveis — ninguém (incluindo desenvolvedores) pode modificar o código ou acessar sua carteira. Pagamentos vão diretamente de carteira para carteira sem intermediários. O contrato inclui proteção TxGuard contra transações duplicadas. Você nunca cede a custódia dos seus fundos a ninguém.",
+    "q8": "E se ninguém ativar depois de mim?",
+    "a8": "Sua posição na fila é permanente e nunca expira. Você simplesmente espera até que novos jogadores ativem o nível. A fila é global — todos os jogadores do mundo compartilham a mesma fila para cada nível. Quanto mais popular o nível, mais rápido seus slots preenchem. Níveis mais altos podem demorar mais, mas oferecem pagamentos maiores."
+  },
+  "footer": {
+    "description": "Sistema de matriz X3 descentralizado na blockchain Solana. Pagamentos instantâneos, mecânica transparente, 100% on-chain.",
+    "smartContract": "Contrato Inteligente",
+    "contractAddress": "Endereço do Contrato",
+    "verifyExplorer": "Sempre verifique o endereço do contrato no Solana Explorer",
+    "viewOnExplorer": "Ver no Explorer",
+    "platform": "Plataforma",
+    "gameLevels": "Níveis do Jogo",
+    "resources": "Recursos",
+    "howItWorks": "Como Funciona",
+    "docs": "Documentação",
+    "disclaimer": "Aviso Legal",
+    "mainnet": "Solana Mainnet",
+    "walletConnected": "Carteira Conectada",
+    "allRightsReserved": "Todos os direitos reservados"
+  },
+  "wallet": {
+    "connect": "Conectar Carteira",
+    "connecting": "Conectando...",
+    "connected": "Conectado",
+    "disconnect": "Desconectar",
+    "balance": "Saldo",
+    "address": "Endereço",
+    "copyAddress": "Copiar Endereço",
+    "viewExplorer": "Ver no Explorer",
+    "switchWallet": "Trocar Carteira",
+    "installPhantom": "Instalar Phantom",
+    "phantomRequired": "Carteira Phantom necessária",
+    "readyToConnect": "Pronto para conectar",
+    "supported": "Suportado",
+    "connectToContinue": "Conecte para continuar",
+    "phantomNotFound": "Phantom não encontrado",
+    "pleaseInstall": "Por favor, instale a extensão Phantom wallet",
+    "byConnecting": "Ao conectar, você concorda com os Termos de Serviço",
+    "notInstalled": "Não instalado"
+  },
+  "guard": {
+    "title": "Conecte Sua Carteira",
+    "description": "Para acessar o painel, conecte sua carteira Solana. Sua carteira é necessária para interagir com a blockchain.",
+    "backHome": "Voltar ao Início",
+    "registerRequired": "Registro Necessário",
+    "registerRequiredDesc": "Para acessar o painel, você precisa se registrar como jogador. É gratuito e leva apenas alguns segundos."
+  },
+  "docs": {
+    "title": "Documentação",
+    "startPlaying": "Começar a Jogar",
+    "overview": "Visão Geral",
+    "gettingStarted": "Primeiros Passos",
+    "matrixSystem": "Sistema de Matriz X3",
+    "earnings": "Ganhos e Pagamentos",
+    "referrals": "Programa de Indicação",
+    "security": "Segurança"
+  },
+  "disclaimer": {
+    "title": "Aviso Legal",
+    "understand": "Eu Entendo",
+    "intro": "Por favor, leia este aviso legal cuidadosamente antes de usar o Solana Program X3. Ao acessar ou usar a plataforma, você concorda em estar vinculado a estes termos.",
+    "lastUpdated": "Última atualização: dezembro 2024",
+    "importantNotice": "Aviso Importante",
+    "importantNoticeText": "Investimentos em criptomoedas carregam alto risco. Apenas invista o que você pode se permitir perder. Esta plataforma opera em contratos inteligentes imutáveis — as transações não podem ser revertidas.",
+    "acceptanceTitle": "Aceitação dos Termos",
+    "acceptanceText": "Ao usar o Solana Program X3, você reconhece que leu, entendeu e concorda em estar vinculado a este aviso legal e todos os termos e condições aplicáveis.",
+    "sections": {
+      "natureOfPlatform": {
+        "title": "Natureza da Plataforma",
+        "content": "Solana Program X3 é uma aplicação descentralizada (dApp) construída na blockchain Solana. A plataforma opera através de contratos inteligentes imutáveis implantados on-chain. Uma vez implantado, o código do contrato inteligente não pode ser modificado, alterado ou controlado por nenhuma parte, incluindo os desenvolvedores.\n\nA plataforma facilita um sistema baseado em matriz onde os participantes podem ativar níveis e receber pagamentos com base na mecânica definida no contrato inteligente. Todas as transações são executadas automaticamente pela blockchain de acordo com as regras predefinidas."
+      },
+      "noFinancialAdvice": {
+        "title": "Não é Aconselhamento Financeiro",
+        "content": "Nada nesta plataforma constitui aconselhamento financeiro, de investimento, jurídico ou fiscal. As informações fornecidas são apenas para fins educacionais e informativos. Você deve consultar profissionais qualificados antes de tomar quaisquer decisões financeiras.\n\nParticipar de plataformas baseadas em blockchain envolve riscos significativos. O desempenho passado não garante resultados futuros. O valor das criptomoedas pode flutuar significativamente e você pode perder parte ou toda a sua investimento."
+      },
+      "riskAcknowledgment": {
+        "title": "Reconhecimento de Riscos",
+        "content": "Ao usar o Solana Program X3, você reconhece e aceita os seguintes riscos:\n\n• Risco do Contrato Inteligente: Embora o código tenha sido cuidadosamente desenvolvido, nenhum contrato inteligente está completamente livre de vulnerabilidades ou bugs potenciais.\n\n• Risco de Mercado: O valor de SOL e outras criptomoedas pode ser altamente volátil e pode resultar em perdas significativas.\n\n• Risco Regulatório: As regulamentações de criptomoedas variam por jurisdição e podem mudar. É sua responsabilidade garantir conformidade com as leis aplicáveis.\n\n• Risco de Rede: A blockchain Solana pode experimentar congestionamento, interrupções ou outros problemas técnicos que podem afetar transações.\n\n• Perda de Acesso: Se você perder acesso à sua carteira ou chaves privadas, seus fundos podem se tornar permanentemente inacessíveis."
+      },
+      "noGuarantees": {
+        "title": "Sem Garantias",
+        "content": "A plataforma não oferece garantias em relação a:\n\n• O valor ou momento de quaisquer ganhos ou retornos\n• A operação contínua da plataforma\n• A disponibilidade ou funcionalidade de quaisquer recursos\n• A precisão de quaisquer informações exibidas\n• As ações de outros participantes\n\nSeus resultados dependem inteiramente da atividade de outros participantes e da mecânica do contrato inteligente. Não há garantia de que você receberá quaisquer pagamentos ou recuperará seu investimento inicial."
+      },
+      "yourResponsibilities": {
+        "title": "Suas Responsabilidades",
+        "content": "Como participante, você é o único responsável por:\n\n• Realizar sua própria pesquisa antes de participar\n• Proteger sua carteira e chaves privadas\n• Entender a mecânica da plataforma\n• Cumprir todas as leis e regulamentos aplicáveis em sua jurisdição\n• Reportar quaisquer ganhos para fins fiscais conforme exigido\n• Tomar decisões informadas sobre sua participação\n\nVocê deve participar apenas com fundos que pode se permitir perder completamente."
+      },
+      "jurisdictionalRestrictions": {
+        "title": "Restrições Jurisdicionais",
+        "content": "A plataforma pode não estar disponível ou pode ser restrita em certas jurisdições. É sua responsabilidade determinar se seu uso da plataforma é legal em sua jurisdição.\n\nAo acessar e usar a plataforma, você declara e garante que está legalmente autorizado a fazê-lo em sua jurisdição e que cumprirá todas as leis e regulamentos locais, estaduais, nacionais e internacionais aplicáveis."
+      },
+      "thirdPartyServices": {
+        "title": "Serviços de Terceiros",
+        "content": "A plataforma se integra com serviços de terceiros, incluindo:\n\n• Rede Blockchain Solana\n• Provedores de Carteira (Phantom, Solflare, etc.)\n• Provedores RPC\n\nNão temos controle sobre esses serviços de terceiros e não somos responsáveis por sua disponibilidade, segurança ou quaisquer problemas decorrentes de seu uso."
+      },
+      "limitationOfLiability": {
+        "title": "Limitação de Responsabilidade",
+        "content": "Na máxima extensão permitida por lei, os desenvolvedores, colaboradores e quaisquer partes associadas não serão responsáveis por quaisquer danos diretos, indiretos, incidentais, especiais, consequenciais ou exemplares decorrentes de:\n\n• Seu uso ou incapacidade de usar a plataforma\n• Quaisquer transações realizadas através da plataforma\n• Qualquer acesso não autorizado à sua carteira ou fundos\n• Quaisquer erros ou omissões no código do contrato inteligente\n• Qualquer outro assunto relacionado à plataforma\n\nEsta limitação se aplica independentemente da teoria legal e mesmo que tenhamos sido avisados da possibilidade de tais danos."
+      },
+      "modifications": {
+        "title": "Modificações",
+        "content": "Este aviso legal pode ser atualizado de tempos em tempos. Embora o código do contrato inteligente seja imutável, a interface front-end e este aviso legal podem ser modificados. É sua responsabilidade revisar este aviso legal periodicamente para quaisquer alterações.\n\nO uso contínuo da plataforma após quaisquer modificações constitui aceitação dos termos atualizados."
+      },
+      "contact": {
+        "title": "Contato",
+        "content": "Se você tiver alguma dúvida sobre este aviso legal ou a plataforma, entre em contato através do nosso canal oficial de suporte do Telegram.\n\nLembre-se: Nunca compartilhe suas chaves privadas ou frase semente com ninguém, incluindo qualquer pessoa que alegue ser de nossa equipe."
+      }
+    }
+  },
+  "toast": {
+    "addressCopied": "Endereço copiado",
+    "signatureCopied": "Assinatura copiada",
+    "contractCopied": "Endereço do contrato copiado",
+    "linkCopied": "Link copiado",
+    "copyFailed": "Falha ao copiar",
+    "walletNotConnected": "Carteira não conectada",
+    "connectWalletFirst": "Conecte a carteira primeiro",
+    "invalidLevel": "Nível inválido",
+    "activationSent": "Ativação enviada",
+    "activationSentLevel": "Ativação L{level} enviada",
+    "activatingLevel": "Ativando nível {level}...",
+    "activationError": "Erro de ativação",
+    "registrationSuccess": "Jogador registrado com sucesso",
+    "registrationFailed": "Falha no registro",
+    "profileCreated": "Perfil criado",
+    "referralActivatedLevel": "Alguém da sua rede de indicações ativou o nível {level}",
+    "creatingProfile": "Criando perfil...",
+    "insufficientFundsForRegistration": "Fundos insuficientes para registro. Você precisa de pelo menos 0.0030 SOL.",
+    "transactionProcessing": "Processando transação...",
+    "clipboardNotSupported": "Área de transferência não suportada",
+    "playerRegistered": "Jogador registrado",
+    "viewInExplorer": "Ver no Explorer",
+    "closeNotification": "Fechar notificação",
+    "comingSoon": "Em breve",
+    "loadError": "Falha ao carregar dados",
+    "activationFinalized": "Ativação finalizada",
+    "registrationFinalized": "Registro finalizado",
+    "checkingPlayerState": "Verificando estado do jogador…",
+    "playerNotFound": "Jogador não encontrado — pressione Registrar",
+    "levelAlreadyActivated": "Nível já ativado",
+    "pressActivate": "Pressione Ativar para ativar este nível"
+  },
+  "overlay": {
+    "processing": "Processando transação..."
+  },
+  "nav": {
+    "dashboard": "Painel",
+    "home": "Início",
+    "levels": "Níveis",
+    "history": "Histórico",
+    "information": "Informação",
+    "info": "Info",
+    "partnerBonus": "Bônus de Parceiro",
+    "partners": "Parceiros",
+    "telegram": "Telegram",
+    "support": "Suporte",
+    "more": "Mais"
+  },
+  "mobileMenu": {
+    "connectWallet": "Conectar carteira",
+    "connecting": "Conectando...",
+    "createProfile": "Criar perfil",
+    "creatingProfile": "Criando perfil...",
+    "goToDashboard": "Ir para o painel"
+  },
+  "dashboardPage": {
+    "title": "Painel",
+    "subtitle": "Seus níveis, ganhos e atividade",
+    "yourStatistics": "Suas estatísticas",
+    "onChainData": "Dados On-Chain",
+    "activeLevels": "Níveis ativos",
+    "next": "Próximo",
+    "allDone": "Tudo pronto",
+    "completedCycles": "Ciclos concluídos",
+    "slotsEquals": "3 slots = 1 ciclo",
+    "estEarnings": "Ganhos estimados",
+    "ownerPayout": "60% pagamento ao proprietário",
+    "totalSpent": "Total gasto",
+    "levelActivations": "ativações de nível",
+    "yourLevels": "Seus níveis",
+    "slotsAndCycles": "Slots e ciclos",
+    "viewAll": "Ver tudo",
+    "slots": "slots",
+    "cycle": "ciclo",
+    "cycles": "ciclos",
+    "howItWorks": "Como funciona:",
+    "howItWorksDesc": "Quando 3 jogadores ativam seu nível, você recebe 60% de cada pagamento. O resto → indicadores (26%) + tesouro (14%).",
+    "latestActivity": "Atividade recente",
+    "transactionHistory": "Histórico de transações",
+    "live": "ao vivo",
+    "noActivity": "Nenhuma atividade ainda. Ative seu primeiro nível para começar.",
+    "contractIdCopied": "ID do contrato copiado"
+  },
+  "levelsPage": {
+    "title": "Níveis",
+    "subtitle": "Ative níveis para ganhar SOL",
+    "active": "Ativo",
+    "ready": "pronto",
+    "noWallet": "sem carteira",
+    "registerFirst": "Por favor, registre um jogador primeiro",
+    "levelAlreadyActive": "já ativo",
+    "activated": "ativado"
+  },
+  "historyPage": {
+    "title": "Histórico de Transações",
+    "subtitle": "Todas suas ativações, ganhos e eventos do sistema",
+    "wallet": "Carteira",
+    "notConnected": "Não conectada",
+    "totalEvents": "Total de Eventos",
+    "activations": "Ativações",
+    "cyclesDone": "Ciclos Concluídos",
+    "pending": "Pendente",
+    "all": "Todos",
+    "earnings": "Ganhos",
+    "connectWallet": "Conecte sua carteira para ver o histórico",
+    "noTransactions": "Nenhuma transação ainda. Ative seu primeiro nível para começar.",
+    "noEventsFound": "Nenhum evento {filter} encontrado.",
+    "transactionTypes": "Tipos de Transação",
+    "activationsDesc": "Suas ativações e reciclagens de nível. Estas são transações de saída.",
+    "earningsDesc": "Pagamentos recebidos: 60% pagamento ao proprietário + bônus de indicação (13%, 8%, 5%).",
+    "pendingDesc": "Transações aguardando confirmação do blockchain.",
+    "cyclesDesc": "Ciclos concluídos — 3 slots preenchidos, depois auto-reciclagem de volta à fila.",
+    "walletCopied": "Carteira copiada",
+    "connectFirst": "Conecte sua carteira primeiro",
+    "copyFailed": "Falha ao copiar"
+  },
+  "informationPage": {
+    "title": "Como Funciona",
+    "subtitle": "Tudo que você precisa saber sobre a plataforma",
+    "totalLevels": "Total de Níveis",
+    "slotsPerCycle": "Slots por Ciclo",
+    "yourPayout": "Seu Pagamento",
+    "network": "Rede",
+    "whatIsThis": "O que é esta plataforma?",
+    "whatIsThisDesc": "Esta é uma aplicação descentralizada na blockchain Solana. Tudo funciona automaticamente através de contratos inteligentes — sem administradores, sem intermediários. Você ativa níveis, ganha quando outros entram depois de você, e o processo se repete para sempre.",
+    "transparent": "Transparente",
+    "transparentDesc": "Todas as transações visíveis na blockchain Solana. Nada escondido.",
+    "automatic": "Automático",
+    "automaticDesc": "O contrato inteligente processa pagamentos. Sem atrasos, sem aprovações necessárias.",
+    "unlimited": "Ilimitado",
+    "unlimitedDesc": "Cada nível pode ganhar para sempre. Sem limites em ciclos ou ganhos.",
+    "simpleProcess": "Processo Simples de 4 Passos",
+    "step1Title": "Ativar um Nível",
+    "step1Desc": "Escolha qualquer nível de L01 a L16. Pague o preço de ativação uma vez. Agora você possui este nível e entra na fila.",
+    "step2Title": "Esperar 3 Ativações",
+    "step2Desc": "Quando 3 outros jogadores ativam o mesmo nível depois de você, cada um paga 60% do preço do nível. São 3 pagamentos no total.",
+    "step3Title": "Ciclo Completo",
+    "step3Desc": "Após receber 3 pagamentos, seu nível recicla automaticamente. Você volta para a fila e pode ganhar novamente.",
+    "step4Title": "Repetir Para Sempre",
+    "step4Desc": "O ciclo se repete indefinidamente. Uma ativação = potencial de ganho ilimitado enquanto novos jogadores continuarem entrando.",
+    "whereMoneyGoes": "Para Onde Vai o Dinheiro?",
+    "moneyGoesDesc": "Quando alguém ativa um nível, o pagamento é instantaneamente dividido:",
+    "youOwner": "Você (Proprietário)",
+    "yourEarnings": "Seus ganhos por ativação",
+    "referrerL1": "Indicador L1",
+    "directInviter": "Seu convidador direto",
+    "referrerL2": "Indicador L2",
+    "inviterOfInviter": "Convidador do seu convidador",
+    "referrerL3": "Indicador L3",
+    "thirdLevelUpline": "Terceiro nível upline",
+    "platform": "Plataforma",
+    "projectDevelopment": "Desenvolvimento do projeto",
+    "exampleCalculation": "Exemplo de Cálculo",
+    "exampleDesc": "L01 custa 0.05 SOL. Quando 3 pessoas ativam depois de você:",
+    "youReceive": "Você recebe:",
+    "perCycle": "por ciclo",
+    "levelPrices": "Preços dos Níveis",
+    "levelPricesDesc": "16 níveis disponíveis. Nível mais alto = ganhos mais altos por ciclo.",
+    "allPricesInSol": "Todos os preços em SOL",
+    "referralBonuses": "Bônus de Indicação",
+    "referralBonusesDesc": "Quando alguém que você convidou ganha de seus níveis, você também recebe um bônus:",
+    "directReferral": "Indicação Direta (Linha 1)",
+    "peopleInvitedDirectly": "Pessoas que você convidou diretamente",
+    "secondLine": "Segunda Linha (Linha 2)",
+    "peopleInvitedByReferrals": "Pessoas convidadas por suas indicações",
+    "thirdLine": "Terceira Linha (Linha 3)",
+    "thirdLevelNetwork": "Terceiro nível da sua rede",
+    "referralNote": "Nota: Você só recebe bônus de indicação para níveis que ativou. Se não tiver L05 ativo, bônus de indicação de L05 vão para a plataforma.",
+    "commonQuestions": "Perguntas Frequentes",
+    "q1": "Preciso ativar níveis em ordem?",
+    "a1": "Não. Você pode ativar qualquer nível a qualquer momento. L01 e L16 são completamente independentes.",
+    "q2": "O que acontece quando meu ciclo completa?",
+    "a2": "Seu nível volta automaticamente para a fila. Você pode ganhar dele repetidamente.",
+    "q3": "Posso perder meu dinheiro?",
+    "a3": "Uma vez ativado, um nível funciona para sempre. Você não pode perdê-lo. Todos os pagamentos são garantidos pelo contrato inteligente.",
+    "q4": "Quão rápidos são os pagamentos?",
+    "a4": "Instantâneos. No momento em que alguém ativa, o SOL vai diretamente para sua carteira. Sem atrasos.",
+    "q5": "E se eu não tiver indicações?",
+    "a5": "Você ainda ganha 60% dos seus níveis. Bônus de indicação são renda extra.",
+    "gettingStarted": "Começando",
+    "getWallet": "Obter uma Carteira",
+    "getWalletDesc": "Baixe a carteira Phantom ou Backpack para seu navegador ou telefone.",
+    "getSol": "Obter SOL",
+    "getSolDesc": "Compre SOL em qualquer exchange (Binance, Coinbase, etc.) e envie para sua carteira.",
+    "minimumForL01": "Mínimo para L01: ~0.06 SOL (incluindo taxas)",
+    "connectWallet": "Conectar Carteira",
+    "connectWalletDesc": "Clique em \"Conectar\" no cabeçalho. Aprove a conexão na sua carteira.",
+    "activateLevels": "Ativar Níveis",
+    "activateLevelsDesc": "Vá para a página de Níveis, escolha um nível, clique em Ativar. Confirme na carteira. Pronto."
+  },
+  "referralTree": {
+    "title": "Árvore de Indicações",
+    "subtitle": "Sua rede de indicações ativa ({count} total)",
+    "total": "Total",
+    "noReferrals": "Ainda não há indicações",
+    "shareLink": "Compartilhe seu link de indicação para começar a construir sua rede",
+    "line": "Linha {number}",
+    "noReferralsInLine": "Não há indicações nesta linha",
+    "referralsCount": "{count} {count, plural, one {indicação} other {indicações}}",
+    "copyAddress": "Copiar endereço",
+    "refresh": "Atualizar",
+    "yourLink": "Seu link de indicação",
+    "copyLink": "Copiar link",
+    "linkCopied": "Link copiado!",
+    "addressCopied": "Endereço copiado!",
+    "viewExplorer": "Ver no Explorer",
+    "copied": "Copiado!",
+    "levels": "Níveis:",
+    "loadingLevels": "Carregando níveis..."
+  },
+  "partnerBonusPage": {
+    "title": "Programa de Parceiros",
+    "subtitle": "Convide outros e ganhe com a atividade deles",
+    "totalEarned": "Total Ganho",
+    "line1": "Linha 1 (13%)",
+    "line2": "Linha 2 (8%)",
+    "line3": "Linha 3 (5%)",
+    "yourReferralLink": "Seu Link de Indicação",
+    "copyLink": "Copiar Link",
+    "connectWalletForLink": "Conecte sua carteira para obter seu link de indicação",
+    "linkNote": "Quando alguém se registra usando seu link, se torna sua indicação Linha 1 permanentemente.",
+    "howReferralWorks": "Como Funcionam os Bônus de Indicação",
+    "step1Title": "Compartilhe seu link",
+    "step1Desc": "Qualquer pessoa que se registrar pelo seu link se torna sua indicação Linha 1.",
+    "step2Title": "Eles ativam níveis",
+    "step2Desc": "Quando suas indicações ganham de seus níveis, você recebe uma porcentagem.",
+    "step3Title": "Você ganha automaticamente",
+    "step3Desc": "Bônus são pagos instantaneamente para sua carteira. Sem necessidade de reivindicar.",
+    "payoutStructure": "Estrutura de Pagamento de Indicação",
+    "directReferrals": "Linha 1 — Indicações Diretas",
+    "directReferralsDesc": "Pessoas que você convidou diretamente",
+    "secondLevel": "Linha 2 — Segundo Nível",
+    "secondLevelDesc": "Indicações das suas indicações",
+    "thirdLevel": "Linha 3 — Terceiro Nível",
+    "thirdLevelDesc": "Terceira geração da sua rede",
+    "important": "Importante",
+    "importantDesc": "Você só recebe bônus de indicação para níveis que ativou. Se sua indicação ganha de L05 mas você não tem L05 ativo, esse bônus vai para a plataforma.",
+    "referralActivity": "Atividade de Indicação",
+    "refresh": "Atualizar",
+    "loading": "Carregando...",
+    "noActivity": "Nenhuma atividade de indicação ainda",
+    "noActivityDesc": "Compartilhe seu link para começar a ganhar bônus de indicação",
+    "showingOf": "Mostrando {count} de {total} transações",
+    "tipsForSuccess": "Dicas para o Sucesso",
+    "tip1Title": "Ativar todos os níveis",
+    "tip1Desc": "Quanto mais níveis você tiver, mais bônus de indicação poderá receber.",
+    "tip2Title": "Construa sua rede",
+    "tip2Desc": "3 linhas de profundidade significa renda passiva das indicações das suas indicações.",
+    "tip3Title": "Compartilhe consistentemente",
+    "tip3Desc": "Seu link nunca expira. Continue compartilhando para crescer sua rede.",
+    "tip4Title": "Ajude sua equipe",
+    "tip4Desc": "Quando suas indicações têm sucesso, você ganha mais. Apoie-os.",
+    "connectFirst": "Conecte sua carteira primeiro",
+    "linkCopied": "Link de indicação copiado",
+    "copyFailed": "Falha ao copiar",
+    "failedToLoad": "Falha ao carregar histórico de parceiro",
+    "registration": "Registro",
+    "newReferral": "Nova indicação"
+  },
+  "telegramPage": {
+    "title": "Telegram",
+    "subtitle": "Junte-se à nossa comunidade e obtenha suporte",
+    "communityGroup": "Grupo da Comunidade",
+    "communityDesc": "Junte-se ao nosso grupo oficial do Telegram. Converse com outros jogadores, compartilhe estratégias, receba atualizações e anúncios.",
+    "joinGroup": "Entrar no Grupo",
+    "copyLink": "Copiar Link",
+    "support": "Suporte",
+    "supportDesc": "Precisa de ajuda? Entre em contato com nossa equipe de suporte diretamente. Respondemos rapidamente a todas as perguntas sobre a plataforma.",
+    "contactSupport": "Contatar Suporte",
+    "whatYouGet": "O Que Você Obtém",
+    "realTimeUpdates": "Atualizações em Tempo Real",
+    "realTimeUpdatesDesc": "Seja o primeiro a saber sobre novos recursos, atualizações e anúncios.",
+    "communitySupport": "Suporte da Comunidade",
+    "communitySupportDesc": "Obtenha ajuda de jogadores experientes e compartilhe seu conhecimento.",
+    "directAccess": "Acesso Direto",
+    "directAccessDesc": "Acesso rápido à equipe de suporte para qualquer problema técnico.",
+    "networkGrowth": "Crescimento da Rede",
+    "networkGrowthDesc": "Conecte-se com outros jogadores e expanda sua rede de indicações."
+  },
+  "docsPage": {
+    "title": "Documentação",
+    "label": "Documentação",
+    "heading": "Como funciona o Solana Program X3",
+    "description": "Documentação técnica completa para entender o sistema de matriz X3, mecânicas de pagamento e como maximizar seus ganhos.",
+    "startPlaying": "Começar a jogar",
+    "swipeHint": "Deslize esquerda/direita para navegar",
+    "of": "de",
+    "more": "Mais",
+    "footerText": "Solana Program X3 — Matriz descentralizada na blockchain Solana",
+    "sections": {
+      "overview": {
+        "title": "Visão geral",
+        "shortTitle": "Visão geral",
+        "content1": {
+          "heading": "O que é Solana Program X3?",
+          "text": "Solana Program X3 é um sistema de matriz totalmente descentralizado construído na blockchain Solana. Opera através de contratos inteligentes verificados sem controle central, o que significa que ninguém pode modificar as regras ou acessar seus fundos.\n\nA plataforma usa um modelo de matriz X3 onde cada nível tem uma fila global. Quando você ativa um nível, entra na fila. À medida que novos jogadores ativam o mesmo nível, eles preenchem seus slots (3 slots por ciclo). Uma vez que todos os slots estejam preenchidos, você recebe pagamentos e reentra automaticamente na fila para ciclos ilimitados."
+        },
+        "content2": {
+          "heading": "Características principais",
+          "text": "• 16 níveis independentes com preços fixos (0,05 - 8,7 SOL)\n• 3 slots por ciclo com reciclagem automática\n• 60% de pagamento ao proprietário do nível por ativação\n• 26% total de recompensas de indicação (13% + 8% + 5%)\n• Transferências instantâneas de carteira para carteira\n• Sem atrasos de saque ou intermediários\n• Código de contrato inteligente imutável"
+        },
+        "content3": {
+          "heading": "Por que blockchain Solana?",
+          "text": "Solana foi escolhida por seu desempenho excepcional:\n\n• Velocidade de transação: ~400ms de tempo de confirmação\n• Taxas baixas: Frações de centavo por transação\n• Alto throughput: 65.000+ transações por segundo\n• Descentralização: Milhares de validadores em todo o mundo\n• Histórico comprovado: Uma das principais blockchains por TVL"
+        },
+        "content4": {
+          "heading": "Como você ganha",
+          "text": "Há duas formas de ganhar na plataforma:\n\n1. Propriedade de nível: Ative níveis e receba 60% de cada jogador que ativar depois de você (3 pagamentos = 180% por ciclo)\n\n2. Bônus de indicação: Convide outros e ganhe 13%, 8% e 5% da sua rede de 3 linhas\n\nAmbos os métodos funcionam simultaneamente e multiplicam sua renda."
+        },
+        "content5": {
+          "heading": "Transparência do contrato inteligente",
+          "text": "Toda a plataforma funciona com contratos inteligentes verificados e de código aberto:\n\n• Endereço do contrato visível publicamente no Solana Explorer\n• Todas as transações registradas na blockchain\n• Qualquer um pode verificar o código e a lógica\n• Sem funções ocultas ou backdoors\n• Operação completamente sem confiança"
+        }
+      },
+      "levels": {
+        "title": "Sistema de níveis",
+        "shortTitle": "Níveis",
+        "content1": {
+          "heading": "Preços dos níveis",
+          "text": "O sistema tem 16 níveis com preços fixos em SOL:\n\nNível 1: 0,05 SOL    Nível 9: 3,25 SOL\nNível 2: 0,18 SOL    Nível 10: 3,90 SOL\nNível 3: 0,36 SOL    Nível 11: 4,65 SOL\nNível 4: 0,68 SOL    Nível 12: 5,45 SOL\nNível 5: 1,10 SOL    Nível 13: 6,40 SOL\nNível 6: 1,55 SOL    Nível 14: 7,35 SOL\nNível 7: 2,10 SOL    Nível 15: 8,00 SOL\nNível 8: 2,65 SOL    Nível 16: 8,70 SOL\n\nCada nível opera independentemente com sua própria fila global. Você pode ativar níveis em qualquer ordem."
+        },
+        "content2": {
+          "heading": "Como funcionam os níveis",
+          "text": "1. Você ativa um nível pagando o preço fixo\n2. Sua ativação é registrada on-chain e você entra na fila global\n3. Os próximos 3 jogadores que ativarem o mesmo nível preenchem seus slots\n4. Você recebe 60% do pagamento de cada jogador (180% total por ciclo)\n5. Após 3 slots preenchidos, você reentra automaticamente na fila\n6. Este ciclo se repete infinitamente a partir de uma única ativação"
+        },
+        "content3": {
+          "heading": "Independência de níveis",
+          "text": "Cada um dos 16 níveis opera completamente independente:\n\n• Fila separada para cada nível\n• Sem pré-requisitos — ative qualquer nível a qualquer momento\n• Múltiplos níveis podem estar ativos simultaneamente\n• Cada nível ganha separadamente\n• O progresso em um nível não afeta outros"
+        },
+        "content4": {
+          "heading": "Ganhos por nível",
+          "text": "Seus ganhos por ciclo (3 slots preenchidos) para cada nível:\n\nL1: 0,09 SOL    L9: 5,85 SOL\nL2: 0,32 SOL    L10: 7,02 SOL\nL3: 0,65 SOL    L11: 8,37 SOL\nL4: 1,22 SOL    L12: 9,81 SOL\nL5: 1,98 SOL    L13: 11,52 SOL\nL6: 2,79 SOL    L14: 13,23 SOL\nL7: 3,78 SOL    L15: 14,40 SOL\nL8: 4,77 SOL    L16: 15,66 SOL\n\nFórmula: Preço do Nível × 60% × 3 slots = Ganhos por Ciclo"
+        },
+        "content5": {
+          "heading": "Mecanismo de auto-reciclagem",
+          "text": "Quando seus 3 slots estão preenchidos, seu nível recicla automaticamente:\n\n• Seu contador de slots é resetado para 0\n• Seu contador de ciclos aumenta em 1\n• Você é movido da cabeça da fila para o final\n• Você continua ganhando sem nenhuma ação\n• Nenhum pagamento adicional necessário\n\nIsso cria potencial de ganhos ilimitado a partir de uma única ativação."
+        }
+      },
+      "queue": {
+        "title": "Fila global",
+        "shortTitle": "Fila",
+        "content1": {
+          "heading": "Estrutura da fila",
+          "text": "Cada nível mantém um LevelPool com QueuePages paginadas. Características principais:\n\n• Cada página comporta até 64 jogadores\n• Quando uma página fica cheia, uma nova é criada automaticamente\n• Jogadores são processados por ordem de chegada\n• Sua posição é permanente e nunca expira\n• Após cada ciclo completo, você reentra no final da fila"
+        },
+        "content2": {
+          "heading": "Processamento da fila",
+          "text": "Quando um novo jogador ativa um nível:\n\n1. O contrato inteligente identifica a cabeça da fila\n2. O contador slots_filled deste jogador aumenta em 1\n3. O pagamento é distribuído (60% ao proprietário, indicações, tesouraria)\n4. Se slots_filled chegar a 3, o nível é reciclado:\n   - o contador de ciclos aumenta em 1\n   - slots_filled é resetado para 0\n   - O jogador é removido da cabeça e adicionado ao final\n5. O novo jogador também entra no final da fila"
+        },
+        "content3": {
+          "heading": "Distribuição justa",
+          "text": "O sistema de fila garante tratamento justo para todos os participantes:\n\n• Primeiro a chegar, primeiro a ser servido — sem favoritismo\n• Sem como pular ou manipular a posição na fila\n• Todos esperam sua vez igualmente\n• O contrato inteligente aplica as regras automaticamente\n• Transparente e verificável on-chain"
+        },
+        "content4": {
+          "heading": "Velocidade da fila",
+          "text": "A velocidade de preenchimento dos seus slots depende da atividade do nível:\n\n• Níveis mais baixos (L1-L5): Mais jogadores, preenchimento mais rápido\n• Níveis mais altos (L11-L16): Menos jogadores, preenchimento mais lento\n• A atividade global afeta todas as filas\n• Sua posição na fila importa — mais cedo = mais rápido\n\nDica: Monitore a atividade da fila no seu painel para acompanhar o progresso."
+        },
+        "content5": {
+          "heading": "Posição permanente",
+          "text": "Uma vez que você ativa um nível, sua posição nunca expira:\n\n• Sem timeout ou expiração\n• A fila persiste para sempre na blockchain\n• Você receberá pagamentos mesmo após meses\n• Sem manutenção ou renovação necessária\n• Totalmente passivo uma vez ativado"
+        }
+      },
+      "payouts": {
+        "title": "Distribuição de pagamentos",
+        "shortTitle": "Pagamentos",
+        "content1": {
+          "heading": "Divisão de pagamentos",
+          "text": "Cada ativação distribui 100% do preço do nível:\n\n• 60% → Proprietário do nível (cabeça da fila)\n• 13% → Indicador Linha 1 (upline1)\n• 8% → Indicador Linha 2 (upline2)\n• 5% → Indicador Linha 3 (upline3)\n• 14% → Tesouraria da plataforma\n\nTodas as transferências acontecem atomicamente em uma única transação Solana. Sem atrasos ou estados pendentes."
+        },
+        "content2": {
+          "heading": "Cálculo de ganhos",
+          "text": "Por ciclo (3 slots preenchidos), você ganha:\n60% × 3 = 180% do preço do nível\n\nExemplo para Nível 5 (1,10 SOL):\n• Por slot: 0,66 SOL (60% de 1,10)\n• Por ciclo: 1,98 SOL (180% de 1,10)\n• ROI por ciclo: +80% de lucro\n\nNão há limite de ciclos. Uma ativação = potencial de ganhos ilimitado."
+        },
+        "content3": {
+          "heading": "Transferências instantâneas",
+          "text": "Os pagamentos são feitos instantaneamente via contrato inteligente:\n\n• Sem estados pendentes ou atrasos\n• Transferências diretas de carteira para carteira\n• SOL aparece na sua carteira imediatamente\n• Nenhuma reivindicação manual necessária\n• Sem valor mínimo de saque"
+        },
+        "content4": {
+          "heading": "Potencial total de ganhos",
+          "text": "Se você ativar todos os 16 níveis e completar múltiplos ciclos:\n\nCusto total dos níveis: ~42 SOL\nGanhos por ciclo: ~100 SOL (todos os níveis)\n\nAlém disso, bônus de indicação da sua rede podem aumentar significativamente sua renda. Quanto mais níveis você ativar e maior sua rede, maiores serão seus ganhos."
+        },
+        "content5": {
+          "heading": "Acompanhando seus ganhos",
+          "text": "Monitore sua renda em tempo real:\n\n• O painel mostra slots preenchidos por nível\n• Visualize a contagem de ciclos completados\n• Acompanhe o total de SOL ganho\n• Veja preenchimentos de slots pendentes\n• Histórico de transações disponível\n\nTodos os dados são obtidos diretamente da blockchain."
+        }
+      },
+      "referrals": {
+        "title": "Sistema de indicações",
+        "shortTitle": "Indicações",
+        "content1": {
+          "heading": "Como funcionam as indicações",
+          "text": "Ao se registrar, sua cadeia de indicação é gravada on-chain:\n\n• upline1: Seu indicador direto (ganha 13%)\n• upline2: O indicador do seu indicador (ganha 8%)\n• upline3: Terceiro nível acima (ganha 5%)\n\nImportante: Bônus de indicação só se aplicam se seu upline tiver o MESMO nível ativo. Caso contrário, a parte deles vai para a tesouraria da plataforma."
+        },
+        "content2": {
+          "heading": "Construindo sua rede",
+          "text": "Para maximizar ganhos de indicação:\n\n1. Compartilhe seu link de indicação (contém seu player PDA)\n2. Quando alguém se registra pelo seu link, você se torna o upline1 deles\n3. Você ganha 13% de cada nível que eles ativam (se você o tiver ativo)\n4. Você também ganha 8% das indicações deles (sua linha 2)\n5. E 5% das indicações da linha 3\n\nA chave é ativar todos os 16 níveis para capturar a renda máxima de indicação."
+        },
+        "content3": {
+          "heading": "Seu link de indicação",
+          "text": "Seu link de indicação único contém seu Player PDA:\n\nhttps://[domínio]/?ref=[seu_player_pda]\n\nCompartilhe este link em qualquer lugar:\n• Redes sociais (Twitter, Telegram, Discord)\n• Vídeos do YouTube e descrições\n• Posts de blog e fóruns\n• Mensagens diretas para amigos\n\nQualquer um que se registre através do seu link se torna sua indicação permanente."
+        },
+        "content4": {
+          "heading": "Regra de correspondência de níveis",
+          "text": "Regra crítica: Você só ganha bônus de indicação para níveis que VOCÊ tem ativos.\n\nExemplo:\n• Você tem L1, L2, L3 ativos\n• Sua indicação ativa L5\n• Você ganha 0% porque não tem L5\n\nSolução: Ative todos os 16 níveis para capturar 100% da renda possível de indicação."
+        },
+        "content5": {
+          "heading": "Crescimento da rede",
+          "text": "Sua rede cresce automaticamente através de 3 linhas:\n\nLinha 1: Pessoas que você convida diretamente (13%)\nLinha 2: Pessoas que sua Linha 1 convida (8%)\nLinha 3: Pessoas que sua Linha 2 convida (5%)\n\nPotencial total de indicação: 26% de cada ativação na sua rede de 3 linhas. Isso cria renda passiva poderosa."
+        },
+        "content6": {
+          "heading": "Exemplo de ganhos de indicação",
+          "text": "Se você tem 10 indicações ativas e cada uma ativa L5 (1,10 SOL):\n\nLinha 1 (10 pessoas): 10 × 1,10 × 13% = 1,43 SOL\n\nSe cada uma convida mais 5 (Linha 2):\n50 × 1,10 × 8% = 4,40 SOL\n\nSe Linha 2 convida 5 cada (Linha 3):\n250 × 1,10 × 5% = 13,75 SOL\n\nTotal apenas de L5: 19,58 SOL"
+        }
+      },
+      "security": {
+        "title": "Segurança",
+        "shortTitle": "Segurança",
+        "content1": {
+          "heading": "Segurança do contrato inteligente",
+          "text": "A plataforma implementa múltiplas medidas de segurança:\n\n• TxGuard: Cada transação usa um nonce único para prevenir ataques de repetição\n• Verificação PDA: Todas as contas são validadas criptograficamente\n• Transferências atômicas: Pagamentos acontecem em uma única transação (tudo ou nada)\n• Código imutável: O contrato não pode ser modificado após implantação\n• Sem chaves admin: Ninguém pode drenar fundos ou mudar regras"
+        },
+        "content2": {
+          "heading": "Seus fundos estão seguros",
+          "text": "• Você nunca entrega a custódia da sua carteira a ninguém\n• Pagamentos vão diretamente de carteira para carteira via contrato\n• Sem sistema de depósito/saque — seus SOL ficam na sua carteira\n• Todas as transações são verificáveis publicamente no Solana Explorer\n• O contrato não tem funções admin que possam roubar fundos"
+        },
+        "content3": {
+          "heading": "Verificado no Solana Explorer",
+          "text": "O contrato inteligente é totalmente transparente:\n\n• Endereço do contrato publicamente disponível\n• Todo o código verificado e legível\n• Cada transação visível no Explorer\n• Estados de contas podem ser inspecionados\n• Sem lógica ou funções ocultas\n\nVocê pode verificar tudo independentemente."
+        },
+        "content4": {
+          "heading": "Rug Pull impossível",
+          "text": "O design do contrato previne qualquer forma de rug pull:\n\n• Sem funções de saque para o proprietário\n• Sem mecanismos de pausa ou congelamento\n• Sem padrões de proxy atualizáveis\n• Fundos fluem diretamente entre carteiras\n• A tesouraria da plataforma é transparente\n\nMesmo os desenvolvedores não podem acessar seus fundos."
+        },
+        "content5": {
+          "heading": "Dicas de segurança da carteira",
+          "text": "Mantenha sua carteira segura:\n\n• Nunca compartilhe sua frase seed com ninguém\n• Use carteira de hardware para grandes quantias\n• Verifique os detalhes da transação antes de assinar\n• Conecte apenas à URL oficial da plataforma\n• Esteja ciente de tentativas de phishing\n• Armazene a frase seed offline com segurança"
+        },
+        "content6": {
+          "heading": "Proteção de transações",
+          "text": "Cada transação é protegida por TxGuard:\n\n• Nonce único previne transações duplicadas\n• Protege contra ataques de repetição\n• Garante que cada ativação seja processada uma vez\n• Validação automática antes da execução\n• Transações falhadas são revertidas com segurança"
+        }
+      },
+      "getting-started": {
+        "title": "Começando",
+        "shortTitle": "Início",
+        "content1": {
+          "heading": "Guia passo a passo",
+          "text": "1. Instale a Phantom Wallet\n   Baixe de phantom.app e crie sua carteira\n\n2. Abasteça sua carteira\n   Transfira SOL para seu endereço Phantom\n\n3. Conecte a carteira\n   Clique em Conectar Carteira na nossa plataforma\n\n4. Registre o jogador\n   Crie seu perfil de jogador on-chain (uma vez)\n\n5. Ative o Nível 1\n   Pague 0,05 SOL para ativar seu primeiro nível\n\n6. Compartilhe e ganhe\n   Copie seu link de indicação e convide outros"
+        },
+        "content2": {
+          "heading": "Dicas para o sucesso",
+          "text": "• Comece com o Nível 1 e vá subindo\n• Ative tantos níveis quanto puder\n• Compartilhe seu link de indicação nas redes sociais\n• Lembre-se: bônus de indicação requerem níveis ativos correspondentes\n• Monitore seu painel para preenchimento de slots e ciclos\n• Níveis mais altos = pagamentos maiores mas movimento de fila mais lento"
+        },
+        "content3": {
+          "heading": "Carteiras suportadas",
+          "text": "A plataforma suporta carteiras Solana populares:\n\n• Phantom (recomendada)\n• Solflare\n• Backpack\n• Ledger (via Phantom)\n• Outras carteiras compatíveis com Solana\n\nRecomendamos Phantom para a melhor experiência."
+        },
+        "content4": {
+          "heading": "Obtendo SOL",
+          "text": "Você precisa de SOL para participar. Formas de obter SOL:\n\n• Compre em exchanges (Binance, Coinbase, Kraken)\n• Use on-ramps de fiat (MoonPay, Transak)\n• Troque de outras criptos\n• Receba de outros usuários\n\nMínimo necessário: ~0,06 SOL para Nível 1 + taxas"
+        },
+        "content5": {
+          "heading": "Processo de registro",
+          "text": "Registro de jogador único:\n\n1. Conecte sua carteira\n2. Clique no botão 'Registrar'\n3. Aprove a transação na sua carteira\n4. Seu player PDA é criado on-chain\n5. Você está pronto para ativar níveis\n\nO registro requer um saldo mínimo de 0.0030 SOL para cobrir as taxas de transação."
+        },
+        "content6": {
+          "heading": "Usando seu painel",
+          "text": "Após o registro, seu painel mostra:\n\n• Níveis ativos e seu status\n• Slots preenchidos e ciclos completados\n• Ganhos totais (estimados)\n• Seu link de indicação\n• Histórico de transações\n• Botões de ativação de níveis"
+        },
+        "content7": {
+          "heading": "Perguntas comuns",
+          "text": "P: E se eu perder o link do meu indicador?\nR: Você pode se registrar com o indicador padrão.\n\nP: Posso mudar meu indicador?\nR: Não, as cadeias de indicação são permanentes on-chain.\n\nP: Qual é o investimento mínimo?\nR: O Nível 1 custa apenas 0,05 SOL.\n\nP: Há um limite de tempo?\nR: Não, seus níveis funcionam para sempre uma vez ativados."
+        }
+      }
+    }
+  },
+  "levelDetailPage": {
+    "activationPrice": "Preço de ativação",
+    "back": "Voltar",
+    "status": "Status",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "slots": "Vagas",
+    "cycles": "Ciclos",
+    "earned": "Ganho",
+    "cycleProgress": "Progresso do Ciclo",
+    "filled": "Preenchido",
+    "empty": "Vazio",
+    "slotsFilled": "{filled} de {total} vagas preenchidas",
+    "nextPayout": "Próximo pagamento",
+    "perActivationDistribution": "Distribuição por Ativação",
+    "youOwner": "Você (Proprietário)",
+    "referrerL1": "Indicador L1",
+    "referrerL2": "Indicador L2",
+    "referrerL3": "Indicador L3",
+    "platform": "Plataforma",
+    "yourEarningsPerCycle": "Seus ganhos por ciclo (×3)",
+    "howItWorks": "Como Funciona",
+    "step1Title": "Ative este nível",
+    "step1Desc": "você entra na fila e espera 3 jogadores ativarem depois de você.",
+    "step2Title": "3 vagas são preenchidas",
+    "step2Desc": "cada vez que alguém ativa, você recebe {percent}% do pagamento.",
+    "step3Title": "Ciclo completo",
+    "step3Desc": "após 3 pagamentos, seu nível é reciclado automaticamente para a fila.",
+    "step4Title": "Ciclos ilimitados",
+    "step4Desc": "você pode ganhar deste nível indefinidamente enquanto novos jogadores entrarem.",
+    "processing": "Processando...",
+    "alreadyActivated": "Já ativado",
+    "activateFor": "Ativar por {price} SOL",
+    "levelStatistics": "Estatísticas do Nível",
+    "totalCyclesCompleted": "Total de Ciclos Completos",
+    "totalEarned": "Total Ganho",
+    "perCycleEarnings": "Ganhos por Ciclo",
+    "note": "Nota",
+    "noteText": "Este nível continuará gerando ganhos enquanto novos jogadores entrarem. Cada ciclo é independente."
+  }
+}

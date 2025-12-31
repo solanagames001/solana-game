@@ -1,0 +1,75 @@
+# ============================================================
+# Solana Game - Headers Configuration
+# Works with Vercel, Netlify, Cloudflare Pages
+# ============================================================
+
+# Global security headers for all routes
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: frame-ancestors 'self'
+
+# Fonts - immutable, long cache
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Next.js static assets - immutable
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Icons - long cache
+/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - moderate cache (can be updated)
+/images/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.jpg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/*.webp
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# SVG icons - long cache
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+# OG Image - moderate cache for social updates
+/og-image.png
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Manifest and service worker
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json
+
+# SEO files
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml
+
+# HTML pages - short cache with revalidation
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Dashboard routes - no cache (dynamic content)
+/dashboard/*
+  Cache-Control: private, no-cache, no-store, must-revalidate
+
+/levels/*
+  Cache-Control: private, no-cache, no-store, must-revalidate
+
+/history/*
+  Cache-Control: private, no-cache, no-store, must-revalidate
+
