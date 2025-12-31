@@ -3,6 +3,7 @@
 
 import { Connection, Transaction, ComputeBudgetProgram } from "@solana/web3.js";
 import { toast } from "./toast";
+import { txLoading } from "./tx-loading";
 
 import buildActivateLevelV3Ix from "./activate-builder";
 
@@ -29,15 +30,20 @@ export async function activateLevel(
   wallet: WalletLike,
   levelId: number
 ): Promise<string | null> {
+  // Show loading overlay immediately
+  txLoading.show(`Activating level ${levelId}...`);
+
   try {
     /* ---------------- Wallet check -------------------------- */
     if (!wallet?.publicKey) {
+      txLoading.hide();
       toast.error("walletNotConnected");
       return null;
     }
 
     /* ---------------- Level check --------------------------- */
     if (!Number.isInteger(levelId) || levelId < 1 || levelId > MAX_LEVELS) {
+      txLoading.hide();
       toast.error("invalidLevel");
       return null;
     }
@@ -52,6 +58,7 @@ export async function activateLevel(
     /* ---------------- Build instruction --------------------- */
     let ix;
     try {
+      txLoading.show(`Building transaction for level ${levelId}...`);
       console.log(`[sdk/activate] Building instruction for level ${levelId}...`);
       ix = await buildActivateLevelV3Ix(
         connection,
@@ -60,6 +67,7 @@ export async function activateLevel(
       );
       console.log(`[sdk/activate] Instruction built successfully for level ${levelId}`);
     } catch (buildErr: any) {
+      txLoading.hide();
       console.error(`[sdk/activate] buildActivateLevelV3Ix failed for level ${levelId}:`, buildErr);
       
       // Сохраняем детали ошибки для отладки
@@ -83,9 +91,10 @@ export async function activateLevel(
     // ComputeBudget instruction MUST be first in the transaction
     const tx = new Transaction().add(computeBudgetIx).add(ix);
 
-    /* ---------------- Send tx (simulation happens in sendTxWithPriority) ------------------------------- */
+    /* ---------------- Send tx ------------------------------- */
     let signature: string;
     try {
+      txLoading.show(`Sending transaction for level ${levelId}...`);
       const result = await sendTxWithPriority(
         connection,
         wallet,
@@ -94,6 +103,7 @@ export async function activateLevel(
       );
       signature = result.signature;
     } catch (err: any) {
+      txLoading.hide();
       console.error("[sdk/activate] send failed:", err);
       
       // Сохраняем детали ошибки для отладки
@@ -122,9 +132,11 @@ export async function activateLevel(
     toast.success(`ACTIVATION_SENT_LEVEL:${levelId}`);
 
     /* ---------------- Finalization -------------------------- */
+    txLoading.show(`Confirming transaction for level ${levelId}...`);
     const res = await waitForSignatureFinalized(connection, signature);
 
     if (!res.ok) {
+      txLoading.hide();
       // Сохраняем детали ошибки для отладки
       const errorDetails = {
         level: levelId,
@@ -147,6 +159,8 @@ export async function activateLevel(
       return null;
     }
 
+    txLoading.hide();
+
     /* ---------------- History ------------------------------- */
     try {
       recordActivate(walletBase58, levelId, signature);
@@ -157,6 +171,7 @@ export async function activateLevel(
 
     return signature;
   } catch (err: any) {
+    txLoading.hide();
     console.error(`[sdk/activate] Unexpected error for level ${levelId}:`, err);
     console.error(`[sdk/activate] Error stack:`, err?.stack);
     console.error(`[sdk/activate] Error details:`, {

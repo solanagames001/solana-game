@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { txLoading } from "@/lib/sdk/tx-loading";
 
 /* ============================================================================
    Фирменный вращающийся бейдж c логотипом (compact version)
@@ -87,61 +88,68 @@ function RotatingBadge() {
 
 /* ============================================================================
    TxOverlayGlobal — unified design with RotatingBadge
+   Uses global txLoading state manager
    ============================================================================
  */
-export default function TxOverlayGlobal({
-  show = false,
-  label = "Processing transaction…",
-}: {
-  show?: boolean;
-  label?: string;
-}) {
-  const [mounted, setMounted] = useState(show);
+export default function TxOverlayGlobal() {
+  const [loadingState, setLoadingState] = useState(() => txLoading.getState());
+  const [mounted, setMounted] = useState(loadingState.isLoading);
+
+  // Subscribe to global loading state
+  useEffect(() => {
+    const unsubscribe = txLoading.subscribe((state) => {
+      setLoadingState(state);
+      if (state.isLoading) {
+        setMounted(true);
+      }
+    });
+    return unsubscribe;
+  }, []);
 
   // Синхронизируем состояние с Topbar (busy indicator)
   useEffect(() => {
     if (typeof window === "undefined") return;
     window.dispatchEvent(
-      new CustomEvent("dashboard:tx-busy", { detail: { busy: show } })
+      new CustomEvent("dashboard:tx-busy", { detail: { busy: loadingState.isLoading } })
     );
-  }, [show]);
+  }, [loadingState.isLoading]);
 
   // Управляем размонтированием (анимация исчезновения)
   useEffect(() => {
-    if (show) {
+    if (loadingState.isLoading) {
       setMounted(true);
     } else {
       const timeout = setTimeout(() => setMounted(false), 400);
       return () => clearTimeout(timeout);
     }
-  }, [show]);
+  }, [loadingState.isLoading]);
 
   if (!mounted) return null;
 
   return (
     <div
-      aria-hidden={!show}
+      aria-hidden={!loadingState.isLoading}
       role="alert"
-      aria-busy={show}
+      aria-busy={loadingState.isLoading}
       className={`fixed inset-0 z-[1000] flex items-center justify-center
-        transition-opacity duration-400 ease-out
-        ${show ? "opacity-100" : "opacity-0"}`}
+        transition-opacity duration-400 ease-out pointer-events-none
+        ${loadingState.isLoading ? "opacity-100" : "opacity-0"}`}
       style={{
-        background: show ? "rgba(0,0,0,0.55)" : "rgba(0,0,0,0)",
-        backdropFilter: "blur(6px)",
+        background: loadingState.isLoading ? "rgba(0,0,0,0.75)" : "rgba(0,0,0,0)",
+        backdropFilter: "blur(8px)",
       }}
     >
       <div
         className={`flex flex-col items-center gap-4 rounded-2xl border border-white/10 
-          bg-[#0b0c0f]/90 px-8 py-6 shadow-[0_0_30px_rgba(20,241,149,0.25)]
-          transform transition-all duration-400 ease-out
-          ${show ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-1"}`}
+          bg-[#0b0c0f]/95 px-8 py-6 shadow-[0_0_30px_rgba(20,241,149,0.25)]
+          transform transition-all duration-400 ease-out pointer-events-auto
+          ${loadingState.isLoading ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-1"}`}
       >
         {/* Фирменный бейдж */}
         <RotatingBadge />
 
         {/* Текст */}
-        <div className="text-sm text-white/90">{label}</div>
+        <div className="text-sm text-white/90 font-medium">{loadingState.label}</div>
       </div>
     </div>
   );

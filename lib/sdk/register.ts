@@ -22,6 +22,7 @@ import {
 import type { AnchorWallet } from "@solana/wallet-adapter-react";
 
 import { toast } from "./toast";
+import { txLoading } from "./tx-loading";
 import {
   PROGRAM_ID,
   derivePlayerPda,
@@ -72,118 +73,136 @@ export async function createPlayer(
   connection: Connection,
   wallet: AnchorWallet
 ): Promise<string> {
-  if (!wallet?.publicKey) {
-    throw new Error("createPlayer: wallet not connected");
-  }
-
-  const authority = wallet.publicKey;
-
-  // Check balance before registration
-  const balance = await connection.getBalance(authority);
-  if (balance < MIN_BALANCE_FOR_REGISTRATION) {
-    const errorMsg = "insufficientFundsForRegistration";
-    toast.error(errorMsg);
-    throw new Error(errorMsg);
-  }
-
-  // Show creating profile notification
-  toast.info("creatingProfile");
-
-  const [playerPda] = derivePlayerPda(authority);
-  const [configPda] = deriveConfigPda();
-  const [statsPda] = deriveGlobalStatsPda();
-
-  // nonce must be u64; Date.now ok for register (tx_guard uniqueness)
-  const nonce = BigInt(Date.now());
-  const [txGuardPda] = deriveTxGuardRegister(authority, nonce);
-
-  /* ----------------------------------------------------------
-     REFERRER
-     getReferrer() returns REFERRER WALLET pubkey.
-     We need to derive PLAYER PDA and pass it both in data and accounts.
-     Rust code expects referrer_player account key to match the referrer PDA in data.
-  ---------------------------------------------------------- */
-
-  const referrerWalletPk = getReferrer(); // PublicKey | null
-  const referrerPlayerPda = referrerWalletPk
-    ? derivePlayerPda(referrerWalletPk)[0]
-    : null;
-
-  // IMPORTANT: data encodes Option<Pubkey> of referrer PLAYER PDA (must match account key)
-  const data = Buffer.concat([
-    REGISTER_DISC,
-    encodeOptionPubkey(referrerPlayerPda),
-    u64ToLeBuffer(nonce),
-  ]);
-
-  /* ----------------------------------------------------------
-     ACCOUNTS (ORDER MUST MATCH Rust)
-     We keep referrer_player slot ALWAYS present to avoid index shift.
-  ---------------------------------------------------------- */
-
-  // placeholder for referrer_player when None:
-  // must be a safe, existing readonly pubkey (NOT SystemProgram.programId).
-  // Using config PDA is safe and always exists on-chain.
-  const referrerPlayerOrPlaceholder = referrerPlayerPda ?? configPda;
-
-  const keys: AccountMeta[] = [
-    // 0 player
-    { pubkey: playerPda, isWritable: true, isSigner: false },
-
-    // 1 authority
-    { pubkey: authority, isWritable: true, isSigner: true },
-
-    // 2 tx_guard
-    { pubkey: txGuardPda, isWritable: true, isSigner: false },
-
-    // 3 config
-    { pubkey: configPda, isWritable: true, isSigner: false },
-
-    // 4 global_stats
-    { pubkey: statsPda, isWritable: true, isSigner: false },
-
-    // 5 referrer_player (ALWAYS PRESENT; readonly)
-    { pubkey: referrerPlayerOrPlaceholder, isWritable: false, isSigner: false },
-
-    // 6 system_program
-    { pubkey: SystemProgram.programId, isWritable: false, isSigner: false },
-  ];
+  // Show loading overlay immediately
+  txLoading.show("Registering player...");
 
   try {
-    const ix = new TransactionInstruction({
-      programId: PROGRAM_ID,
-      keys,
-      data,
-    });
-
-    const tx = new Transaction().add(ix);
-
-    const { signature } = await sendTxWithPriority(
-      connection,
-      wallet,
-      tx,
-      "Register player"
-    );
-
-    const res = await waitForSignatureFinalized(connection, signature);
-
-    if (!res.ok) {
-      const msg = `Registration error: ${res.err ?? "unknown"}`;
-      toast.error(msg);
-      throw new Error(msg);
+    if (!wallet?.publicKey) {
+      txLoading.hide();
+      throw new Error("createPlayer: wallet not connected");
     }
 
-    // referrer одноразовый — чистим ТОЛЬКО после finalized OK
-    clearReferrer();
+    const authority = wallet.publicKey;
 
-    toast.success("playerRegistered");
-    return signature;
+    // Check balance before registration
+    txLoading.show("Checking balance...");
+    const balance = await connection.getBalance(authority);
+    if (balance < MIN_BALANCE_FOR_REGISTRATION) {
+      txLoading.hide();
+      const errorMsg = "insufficientFundsForRegistration";
+      toast.error(errorMsg);
+      throw new Error(errorMsg);
+    }
+
+    // Show creating profile notification
+    toast.info("creatingProfile");
+    txLoading.show("Creating player profile...");
+
+    const [playerPda] = derivePlayerPda(authority);
+    const [configPda] = deriveConfigPda();
+    const [statsPda] = deriveGlobalStatsPda();
+
+    // nonce must be u64; Date.now ok for register (tx_guard uniqueness)
+    const nonce = BigInt(Date.now());
+    const [txGuardPda] = deriveTxGuardRegister(authority, nonce);
+
+    /* ----------------------------------------------------------
+       REFERRER
+       getReferrer() returns REFERRER WALLET pubkey.
+       We need to derive PLAYER PDA and pass it both in data and accounts.
+       Rust code expects referrer_player account key to match the referrer PDA in data.
+    ---------------------------------------------------------- */
+
+    const referrerWalletPk = getReferrer(); // PublicKey | null
+    const referrerPlayerPda = referrerWalletPk
+      ? derivePlayerPda(referrerWalletPk)[0]
+      : null;
+
+    // IMPORTANT: data encodes Option<Pubkey> of referrer PLAYER PDA (must match account key)
+    const data = Buffer.concat([
+      REGISTER_DISC,
+      encodeOptionPubkey(referrerPlayerPda),
+      u64ToLeBuffer(nonce),
+    ]);
+
+    /* ----------------------------------------------------------
+       ACCOUNTS (ORDER MUST MATCH Rust)
+       We keep referrer_player slot ALWAYS present to avoid index shift.
+    ---------------------------------------------------------- */
+
+    // placeholder for referrer_player when None:
+    // must be a safe, existing readonly pubkey (NOT SystemProgram.programId).
+    // Using config PDA is safe and always exists on-chain.
+    const referrerPlayerOrPlaceholder = referrerPlayerPda ?? configPda;
+
+    const keys: AccountMeta[] = [
+      // 0 player
+      { pubkey: playerPda, isWritable: true, isSigner: false },
+
+      // 1 authority
+      { pubkey: authority, isWritable: true, isSigner: true },
+
+      // 2 tx_guard
+      { pubkey: txGuardPda, isWritable: true, isSigner: false },
+
+      // 3 config
+      { pubkey: configPda, isWritable: true, isSigner: false },
+
+      // 4 global_stats
+      { pubkey: statsPda, isWritable: true, isSigner: false },
+
+      // 5 referrer_player (ALWAYS PRESENT; readonly)
+      { pubkey: referrerPlayerOrPlaceholder, isWritable: false, isSigner: false },
+
+      // 6 system_program
+      { pubkey: SystemProgram.programId, isWritable: false, isSigner: false },
+    ];
+
+    try {
+      const ix = new TransactionInstruction({
+        programId: PROGRAM_ID,
+        keys,
+        data,
+      });
+
+      const tx = new Transaction().add(ix);
+
+      txLoading.show("Sending registration transaction...");
+      const { signature } = await sendTxWithPriority(
+        connection,
+        wallet,
+        tx,
+        "Register player"
+      );
+
+      txLoading.show("Confirming registration...");
+      const res = await waitForSignatureFinalized(connection, signature);
+
+      if (!res.ok) {
+        txLoading.hide();
+        const msg = `Registration error: ${res.err ?? "unknown"}`;
+        toast.error(msg);
+        throw new Error(msg);
+      }
+
+      txLoading.hide();
+
+      // referrer одноразовый — чистим ТОЛЬКО после finalized OK
+      clearReferrer();
+
+      toast.success("playerRegistered");
+      return signature;
+    } catch (err: any) {
+      txLoading.hide();
+      console.error("[sdk/register.createPlayer]", err);
+      // Only show error if it's not the insufficient funds error (already shown)
+      if (err?.message !== "insufficientFundsForRegistration") {
+        toast.error("registrationFailed");
+      }
+      throw err;
+    }
   } catch (err: any) {
-    console.error("[sdk/register.createPlayer]", err);
-    // Only show error if it's not the insufficient funds error (already shown)
-    if (err?.message !== "insufficientFundsForRegistration") {
-      toast.error("registrationFailed");
-    }
+    txLoading.hide();
     throw err;
   }
 }

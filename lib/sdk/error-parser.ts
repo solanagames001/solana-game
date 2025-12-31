@@ -119,28 +119,65 @@ export function formatActivationError(err: any, levelId: number): string {
     return `Level ${levelId} activation failed: ${parsed.message}`;
   }
 
+  // КРИТИЧЕСКОЕ: Проверяем логи ПЕРВЫМ делом (там самая полезная информация)
+  if (err?.logs && Array.isArray(err.logs)) {
+    const logsStr = err.logs.join(" ");
+    
+    // Проверяем "insufficient lamports" (наиболее частая ошибка)
+    const insufficientLamportsMatch = logsStr.match(/Transfer: insufficient lamports (\d+), need (\d+)/);
+    if (insufficientLamportsMatch) {
+      const haveLamports = parseInt(insufficientLamportsMatch[1], 10);
+      const needLamports = parseInt(insufficientLamportsMatch[2], 10);
+      const missingLamports = needLamports - haveLamports;
+      const missingSOL = (missingLamports / 1_000_000_000).toFixed(4);
+      const needSOL = (needLamports / 1_000_000_000).toFixed(4);
+      
+      return `Insufficient SOL balance. Level ${levelId} requires ${needSOL} SOL. You need ${missingSOL} SOL more.`;
+    }
+    
+    // Проверяем другие варианты insufficient
+    if (logsStr.includes("insufficient lamports") || logsStr.includes("insufficient funds")) {
+      return `Insufficient SOL balance. Level ${levelId} requires more SOL. Please add SOL to your wallet.`;
+    }
+    
+    if (logsStr.includes("already activated") || logsStr.includes("AlreadyActivated")) {
+      return `Level ${levelId} is already activated.`;
+    }
+  }
+
   // Извлекаем сообщение из ошибки (правильная обработка объектов)
   let message = "";
   if (typeof err === "string") {
     message = err;
-  } else if (err?.message) {
-    message = String(err.message);
-  } else if (err?.error) {
-    message = String(err.error);
-  } else if (err?.toString && err.toString() !== "[object Object]") {
-    message = err.toString();
-  } else if (err?.name) {
+  } else if (err?.message && typeof err.message === "string") {
+    message = err.message;
+  } else if (err?.error && typeof err.error === "string") {
+    message = err.error;
+  } else if (err?.toString && typeof err.toString === "function") {
+    const str = err.toString();
+    if (str !== "[object Object]") {
+      message = str;
+    }
+  } else if (err?.name && typeof err.name === "string") {
     message = err.name;
-  } else {
-    // Пытаемся извлечь из JSON
+  }
+  
+  // Если всё ещё нет сообщения - пытаемся JSON
+  if (!message || message === "[object Object]") {
     try {
-      message = JSON.stringify(err);
+      const jsonStr = JSON.stringify(err);
+      if (jsonStr && jsonStr !== "{}" && jsonStr !== "null") {
+        // Не показываем JSON пользователю, просто используем как fallback
+        message = "";
+      } else {
+        message = "";
+      }
     } catch {
-      message = "Unknown error";
+      message = "";
     }
   }
   
-  // Обработка ошибок построения инструкции
+  // Обработка ошибок построения инструкции (в message)
   if (message.includes("ConfigV3 not found") || message.includes("Failed to fetch ConfigV3")) {
     return `Failed to connect to blockchain. Please check your internet connection and try again.`;
   }
@@ -153,7 +190,7 @@ export function formatActivationError(err: any, levelId: number): string {
     return `Network timeout. Please check your connection and try again.`;
   }
   
-  if (message.includes("insufficient funds") || message.includes("Insufficient funds")) {
+  if (message.includes("insufficient funds") || message.includes("Insufficient funds") || message.includes("insufficient lamports")) {
     return `Insufficient SOL balance. Level ${levelId} requires more SOL.`;
   }
 
@@ -169,27 +206,15 @@ export function formatActivationError(err: any, levelId: number): string {
     return "Transaction was cancelled by user.";
   }
 
-  // Проверяем логи на наличие полезной информации
-  if (err?.logs && Array.isArray(err.logs)) {
-    const logsStr = err.logs.join(" ");
-    if (logsStr.includes("insufficient funds")) {
-      return `Insufficient SOL balance. Level ${levelId} requires more SOL.`;
-    }
-    if (logsStr.includes("already activated") || logsStr.includes("AlreadyActivated")) {
-      return `Level ${levelId} is already activated.`;
-    }
-  }
-
   // Общая ошибка - показываем детали для отладки, но без технических деталей для пользователя
   console.error("[formatActivationError] Unparsed error for level", levelId, ":", err);
   
   // Упрощаем сообщение для пользователя
-  if (message.includes("Unexpected error") || message.includes("unexpected error") || message === "[object Object]") {
-    return `Activation failed. Please try again. If the problem persists, check your internet connection and wallet balance.`;
+  if (!message || message === "[object Object]") {
+    return `Activation failed. Please check your wallet balance and try again. If the problem persists, check your internet connection.`;
   }
   
   // Ограничиваем длину сообщения для пользователя
   const userMessage = message.length > 100 ? message.substring(0, 100) + "..." : message;
   return `Activation failed: ${userMessage || "Unknown error"}. Please try again.`;
 }
-
