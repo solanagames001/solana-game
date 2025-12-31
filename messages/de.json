@@ -400,10 +400,33 @@
     "checkingPlayerState": "Spielerstatus wird überprüft…",
     "playerNotFound": "Spieler nicht gefunden — drücken Sie Registrieren",
     "levelAlreadyActivated": "Level bereits aktiviert",
-    "pressActivate": "Drücken Sie Aktivieren, um dieses Level zu aktivieren"
+    "pressActivate": "Drücken Sie Aktivieren, um dieses Level zu aktivieren",
+    "failedToConnectBlockchain": "Verbindung zur Blockchain fehlgeschlagen. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+    "requestTimeout": "Anfrage-Timeout. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+    "networkTimeout": "Netzwerk-Timeout. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "insufficientBalanceForLevel": "Unzureichende SOL-Balance. Level {level} erfordert mehr SOL.",
+    "insufficientBalanceDetailed": "Unzureichende SOL-Balance. Level {level} erfordert {needSOL} SOL. Sie benötigen {missingSOL} SOL mehr.",
+    "insufficientBalanceAddSOL": "Unzureichende SOL-Balance. Level {level} erfordert mehr SOL. Bitte fügen Sie SOL zu Ihrer Wallet hinzu.",
+    "insufficientBalanceForFees": "Unzureichende SOL-Balance für Transaktionsgebühren.",
+    "transactionSimulationFailed": "Transaktionssimulation fehlgeschlagen. Bitte überprüfen Sie Ihr Guthaben und versuchen Sie es erneut.",
+    "transactionCancelled": "Transaktion wurde vom Benutzer abgebrochen.",
+    "activationFailedGeneric": "Aktivierung fehlgeschlagen. Bitte überprüfen Sie Ihr Wallet-Guthaben und versuchen Sie es erneut. Wenn das Problem weiterhin besteht, überprüfen Sie Ihre Internetverbindung.",
+    "activationFailedAnchor": "Aktivierung von Level {level} fehlgeschlagen: Anchor-Fehler {code}.",
+    "registrationError": "Registrierungsfehler: {error}",
+    "levelAlreadyActivated": "Level {level} ist bereits aktiviert"
   },
   "overlay": {
-    "processing": "Transaktion wird verarbeitet..."
+    "processing": "Transaktion wird verarbeitet...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • VERARBEITUNG •",
+    "activatingLevel": "Aktivierung von Level {level}...",
+    "buildingTransaction": "Transaktion für Level {level} wird erstellt...",
+    "sendingTransaction": "Transaktion für Level {level} wird gesendet...",
+    "confirmingTransaction": "Transaktion für Level {level} wird bestätigt...",
+    "registeringPlayer": "Spieler wird registriert...",
+    "checkingBalance": "Guthaben wird geprüft...",
+    "creatingProfile": "Spielerprofil wird erstellt...",
+    "sendingRegistration": "Registrierung wird gesendet...",
+    "confirmingRegistration": "Registrierung wird bestätigt..."
   },
   "nav": {
     "dashboard": "Dashboard",

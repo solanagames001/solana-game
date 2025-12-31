@@ -400,10 +400,33 @@
     "checkingPlayerState": "Memeriksa status pemain…",
     "playerNotFound": "Pemain tidak ditemukan — tekan Daftar",
     "levelAlreadyActivated": "Level sudah diaktifkan",
-    "pressActivate": "Tekan Aktifkan untuk mengaktifkan level ini"
+    "pressActivate": "Tekan Aktifkan untuk mengaktifkan level ini",
+    "failedToConnectBlockchain": "Gagal terhubung ke blockchain. Silakan periksa koneksi internet Anda dan coba lagi.",
+    "requestTimeout": "Batas waktu permintaan habis. Silakan periksa koneksi internet Anda dan coba lagi.",
+    "networkTimeout": "Batas waktu jaringan habis. Silakan periksa koneksi Anda dan coba lagi.",
+    "insufficientBalanceForLevel": "Saldo SOL tidak mencukupi. Level {level} memerlukan lebih banyak SOL.",
+    "insufficientBalanceDetailed": "Saldo SOL tidak mencukupi. Level {level} memerlukan {needSOL} SOL. Anda memerlukan {missingSOL} SOL lagi.",
+    "insufficientBalanceAddSOL": "Saldo SOL tidak mencukupi. Level {level} memerlukan lebih banyak SOL. Silakan tambahkan SOL ke dompet Anda.",
+    "insufficientBalanceForFees": "Saldo SOL tidak mencukupi untuk biaya transaksi.",
+    "transactionSimulationFailed": "Simulasi transaksi gagal. Silakan periksa saldo Anda dan coba lagi.",
+    "transactionCancelled": "Transaksi dibatalkan oleh pengguna.",
+    "activationFailedGeneric": "Aktivasi gagal. Silakan periksa saldo dompet Anda dan coba lagi. Jika masalah berlanjut, periksa koneksi internet Anda.",
+    "activationFailedAnchor": "Aktivasi level {level} gagal: kesalahan Anchor {code}.",
+    "registrationError": "Kesalahan pendaftaran: {error}",
+    "levelAlreadyActivated": "Level {level} sudah diaktifkan"
   },
   "overlay": {
-    "processing": "Memproses transaksi..."
+    "processing": "Memproses transaksi...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • MEMPROSES •",
+    "activatingLevel": "Mengaktifkan level {level}...",
+    "buildingTransaction": "Membangun transaksi untuk level {level}...",
+    "sendingTransaction": "Mengirim transaksi untuk level {level}...",
+    "confirmingTransaction": "Mengonfirmasi transaksi untuk level {level}...",
+    "registeringPlayer": "Mendaftarkan pemain...",
+    "checkingBalance": "Memeriksa saldo...",
+    "creatingProfile": "Membuat profil pemain...",
+    "sendingRegistration": "Mengirim pendaftaran...",
+    "confirmingRegistration": "Mengonfirmasi pendaftaran..."
   },
   "nav": {
     "dashboard": "Dasbor",

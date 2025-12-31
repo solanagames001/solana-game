@@ -180,9 +180,9 @@ export async function createPlayer(
 
       if (!res.ok) {
         txLoading.hide();
-        const msg = `Registration error: ${res.err ?? "unknown"}`;
-        toast.error(msg);
-        throw new Error(msg);
+        const errorMsg = res.err ?? "unknown";
+        toast.error(`registrationError:${errorMsg}`);
+        throw new Error(`Registration error: ${errorMsg}`);
       }
 
       txLoading.hide();

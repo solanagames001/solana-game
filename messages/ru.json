@@ -399,11 +399,33 @@
     "registrationFinalized": "Регистрация завершена",
     "checkingPlayerState": "Проверка состояния игрока…",
     "playerNotFound": "Игрок не найден — нажмите Зарегистрировать",
-    "levelAlreadyActivated": "Уровень уже активирован",
-    "pressActivate": "Нажмите Активировать для активации этого уровня"
+    "levelAlreadyActivated": "Уровень {level} уже активирован",
+    "pressActivate": "Нажмите Активировать для активации этого уровня",
+    "failedToConnectBlockchain": "Не удалось подключиться к блокчейну. Проверьте подключение к интернету и попробуйте снова.",
+    "requestTimeout": "Тайм-аут запроса. Проверьте подключение к интернету и попробуйте снова.",
+    "networkTimeout": "Тайм-аут сети. Проверьте подключение и попробуйте снова.",
+    "insufficientBalanceForLevel": "Недостаточно SOL. Уровень {level} требует больше SOL.",
+    "insufficientBalanceDetailed": "Недостаточно SOL. Уровень {level} требует {needSOL} SOL. Вам не хватает {missingSOL} SOL.",
+    "insufficientBalanceAddSOL": "Недостаточно SOL. Уровень {level} требует больше SOL. Пожалуйста, пополните кошелёк SOL.",
+    "insufficientBalanceForFees": "Недостаточно SOL для комиссий транзакции.",
+    "transactionSimulationFailed": "Ошибка симуляции транзакции. Проверьте баланс и попробуйте снова.",
+    "transactionCancelled": "Транзакция была отменена пользователем.",
+    "activationFailedGeneric": "Активация не удалась. Проверьте баланс кошелька и попробуйте снова. Если проблема сохраняется, проверьте подключение к интернету.",
+    "activationFailedAnchor": "Активация уровня {level} не удалась: ошибка Anchor {code}.",
+    "registrationError": "Ошибка регистрации: {error}"
   },
   "overlay": {
-    "processing": "Обработка транзакции..."
+    "processing": "Обработка транзакции...",
+    "badgeText": "SOLANA • X3 • БЛОКЧЕЙН • ОБРАБОТКА •",
+    "activatingLevel": "Активация уровня {level}...",
+    "buildingTransaction": "Построение транзакции для уровня {level}...",
+    "sendingTransaction": "Отправка транзакции для уровня {level}...",
+    "confirmingTransaction": "Подтверждение транзакции для уровня {level}...",
+    "registeringPlayer": "Регистрация игрока...",
+    "checkingBalance": "Проверка баланса...",
+    "creatingProfile": "Создание профиля игрока...",
+    "sendingRegistration": "Отправка регистрации...",
+    "confirmingRegistration": "Подтверждение регистрации..."
   },
   "nav": {
     "dashboard": "Панель",

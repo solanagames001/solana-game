@@ -400,10 +400,33 @@
     "checkingPlayerState": "Vérification de l'état du joueur…",
     "playerNotFound": "Joueur introuvable — appuyez sur S'inscrire",
     "levelAlreadyActivated": "Niveau déjà activé",
-    "pressActivate": "Appuyez sur Activer pour activer ce niveau"
+    "pressActivate": "Appuyez sur Activer pour activer ce niveau",
+    "failedToConnectBlockchain": "Échec de la connexion à la blockchain. Veuillez vérifier votre connexion Internet et réessayer.",
+    "requestTimeout": "Délai d'attente de la demande expiré. Veuillez vérifier votre connexion Internet et réessayer.",
+    "networkTimeout": "Délai d'attente du réseau expiré. Veuillez vérifier votre connexion et réessayer.",
+    "insufficientBalanceForLevel": "Solde SOL insuffisant. Le niveau {level} nécessite plus de SOL.",
+    "insufficientBalanceDetailed": "Solde SOL insuffisant. Le niveau {level} nécessite {needSOL} SOL. Il vous manque {missingSOL} SOL.",
+    "insufficientBalanceAddSOL": "Solde SOL insuffisant. Le niveau {level} nécessite plus de SOL. Veuillez ajouter du SOL à votre portefeuille.",
+    "insufficientBalanceForFees": "Solde SOL insuffisant pour les frais de transaction.",
+    "transactionSimulationFailed": "Échec de la simulation de transaction. Veuillez vérifier votre solde et réessayer.",
+    "transactionCancelled": "La transaction a été annulée par l'utilisateur.",
+    "activationFailedGeneric": "Échec de l'activation. Veuillez vérifier le solde de votre portefeuille et réessayer. Si le problème persiste, vérifiez votre connexion Internet.",
+    "activationFailedAnchor": "Échec de l'activation du niveau {level}: erreur Anchor {code}.",
+    "registrationError": "Erreur d'inscription: {error}",
+    "levelAlreadyActivated": "Le niveau {level} est déjà activé"
   },
   "overlay": {
-    "processing": "Transaction en cours..."
+    "processing": "Transaction en cours...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • TRAITEMENT •",
+    "activatingLevel": "Activation du niveau {level}...",
+    "buildingTransaction": "Création de la transaction pour le niveau {level}...",
+    "sendingTransaction": "Envoi de la transaction pour le niveau {level}...",
+    "confirmingTransaction": "Confirmation de la transaction pour le niveau {level}...",
+    "registeringPlayer": "Inscription du joueur...",
+    "checkingBalance": "Vérification du solde...",
+    "creatingProfile": "Création du profil du joueur...",
+    "sendingRegistration": "Envoi de l'inscription...",
+    "confirmingRegistration": "Confirmation de l'inscription..."
   },
   "nav": {
     "dashboard": "Tableau de bord",

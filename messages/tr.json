@@ -400,10 +400,33 @@
     "checkingPlayerState": "Oyuncu durumu kontrol ediliyor…",
     "playerNotFound": "Oyuncu bulunamadı — Kayıt Ol'a basın",
     "levelAlreadyActivated": "Seviye zaten etkinleştirildi",
-    "pressActivate": "Bu seviyeyi etkinleştirmek için Etkinleştir'e basın"
+    "pressActivate": "Bu seviyeyi etkinleştirmek için Etkinleştir'e basın",
+    "failedToConnectBlockchain": "Blockchain'e bağlanılamadı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.",
+    "requestTimeout": "İstek zaman aşımına uğradı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.",
+    "networkTimeout": "Ağ zaman aşımına uğradı. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
+    "insufficientBalanceForLevel": "Yetersiz SOL bakiyesi. Seviye {level} daha fazla SOL gerektirir.",
+    "insufficientBalanceDetailed": "Yetersiz SOL bakiyesi. Seviye {level} {needSOL} SOL gerektirir. {missingSOL} SOL daha gerekiyor.",
+    "insufficientBalanceAddSOL": "Yetersiz SOL bakiyesi. Seviye {level} daha fazla SOL gerektirir. Lütfen cüzdanınıza SOL ekleyin.",
+    "insufficientBalanceForFees": "İşlem ücretleri için yetersiz SOL bakiyesi.",
+    "transactionSimulationFailed": "İşlem simülasyonu başarısız. Lütfen bakiyenizi kontrol edin ve tekrar deneyin.",
+    "transactionCancelled": "İşlem kullanıcı tarafından iptal edildi.",
+    "activationFailedGeneric": "Etkinleştirme başarısız. Lütfen cüzdan bakiyenizi kontrol edin ve tekrar deneyin. Sorun devam ederse, internet bağlantınızı kontrol edin.",
+    "activationFailedAnchor": "Seviye {level} etkinleştirme başarısız: Anchor hatası {code}.",
+    "registrationError": "Kayıt hatası: {error}",
+    "levelAlreadyActivated": "Seviye {level} zaten etkinleştirilmiş"
   },
   "overlay": {
-    "processing": "İşlem işleniyor..."
+    "processing": "İşlem işleniyor...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • İŞLENİYOR •",
+    "activatingLevel": "Seviye {level} etkinleştiriliyor...",
+    "buildingTransaction": "Seviye {level} için işlem oluşturuluyor...",
+    "sendingTransaction": "Seviye {level} için işlem gönderiliyor...",
+    "confirmingTransaction": "Seviye {level} için işlem onaylanıyor...",
+    "registeringPlayer": "Oyuncu kaydediliyor...",
+    "checkingBalance": "Bakiye kontrol ediliyor...",
+    "creatingProfile": "Oyuncu profili oluşturuluyor...",
+    "sendingRegistration": "Kayıt gönderiliyor...",
+    "confirmingRegistration": "Kayıt onaylanıyor..."
   },
   "nav": {
     "dashboard": "Panel",

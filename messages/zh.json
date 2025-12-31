@@ -400,10 +400,33 @@
     "checkingPlayerState": "正在检查玩家状态…",
     "playerNotFound": "未找到玩家 — 请点击注册",
     "levelAlreadyActivated": "级别已激活",
-    "pressActivate": "点击激活以激活此级别"
+    "pressActivate": "点击激活以激活此级别",
+    "failedToConnectBlockchain": "连接区块链失败。请检查您的互联网连接并重试。",
+    "requestTimeout": "请求超时。请检查您的互联网连接并重试。",
+    "networkTimeout": "网络超时。请检查您的连接并重试。",
+    "insufficientBalanceForLevel": "SOL余额不足。等级 {level} 需要更多SOL。",
+    "insufficientBalanceDetailed": "SOL余额不足。等级 {level} 需要 {needSOL} SOL。您还需要 {missingSOL} SOL。",
+    "insufficientBalanceAddSOL": "SOL余额不足。等级 {level} 需要更多SOL。请向您的钱包添加SOL。",
+    "insufficientBalanceForFees": "交易费用余额不足。",
+    "transactionSimulationFailed": "交易模拟失败。请检查您的余额并重试。",
+    "transactionCancelled": "交易已被用户取消。",
+    "activationFailedGeneric": "激活失败。请检查您的钱包余额并重试。如果问题持续，请检查您的互联网连接。",
+    "activationFailedAnchor": "等级 {level} 激活失败：Anchor错误 {code}。",
+    "registrationError": "注册错误：{error}",
+    "levelAlreadyActivated": "等级 {level} 已激活"
   },
   "overlay": {
-    "processing": "交易处理中..."
+    "processing": "交易处理中...",
+    "badgeText": "SOLANA • X3 • 区块链 • 处理中 •",
+    "activatingLevel": "激活等级 {level}...",
+    "buildingTransaction": "为等级 {level} 构建交易...",
+    "sendingTransaction": "发送等级 {level} 的交易...",
+    "confirmingTransaction": "确认等级 {level} 的交易...",
+    "registeringPlayer": "注册玩家...",
+    "checkingBalance": "检查余额...",
+    "creatingProfile": "创建玩家档案...",
+    "sendingRegistration": "发送注册...",
+    "confirmingRegistration": "确认注册..."
   },
   "nav": {
     "dashboard": "面板",

@@ -106,6 +106,7 @@ export function parseAnchorError(err: any): { code: number; message: string } | 
 
 /**
  * Форматирует сообщение об ошибке для пользователя
+ * Возвращает ключ перевода или специальный формат с параметрами
  */
 export function formatActivationError(err: any, levelId: number): string {
   const parsed = parseAnchorError(err);
@@ -113,10 +114,11 @@ export function formatActivationError(err: any, levelId: number): string {
   if (parsed) {
     // Специальная обработка для "Level already activated"
     if (parsed.code === 6004) {
-      return `Level ${levelId} is already activated`;
+      return `levelAlreadyActivated:${levelId}`;
     }
     
-    return `Level ${levelId} activation failed: ${parsed.message}`;
+    // Для других Anchor ошибок возвращаем ключ с кодом (Toaster обработает)
+    return `activationFailedAnchor:${levelId}:${parsed.code}`;
   }
 
   // КРИТИЧЕСКОЕ: Проверяем логи ПЕРВЫМ делом (там самая полезная информация)
@@ -132,16 +134,17 @@ export function formatActivationError(err: any, levelId: number): string {
       const missingSOL = (missingLamports / 1_000_000_000).toFixed(4);
       const needSOL = (needLamports / 1_000_000_000).toFixed(4);
       
-      return `Insufficient SOL balance. Level ${levelId} requires ${needSOL} SOL. You need ${missingSOL} SOL more.`;
+      // Возвращаем специальный формат: KEY:param1:param2
+      return `insufficientBalanceDetailed:${levelId}:${needSOL}:${missingSOL}`;
     }
     
     // Проверяем другие варианты insufficient
     if (logsStr.includes("insufficient lamports") || logsStr.includes("insufficient funds")) {
-      return `Insufficient SOL balance. Level ${levelId} requires more SOL. Please add SOL to your wallet.`;
+      return `insufficientBalanceAddSOL:${levelId}`;
     }
     
     if (logsStr.includes("already activated") || logsStr.includes("AlreadyActivated")) {
-      return `Level ${levelId} is already activated.`;
+      return `levelAlreadyActivated:${levelId}`;
     }
   }
 
@@ -178,32 +181,33 @@ export function formatActivationError(err: any, levelId: number): string {
   }
   
   // Обработка ошибок построения инструкции (в message)
+  // Возвращаем ключи переводов
   if (message.includes("ConfigV3 not found") || message.includes("Failed to fetch ConfigV3")) {
-    return `Failed to connect to blockchain. Please check your internet connection and try again.`;
+    return "failedToConnectBlockchain";
   }
   
   if (message.includes("timeout") || message.includes("Timeout")) {
-    return `Request timeout. Please check your internet connection and try again.`;
+    return "requestTimeout";
   }
   
   if (message.includes("Pool fetch timeout") || message.includes("TailPage fetch timeout") || message.includes("HeadPage fetch timeout")) {
-    return `Network timeout. Please check your connection and try again.`;
+    return "networkTimeout";
   }
   
   if (message.includes("insufficient funds") || message.includes("Insufficient funds") || message.includes("insufficient lamports")) {
-    return `Insufficient SOL balance. Level ${levelId} requires more SOL.`;
+    return `insufficientBalanceForLevel:${levelId}`;
   }
 
   if (message.includes("Attempt to debit an account but found no record of a prior credit")) {
-    return `Insufficient SOL balance for transaction fees.`;
+    return "insufficientBalanceForFees";
   }
 
   if (message.includes("Transaction simulation failed")) {
-    return `Transaction simulation failed. Please check your balance and try again.`;
+    return "transactionSimulationFailed";
   }
 
   if (message.includes("User rejected") || message.includes("user rejected")) {
-    return "Transaction was cancelled by user.";
+    return "transactionCancelled";
   }
 
   // Общая ошибка - показываем детали для отладки, но без технических деталей для пользователя
@@ -211,10 +215,9 @@ export function formatActivationError(err: any, levelId: number): string {
   
   // Упрощаем сообщение для пользователя
   if (!message || message === "[object Object]") {
-    return `Activation failed. Please check your wallet balance and try again. If the problem persists, check your internet connection.`;
+    return "activationFailedGeneric";
   }
   
-  // Ограничиваем длину сообщения для пользователя
-  const userMessage = message.length > 100 ? message.substring(0, 100) + "..." : message;
-  return `Activation failed: ${userMessage || "Unknown error"}. Please try again.`;
+  // Для неизвестных ошибок возвращаем общий ключ
+  return "activationFailedGeneric";
 }

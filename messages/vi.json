@@ -400,10 +400,33 @@
     "checkingPlayerState": "Đang kiểm tra trạng thái người chơi…",
     "playerNotFound": "Không tìm thấy người chơi — nhấn Đăng ký",
     "levelAlreadyActivated": "Cấp đã được kích hoạt",
-    "pressActivate": "Nhấn Kích hoạt để kích hoạt cấp này"
+    "pressActivate": "Nhấn Kích hoạt để kích hoạt cấp này",
+    "failedToConnectBlockchain": "Không thể kết nối với blockchain. Vui lòng kiểm tra kết nối internet của bạn và thử lại.",
+    "requestTimeout": "Hết thời gian chờ yêu cầu. Vui lòng kiểm tra kết nối internet của bạn và thử lại.",
+    "networkTimeout": "Hết thời gian chờ mạng. Vui lòng kiểm tra kết nối của bạn và thử lại.",
+    "insufficientBalanceForLevel": "Số dư SOL không đủ. Cấp {level} yêu cầu thêm SOL.",
+    "insufficientBalanceDetailed": "Số dư SOL không đủ. Cấp {level} yêu cầu {needSOL} SOL. Bạn cần thêm {missingSOL} SOL.",
+    "insufficientBalanceAddSOL": "Số dư SOL không đủ. Cấp {level} yêu cầu thêm SOL. Vui lòng thêm SOL vào ví của bạn.",
+    "insufficientBalanceForFees": "Số dư SOL không đủ cho phí giao dịch.",
+    "transactionSimulationFailed": "Mô phỏng giao dịch thất bại. Vui lòng kiểm tra số dư của bạn và thử lại.",
+    "transactionCancelled": "Giao dịch đã bị hủy bởi người dùng.",
+    "activationFailedGeneric": "Kích hoạt thất bại. Vui lòng kiểm tra số dư ví của bạn và thử lại. Nếu vấn đề vẫn tiếp tục, hãy kiểm tra kết nối internet của bạn.",
+    "activationFailedAnchor": "Kích hoạt cấp {level} thất bại: lỗi Anchor {code}.",
+    "registrationError": "Lỗi đăng ký: {error}",
+    "levelAlreadyActivated": "Cấp {level} đã được kích hoạt"
   },
   "overlay": {
-    "processing": "Đang xử lý giao dịch..."
+    "processing": "Đang xử lý giao dịch...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • ĐANG XỬ LÝ •",
+    "activatingLevel": "Đang kích hoạt cấp {level}...",
+    "buildingTransaction": "Đang tạo giao dịch cho cấp {level}...",
+    "sendingTransaction": "Đang gửi giao dịch cho cấp {level}...",
+    "confirmingTransaction": "Đang xác nhận giao dịch cho cấp {level}...",
+    "registeringPlayer": "Đang đăng ký người chơi...",
+    "checkingBalance": "Đang kiểm tra số dư...",
+    "creatingProfile": "Đang tạo hồ sơ người chơi...",
+    "sendingRegistration": "Đang gửi đăng ký...",
+    "confirmingRegistration": "Đang xác nhận đăng ký..."
   },
   "nav": {
     "dashboard": "Bảng điều khiển",

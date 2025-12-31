@@ -400,10 +400,33 @@
     "checkingPlayerState": "Verificando estado del jugador…",
     "playerNotFound": "Jugador no encontrado — presione Registrar",
     "levelAlreadyActivated": "Nivel ya activado",
-    "pressActivate": "Presione Activar para activar este nivel"
+    "pressActivate": "Presione Activar para activar este nivel",
+    "failedToConnectBlockchain": "Error al conectar con la blockchain. Por favor, verifique su conexión a Internet e intente de nuevo.",
+    "requestTimeout": "Tiempo de espera de solicitud agotado. Por favor, verifique su conexión a Internet e intente de nuevo.",
+    "networkTimeout": "Tiempo de espera de red agotado. Por favor, verifique su conexión e intente de nuevo.",
+    "insufficientBalanceForLevel": "Saldo de SOL insuficiente. El nivel {level} requiere más SOL.",
+    "insufficientBalanceDetailed": "Saldo de SOL insuficiente. El nivel {level} requiere {needSOL} SOL. Necesita {missingSOL} SOL más.",
+    "insufficientBalanceAddSOL": "Saldo de SOL insuficiente. El nivel {level} requiere más SOL. Por favor, agregue SOL a su billetera.",
+    "insufficientBalanceForFees": "Saldo de SOL insuficiente para las tarifas de transacción.",
+    "transactionSimulationFailed": "Error en la simulación de transacción. Por favor, verifique su saldo e intente de nuevo.",
+    "transactionCancelled": "La transacción fue cancelada por el usuario.",
+    "activationFailedGeneric": "Error en la activación. Por favor, verifique el saldo de su billetera e intente de nuevo. Si el problema persiste, verifique su conexión a Internet.",
+    "activationFailedAnchor": "Error en la activación del nivel {level}: error de Anchor {code}.",
+    "registrationError": "Error de registro: {error}",
+    "levelAlreadyActivated": "El nivel {level} ya está activado"
   },
   "overlay": {
-    "processing": "Procesando transacción..."
+    "processing": "Procesando transacción...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • PROCESANDO •",
+    "activatingLevel": "Activando nivel {level}...",
+    "buildingTransaction": "Construyendo transacción para el nivel {level}...",
+    "sendingTransaction": "Enviando transacción para el nivel {level}...",
+    "confirmingTransaction": "Confirmando transacción para el nivel {level}...",
+    "registeringPlayer": "Registrando jugador...",
+    "checkingBalance": "Verificando saldo...",
+    "creatingProfile": "Creando perfil del jugador...",
+    "sendingRegistration": "Enviando registro...",
+    "confirmingRegistration": "Confirmando registro..."
   },
   "nav": {
     "dashboard": "Panel",

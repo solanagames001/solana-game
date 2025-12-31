@@ -399,11 +399,33 @@
     "registrationFinalized": "Registration finalized",
     "checkingPlayerState": "Checking player state…",
     "playerNotFound": "Player not found — press Register",
-    "levelAlreadyActivated": "Level already activated",
-    "pressActivate": "Press Activate to activate this level"
+    "levelAlreadyActivated": "Level {level} is already activated",
+    "pressActivate": "Press Activate to activate this level",
+    "failedToConnectBlockchain": "Failed to connect to blockchain. Please check your internet connection and try again.",
+    "requestTimeout": "Request timeout. Please check your internet connection and try again.",
+    "networkTimeout": "Network timeout. Please check your connection and try again.",
+    "insufficientBalanceForLevel": "Insufficient SOL balance. Level {level} requires more SOL.",
+    "insufficientBalanceDetailed": "Insufficient SOL balance. Level {level} requires {needSOL} SOL. You need {missingSOL} SOL more.",
+    "insufficientBalanceAddSOL": "Insufficient SOL balance. Level {level} requires more SOL. Please add SOL to your wallet.",
+    "insufficientBalanceForFees": "Insufficient SOL balance for transaction fees.",
+    "transactionSimulationFailed": "Transaction simulation failed. Please check your balance and try again.",
+    "transactionCancelled": "Transaction was cancelled by user.",
+    "activationFailedGeneric": "Activation failed. Please check your wallet balance and try again. If the problem persists, check your internet connection.",
+    "activationFailedAnchor": "Level {level} activation failed: Anchor error {code}.",
+    "registrationError": "Registration error: {error}"
   },
   "overlay": {
-    "processing": "Processing transaction..."
+    "processing": "Processing transaction...",
+    "badgeText": "SOLANA • X3 • BLOCKCHAIN • PROCESSING •",
+    "activatingLevel": "Activating level {level}...",
+    "buildingTransaction": "Building transaction for level {level}...",
+    "sendingTransaction": "Sending transaction for level {level}...",
+    "confirmingTransaction": "Confirming transaction for level {level}...",
+    "registeringPlayer": "Registering player...",
+    "checkingBalance": "Checking balance...",
+    "creatingProfile": "Creating player profile...",
+    "sendingRegistration": "Sending registration transaction...",
+    "confirmingRegistration": "Confirming registration..."
   },
   "nav": {
     "dashboard": "Dashboard",

@@ -139,6 +139,47 @@ export default function Toaster() {
                   }
                 }
                 
+                // Handle format with parameters: KEY:param1:param2:param3
+                const parts = item.message.split(':');
+                if (parts.length > 1) {
+                  const key = parts[0];
+                  const params = parts.slice(1);
+                  
+                  try {
+                    // Handle specific formats
+                    if (key === 'levelAlreadyActivated' && params.length === 1) {
+                      return t('levelAlreadyActivated', { level: params[0] });
+                    }
+                    if (key === 'insufficientBalanceForLevel' && params.length === 1) {
+                      return t('insufficientBalanceForLevel', { level: params[0] });
+                    }
+                    if (key === 'insufficientBalanceAddSOL' && params.length === 1) {
+                      return t('insufficientBalanceAddSOL', { level: params[0] });
+                    }
+                    if (key === 'insufficientBalanceDetailed' && params.length === 3) {
+                      return t('insufficientBalanceDetailed', { 
+                        level: params[0], 
+                        needSOL: params[1], 
+                        missingSOL: params[2] 
+                      });
+                    }
+                    if (key === 'activationFailedAnchor' && params.length === 2) {
+                      return t('activationFailedAnchor', { level: params[0], code: params[1] });
+                    }
+                    if (key === 'registrationError' && params.length >= 1) {
+                      return t('registrationError', { error: params.join(':') });
+                    }
+                    
+                    // Try generic translation with first param as object
+                    const translated = t(key as any, { value: params.join(':') });
+                    if (translated && translated !== key) {
+                      return translated;
+                    }
+                  } catch {
+                    // Fall through to show original
+                  }
+                }
+                
                 // Check if message looks like a translation key (camelCase, only ASCII letters/numbers)
                 // If it contains non-ASCII characters (like Cyrillic) or spaces, it's already translated
                 const isLikelyKey = /^[a-zA-Z][a-zA-Z0-9]*$/.test(item.message) && 

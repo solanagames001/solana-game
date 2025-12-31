@@ -400,10 +400,33 @@
     "checkingPlayerState": "プレイヤーの状態を確認中…",
     "playerNotFound": "プレイヤーが見つかりません — 登録を押してください",
     "levelAlreadyActivated": "レベルは既にアクティベートされています",
-    "pressActivate": "アクティベートを押してこのレベルをアクティベートしてください"
+    "pressActivate": "アクティベートを押してこのレベルをアクティベートしてください",
+    "failedToConnectBlockchain": "ブロックチェーンへの接続に失敗しました。インターネット接続を確認して再試行してください。",
+    "requestTimeout": "リクエストがタイムアウトしました。インターネット接続を確認して再試行してください。",
+    "networkTimeout": "ネットワークがタイムアウトしました。接続を確認して再試行してください。",
+    "insufficientBalanceForLevel": "SOL残高が不足しています。レベル {level} にはより多くのSOLが必要です。",
+    "insufficientBalanceDetailed": "SOL残高が不足しています。レベル {level} には {needSOL} SOLが必要です。あと {missingSOL} SOL必要です。",
+    "insufficientBalanceAddSOL": "SOL残高が不足しています。レベル {level} にはより多くのSOLが必要です。ウォレットにSOLを追加してください。",
+    "insufficientBalanceForFees": "トランザクション手数料のSOL残高が不足しています。",
+    "transactionSimulationFailed": "トランザクションのシミュレーションに失敗しました。残高を確認して再試行してください。",
+    "transactionCancelled": "トランザクションはユーザーによってキャンセルされました。",
+    "activationFailedGeneric": "アクティベーションに失敗しました。ウォレットの残高を確認して再試行してください。問題が続く場合は、インターネット接続を確認してください。",
+    "activationFailedAnchor": "レベル {level} のアクティベーションに失敗しました：Anchorエラー {code}。",
+    "registrationError": "登録エラー：{error}",
+    "levelAlreadyActivated": "レベル {level} は既にアクティベートされています"
   },
   "overlay": {
-    "processing": "トランザクション処理中..."
+    "processing": "トランザクション処理中...",
+    "badgeText": "SOLANA • X3 • ブロックチェーン • 処理中 •",
+    "activatingLevel": "レベル {level} を有効化中...",
+    "buildingTransaction": "レベル {level} のトランザクションを作成中...",
+    "sendingTransaction": "レベル {level} のトランザクションを送信中...",
+    "confirmingTransaction": "レベル {level} のトランザクションを確認中...",
+    "registeringPlayer": "プレイヤーを登録中...",
+    "checkingBalance": "残高を確認中...",
+    "creatingProfile": "プレイヤープロフィールを作成中...",
+    "sendingRegistration": "登録を送信中...",
+    "confirmingRegistration": "登録を確認中..."
   },
   "nav": {
     "dashboard": "ダッシュボード",
