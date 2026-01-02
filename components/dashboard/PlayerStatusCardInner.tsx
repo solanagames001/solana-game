@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, useCallback } from "react";
+import { useEffect, useMemo, useState, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import {
@@ -56,11 +56,24 @@ export default function PlayerStatusCardInner() {
 
   const [meta, setMeta] = useState<PlayerMeta | null>(() => loadLS());
   const [loading, setLoading] = useState(false);
+  // Track last emitted state to avoid duplicate events
+  const lastEmittedHasPlayer = useRef<boolean | null>(null);
 
   const [pda] = useMemo(() => {
     if (!publicKey) return [null] as const;
     return derivePlayerPda(publicKey);
   }, [publicKey]);
+
+  // Emit player state only when it changes
+  const emitPlayerState = useCallback((hasPlayer: boolean) => {
+    if (lastEmittedHasPlayer.current === hasPlayer) return; // No change
+    lastEmittedHasPlayer.current = hasPlayer;
+    try {
+      window.dispatchEvent(
+        new CustomEvent("dashboard:player-state", { detail: { hasPlayer } })
+      );
+    } catch {}
+  }, []);
 
   const fmtGreen = (v?: string) =>
     !v ? (
@@ -78,12 +91,7 @@ export default function PlayerStatusCardInner() {
     if (!connected || !publicKey || !pda) {
       setMeta(null);
       saveLS(null);
-      // Notify Topbar that player doesn't exist
-      try {
-        window.dispatchEvent(
-          new CustomEvent("dashboard:player-state", { detail: { hasPlayer: false } })
-        );
-      } catch {}
+      emitPlayerState(false);
       return;
     }
 
@@ -97,26 +105,16 @@ export default function PlayerStatusCardInner() {
         };
         setMeta(data);
         saveLS(data);
-        // Notify Topbar that player exists
-        try {
-          window.dispatchEvent(
-            new CustomEvent("dashboard:player-state", { detail: { hasPlayer: true } })
-          );
-        } catch {}
+        emitPlayerState(true);
       } else {
         setMeta(null);
         saveLS(null);
-        // Notify Topbar that player doesn't exist
-        try {
-          window.dispatchEvent(
-            new CustomEvent("dashboard:player-state", { detail: { hasPlayer: false } })
-          );
-        } catch {}
+        emitPlayerState(false);
       }
     } catch (e) {
       console.warn("[PlayerStatusCardInner] refresh error:", e);
     }
-  }, [connected, publicKey, pda, connection]);
+  }, [connected, publicKey, pda, connection, emitPlayerState]);
 
   useEffect(() => {
     if (connected && publicKey && pda) refresh();
@@ -151,13 +149,6 @@ export default function PlayerStatusCardInner() {
       await new Promise((r) => setTimeout(r, 900));
 
       await refresh();
-
-      // Notify Topbar that player was created
-      try {
-        window.dispatchEvent(
-          new CustomEvent("dashboard:player-state", { detail: { hasPlayer: true } })
-        );
-      } catch {}
 
       toast.success(t('playerRegistered'));
     } catch (e) {

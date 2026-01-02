@@ -5,6 +5,30 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { HeliusRPCOptimizer, HELIUS_CONFIG } from "../helius";
 
 const LAMPORTS_PER_SOL = 1_000_000_000;
+const BALANCE_CACHE_KEY = "sg-balance-cache-v1";
+
+// Load cached balance from localStorage
+function loadCachedBalance(address: string): number | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const cached = localStorage.getItem(BALANCE_CACHE_KEY);
+    if (cached) {
+      const data = JSON.parse(cached);
+      if (data.address === address && data.balance !== undefined) {
+        return data.balance;
+      }
+    }
+  } catch {}
+  return null;
+}
+
+// Save balance to localStorage
+function saveCachedBalance(address: string, balance: number) {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(BALANCE_CACHE_KEY, JSON.stringify({ address, balance }));
+  } catch {}
+}
 
 /**
  * Optimized wallet balance hook with caching
@@ -14,12 +38,17 @@ const LAMPORTS_PER_SOL = 1_000_000_000;
  * - Respects cache TTL to minimize RPC calls
  * - Auto-refreshes based on HELIUS_CONFIG.limits.cacheTTL.balance
  * - Debounces rapid refresh calls
+ * - Loads cached balance from localStorage to prevent flicker
  */
 export function useWalletBalance() {
   const { connection } = useConnection();
   const { publicKey } = useWallet();
 
-  const [balance, setBalance] = useState<number | null>(null);
+  // Initialize with cached value to prevent flicker
+  const [balance, setBalance] = useState<number | null>(() => {
+    if (!publicKey) return null;
+    return loadCachedBalance(publicKey.toBase58());
+  });
   const [isLoading, setIsLoading] = useState(false);
   const lastFetchRef = useRef<number>(0);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -49,7 +78,9 @@ export function useWalletBalance() {
         "confirmed"
       );
       
-      setBalance(lamports / LAMPORTS_PER_SOL);
+      const newBalance = lamports / LAMPORTS_PER_SOL;
+      setBalance(newBalance);
+      saveCachedBalance(publicKey.toBase58(), newBalance);
       lastFetchRef.current = now;
     } catch (e) {
       console.warn("[useWalletBalance] Failed to fetch balance:", e);
@@ -64,6 +95,12 @@ export function useWalletBalance() {
     if (!publicKey) {
       setBalance(null);
       return;
+    }
+
+    // Try to load cached balance immediately
+    const cached = loadCachedBalance(publicKey.toBase58());
+    if (cached !== null && balance === null) {
+      setBalance(cached);
     }
 
     let cancelled = false;

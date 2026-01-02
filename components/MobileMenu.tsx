@@ -15,7 +15,6 @@ interface MobileMenuProps {
   connected: boolean;
   connecting?: boolean;
   hasPlayer: boolean;
-  checkingPlayer?: boolean;
   registerLoading?: boolean;
   address?: string | null;
 }
@@ -30,7 +29,6 @@ export default function MobileMenu({
   connected,
   connecting,
   hasPlayer,
-  checkingPlayer,
   registerLoading,
   address,
 }: MobileMenuProps) {
@@ -175,104 +173,69 @@ export default function MobileMenu({
                 )}
               </AnimatePresence>
 
-              {/* PRIMARY ACTION BUTTON - with smooth transitions */}
-              {/* Logic matches Desktop: show Dashboard immediately when connected (optimistic) */}
-              <AnimatePresence mode="wait">
-                {connecting ? (
-                  <motion.div
-                    key="connecting"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                  >
-                    <PrimaryButton
-                      label={tMenu('connecting')}
-                      disabled
-                      onClick={() => {}}
-                      loading
-                    />
-                  </motion.div>
-                ) : !connected ? (
-                  <motion.div
-                    key="connect"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                  >
-                    <PrimaryButton
-                      label={tMenu('connectWallet')}
-                      onClick={() =>
-                        safe(() => {
-                          onConnect();
-                          onClose();
-                        })
-                      }
-                      icon={
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
-                          <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
-                        </svg>
-                      }
-                    />
-                  </motion.div>
-                ) : !hasPlayer ? (
-                  <motion.div
-                    key="register"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                  >
-                    <PrimaryButton
-                      label={registerLoading ? tMenu('creatingProfile') : tMenu('createProfile')}
-                      disabled={registerLoading || checkingPlayer}
-                      loading={registerLoading || checkingPlayer}
-                      onClick={() =>
-                        safe(() => {
-                          onRegister();
-                          onClose();
-                        })
-                      }
-                      icon={
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                          <circle cx="9" cy="7" r="4" />
-                          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                        </svg>
-                      }
-                    />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="dashboard"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                  >
-                    <PrimaryButton
-                      label={tMenu('goToDashboard')}
-                      onClick={() =>
-                        safe(() => {
-                          onDashboard();
-                          onClose();
-                        })
-                      }
-                      icon={
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                          <rect x="3" y="3" width="7" height="7" rx="1" />
-                          <rect x="14" y="3" width="7" height="7" rx="1" />
-                          <rect x="3" y="14" width="7" height="7" rx="1" />
-                          <rect x="14" y="14" width="7" height="7" rx="1" />
-                        </svg>
-                      }
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              {/* PRIMARY ACTION BUTTON - NO animation between states (like Desktop) */}
+              {connecting ? (
+                <PrimaryButton
+                  label={tMenu('connecting')}
+                  disabled
+                  onClick={() => {}}
+                  loading
+                />
+              ) : !connected ? (
+                <PrimaryButton
+                  label={tMenu('connectWallet')}
+                  onClick={() =>
+                    safe(() => {
+                      onConnect();
+                      onClose();
+                    })
+                  }
+                  icon={
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+                      <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+                    </svg>
+                  }
+                />
+              ) : !hasPlayer ? (
+                <PrimaryButton
+                  label={registerLoading ? tMenu('creatingProfile') : tMenu('createProfile')}
+                  disabled={registerLoading}
+                  loading={registerLoading}
+                  onClick={() =>
+                    safe(() => {
+                      onRegister();
+                      onClose();
+                    })
+                  }
+                  icon={
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  }
+                />
+              ) : (
+                <PrimaryButton
+                  label={tMenu('goToDashboard')}
+                  onClick={() =>
+                    safe(() => {
+                      onDashboard();
+                      onClose();
+                    })
+                  }
+                  icon={
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="3" y="3" width="7" height="7" rx="1" />
+                      <rect x="14" y="3" width="7" height="7" rx="1" />
+                      <rect x="3" y="14" width="7" height="7" rx="1" />
+                      <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                  }
+                />
+              )}
 
               {/* DISCONNECT BUTTON */}
               <AnimatePresence mode="wait">
