@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "지갑 연결",
     "connecting": "연결 중...",
+    "checking": "확인 중...",
     "createProfile": "프로필 만들기",
     "creatingProfile": "프로필 만드는 중...",
     "goToDashboard": "대시보드로 이동"

@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "Cüzdan bağla",
     "connecting": "Bağlanıyor...",
+    "checking": "Kontrol ediliyor...",
     "createProfile": "Profil oluştur",
     "creatingProfile": "Profil oluşturuluyor...",
     "goToDashboard": "Panele git"

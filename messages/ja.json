@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "ウォレット接続",
     "connecting": "接続中...",
+    "checking": "確認中...",
     "createProfile": "プロフィール作成",
     "creatingProfile": "プロフィール作成中...",
     "goToDashboard": "ダッシュボードへ"

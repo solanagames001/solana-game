@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "Connecter le portefeuille",
     "connecting": "Connexion...",
+    "checking": "Vérification...",
     "createProfile": "Créer un profil",
     "creatingProfile": "Création du profil...",
     "goToDashboard": "Aller au tableau de bord"

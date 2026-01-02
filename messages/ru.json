@@ -443,6 +443,7 @@
   "mobileMenu": {
     "connectWallet": "Подключить кошелек",
     "connecting": "Подключение...",
+    "checking": "Проверка...",
     "createProfile": "Создать профиль",
     "creatingProfile": "Создание профиля...",
     "goToDashboard": "Перейти в панель"

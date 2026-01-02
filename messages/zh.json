@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "连接钱包",
     "connecting": "连接中...",
+    "checking": "检查中...",
     "createProfile": "创建资料",
     "creatingProfile": "创建资料中...",
     "goToDashboard": "进入面板"

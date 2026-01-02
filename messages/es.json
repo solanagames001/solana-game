@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "Conectar Billetera",
     "connecting": "Conectando...",
+    "checking": "Verificando...",
     "createProfile": "Crear Perfil",
     "creatingProfile": "Creando Perfil...",
     "goToDashboard": "Ir al Panel"

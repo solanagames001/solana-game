@@ -443,6 +443,7 @@
   "mobileMenu": {
     "connectWallet": "Connect Wallet",
     "connecting": "Connecting...",
+    "checking": "Checking...",
     "createProfile": "Create Profile",
     "creatingProfile": "Creating Profile...",
     "goToDashboard": "Go to Dashboard"

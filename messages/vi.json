@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "Kết nối ví",
     "connecting": "Đang kết nối...",
+    "checking": "Đang kiểm tra...",
     "createProfile": "Tạo hồ sơ",
     "creatingProfile": "Đang tạo hồ sơ...",
     "goToDashboard": "Đến bảng điều khiển"

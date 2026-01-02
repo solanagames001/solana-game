@@ -26,7 +26,7 @@ export default function Header() {
   const toast = useToast();
 
   const { connected, connecting, publicKey, disconnect } = useWallet();
-  const { address, playerExists, busyRegister, register } = usePlayer();
+  const { address, playerExists, busyRegister, register, checkingPlayer } = usePlayer();
 
   const [mounted, setMounted] = useState(false);
   const [walletModalOpen, setWalletModalOpen] = useState(false);
@@ -283,7 +283,8 @@ export default function Header() {
         onDisconnect={safeDisconnect}
         connected={connected}
         connecting={connecting}
-        hasPlayer={playerExists === true}
+        hasPlayer={playerExists !== false}
+        checkingPlayer={checkingPlayer}
         registerLoading={busyRegister}
         address={address}
       />

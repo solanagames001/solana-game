@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "Hubungkan dompet",
     "connecting": "Menghubungkan...",
+    "checking": "Memeriksa...",
     "createProfile": "Buat profil",
     "creatingProfile": "Membuat profil...",
     "goToDashboard": "Ke dasbor"

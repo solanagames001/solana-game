@@ -444,6 +444,7 @@
   "mobileMenu": {
     "connectWallet": "Wallet verbinden",
     "connecting": "Verbinde...",
+    "checking": "Prüfe...",
     "createProfile": "Profil erstellen",
     "creatingProfile": "Erstelle Profil...",
     "goToDashboard": "Zum Dashboard"

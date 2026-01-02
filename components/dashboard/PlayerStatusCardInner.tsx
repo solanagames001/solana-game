@@ -78,6 +78,12 @@ export default function PlayerStatusCardInner() {
     if (!connected || !publicKey || !pda) {
       setMeta(null);
       saveLS(null);
+      // Notify Topbar that player doesn't exist
+      try {
+        window.dispatchEvent(
+          new CustomEvent("dashboard:player-state", { detail: { hasPlayer: false } })
+        );
+      } catch {}
       return;
     }
 
@@ -91,9 +97,21 @@ export default function PlayerStatusCardInner() {
         };
         setMeta(data);
         saveLS(data);
+        // Notify Topbar that player exists
+        try {
+          window.dispatchEvent(
+            new CustomEvent("dashboard:player-state", { detail: { hasPlayer: true } })
+          );
+        } catch {}
       } else {
         setMeta(null);
         saveLS(null);
+        // Notify Topbar that player doesn't exist
+        try {
+          window.dispatchEvent(
+            new CustomEvent("dashboard:player-state", { detail: { hasPlayer: false } })
+          );
+        } catch {}
       }
     } catch (e) {
       console.warn("[PlayerStatusCardInner] refresh error:", e);
@@ -127,10 +145,21 @@ export default function PlayerStatusCardInner() {
         signAllTransactions: adapter.signAllTransactions,
       };
 
-      const sig = await createPlayer(connection, aw); // ← FIX
+      const sig = await createPlayer(connection, aw);
+
+      // 🔑 Даём сети увидеть Player PDA
+      await new Promise((r) => setTimeout(r, 900));
+
+      await refresh();
+
+      // Notify Topbar that player was created
+      try {
+        window.dispatchEvent(
+          new CustomEvent("dashboard:player-state", { detail: { hasPlayer: true } })
+        );
+      } catch {}
 
       toast.success(t('playerRegistered'));
-      await refresh();
     } catch (e) {
       console.error("[PlayerStatusCardInner] register error:", e);
       toast.error(t('registrationFailed'));
