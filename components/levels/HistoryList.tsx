@@ -142,7 +142,11 @@ export default function HistoryList({
       {totalPages > 1 && (
         <div className="flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-xs text-white/50">
           <span>
-            Showing {(safePage - 1) * pageSize + 1}–{Math.min(safePage * pageSize, total)} of {total}
+            {tHistory('showing', { 
+              start: (safePage - 1) * pageSize + 1, 
+              end: Math.min(safePage * pageSize, total), 
+              total 
+            })}
           </span>
           <div className="flex items-center gap-1">
             <button

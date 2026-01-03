@@ -193,6 +193,7 @@
     "hAgo": "j lalu",
     "dAgo": "h lalu",
     "activated": "Diaktifkan",
+    "showing": "Menampilkan {start}–{end} dari {total}",
     "filters": {
       "all": "Semua",
       "activations": "Aktivasi",
@@ -651,7 +652,10 @@
     "copyFailed": "Gagal menyalin",
     "failedToLoad": "Gagal memuat riwayat mitra",
     "registration": "Pendaftaran",
-    "newReferral": "Rujukan baru"
+    "newReferral": "Rujukan baru",
+    "line1Label": "Baris 1",
+    "line2Label": "Baris 2",
+    "line3Label": "Baris 3"
   },
   "telegramPage": {
     "title": "Telegram",

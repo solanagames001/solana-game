@@ -193,6 +193,7 @@
     "hAgo": "sa önce",
     "dAgo": "gün önce",
     "activated": "Etkinleştirildi",
+    "showing": "{start}–{end} / {total} gösteriliyor",
     "filters": {
       "all": "Tümü",
       "activations": "Aktivasyonlar",
@@ -651,7 +652,10 @@
     "copyFailed": "Kopyalama başarısız",
     "failedToLoad": "Partner geçmişi yüklenemedi",
     "registration": "Kayıt",
-    "newReferral": "Yeni yönlendirme"
+    "newReferral": "Yeni yönlendirme",
+    "line1Label": "Hat 1",
+    "line2Label": "Hat 2",
+    "line3Label": "Hat 3"
   },
   "telegramPage": {
     "title": "Telegram",

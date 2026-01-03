@@ -193,6 +193,7 @@
     "hAgo": "giờ trước",
     "dAgo": "ngày trước",
     "activated": "Đã kích hoạt",
+    "showing": "Hiển thị {start}–{end} trong {total}",
     "filters": {
       "all": "Tất cả",
       "activations": "Kích hoạt",
@@ -651,7 +652,10 @@
     "copyFailed": "Sao chép thất bại",
     "failedToLoad": "Không thể tải lịch sử đối tác",
     "registration": "Đăng ký",
-    "newReferral": "Người giới thiệu mới"
+    "newReferral": "Người giới thiệu mới",
+    "line1Label": "Tuyến 1",
+    "line2Label": "Tuyến 2",
+    "line3Label": "Tuyến 3"
   },
   "telegramPage": {
     "title": "Telegram",

@@ -193,6 +193,7 @@
     "hAgo": "Std. vor",
     "dAgo": "T. vor",
     "activated": "Aktiviert",
+    "showing": "Zeige {start}–{end} von {total}",
     "filters": {
       "all": "Alle",
       "activations": "Aktivierungen",
@@ -651,7 +652,10 @@
     "copyFailed": "Kopieren fehlgeschlagen",
     "failedToLoad": "Partnerverlauf konnte nicht geladen werden",
     "registration": "Registrierung",
-    "newReferral": "Neue Empfehlung"
+    "newReferral": "Neue Empfehlung",
+    "line1Label": "Linie 1",
+    "line2Label": "Linie 2",
+    "line3Label": "Linie 3"
   },
   "telegramPage": {
     "title": "Telegram",

@@ -17,11 +17,12 @@ import { priceLamportsForLevel, lamportsToSol } from "@/lib/sdk/prices";
 /* Constants from on-chain program                              */
 /* ------------------------------------------------------------ */
 
-const REF_PERCENTAGES = {
-  REF_T1_13: { pct: 13, label: "Line 1" },
-  REF_T2_8: { pct: 8, label: "Line 2" },
-  REF_T3_5: { pct: 5, label: "Line 3" },
-};
+// Line keys for translation lookup
+const REF_LINE_KEYS = {
+  REF_T1_13: "line1Label",
+  REF_T2_8: "line2Label",
+  REF_T3_5: "line3Label",
+} as const;
 
 const REF_PERC: Partial<Record<TxKind, number>> = {
   REF_T1_13: 0.13,
@@ -61,7 +62,8 @@ interface PartnerTx {
   level: string;
   amount: number;
   type: TxKind;
-  line: string;
+  lineKey: string; // Translation key for line
+  referralAddress?: string; // Referral wallet address if available
 }
 
 /* ------------------------------------------------------------ */
@@ -140,6 +142,22 @@ export default function PartnerBonusPage() {
       let ref3 = 0;
 
       const txs: PartnerTx[] = refEvents.map((ev) => {
+        // Extract referral address from signature if available
+        // Format: referral-registered-line{1|2|3}-<address>-<timestamp>
+        // or: referral-registered-<address>-<timestamp>
+        let referralAddress: string | undefined;
+        if (ev.sig) {
+          const newFormatMatch = ev.sig.match(/^referral-registered-line[123]-([A-Za-z0-9]{32,44})-\d+$/);
+          if (newFormatMatch) {
+            referralAddress = newFormatMatch[1];
+          } else {
+            const oldFormatMatch = ev.sig.match(/^referral-registered-([A-Za-z0-9]{32,44})-\d+$/);
+            if (oldFormatMatch) {
+              referralAddress = oldFormatMatch[1];
+            }
+          }
+        }
+
         // REFERRAL_REGISTERED не имеет суммы выплаты
         if (ev.kind === "REFERRAL_REGISTERED") {
           return {
@@ -149,7 +167,8 @@ export default function PartnerBonusPage() {
             level: "—",
             amount: 0,
             type: ev.kind,
-            line: t('registration'),
+            lineKey: "registration",
+            referralAddress,
           };
         }
 
@@ -163,7 +182,7 @@ export default function PartnerBonusPage() {
         if (ev.kind === "REF_T2_8") ref2 += rewardSol;
         if (ev.kind === "REF_T3_5") ref3 += rewardSol;
 
-        const lineInfo = REF_PERCENTAGES[ev.kind as keyof typeof REF_PERCENTAGES];
+        const lineKey = REF_LINE_KEYS[ev.kind as keyof typeof REF_LINE_KEYS] ?? ev.kind;
 
         return {
           id: ev.id,
@@ -172,7 +191,8 @@ export default function PartnerBonusPage() {
           level: `L${String(ev.levelId).padStart(2, "0")}`,
           amount: rewardSol,
           type: ev.kind,
-          line: lineInfo?.label ?? ev.kind,
+          lineKey,
+          referralAddress,
         };
       });
 
@@ -436,11 +456,18 @@ export default function PartnerBonusPage() {
                 key={tx.id}
                 className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 rounded-xl bg-[#0d0d0f] p-3 sm:p-4"
               >
-                <div className="flex items-center gap-2 sm:gap-3">
+                <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                   <span className="rounded-full px-2 py-0.5 text-[10px] font-medium bg-[#14F195]/10 text-[#14F195]">
-                    {tx.line}
+                    {t(tx.lineKey)}
                   </span>
-                  <span className="text-xs font-mono text-white/60">{tx.level}</span>
+                  {tx.level !== "—" && (
+                    <span className="text-xs font-mono text-white/60">{tx.level}</span>
+                  )}
+                  {tx.referralAddress && (
+                    <span className="text-[10px] font-mono text-white/50">
+                      {tx.referralAddress.slice(0, 4)}…{tx.referralAddress.slice(-4)}
+                    </span>
+                  )}
                   <span className="text-[10px] text-white/40 hidden sm:inline">{tx.relativeTime}</span>
                 </div>
                 <div className="flex items-center justify-between sm:justify-end gap-3">

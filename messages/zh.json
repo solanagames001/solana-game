@@ -193,6 +193,7 @@
     "hAgo": "小时前",
     "dAgo": "天前",
     "activated": "已激活",
+    "showing": "显示 {start}–{end} / 共 {total}",
     "filters": {
       "all": "全部",
       "activations": "激活",
@@ -651,7 +652,10 @@
     "copyFailed": "复制失败",
     "failedToLoad": "无法加载合作伙伴历史",
     "registration": "注册",
-    "newReferral": "新推荐"
+    "newReferral": "新推荐",
+    "line1Label": "线路1",
+    "line2Label": "线路2",
+    "line3Label": "线路3"
   },
   "telegramPage": {
     "title": "Telegram",

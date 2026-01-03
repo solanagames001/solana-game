@@ -193,6 +193,7 @@
     "hAgo": "시간 전",
     "dAgo": "일 전",
     "activated": "활성화됨",
+    "showing": "{start}–{end} / {total}개 표시",
     "filters": {
       "all": "전체",
       "activations": "활성화",
@@ -651,7 +652,10 @@
     "copyFailed": "복사 실패",
     "failedToLoad": "파트너 내역을 로드하지 못했습니다",
     "registration": "등록",
-    "newReferral": "새 추천"
+    "newReferral": "새 추천",
+    "line1Label": "라인 1",
+    "line2Label": "라인 2",
+    "line3Label": "라인 3"
   },
   "telegramPage": {
     "title": "Telegram",

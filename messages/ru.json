@@ -216,6 +216,7 @@
     "hAgo": "ч. назад",
     "dAgo": "дн. назад",
     "activated": "Активировано",
+    "showing": "Показано {start}–{end} из {total}",
     "filters": {
       "all": "Все",
       "activations": "Активации",
@@ -650,7 +651,10 @@
     "copyFailed": "Ошибка копирования",
     "failedToLoad": "Не удалось загрузить историю партнёра",
     "registration": "Регистрация",
-    "newReferral": "Новый реферал"
+    "newReferral": "Новый реферал",
+    "line1Label": "Линия 1",
+    "line2Label": "Линия 2",
+    "line3Label": "Линия 3"
   },
   "telegramPage": {
     "title": "Telegram",

@@ -158,6 +158,7 @@
     "hAgo": "h hace",
     "dAgo": "d hace",
     "activated": "Activado",
+    "showing": "Mostrando {start}–{end} de {total}",
     "filters": {
       "all": "Todos",
       "activations": "Activaciones",
@@ -651,7 +652,10 @@
     "copyFailed": "Error al copiar",
     "failedToLoad": "Error al cargar historial de socios",
     "registration": "Registro",
-    "newReferral": "Nuevo referido"
+    "newReferral": "Nuevo referido",
+    "line1Label": "Línea 1",
+    "line2Label": "Línea 2",
+    "line3Label": "Línea 3"
   },
   "telegramPage": {
     "title": "Telegram",

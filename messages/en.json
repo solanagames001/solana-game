@@ -216,6 +216,7 @@
     "hAgo": "h ago",
     "dAgo": "d ago",
     "activated": "Activated",
+    "showing": "Showing {start}–{end} of {total}",
     "filters": {
       "all": "All",
       "activations": "Activations",
@@ -650,7 +651,10 @@
     "copyFailed": "Copy failed",
     "failedToLoad": "Failed to load partner history",
     "registration": "Registration",
-    "newReferral": "New referral"
+    "newReferral": "New referral",
+    "line1Label": "Line 1",
+    "line2Label": "Line 2",
+    "line3Label": "Line 3"
   },
   "telegramPage": {
     "title": "Telegram",

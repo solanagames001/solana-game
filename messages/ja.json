@@ -193,6 +193,7 @@
     "hAgo": "時間前",
     "dAgo": "日前",
     "activated": "アクティベート済み",
+    "showing": "{start}–{end} / {total}件",
     "filters": {
       "all": "すべて",
       "activations": "アクティベーション",
@@ -651,7 +652,10 @@
     "copyFailed": "コピーに失敗しました",
     "failedToLoad": "パートナー履歴の読み込みに失敗しました",
     "registration": "登録",
-    "newReferral": "新しい紹介"
+    "newReferral": "新しい紹介",
+    "line1Label": "ライン1",
+    "line2Label": "ライン2",
+    "line3Label": "ライン3"
   },
   "telegramPage": {
     "title": "Telegram",
