@@ -38,7 +38,7 @@ next-env.d.ts
 # ============================================================
 **/target/
 target/
-Cargo.lock
+# Cargo.lock - needed for verifiable builds
 *.so
 
 # ============================================================
