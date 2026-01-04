@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "programs/solana_game"
+]
+resolver = "2"
+
+[profile.release]
+opt-level = "z"          # минимальный размер бинарника
+lto = true               # Link Time Optimization
+codegen-units = 1        # единая сборка для лучшей оптимизации
+panic = "abort"          # убираем обработку паник — меньше вес
+strip = true             # удаляем отладочные символы
+overflow-checks = true   # защита от переполнений

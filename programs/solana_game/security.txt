@@ -1,0 +1,8 @@
+Contact: mailto:security@example.com
+Contact: https://github.com/solanagames001/solana-game/security
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en, ru
+Canonical: https://github.com/solanagames001/solana-game/blob/main/programs/solana_game/security.txt
+Policy: https://github.com/solanagames001/solana-game/security/policy
+
+
